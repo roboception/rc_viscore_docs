@@ -1,0 +1,171 @@
+Safety
+
+Warning: The operator must have read and understood all of the
+  instructions in this manual before handling the
+
+  rc_viscore
+
+   product.
+
+Warning: If operating the
+
+  rc_viscore
+
+   with the
+
+  rc_cube
+
+   product, the operator must have read and understood all of the
+  safety, installation, and maintenance instructions given in the
+
+  rc_cube
+
+   manual.
+
+Note: The term "operator" refers to anyone responsible for any of
+  the following tasks performed in conjunction with the
+
+  rc_viscore
+
+  :
+
+     Installation
+
+     Maintenance
+
+     Inspection
+
+     Calibration
+
+     Programming
+
+     Decommissioning
+
+This manual explains the
+
+rc_viscore
+
+'s various components and general operations regarding the product's
+whole life-cycle, from installation through operation to
+decommissioning.
+
+The drawings and photos in this documentation are representative
+examples; differences may exist between them and the delivered
+product.
+
+General warnings
+
+Note: Any use of the
+
+  rc_viscore
+
+   in noncompliance with these warnings is inappropriate and may cause
+  injury or damage as well as void the warranty.
+
+Warning:
+
+  The rc_viscore is protected according to IP54. High humidity or
+  temperature can damage the device. Do not operate in an environment
+  where combustible or explosive fumes may occur.
+
+  The rc_viscore needs to be properly mounted before use.
+
+  All cable sets need to be secured to the rc_viscore and the mount.
+
+  Cables must not be longer than 30 m. The 8-Pin power supply cable
+  must not be longer than 15 m.
+
+  Power to the rc_viscore must be supplied through an appropriate,
+  separate DC power source.
+
+  An appropriate power supply, which conforms to the EN 62368-1
+  standard must be used to supply power to the rc_viscore.
+
+  Check polarity and connections.
+
+  The rc_viscore's housing must be grounded.
+
+Warning:
+
+  The rc_viscore's and any related equipment's safety guidelines must
+  always be satisfied.
+
+  The rc_viscore does not fall under the purview of the machinery or
+  medical directives.
+
+-[ Risk assessment and final application: The
+
+rc_viscore
+
+ may be used with a robot together with an
+
+rc_cube
+
+. Robot,
+
+rc_viscore
+
+,
+
+rc_cube
+
+, and any other equipment used in the final application must be
+evaluated with a risk assessment. The system integrator's duty is to
+ensure respect for all local safety measures and regulations.
+Depending on the application, there may be risks that need additional
+protection/safety measures. ]-
+
+Intended use
+
+The
+
+rc_viscore
+
+ is intended to be used in combination with a Roboception
+
+rc_cube
+
+ or SGM®Producer. The
+
+rc_viscore
+
+ together with a Roboception
+
+rc_cube
+
+ are intended for installation with automated machinery, a mobile
+platform, or stationary equipment. They can also be used for data
+acquisition in other applications.
+
+Warning: The
+
+  rc_viscore
+
+   is
+
+  NOT
+
+   intended for safety critical applications.
+
+Warning: The
+
+  rc_viscore
+
+   is
+
+  NOT
+
+   to be used in dynamic environments or mounted to a robot end-
+  effector.
+
+The
+
+rc_viscore
+
+ may be used only within the scope of its technical specification. Any
+other use of the product is deemed unintended use. Roboception will
+not be liable for any damages resulting from any improper or
+unintended use.
+
+Warning: Always comply with local and/or national laws, regulations
+  and directives on automation safety and general machine safety.

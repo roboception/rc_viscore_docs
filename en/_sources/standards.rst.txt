@@ -1,0 +1,95 @@
+Applicable standards
+
+Approvals
+
+The
+
+rc_viscore
+
+ has received the following approvals:
+
+   EC Declaration of Conformity
+
+   IP54 ingress protection according IEC standard 60529
+
+   ROHS compliant according to EU directive 2011/65/EU
+
+   WEEE compliant according to EU directive 2012/19/EC
+
+Electronical and safety standards
+
+The
+
+rc_viscore
+
+ has been designed to be in compliance with 2014/30/EU and 2011/65/EU.
+The
+
+rc_viscore
+
+ consists of the
+
+rc_randomdot
+
+ and two industrial vision cameras.
+
+The
+
+rc_randomdot
+
+ has been tested based on the following harmonized standards:
+
+EN 61000-6-4:2007 + A1:2011 : Interference Emission
+
+EN 61000-6-2:2005 : Interference Immunity
+
+EN 62471:2008 / IEC 62471:2008 : Photobiological safety of lamps and
+lamp systems
+
+The industrial cameras have been tested based on the following
+harmonized standards:
+
+EN 61000-6-4:2007 + A1:2011 : Interference Emission
+
+EN 61000-6-2:2005 : Interference Immunity
+
+Environmental regulation
+
+EU RoHS Directive
+
+All components of the
+
+rc_viscore
+
+, including the
+
+rc_randomdot
+
+, the industrial cameras, cabling, and structure comply with the
+provisions in EU RoHS 2 Directive 2011/65/EU on the restriction of the
+use of certain hazardous substances in electrical and electronic
+equipment. Items that are exempted in the RoHS Directive are excluded
+from these standards.
+
+REACH Regulation
+
+All components of the
+
+rc_viscore
+
+, including the
+
+rc_randomdot
+
+, the industrial cameras, cabling, and structure comply with REACH
+Regulation 1907/2006/CE. These products are not classified as
+hazardous. We hereby certify that these products do not contain any
+Substance of Very High Concern (SVHC) in amounts >0.1% (w/w).
+
+Available certificates
+
+Copies of the various certificates can be downloaded from
+
+https://roboception.com/support/
+
+.

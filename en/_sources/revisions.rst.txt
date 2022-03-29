@@ -1,0 +1,76 @@
+-[ Revisions ]-
+
+This product may be modified without notice, when necessary, due to
+product improvements, modifications, or changes in specifications. If
+such modification is made, the manual will also be revised; see
+revision information.
+
+
+DOCUMENTATION REVISION
+
+  Rev 1.0, Mar 29, 2022
+
+    
+   Manufacturer
+
+    
+   Roboception GmbH
+
+
+   Kaflerstrasse 2
+   81241 Munich
+   Germany
+    
+   CUSTOMER SUPPORT
+
+   :  
+   support@roboception.de
+
+    | +49 89 889 50 79-0 (09:00-17:00 CET)
+
+
+Please read the operating manual in full and keep it with the product.
+
+
+COPYRIGHT
+
+
+This manual and the product it describes are protected by copyright.
+Unless permitted by German intellectual property and related rights
+legislation, any use and circulation of this content requires the
+prior consent of the individual owner of the rights. This manual and
+the product it describes, therefore, may not be reproduced in whole or
+in part, whether for sale or not, without prior written consent.
+
+Information provided in this document is believed to be accurate and
+reliable. However, no responsibility is assumed.
+
+Differences may exist between the manual and the product if the
+product has been modified after the manual's edition date. The
+information contained in this document is subject to change without
+notice.
+
+Introduction
+
+-[ Indications in the manual ]-
+
+To prevent damage to the equipment and ensure the user's safety, this
+manual indicates each precaution related to safety with
+
+Warning
+
+. Supplementary information is provided as a
+
+Note
+
+.
+
+Warning: Warnings in this manual indicate procedures and actions
+  that must be observed to avoid danger of injury to the
+  operator/user, or damage to the equipment. Software-related warnings
+  indicate procedures that must be observed to avoid malfunctions or
+  unexpected behavior of the software.
+
+Note: Notes are used in this manual to indicate supplementary
+  relevant information.
+

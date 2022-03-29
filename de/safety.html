@@ -1,0 +1,416 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="de" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="de" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Sicherheit &mdash; rc_viscore 1.0 Dokumentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+
+  
+    <link rel="stylesheet" href="_static/css/default.css" type="text/css" />
+  
+
+  
+
+  
+
+  
+
+  
+        <link rel="index" title="Stichwortverzeichnis"
+              href="genindex.html"/>
+        <link rel="search" title="Suche" href="search.html"/>
+    <link rel="top" title="rc_viscore 1.0 Dokumentation" href="index.html"/>
+        <link rel="next" title="Hardware-Spezifikation" href="hardware_spec.html"/>
+        <link rel="prev" title="Informationen zur Entsorgung" href="disposal.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> rc_viscore
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                01
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Suche" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="revisions.html">Einführung</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="general.html">Überblick</a></li>
+<li class="toctree-l2"><a class="reference internal" href="warranty.html">Garantie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standards.html">Zulassungen und Normen</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="standards.html#approvals">Genehmigungen</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="standards.html#electronical-and-safety-standards">Elektronische und Sicherheitsstandards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standards.html#environmental-regulation">Umweltvorschriften</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="standards.html#eu-rohs-directive">EU-RoHS-Richtlinie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="standards.html#reach-regulation">REACH-Verordnung</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="standards.html#available-certificates">Verfügbare Zertifikate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="disposal.html">Informationen zur Entsorgung</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sicherheit</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#general-warnings">Allgemeine Sicherheitshinweise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#intended-use">Verwendungszweck</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="hardware_spec.html">Hardware-Spezifikation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="hardware_spec.html#scope-of-delivery">Umfang der Lieferung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hardware_spec.html#technical-specification">Technische Spezifikation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hardware_spec.html#environmental-and-operating-conditions">Umwelt- und Betriebsbedingungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hardware_spec.html#power-supply-specifications">Spezifikationen für die Spannungsversorgung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hardware_spec.html#wiring">Verkabelung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hardware_spec.html#coordinate-frames">Koordinatensysteme</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#mounting">Montage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#power-up">Einschalten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#connecting">Herstellen der Verbindung</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#connecting-to-the-rc-cube">Verbinden mit dem rc_cube</a></li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#connecting-to-the-sgmregproducer">Anschließen an den SGM®Producer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#adjust-focus">Fokus einstellen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#calibration">Kalibrierung</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="maintenance.html">Wartung</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="maintenance.html#lens-cleaning">Reinigung der Linse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maintenance.html#change-of-working-range">Änderung des Arbeitsbereichs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="accessories.html">Zubehör</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="accessories.html#power-connections">Stromanschluss</a></li>
+<li class="toctree-l2"><a class="reference internal" href="accessories.html#power-supplies">Netzteile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="accessories.html#spare-parts">Ersatzteile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="accessories.html#sgmregproducer-and-rc-cube">SGM®Producer und rc_cube</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Fehlerbehebung</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#hardware-issues">Hardware-Probleme</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#sparse-depth-images">Spärlich befüllte Tiefenbilder</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Kontakt</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contact.html#support">Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contact.html#address">Adresse</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">rc_viscore</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">rc_viscore</a> &gt;</li>
+        
+      <li>Sicherheit</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="safety">
+<span id="sect-safety"></span><h1>Sicherheit<a class="headerlink" href="#safety" title="Link zu dieser Überschrift">¶</a></h1>
+<div class="admonition warning" id="index-0">
+<p class="first admonition-title">Warnung</p>
+<p class="last">Vor Inbetriebnahme des <em>rc_viscore</em> muss der Bediener alle Anweisungen in diesem Handbuch gelesen und verstanden haben.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warnung</p>
+<p class="last">Bei Betrieb des <em>rc_viscore</em> mit dem <em>rc_cube</em> muss der Bediener alle Sicherheits-, Installations- und Wartungshinweise in der <em>rc_cube</em> Anleitung gelesen und verstanden haben.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Bemerkung</p>
+<p>Der Begriff „Bediener“ bezieht sich auf jeden, der für eine der folgenden Aufgaben verantwortlich ist, die in Verbindung mit dem <em>rc_viscore</em> ausgeführt werden:</p>
+<blockquote class="last">
+<div><ul class="simple">
+<li>Installation</li>
+<li>Wartung</li>
+<li>Inspektion</li>
+<li>Kalibrierung</li>
+<li>Programmierung</li>
+<li>Außerbetriebnahme</li>
+</ul>
+</div></blockquote>
+</div>
+<p>Dieses Handbuch erklärt die verschiedenen Komponenten des <em>rc_viscore</em> und die allgemeine Bedienung über den gesamten Lebenszyklus des Produkts, von der Installation über den Betrieb bis zur Außerbetriebnahme.</p>
+<p>Die Zeichnungen und Fotos in dieser Dokumentation sind repräsentative Beispiele; es können Unterschiede zum gelieferten Produkt bestehen.</p>
+<div class="section" id="general-warnings">
+<h2>Allgemeine Sicherheitshinweise<a class="headerlink" href="#general-warnings" title="Link zu dieser Überschrift">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Bemerkung</p>
+<p class="last">Eine Verwendung des <em>rc_viscore</em> unter Nichtbeachtung dieser Warnhinweise ist nicht bestimmungsgemäß und kann zu Verletzungen oder Schäden führen sowie die Gewährleistung erlöschen lassen.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warnung</p>
+<ul class="last simple">
+<li>Der <em>rc_viscore</em> ist nach IP54 geschützt. Hohe Luftfeuchtigkeit oder Temperatur können das Gerät beschädigen. Er darf nicht in einer Umgebung benutzt werden, in der brennbare oder explosive Dämpfe auftreten können.</li>
+<li>Der <em>rc_viscore</em> muss vor der Verwendung ordnungsgemäß befestigt werden.</li>
+<li>Alle Kabelsätze müssen am <em>rc_viscore</em> und an der Halterung befestigt werden.</li>
+<li>Die Länge der verwendeten Kabel darf 30 Meter nicht überschreiten. Das 8-polige Stromkabel darf nicht länger sein als 15 Meter.</li>
+<li>Zur Spannungsversorgung des <em>rc_viscore</em> muss eine geeignete, separate Gleichspannungsquelle verwendet werden.</li>
+<li>Zur Spannungsversorgung des <em>rc_viscore</em> muss ein geeignetes Netzteil verwendet werden, das der Norm EN 62368-1 entspricht.</li>
+<li>Prüfen Sie die Polarität und die Anschlüsse.</li>
+<li>Das Gehäuse des <em>rc_viscore</em> muss geerdet sein.</li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warnung</p>
+<ul class="last simple">
+<li>Die Sicherheitsrichtlinien des <em>rc_viscore</em> und der zugehörigen Geräte müssen immer eingehalten werden.</li>
+<li>Der <em>rc_viscore</em> fällt nicht in den Geltungsbereich der Maschinen- oder Medizinrichtlinien.</li>
+</ul>
+</div>
+<p class="rubric">Risikobewertung und endgültige Anwendung: Der <em>rc_viscore</em> darf mit einem Roboter zusammen mit einem <em>rc_cube</em> verwendet werden. Roboter, <em>rc_viscore</em>, <em>rc_cube</em> und alle anderen Geräte, die in der endgültigen Anwendung verwendet werden, müssen mit einer Risikobeurteilung bewertet werden. Es ist die Pflicht des Systemintegrators, die Einhaltung aller lokalen Sicherheitsmaßnahmen und Vorschriften zu gewährleisten. Je nach Anwendung kann es Risiken geben, die zusätzliche Schutz-/Sicherheitsmaßnahmen erfordern.</p>
+</div>
+<div class="section" id="intended-use">
+<h2>Verwendungszweck<a class="headerlink" href="#intended-use" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Der <em>rc_viscore</em> ist für die Verwendung in Kombination mit einem Roboception <em>rc_cube</em> oder dem SGM®Producer bestimmt. Der <em>rc_viscore</em> zusammen mit einem Roboception <em>rc_cube</em> sind für die Installation an einer automatisierten Maschine, einer mobilen Plattform oder einer stationären Anlage vorgesehen. Sie können auch zur Datenerfassung in anderen Anwendungen eingesetzt werden.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warnung</p>
+<p class="last">Der <em>rc_viscore</em> ist <strong>NICHT</strong> für sicherheitskritische Anwendungen vorgesehen.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warnung</p>
+<p class="last">Der <em>rc_viscore</em> darf <strong>NICHT</strong> in dynamischen Umgebungen genutzt werden und darf <strong>NICHT</strong> am Endeffektor eines Roboters befestigt werden.</p>
+</div>
+<p>Der <em>rc_viscore</em> darf nur im Rahmen seiner technischen Spezifikation verwendet werden. Jede andere Verwendung des Produkts gilt als nicht bestimmungsgemäß. Roboception haftet nicht für Schäden, die aus nicht bestimmungsgemäßer Verwendung resultieren.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warnung</p>
+<p class="last">Die lokalen und/oder nationalen Gesetze, Vorschriften und Richtlinien zu Automationssicherheit und allgemeiner Maschinensicherheit sind stets einzuhalten.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="hardware_spec.html" class="btn btn-neutral float-right" title="Hardware-Spezifikation" accesskey="n" rel="next">Weiter <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="disposal.html" class="btn btn-neutral" title="Informationen zur Entsorgung" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Zurück</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2022, Roboception GmbH.
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-cog"> Optionen</span>
+      de
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Sprachen</dt>
+        
+          
+          <dd><a href="../en/safety.html">en</a></dd>
+          
+        
+          
+          <dd><a href="../de/safety.html">de</a></dd>
+          
+        
+      </dl>
+      
+      
+        <dl>
+          <dt>Downloads</dt>
+          
+            <dd><a href="../pdf/rc_viscore_manual_en.pdf">PDF (en)</a></dd>
+          
+            <dd><a href="../pdf/rc_viscore_manual_de.pdf">PDF (de)</a></dd>
+          
+        </dl>
+      
+
+    </div>
+  </div>
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            LANGUAGE:'de',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

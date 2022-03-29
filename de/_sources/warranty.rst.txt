@@ -1,0 +1,40 @@
+Garantie
+
+Nicht ausdrücklich vom Hersteller genehmigte Änderungen an der Hard-
+und Software können zum Erlöschen der Garantie- und
+Gewährleistungsansprüche des Anwenders führen.
+
+Warnung: Der
+
+  rc_viscore
+
+   arbeitet mit komplexer Hardware, die sich in einer Weise verhalten
+  kann, die vom Benutzer nicht beabsichtigt ist. Der Käufer muss seine
+  Anwendung so gestalten, dass ein Ausfall des
+
+  rc_viscore
+
+   nicht zu Personen-, Sach- oder anderen Schäden führt.
+
+Warnung: Versuchen Sie nicht, den
+
+  rc_viscore
+
+   zu zerlegen, zu öffnen, zu warten oder zu modifizieren. Andernfalls
+  besteht die Gefahr eines elektrischen Schlags oder einer anderen
+  Gefahr. Jegliche Anzeichen eines Versuchs, das Gerät zu öffnen
+  und/oder zu modifizieren, einschließlich des Ablösens, Durchstechens
+  oder Entfernens von Aufklebern, führt zum Erlöschen der beschränkten
+  Garantie.
+
+Warnung: ACHTUNG: Um die europäische CE-Anforderung zu erfüllen,
+  müssen alle Signalkabel, die zum Anschluss dieses Geräts verwendet
+  werden, abgeschirmt sein und das Gerät muss geerdet sein. Der
+  Betrieb mit falschen Kabeln kann zu Interferenzen mit anderen
+  Geräten oder zu einem unerwünschten Verhalten des Produkts führen.
+
+Bemerkung: Dieses Produkt darf nicht als Hausmüll behandelt werden.
+  Indem Sie sicherstellen, dass dieses Produkt korrekt entsorgt wird,
+  tragen Sie zum Schutz der Umwelt bei. Nähere Informationen zum
+  Recycling dieses Produkts erhalten Sie bei Ihrer Gemeindeverwaltung,
+  Ihrem Entsorgungsdienstleister oder dem Lieferanten des Produkts.

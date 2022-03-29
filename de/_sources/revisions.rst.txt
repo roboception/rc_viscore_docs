@@ -1,0 +1,80 @@
+-[ Revisionen ]-
+
+Dieses Produkt kann ohne vorherige Ankündigung modifiziert werden,
+wenn dies aufgrund von Produktverbesserungen, Modifikationen oder
+Änderungen der Spezifikationen erforderlich ist. Wenn eine solche
+Änderung vorgenommen wird, wird auch das Handbuch überarbeitet; siehe
+Revisionsinformationen.
+
+
+Dokumentationsversion
+
+  Rev 1.0, 29.03.2022
+
+    
+   Hersteller
+
+    
+   Roboception GmbH
+   Kaflerstraße 2
+   81241 München
+   Deutschland
+    
+   Technischer Support
+
+   :  
+   support@roboception.de
+
+    | +49 89 889 50 79-0 (09:00-17:00 CET)
+
+
+Betriebsanleitung bitte vollständig lesen und produktnah aufbewahren.
+
+
+COPYRIGHT
+
+
+Dieses Handbuch und das darin beschriebene Produkt sind
+urheberrechtlich geschützt. Jede Verwertung und Verbreitung dieses
+Inhalts bedarf, soweit nicht nach dem Gesetz über geistiges Eigentum
+und verwandte Schutzrechte zulässig, der vorherigen Zustimmung des
+jeweiligen Rechteinhabers. Dieses Handbuch und das darin beschriebene
+Produkt dürfen daher ohne vorherige schriftliche Genehmigung weder
+ganz noch teilweise vervielfältigt werden, weder für den Verkauf noch
+für andere Zwecke.
+
+Die in diesem Dokument bereitgestellten Informationen sind nach bestem
+Wissen und Gewissen zusammengestellt worden. Eine Haftung für deren
+Verwendung wird jedoch nicht übernommen.
+
+Es können Unterschiede zwischen dem Handbuch und dem Produkt bestehen,
+wenn das Produkt nach dem Ausgabedatum des Handbuchs geändert wurde.
+Die in diesem Dokument enthaltenen Informationen können ohne vorherige
+Ankündigung geändert werden.
+
+Einführung
+
+-[ Hinweise im Handbuch ]-
+
+Um Schäden an der Ausrüstung zu vermeiden und die Sicherheit der
+Benutzer zu gewährleisten, enthält das vorliegende Handbuch
+Sicherheitshinweise, die mit dem Symbol
+
+Warnung
+
+ gekennzeichnet werden. Zusätzliche Informationen sind als
+
+Bemerkung
+
+ gekennzeichnet.
+
+Warnung: Warnhinweise in diesem Handbuch kennzeichnen Verfahren und
+  Maßnahmen, die beachtet werden müssen, um Verletzungsgefahren für
+  den Bediener/Benutzer oder Schäden am Gerät zu vermeiden.
+  Softwarebezogene Warnhinweise weisen auf Verfahren hin, die beachtet
+  werden müssen, um Fehlfunktionen oder unerwartetes Verhalten der
+  Software zu vermeiden.
+
+Bemerkung: Hinweise werden in diesem Handbuch verwendet, um auf
+  ergänzende relevante Informationen hinzuweisen.
+

@@ -1,0 +1,60 @@
+.. include:: global_rst.glb
+
+.. _sect-disposal:
+
+Information on disposal
+=======================
+
+.. index:: ! disposal
+
+.. image:: images/weee-mark_small.*
+   :width: 60
+
+#. **Disposal of Waste Electrical & Electronic Equipment**
+
+   This symbol on the product(s) and / or accompanying documents means that used electrical and electronic products 
+   should not be mixed with general household waste.  For proper treatment, recovery and recycling, please contact 
+   your supplier or the manufacturer. Disposing of this product correctly will help save valuable resources and 
+   prevent any potential negative effects on human health and the environment, which could otherwise arise from 
+   inappropriate waste handling.
+
+
+#. **Removal of batteries**
+
+   If the products contain batteries and accumulators that can be removed from the product without destruction, 
+   these must be removed before disposal and disposed of separately as batteries.
+
+   The following batteries or accumulators are contained in the |rc_viscore|: None
+
+
+#. **Options for returning old equipment**
+
+   Owners of old devices can return them to the manufacturer to ensure proper disposal.
+
+   Please :ref:`contact support<sect-contact>`:latex:`\:(Section \ref{contact:sect-contact})` about returning the device for disposal.
+
+
+#. **Data protection**
+
+   End users of Electrical & Electronic Equipment are responsible for deleting personal data on the waste equipment to be disposed of.
+
+
+#. **WEEE registration number**
+
+   |company| is registered under the registration number DE 33323989 at the stiftung elektro-altgeräte register, 
+   Nordostpark 72, 90411 Nuremberg, Germany, as a producer of electrical and/or electronic equipment.
+
+
+#. **Collection and recovery quotas**
+
+   According to the WEEE Directive, EU member states are obliged to collect data on waste electrical and electronic 
+   equipment and to transmit this data to the European Commission. Further information can be found on the German 
+   Ministry for the Environment website.
+ 
+
+**Information on Disposal outside the European Union**
+
+This symbol is valid only in the European Union. If you wish to discard this product please contact 
+your local authorities or dealer and ask for the correct method of disposal.
+
+ 

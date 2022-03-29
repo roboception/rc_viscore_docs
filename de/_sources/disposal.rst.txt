@@ -1,0 +1,44 @@
+Informationen zur Entsorgung
+
+
+Entsorgung von Elektro- und Elektronikgeräten  Das Symbol der
+„durchgestrichenen Mülltonne“ bedeutet, dass Sie gesetzlich
+verpflichtet sind, diese Geräte einer vom unsortierten Siedlungsabfall
+getrennten Erfassung zuzuführen. Die Entsorgung über den Hausmüll, wie
+bspw. die Restmülltonne oder die Gelbe Tonne ist untersagt. Vermeiden
+Sie Fehlwürfe durch die korrekte Entsorgung in speziellen Sammel- und
+Rückgabestellen.
+
+Entnahme von Batterien  Enthalten die Produkte Batterien und Akkus,
+die aus dem Altgerät zerstörungsfrei entnommen werden können, müssen
+diese vor der Entsorgung entnommen werden und getrennt als Batterie
+entsorgt werden.  Folgende Batterien bzw. Akkumulatoren sind im
+rc_viscore enthalten: Keine
+
+Möglichkeiten der Rückgabe von Altgeräten  Besitzer von Altgeräten
+können diese an den Hersteller zurückgeben, damit eine ordnungsgemäße
+Entsorgung sichergestellt ist.  Bitte kontaktieren Sie den
+Support\:(Abschnitt \ref{contact:sect-contact}) wegen der Rücknahme
+des Gerätes.
+
+Datenschutz  Endnutzer von Elektro- und Elektronikaltgeräten werden
+darauf hingewiesen, dass Sie für das Löschen personenbezogener Daten
+auf den zu entsorgenden Altgeräten selbst verantwortlich sind.
+
+WEEE-Registrierungsnummer  Roboception ist unter der
+Registrierungsnummer DE 33323989 bei der stiftung elektro-altgeräte
+register, Nordostpark 72, 90411 Nürnberg, als Hersteller von Elektro-
+und/ oder Elektronikgeräten registriert.
+
+Sammel- und Verwertungsquoten  Die EU-Mitgliedsstaaten sind nach der
+WEEE-Richtlinie verpflichtet, Daten zu Elektro- und
+Elektronikaltgeräten zu erheben und diese an die Europäische
+Kommission zu übermitteln. Auf der Webseite des Bundesministeriums für
+Umwelt- und Naturschutz finden Sie weitere Informationen hierzu.
+
+Information zur Entsorgung außerhalb der Europäischen Union
+
+Das Symbol der durchgestrichenen Mülltonne ist nur in der Europäischen
+Union gültig. Für die Entsorgung in anderen Ländern außerhalb der
+Europäischen Union können die örtlichen Behörden oder der Hersteller
+Auskunft über die richtige Entsorgungsmethode geben.

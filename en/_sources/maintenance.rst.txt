@@ -1,0 +1,42 @@
+Maintenance
+
+Warning: The only parts removable by the customer are the lens caps,
+  which can be unscrewed. The customer does not need to open the
+
+  rc_viscore
+
+  's housing to perform maintenance. Unauthorized opening of the
+  housing will void the warranty. For all maintenance operations other
+  than adjusting focus and aperture, the product must be switched off.
+
+To handle the optical components, wearing gloves is strongly
+recommended. The lens cap can be removed by unscrewing the barrel.
+Then focus and the aperture can be adjusted with manual settings of
+the C-mount lens.
+
+Warning: The lens cap needs to be in place during normal operation
+  to meet EMC requirements.
+
+Lens cleaning
+
+Glass lenses with antireflective coating are used to reduce glare.
+Please take special care when cleaning the lenses. To clean them, use
+a compressed air duster or soft lens-cleaning brush to remove dust or
+dirt particles. To remove stubborn dirt, wipe 1-2 drops of a non-
+alcohol-based lens cleaning solution formulated for coated lenses
+(such as the Uvex Clear family of products) in a gentle circular
+motion with a cleaning tissue. Always apply the fluid to a tissue
+rather than the lens itself.
+
+Warning: In case the lens covers are removed, a calibration check is
+  required.
+
+Change of Working Range
+
+In case a change of working range is desired, an adjustment of the
+focus as well as the depth range is required. Please note the
+limitations in the measurement range in
+
+Table 2
+
+.

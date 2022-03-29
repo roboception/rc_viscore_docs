@@ -1,0 +1,94 @@
+.. include:: global_rst.glb
+
+.. _sect-contact:
+
+Contact
+=======
+
+Support
+^^^^^^^
+
+.. only:: roboception
+
+    For support issues, please see http://www.roboception.com/support or contact support@roboception.de.
+
+.. only:: matrixvision
+
+    For support issues, please see https://www.matrix-vision.com/support-en.html or use our service desk: https://servicedesk.matrix-vision.com/.
+
+.. only:: schunk
+
+    For support issues, please contact service.greifsysteme@de.schunk.com, or call +49 7133-103-2333.
+
+.. only:: basler
+
+   For support issues, please see https://www.baslerweb.com/en/sales-support/support-contact/ or contact
+
+   | **Technical Support Team**
+   |
+   | Europe, Middle East, Africa
+   | +49 4102 463 515
+   | support.europe@baslerweb.com
+   |
+   | The Americas
+   | +1 610 280 0171
+   | support.usa@baslerweb.com
+   |
+   | Asia-Pacific
+   | +65 6367 1355
+   | support.asia@baslerweb.com
+   |
+
+Address
+^^^^^^^
+
+.. only:: roboception
+
+    | Roboception GmbH
+    | Kaflerstrasse 2
+    | 81241 Munich
+    | Germany
+    |
+    | Web: http://www.roboception.com
+    | Email: info@roboception.de
+    | Phone: +49 89 889 50 79-0
+    |
+
+.. only:: matrixvision
+
+    | MATRIX VISION GmbH
+    | Talstrasse 16
+    | D-71570 Oppenweiler
+    | Germany
+    |
+    | Web: https://www.matrix-vision.com
+    | Email: info@matrix-vision.de
+    | Phone: +49 71 91 94 32-0
+    |
+
+.. only:: schunk
+
+    |
+    | **Distributor:**
+    | SCHUNK GmbH & Co. KG
+    | Spann- und Greiftechnik
+    | Bahnhofstr. 106 - 134
+    | D-74348 Lauffen/Neckar
+    | Germany
+    |
+    | Web: http://www.schunk.com
+    | Email: info@de.schunk.com
+    | Phone: +49-7133-103-0
+    |
+
+.. only:: basler
+
+    | Basler AG
+    | An der Strusbek 60-62
+    | 22926 Ahrensburg
+    | Germany
+    |
+    | Web: http://www.baslerweb.com
+    | Email: info@baslerweb.com
+    | Phone: +49 4102 463 0
+    |

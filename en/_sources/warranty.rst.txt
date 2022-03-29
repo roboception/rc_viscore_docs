@@ -1,0 +1,38 @@
+Warranty
+
+Any changes or modifications to the hard- and software not expressly
+approved by Roboception could void the user's warranty and guarantee
+rights.
+
+Warning: The
+
+  rc_viscore
+
+   utilizes complex hardware technology that may behave in a way not
+  intended by the user. The purchaser must design its application to
+  ensure that any failure of the
+
+  rc_viscore
+
+   does not cause personal injury, property damage, or other losses.
+
+Warning: Do not attempt to take apart, open, service, or modify the
+
+  rc_viscore
+
+  . Doing so could present the risk of electric shock or other hazard.
+  Any evidence of any attempt to open and/or modify the device,
+  including any peeling, puncturing, or removal of any of the labels,
+  will void the Limited Warranty.
+
+Warning: CAUTION: to comply with the European CE requirement, all
+  signal cables used to connect this device must be shielded and the
+  device must be grounded. Operation with incorrect cables may result
+  in interference with other devices or undesired effects of the
+  product.
+
+Note: This product may not be treated as household waste. By
+  ensuring this product is disposed of correctly, you will help to
+  protect the environment. For more detailed information about the
+  recycling of this product, please contact your local authority, your
+  waste disposal service provider, or the product's supplier.

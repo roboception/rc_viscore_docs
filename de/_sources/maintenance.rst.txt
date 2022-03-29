@@ -1,0 +1,46 @@
+Wartung
+
+Warnung: Die einzigen vom Kunden abnehmbaren Teile ist der
+  Objektivschutz der Kameras und des Projektors. Ein Öffnen des
+  Gehäuses des
+
+  rc_viscore
+
+   zur Durchführung von Wartungsarbeiten beim Kunden ist nicht
+  vorgesehen. Unbefugtes Öffnen des Gehäuses führt zum Erlöschen der
+  Garantie. Für alle Wartungsarbeiten außer der Einstellung von Fokus
+  und Blende muss das Produkt ausgeschaltet werden.
+
+Zur Handhabung der optischen Komponenten wird das Tragen von
+Handschuhen dringend empfohlen. Der Objektivschutz kann durch
+Abschrauben entfernt werden. Dann können der Fokus und die Blende
+durch manuelle Einstellungen des C-Mount-Objektivs angepasst werden.
+
+Warnung: Der Objektivschutz muss im Normalbetrieb aufgesetzt sein,
+  um die EMV-Anforderungen zu erfüllen.
+
+Reinigung der Linse
+
+Es werden Glaslinsen mit Antireflex Beschichtung verwendet, um die
+Lichtleistung zu maximieren. Bitte gehen Sie bei der Reinigung der
+Linsen besonders vorsichtig vor. Verwenden Sie zur Reinigung saubere,
+ölfreie Druckluft oder einen weichen Linsenreinigungspinsel um Staub
+oder Schmutzpartikel zu entfernen. Um hartnäckige Verschmutzungen zu
+entfernen, wischen Sie die Linse in sanft kreisenden Bewegungen mit
+einem Reinigungstuch ab, auf das 1-2 Tropfen einer alkoholfreien
+Linsenreinigungslösung aufgebracht wurde, die für beschichtete Linsen
+geeignet ist (z. B. die Uvex Clear-Produktfamilie). Tragen Sie die
+Flüssigkeit immer auf ein Tuch und nicht auf das Objektiv selbst auf.
+
+Warnung: Wenn die Objektivabdeckungen entfernt wurden, ist eine
+  Kalibrierungsprüfung erforderlich.
+
+Änderung des Arbeitsbereichs
+
+Falls eine Änderung des Arbeitsbereichs gewünscht wird, ist eine
+Anpassung des Fokus sowie des Tiefenbereichs erforderlich. Bitte
+beachten Sie die Einschränkungen im Messbereich in
+
+Tab. 2
+
+.

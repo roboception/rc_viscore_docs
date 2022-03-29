@@ -1,0 +1,718 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="de" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="de" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Hardware-Spezifikation &mdash; rc_viscore 1.0 Dokumentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+
+  
+    <link rel="stylesheet" href="_static/css/default.css" type="text/css" />
+  
+
+  
+
+  
+
+  
+
+  
+        <link rel="index" title="Stichwortverzeichnis"
+              href="genindex.html"/>
+        <link rel="search" title="Suche" href="search.html"/>
+    <link rel="top" title="rc_viscore 1.0 Dokumentation" href="index.html"/>
+        <link rel="next" title="Installation" href="installation.html"/>
+        <link rel="prev" title="Sicherheit" href="safety.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> rc_viscore
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                01
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Suche" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="revisions.html">Einführung</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="general.html">Überblick</a></li>
+<li class="toctree-l2"><a class="reference internal" href="warranty.html">Garantie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standards.html">Zulassungen und Normen</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="standards.html#approvals">Genehmigungen</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="standards.html#electronical-and-safety-standards">Elektronische und Sicherheitsstandards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standards.html#environmental-regulation">Umweltvorschriften</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="standards.html#eu-rohs-directive">EU-RoHS-Richtlinie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="standards.html#reach-regulation">REACH-Verordnung</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="standards.html#available-certificates">Verfügbare Zertifikate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="disposal.html">Informationen zur Entsorgung</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="safety.html">Sicherheit</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="safety.html#general-warnings">Allgemeine Sicherheitshinweise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="safety.html#intended-use">Verwendungszweck</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Hardware-Spezifikation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#scope-of-delivery">Umfang der Lieferung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#technical-specification">Technische Spezifikation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#environmental-and-operating-conditions">Umwelt- und Betriebsbedingungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#power-supply-specifications">Spezifikationen für die Spannungsversorgung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#wiring">Verkabelung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#coordinate-frames">Koordinatensysteme</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#mounting">Montage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#power-up">Einschalten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#connecting">Herstellen der Verbindung</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#connecting-to-the-rc-cube">Verbinden mit dem rc_cube</a></li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#connecting-to-the-sgmregproducer">Anschließen an den SGM®Producer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#adjust-focus">Fokus einstellen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#calibration">Kalibrierung</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="maintenance.html">Wartung</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="maintenance.html#lens-cleaning">Reinigung der Linse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maintenance.html#change-of-working-range">Änderung des Arbeitsbereichs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="accessories.html">Zubehör</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="accessories.html#power-connections">Stromanschluss</a></li>
+<li class="toctree-l2"><a class="reference internal" href="accessories.html#power-supplies">Netzteile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="accessories.html#spare-parts">Ersatzteile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="accessories.html#sgmregproducer-and-rc-cube">SGM®Producer und rc_cube</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Fehlerbehebung</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#hardware-issues">Hardware-Probleme</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#sparse-depth-images">Spärlich befüllte Tiefenbilder</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Kontakt</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contact.html#support">Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contact.html#address">Adresse</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">rc_viscore</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">rc_viscore</a> &gt;</li>
+        
+      <li>Hardware-Spezifikation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="hardware-specification">
+<span id="sect-hardware-specification"></span><h1>Hardware-Spezifikation<a class="headerlink" href="#hardware-specification" title="Link zu dieser Überschrift">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Bemerkung</p>
+<p class="last">Die folgenden Hardware-Spezifikationen dienen als allgemeine Referenz; es können Unterschiede zum Produkt bestehen.</p>
+</div>
+<div class="section" id="scope-of-delivery">
+<h2>Umfang der Lieferung<a class="headerlink" href="#scope-of-delivery" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Die Standardlieferung für einen <em>rc_viscore</em> umfasst</p>
+<blockquote>
+<div><ul class="simple">
+<li><em>rc_viscore</em> sensor,</li>
+<li>Kalibriermuster groß (A3),</li>
+<li>2 x 10 m Gigabit-Ethernet-Netzwerkkabel,</li>
+<li>10 m Stromkabel mit M12-Stecker und einem offenen Ende,</li>
+<li>Kurzanleitung.</li>
+</ul>
+</div></blockquote>
+<p>Das vollständige Handbuch ist online in digitaler Form unter <a class="reference external" href="http://doc.rc-viscore.com">http://doc.rc-viscore.com</a> verfügbar.</p>
+<div class="admonition note">
+<p class="first admonition-title">Bemerkung</p>
+<p>Die folgenden Artikel sind nicht im Lieferumfang enthalten, sofern nicht anders angegeben:</p>
+<ul class="simple">
+<li>Kupplungen, Adapter, Halterungen,</li>
+<li>Stromversorgungseinheit und Sicherungen.</li>
+</ul>
+<p class="last">Vorschläge für Kabel von Drittanbietern finden Sie unter <a class="reference internal" href="accessories.html#sect-accessories"><span class="std std-ref">Zubehör</span></a>.</p>
+</div>
+<p>Das folgende Bild zeigt die wichtigsten Bauteile des <em>rc_viscore</em>, auf die in diesem Handbuch Bezug genommen wird.</p>
+<div class="figure align-center" id="id1">
+<span id="fig-parts"></span><a class="reference internal image-reference" href="_images/rcv_cameras_de.png"><img alt="_images/rcv_cameras_de.png" src="_images/rcv_cameras_de.png" style="width: 160mm;" /></a>
+<p class="caption"><span class="caption-number">Abb. 2 </span><span class="caption-text">Beschreibung der Bauteile</span></p>
+</div>
+</div>
+<div class="section" id="technical-specification">
+<h2>Technische Spezifikation<a class="headerlink" href="#technical-specification" title="Link zu dieser Überschrift">¶</a></h2>
+<p id="index-0">Die technische Spezifikation des <em>rc_viscore</em> ist in <a class="reference internal" href="#tab-common-hardware-specifications"><span class="std std-numref">Tab. 1</span></a> dargestellt. Die angegebene Tiefenbildrate kann auf einem <em>rc_cube</em> oder mit dem SGM®Producer auf einem Computer mit einer Nvidia RTX2070 GPU erreicht werden. Höhere Bildraten (bis zu 9 Hz) sind mit schnelleren Grafikkarten möglich.</p>
+<span id="tab-common-hardware-specifications"></span><table border="1" class="docutils" id="technische-daten-des-rc-viscore">
+<caption><span class="caption-number">Tab. 1 </span><span class="caption-text">Technische Daten des <em>rc_viscore</em></span><a class="headerlink" href="#technische-daten-des-rc-viscore" title="Link zu dieser Tabelle">¶</a></caption>
+<colgroup>
+<col width="26%" />
+<col width="74%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">&#160;</th>
+<th class="head"><strong>rc_viscore 210m-16-12M-H1-R</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Bildauflösung</td>
+<td>4112 x 3008 Pixel monochrom</td>
+</tr>
+<tr class="row-odd"><td>Bildwiederholrate</td>
+<td>9 Hz</td>
+</tr>
+<tr class="row-even"><td>Brennweite</td>
+<td>16 mm</td>
+</tr>
+<tr class="row-odd"><td>Sichtfeld</td>
+<td>Horizontal: 47,5°, Vertikal: 35,7°</td>
+</tr>
+<tr class="row-even"><td>Tiefenbild</td>
+<td><div class="first last line-block">
+<div class="line">4112 x 3008 Pixel (Voll) &#64; 2,8 Hz (Nvidia RTX2070)</div>
+<div class="line">2056 x 1504 Pixel (Hoch) &#64; 4,6 Hz (Nvidia RTX2070)</div>
+<div class="line">1028 x 752 Pixel (Mittel) &#64; 9 Hz (Nvidia RTX2070)</div>
+<div class="line">686 x 502 Pixel (Niedrig) &#64; 9 Hz (Nvidia RTX2070)</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>Kühlung</td>
+<td>Passiv</td>
+</tr>
+<tr class="row-even"><td>Basisabstand</td>
+<td>210 mm</td>
+</tr>
+<tr class="row-odd"><td>Größe (B x H x L)</td>
+<td>262 mm x 204 mm x 82 mm</td>
+</tr>
+<tr class="row-even"><td>Masse</td>
+<td>1.64 kg</td>
+</tr>
+</tbody>
+</table>
+<p>Der Tiefenbildbereich des <em>rc_viscore</em> hängt von der Tiefenbildqualität, dem angegebenen maximalen Tiefenbereich und dem verfügbaren GPU-Speicher ab. Der Tiefenbereich bei näherer Entfernung ist viel kleiner als der Tiefenbereich bei weiter Entfernung. Der <em>rc_cube</em> verwendet 3,4 Gbyte GPU-Speicher für das Stereo-Matching. <a class="reference internal" href="#tab-common-depth-ranges"><span class="std std-numref">Tab. 2</span></a> zeigt Beispiele für resultierende Tiefenbereiche mit dieser Menge an GPU-Speicher. Größere Tiefenbereiche sind möglich, wenn der SGM®Producer mit einer Grafikkarte verwendet wird, die mehr GPU-Speicher bietet.</p>
+<span id="tab-common-depth-ranges"></span><table border="1" class="docutils" id="beispiele-moglicher-tiefenbereiche-des-rc-viscore-mit-3-4-gbytes-gpu-speicher-wie-im-fall-des-rc-cube">
+<caption><span class="caption-number">Tab. 2 </span><span class="caption-text">Beispiele möglicher Tiefenbereiche des <em>rc_viscore</em> mit 3,4 Gbytes GPU-Speicher, wie im Fall des <em>rc_cube</em></span><a class="headerlink" href="#beispiele-moglicher-tiefenbereiche-des-rc-viscore-mit-3-4-gbytes-gpu-speicher-wie-im-fall-des-rc-cube" title="Link zu dieser Tabelle">¶</a></caption>
+<colgroup>
+<col width="34%" />
+<col width="66%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">&#160;</th>
+<th class="head"><strong>rc_viscore 210m-16-12M-H1-R</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Volle Tiefenbildqualität</td>
+<td><div class="first last line-block">
+<div class="line">0.89 m bis 1.00 m</div>
+<div class="line">1.60 m bis 2.00 m</div>
+<div class="line">2.18 m bis 3.00 m</div>
+<div class="line">2.65 m bis 4.00 m</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>Hohe Tiefenbildqualität</td>
+<td><div class="first last line-block">
+<div class="line">0.52 m bis 1.00 m</div>
+<div class="line">0.66 m bis 2.00 m</div>
+<div class="line">0.75 m bis 3.00 m</div>
+<div class="line">0.80 m bis 4.00 m</div>
+<div class="line">1,00 m bis unendlich</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>Mittlere und niedrige Tiefenbildqualität</td>
+<td>0.52 m bis unendlich</td>
+</tr>
+</tbody>
+</table>
+<p>Die Auflösung und Genauigkeit bei verschiedenen Entfernungen ist in <a class="reference internal" href="#tab-common-accuracy"><span class="std std-numref">Tab. 3</span></a> für die empfohlene Tiefenbildqualität <em>Hoch</em> angegeben. Bei voller Tiefenbildqualität sind die Auflösung und die Genauigkeit um den Faktor 2 besser. Bei mittlerer Qualität sind die Auflösung und die Genauigkeit etwa zweimal schlechter als in der Tabelle angegeben.</p>
+<span id="tab-common-accuracy"></span><table border="1" class="docutils" id="auflosung-und-genauigkeit-des-rc-viscore-in-millimetern-mit-stereo-matching-in-qualitat-hoch-und-random-dot-projektion-auf-nicht-reflektierende-und-nicht-transparente-objekte">
+<caption><span class="caption-number">Tab. 3 </span><span class="caption-text">Auflösung und Genauigkeit des <em>rc_viscore</em> in Millimetern mit Stereo-Matching in Qualität <em>Hoch</em> und Random-Dot-Projektion auf nicht-reflektierende und nicht-transparente Objekte.</span><a class="headerlink" href="#auflosung-und-genauigkeit-des-rc-viscore-in-millimetern-mit-stereo-matching-in-qualitat-hoch-und-random-dot-projektion-auf-nicht-reflektierende-und-nicht-transparente-objekte" title="Link zu dieser Tabelle">¶</a></caption>
+<colgroup>
+<col width="34%" />
+<col width="36%" />
+<col width="30%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">&#160;</th>
+<th class="head"><strong>Abstand</strong></th>
+<th class="head"><strong>rc_viscore</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Laterale Auflösung</td>
+<td><div class="first last line-block">
+<div class="line">1.0 m</div>
+<div class="line">2.0 m</div>
+<div class="line">3.0 m</div>
+<div class="line">4.0 m</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">0.4 mm</div>
+<div class="line">0.9 mm</div>
+<div class="line">1.3 mm</div>
+<div class="line">1.7 mm</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>Tiefenauflösung</td>
+<td><div class="first last line-block">
+<div class="line">1.0 m</div>
+<div class="line">2.0 m</div>
+<div class="line">3.0 m</div>
+<div class="line">4.0 m</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">0.1 mm</div>
+<div class="line">0.5 mm</div>
+<div class="line">1.2 mm</div>
+<div class="line">2.0 mm</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>Durchschnittliche Tiefengenauigkeit</td>
+<td><div class="first last line-block">
+<div class="line">1.0 m</div>
+<div class="line">2.0 m</div>
+<div class="line">3.0 m</div>
+<div class="line">4.0 m</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">0.5 mm</div>
+<div class="line">2.0 mm</div>
+<div class="line">4.6 mm</div>
+<div class="line">8.2 mm</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="figure align-center" id="id2">
+<span id="fig-size"></span><span id="index-1"></span><a class="reference internal image-reference" href="_images/rcv_size.png"><img alt="_images/rcv_size.png" src="_images/rcv_size.png" style="width: 160mm;" /></a>
+<p class="caption"><span class="caption-number">Abb. 3 </span><span class="caption-text">Gesamtabmessungen des <em>rc_viscore</em> in Millimetern</span></p>
+</div>
+<p id="index-2">CAD-Modelle des <em>rc_viscore</em> können von <a class="reference external" href="http://www.roboception.com/download">http://www.roboception.com/download</a> heruntergeladen werden. Die CAD-Modelle werden ohne Gewähr für ihre Korrektheit zur Verfügung gestellt.</p>
+</div>
+<div class="section" id="environmental-and-operating-conditions">
+<h2>Umwelt- und Betriebsbedingungen<a class="headerlink" href="#environmental-and-operating-conditions" title="Link zu dieser Überschrift">¶</a></h2>
+<p id="index-3">Der <em>rc_viscore</em> ist für den industriellen Einsatz konzipiert. Die Umgebungsbedingungen für Lagerung, Transport und Betrieb nach in <a class="reference internal" href="#tab-hardware-environment"><span class="std std-numref">Tab. 4</span></a> müssen beachtet werden.</p>
+<span id="tab-hardware-environment"></span><table border="1" class="docutils" id="umgebungsbedingungen">
+<caption><span class="caption-number">Tab. 4 </span><span class="caption-text">Umgebungsbedingungen</span><a class="headerlink" href="#umgebungsbedingungen" title="Link zu dieser Tabelle">¶</a></caption>
+<colgroup>
+<col width="41%" />
+<col width="59%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">&#160;</th>
+<th class="head"><strong>rc_viscore</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Lager-/Transporttemperatur</td>
+<td>-20 °C bis 60 °C</td>
+</tr>
+<tr class="row-odd"><td>Betriebstemperatur</td>
+<td>0 °C bis 45 °C (passive Kühlung)</td>
+</tr>
+<tr class="row-even"><td>Relative Luftfeuchtigkeit (nicht kondensierend)</td>
+<td>20 % to 80 %</td>
+</tr>
+<tr class="row-odd"><td>Schutzklasse</td>
+<td>IP54</td>
+</tr>
+<tr class="row-even"><td>Sonstige</td>
+<td><ul class="first last simple">
+<li>Von korrosiven Flüssigkeiten oder Gasen fernhalten.</li>
+<li>Von explosiven Flüssigkeiten oder Gasen fernhalten.</li>
+<li>Von starken elektromagnetischen Störungen fernhalten.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p id="index-4">Der <em>rc_viscore</em> ist für eine Betriebstemperatur (Umgebung) von 0 °C bis 45 °C ausgelegt und arbeitet mit einer konvektiven (passiven) Kühlung. Ein ungehinderter Luftstrom, insbesondere um die Kühlrippen, muss während des Einsatzes gewährleistet sein. Der <em>rc_viscore</em> darf nur über die beschriebene mechanische Montageschnittstelle montiert werden, wobei alle Gehäuseteile unbedeckt bleiben müssen. Ein Freiraum von mindestens 10 cm in alle Richtungen vom Gehäuse und ein ausreichender Luftaustausch mit der Umgebung sind erforderlich, um eine ausreichende Kühlung zu gewährleisten. Die Kühlrippen müssen frei von Schmutz und anderen Verunreinigungen sein.</p>
+</div>
+<div class="section" id="power-supply-specifications">
+<span id="power-supply"></span><h2>Spezifikationen für die Spannungsversorgung<a class="headerlink" href="#power-supply-specifications" title="Link zu dieser Überschrift">¶</a></h2>
+<p id="index-5">Der <em>rc_viscore</em> muss von einer Gleichspannungsquelle versorgt werden. Im Standardlieferumfang des <em>rc_viscore</em> ist kein Gleichspannungsnetzteil enthalten. Jeder <em>rc_viscore</em> muss an eine eigene Spannungsversorgung angeschlossen werden. Der Anschluss an das Stromnetz ist nur über eine nach EN55011 Klasse B zertifizierte Stromversorgung zulässig.</p>
+<span id="tab-hardware-power"></span><table border="1" class="docutils" id="grenzwerte-fur-die-stromversorgung">
+<caption><span class="caption-number">Tab. 5 </span><span class="caption-text">Grenzwerte für die Stromversorgung</span><a class="headerlink" href="#grenzwerte-fur-die-stromversorgung" title="Link zu dieser Tabelle">¶</a></caption>
+<colgroup>
+<col width="32%" />
+<col width="14%" />
+<col width="14%" />
+<col width="41%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">&#160;</th>
+<th class="head"><strong>Min</strong></th>
+<th class="head"><strong>Nominal</strong></th>
+<th class="head"><strong>Max</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Versorgungsspannung</td>
+<td>22.0 V</td>
+<td>24 V</td>
+<td>26.0 V</td>
+</tr>
+<tr class="row-odd"><td>Max. Leistungsaufnahme</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td>48 W</td>
+</tr>
+<tr class="row-even"><td>Überstromschutz</td>
+<td colspan="3">Die Stromversorgung muss mit einer 2-A-Sicherung abgesichert sein</td>
+</tr>
+<tr class="row-odd"><td>Erfüllung der EMV-Anforderungen</td>
+<td colspan="3">siehe <a class="reference internal" href="standards.html#sect-standards"><span class="std std-ref">Elektronische und Sicherheitsstandards</span></a></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="first admonition-title">Warnung</p>
+<p class="last">Die Überschreitung der maximalen Betriebsspannung kann zu Schäden am <em>rc_viscore</em>, am Netzteil und an angeschlossener Ausrüstung führen.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warnung</p>
+<p class="last">Jeder <em>rc_viscore</em> muss von einem eigenen Netzteil versorgt werden.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warnung</p>
+<p class="last">Der Anschluss an das Gebäudenetz darf nur über Netzteile erfolgen, die gemäß EN 55011 als Gerät der Klasse B zertifiziert sind.</p>
+</div>
+</div>
+<div class="section" id="wiring">
+<span id="sect-wiring"></span><h2>Verkabelung<a class="headerlink" href="#wiring" title="Link zu dieser Überschrift">¶</a></h2>
+<p id="index-6">Der <em>rc_viscore</em> wird mit einem bereits angeschlossenen Synchronisationskabel zwischen Projektor und Kameras geliefert. Es liegt in der Verantwortung des Kunden, die beiden mitgelieferten M12 X-kodierten Netzwerkkabel an die linke und rechte Kamera sowie das Netzkabel mit einem abgewinkelten M12-Stecker an den Projektor anzuschließen (siehe <a class="reference internal" href="#fig-connect"><span class="std std-numref">Abb. 4</span></a>). Die Netzwerkkabel müssen zur Zugentlastung in die Kabelführung eingeklipst werden. Alle Kabel müssen an der Montagehalterung befestigt werden.</p>
+<div class="figure align-center" id="id3">
+<span id="fig-connect"></span><a class="reference internal image-reference" href="_images/rcv_connect_de.png"><img alt="_images/rcv_connect_de.png" src="_images/rcv_connect_de.png" style="width: 160mm;" /></a>
+<p class="caption"><span class="caption-number">Abb. 4 </span><span class="caption-text">Lage der elektrischen Anschlüsse des <em>rc_viscore</em></span></p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warnung</p>
+<p class="last">Aufgrund des ohmschen Spannungsabfalls ist die maximale Länge des Netzkabels auf 15 m begrenzt. Die Versorgungsspannung sollte auf die angegebenen 24 V eingestellt werden und darf wegen der stark schwankenden Stromaufnahme des <em>rc_viscore</em> nicht über 26 V liegen.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warnung</p>
+<p class="last">Die Richtlinien zum Kabelmanagement sind zwingend einzuhalten. Kabel sind immer mit einer Zugentlastung an der Halterung des <em>rc_viscore</em> zu befestigen, sodass durch Kabelbewegungen keine Kräfte auf die M12-Anschlüsse des <em>rc_viscore</em> wirken. Die verwendeten Kabel müssen lang genug sein, damit sich der <em>rc_viscore</em> voll bewegen kann, ohne dass das Kabel zu stark belastet wird. Der minimale Biegeradius des Kabels (d.h. <span class="math notranslate nohighlight">\(R_{min} = 15 d\)</span>) muss eingehalten werden.</p>
+</div>
+<p id="index-7">Die Steckerbelegung für den Stromanschluss ist in <a class="reference internal" href="#tab-power-pin-assignments"><span class="std std-numref">Tab. 6</span></a> angegeben.</p>
+<span id="tab-power-pin-assignments"></span><table border="1" class="docutils" id="steckerbelegung-fur-den-stromanschluss">
+<caption><span class="caption-number">Tab. 6 </span><span class="caption-text">Steckerbelegung für den Stromanschluss</span><a class="headerlink" href="#steckerbelegung-fur-den-stromanschluss" title="Link zu dieser Tabelle">¶</a></caption>
+<colgroup>
+<col width="13%" />
+<col width="24%" />
+<col width="24%" />
+<col width="39%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Pin</strong></th>
+<th class="head"><strong>Kabelfarbe</strong></th>
+<th class="head"><strong>Bezeichnung</strong></th>
+<th class="head"><strong>Details</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>Weiß</td>
+<td>nc</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>Braun</td>
+<td>Leistung +24 V</td>
+<td>2 A &#64; 24 V</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>Green</td>
+<td>nc</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>Gelb</td>
+<td>nc</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>Grau</td>
+<td>GPIO Vcc</td>
+<td>5-24 V, 50 mA max.</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>Pink</td>
+<td>GPIO Out 1</td>
+<td>Projektor Belichtungssignal</td>
+</tr>
+<tr class="row-even"><td>7</td>
+<td>Blue</td>
+<td>Leistung GND</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>8</td>
+<td>Red</td>
+<td>GPIO-Ausgang 2</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>Die GPIOs sind durch Optokoppler galvanisch getrennt. <em>GPIO Out 1</em> liefert standardmäßig ein Belichtungssynchronisationssignal mit einem logischen High-Pegel für die Dauer der Bildbelichtung. Die Pins der nicht verwendeten GPIOs sollten potentialfrei bleiben. GPIO-Schaltkreise und Spezifikationen sind in <a class="reference internal" href="#fig-gpio"><span class="std std-numref">Abb. 5</span></a> dargestellt.</p>
+<div class="figure align-center" id="id4">
+<span id="fig-gpio"></span><a class="reference internal image-reference" href="_images/rcv_gpio_de.png"><img alt="_images/rcv_gpio_de.png" src="_images/rcv_gpio_de.png" style="width: 160mm;" /></a>
+<p class="caption"><span class="caption-number">Abb. 5 </span><span class="caption-text">GPIO-Schaltschema und zugehörige Spezifikationen</span></p>
+</div>
+</div>
+<div class="section" id="coordinate-frames">
+<span id="sect-coordinate-frames"></span><h2>Koordinatensysteme<a class="headerlink" href="#coordinate-frames" title="Link zu dieser Überschrift">¶</a></h2>
+<p id="index-8">Der Ursprung des Koordinatensystems des <em>rc_viscore</em> ist definiert als die Austrittspupille des linken Kameraobjektivs. Dieses Koordinatensystem wird Sensor-Koordinatensystem oder Kamera-Koordinatensystem genannt. Es wird in <a class="reference internal" href="#fig-frame"><span class="std std-numref">Abb. 6</span></a> dargestellt.</p>
+<div class="figure align-center" id="id5">
+<span id="fig-frame"></span><a class="reference internal image-reference" href="_images/rcv_frame.png"><img alt="_images/rcv_frame.png" src="_images/rcv_frame.png" style="width: 160mm;" /></a>
+<p class="caption"><span class="caption-number">Abb. 6 </span><span class="caption-text">Position und Orientierung des Kamerakoordinatensystems</span></p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Bemerkung</p>
+<p class="last">Der korrekte Versatz zwischen dem Sensor-/Kamera-Koordinatensystem und einem Roboterkoordinatensystem kann durch Hand-Augen-Kalibrierung kalibriert werden. Siehe <a class="reference external" href="https://doc.rc-cube.com/latest/en/handeye_calibration.html">https://doc.rc-cube.com/latest/en/handeye_calibration.html</a>.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="installation.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Weiter <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="safety.html" class="btn btn-neutral" title="Sicherheit" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Zurück</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2022, Roboception GmbH.
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-cog"> Optionen</span>
+      de
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Sprachen</dt>
+        
+          
+          <dd><a href="../en/hardware_spec.html">en</a></dd>
+          
+        
+          
+          <dd><a href="../de/hardware_spec.html">de</a></dd>
+          
+        
+      </dl>
+      
+      
+        <dl>
+          <dt>Downloads</dt>
+          
+            <dd><a href="../pdf/rc_viscore_manual_en.pdf">PDF (en)</a></dd>
+          
+            <dd><a href="../pdf/rc_viscore_manual_de.pdf">PDF (de)</a></dd>
+          
+        </dl>
+      
+
+    </div>
+  </div>
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            LANGUAGE:'de',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

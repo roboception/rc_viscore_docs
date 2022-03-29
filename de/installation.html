@@ -1,0 +1,443 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="de" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="de" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Installation &mdash; rc_viscore 1.0 Dokumentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+
+  
+    <link rel="stylesheet" href="_static/css/default.css" type="text/css" />
+  
+
+  
+
+  
+
+  
+
+  
+        <link rel="index" title="Stichwortverzeichnis"
+              href="genindex.html"/>
+        <link rel="search" title="Suche" href="search.html"/>
+    <link rel="top" title="rc_viscore 1.0 Dokumentation" href="index.html"/>
+        <link rel="next" title="Wartung" href="maintenance.html"/>
+        <link rel="prev" title="Hardware-Spezifikation" href="hardware_spec.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> rc_viscore
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                01
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Suche" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="revisions.html">Einführung</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="general.html">Überblick</a></li>
+<li class="toctree-l2"><a class="reference internal" href="warranty.html">Garantie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standards.html">Zulassungen und Normen</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="standards.html#approvals">Genehmigungen</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="standards.html#electronical-and-safety-standards">Elektronische und Sicherheitsstandards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standards.html#environmental-regulation">Umweltvorschriften</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="standards.html#eu-rohs-directive">EU-RoHS-Richtlinie</a></li>
+<li class="toctree-l3"><a class="reference internal" href="standards.html#reach-regulation">REACH-Verordnung</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="standards.html#available-certificates">Verfügbare Zertifikate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="disposal.html">Informationen zur Entsorgung</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="safety.html">Sicherheit</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="safety.html#general-warnings">Allgemeine Sicherheitshinweise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="safety.html#intended-use">Verwendungszweck</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="hardware_spec.html">Hardware-Spezifikation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="hardware_spec.html#scope-of-delivery">Umfang der Lieferung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hardware_spec.html#technical-specification">Technische Spezifikation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hardware_spec.html#environmental-and-operating-conditions">Umwelt- und Betriebsbedingungen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hardware_spec.html#power-supply-specifications">Spezifikationen für die Spannungsversorgung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hardware_spec.html#wiring">Verkabelung</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hardware_spec.html#coordinate-frames">Koordinatensysteme</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#mounting">Montage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#power-up">Einschalten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#connecting">Herstellen der Verbindung</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#connecting-to-the-rc-cube">Verbinden mit dem rc_cube</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#connecting-to-the-sgmregproducer">Anschließen an den SGM®Producer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#adjust-focus">Fokus einstellen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#calibration">Kalibrierung</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="maintenance.html">Wartung</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="maintenance.html#lens-cleaning">Reinigung der Linse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maintenance.html#change-of-working-range">Änderung des Arbeitsbereichs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="accessories.html">Zubehör</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="accessories.html#power-connections">Stromanschluss</a></li>
+<li class="toctree-l2"><a class="reference internal" href="accessories.html#power-supplies">Netzteile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="accessories.html#spare-parts">Ersatzteile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="accessories.html#sgmregproducer-and-rc-cube">SGM®Producer und rc_cube</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Fehlerbehebung</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#hardware-issues">Hardware-Probleme</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#sparse-depth-images">Spärlich befüllte Tiefenbilder</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Kontakt</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contact.html#support">Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contact.html#address">Adresse</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">rc_viscore</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">rc_viscore</a> &gt;</li>
+        
+      <li>Installation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="installation">
+<span id="sect-installation"></span><h1>Installation<a class="headerlink" href="#installation" title="Link zu dieser Überschrift">¶</a></h1>
+<div class="admonition warning" id="index-0">
+<p class="first admonition-title">Warnung</p>
+<p class="last">Die Anweisungen zum <em>rc_viscore</em> im Abschnitt <a class="reference internal" href="safety.html#sect-safety"><span class="std std-ref">Sicherheit</span></a> müssen vor der Installation gelesen und verstanden werden.</p>
+</div>
+<div class="section" id="mounting">
+<h2>Montage<a class="headerlink" href="#mounting" title="Link zu dieser Überschrift">¶</a></h2>
+<p id="index-1">Der <em>rc_viscore</em> ist für die Montage an einer Wand oder Decke über dem Zielbereich vorgesehen. Er ist nicht für den Einsatz in dynamischen Anwendungen an einem Roboterhandgelenk vorgesehen. Es liegt in der Verantwortung des Kunden, für eine geeignete Halterung zu sorgen.</p>
+<p>Für die Montage bietet der <em>rc_viscore</em> auf seiner Ober- und Unterseite mehrere M4- und M5-Gewinde an (siehe <a class="reference internal" href="#fig-mounting"><span class="std std-numref">Abb. 7</span></a>). Zum Schutz vor Vibrationen müssen mittelfeste Schraubensicherungen oder Tuflok-Schrauben verwendet werden. M5-Schrauben müssen mit 4,0 Nm angezogen werden, M4-Schrauben müssen mit 3,3 Nm angezogen werden.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warnung</p>
+<p class="last">Der <em>rc_viscore</em> kann nicht an den Endeffektor eines Roboters montiert werden.</p>
+</div>
+<div class="figure align-center" id="id1">
+<span id="fig-mounting"></span><a class="reference internal image-reference" href="_images/rcv_mounting_de.png"><img alt="_images/rcv_mounting_de.png" src="_images/rcv_mounting_de.png" style="width: 140mm;" /></a>
+<p class="caption"><span class="caption-number">Abb. 7 </span><span class="caption-text">Montage des <em>rc_viscore</em></span></p>
+</div>
+<p>Nur die Fläche, welche die Gewinde enthält, darf mit der Halterung in Berührung kommen, alle anderen Flächen müssen frei bleiben. Hinter dem <em>rc_viscore</em> muss ein Freiraum von mindestens 10 cm vorhanden sein, um einen ausreichenden Luftstrom zur Kühlung zu ermöglichen.</p>
+</div>
+<div class="section" id="power-up">
+<h2>Einschalten<a class="headerlink" href="#power-up" title="Link zu dieser Überschrift">¶</a></h2>
+<div class="admonition note" id="index-2">
+<p class="first admonition-title">Bemerkung</p>
+<p class="last">Verbinden Sie immer alle M12-Steckverbinder am <em>rc_viscore</em> und ziehen sie fest <em>bevor</em> Sie die Stromversorgung einschalten.</p>
+</div>
+<p>Nachdem Sie das System an die Stromversorgung angeschlossen haben, sollte die LED auf der Vorderseite vom <em>rc_viscore</em> sofort aufleuchten.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warnung</p>
+<p class="last">Schauen Sie während der Inbetriebnahme oder des Betriebs zu keinem Zeitpunkt in das Projektorobjektiv oder in den Lichtstrahl in der Mitte des <em>rc_viscore</em>.</p>
+</div>
+</div>
+<div class="section" id="connecting">
+<h2>Herstellen der Verbindung<a class="headerlink" href="#connecting" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Der <em>rc_viscore</em> kann zusammen mit einem <em>rc_cube</em> oder als eigenständige hochauflösende RGBD-Kamera mit dem SGM®producer verwendet werden. Die folgenden Abschnitte beschreiben den Anschluss des <em>rc_viscore</em> in beiden Szenarien.</p>
+<div class="section" id="connecting-to-the-rc-cube">
+<h3>Verbinden mit dem rc_cube<a class="headerlink" href="#connecting-to-the-rc-cube" title="Link zu dieser Überschrift">¶</a></h3>
+<p id="index-3">Der <em>rc_cube</em> I (Industrie Edge Computer) bietet vier Netzwerkanschlüsse, die mit Sensor 0-3 bezeichnet sind. Die beiden Netzwerkkabel des <em>rc_viscore</em> müssen direkt an zwei dieser Ports angeschlossen werden. Welche das sind, spielt keine Rolle. Es können zwei <em>rc_viscore</em> Geräte gleichzeitig angeschlossen und verwendet werden.</p>
+<p>Der <em>rc_cube</em> S (Edge Computer) bietet einen 2,5-Gigabit-Sensoranschluss. Für den Anschluss eines <em>rc_viscore</em> muss ein Switch verwendet werden. Der Switch muss 2,5 Gigabit für den Anschluss an den <em>rc_cube</em> und 1 Gigabit Geschwindigkeit für den Anschluss an den <em>rc_viscore</em> unterstützen. Der Switch ist nicht im Lieferumfang des <em>rc_cube</em> S enthalten. Roboception kann auf Anfrage einen geeigneten Switch empfehlen.</p>
+<p>Standardmäßig ist der <em>rc_cube</em> so konfiguriert, dass ein <em>rc_visard</em> als Sensor unterstützt wird. Um einen <em>rc_viscore</em> zu unterstützen, muss der Typ der Kamera-Pipeline in der Web GUI des <em>rc_cube</em> unter <span class="menuselection">System ‣ Kamera Pipelines</span> geändert werden (siehe <a class="reference external" href="https://doc.rc-cube.com/latest/en/pipelines.html">https://doc.rc-cube.com/latest/en/pipelines.html</a>). Ein Klick auf <span class="guilabel">Pipelines konfigurieren</span> öffnet einen Dialog, der es erlaubt, den Typ der Pipeline auf <code class="docutils literal notranslate"><span class="pre">rc_viscore</span></code> zu ändern. Nach der Änderung der Pipeline-Konfiguration ist ein Neustart erforderlich.</p>
+<p>Für den gleichzeitigen Anschluss von zwei <em>rc_viscore</em>-Sensoren ist es zusätzlich notwendig, wie oben beschrieben, eine zweite Pipeline zu konfigurieren und durch Setzen eines Filterausdrucks festzulegen, welche Pipeline welchen <em>rc_viscore</em> verwenden soll. Dies geschieht durch Anklicken von <span class="guilabel">Kameraverbindung konfigurieren</span> auf der Seite <em>Kamera-Pipelines</em>, oder durch Auswahl der entsprechenden Pipeline im Menü, z.B. unter <span class="menuselection">System ‣ Kamera-Pipelines ‣ Pipeline …</span>. Ein Klick auf <span class="guilabel">Kamera auswählen</span> öffnet einen Dialog zum Bearbeiten des Gerätefilters (siehe auch <a class="reference external" href="https://doc.rc-cube.com/latest/en/pipelines.html#configuration-of-connected-cameras">https://doc.rc-cube.com/latest/en/pipelines.html#configuration-of-connected-cameras</a>).</p>
+<p>Es kann bis zu einer Minute dauern, bis der <em>rc_viscore</em> verbunden ist. Für jeden erfolgreich verbundenen Sensor wird die Verbindungsgeschwindigkeit und Bildrate im <span class="menuselection">Dashboard</span> der Web GUI angezeigt.</p>
+</div>
+<div class="section" id="connecting-to-the-sgmregproducer">
+<h3>Anschließen an den SGM®Producer<a class="headerlink" href="#connecting-to-the-sgmregproducer" title="Link zu dieser Überschrift">¶</a></h3>
+<p id="index-4">Für die Verwendung des <em>rc_viscore</em> als hochauflösende RGBD-Kamera bietet Roboception den SGM®Producer an, der eine GenICam-kompatible Transportschicht darstellt (siehe <a class="reference external" href="https://roboception.com/product/sgmproducer">https://roboception.com/product/sgmproducer</a>). Der Producer kann mit Halcon, mit der rc_genicam_api für C++ Programmierer, mit dem rc_genicam_driver für ROS und ROS2, sowie mit jeder anderen GenICam kompatiblen Anwendung verwendet werden. Er kann kostenlos von <a class="reference external" href="http://www.roboception.com/download">http://www.roboception.com/download</a> heruntergeladen und auf Windows- und Ubuntu-Computern mit einer Nvidia-Grafikkarte installiert werden.</p>
+<p>Es wird dringend empfohlen, beide Netzwerkkabel direkt an 1-Gigabit-Ethernet-Ports des Computers anzuschließen. Ein Netzwerk-Switch kann nur funktionieren, wenn die Netzwerkverbindung zwischen dem Switch und dem Computer eine Bandbreite von mehr als 2 Gigabit hat, z. B. 2,5, 5 oder 10 Gigabit.</p>
+<p>In der Standard-Netzwerkkonfiguration und gemäß dem GigE Vision-Standard versuchen die Kameras, ihre Konfiguration von einem DHCP-Server zu beziehen und greifen auf das Link-Local-Selbstkonfigurationsprotokoll zurück, wenn kein DHCP-Server gefunden werden kann. Für eine direkte Verbindung ohne DHCP-Server sollten die Ethernet-Ports des Computers für ein Link-Local-Netzwerk konfiguriert werden. Es ist auch möglich, die IP-Adressen der linken und rechten <em>rc_viscore</em> Kamera manuell zu konfigurieren. Die Optionen zum Ändern der Netzwerkeinstellungen und der IP-Konfiguration sind:</p>
+<blockquote>
+<div><ul class="simple">
+<li>jedes Konfigurationstool, das mit GigE Vision 2.0 kompatibel ist, oder das Kommandozeilentool <code class="docutils literal notranslate"><span class="pre">gc_config</span></code> von Roboception. Normalerweise scannen diese Tools nach allen verfügbaren GigE Vision® Geräten im Netzwerk. Alle <em>rc_viscore</em> Geräte können eindeutig anhand ihrer Seriennummer identifiziert werden, die auf dem Gerät aufgedruckt ist.</li>
+<li>vorübergehende Änderung der Netzwerkkonfiguration über das Tool <code class="docutils literal notranslate"><span class="pre">rcdiscover-gui</span></code> von Roboception. Die einzelnen Kameras können in der Liste angezeigt werden, nachdem das Kontrollkästchen <span class="guilabel">Only Roboception devices</span> deaktiviert wurde.</li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Bemerkung</p>
+<p class="last">Das Kommandozeilen-Tool <code class="docutils literal notranslate"><span class="pre">gc_config</span></code> ist Teil des Open-Source-Convenience-Layers <code class="docutils literal notranslate"><span class="pre">rc_genicam_api</span></code> von Roboception, der kostenlos für Windows und Linux von <a class="reference external" href="http://www.roboception.com/download">http://www.roboception.com/download</a> heruntergeladen werden kann.</p>
+</div>
+<p>Für die Einstellung des Fokus, die Überprüfung und die Kalibrierung des <em>rc_viscore</em>, wie in den nächsten Abschnitten erläutert, enthält das SGM®Producer-Paket ein Kalibrierprogramm, genannt <cite>rc_calib</cite>.</p>
+</div>
+</div>
+<div class="section" id="adjust-focus">
+<span id="sect-adjust-focus"></span><h2>Fokus einstellen<a class="headerlink" href="#adjust-focus" title="Link zu dieser Überschrift">¶</a></h2>
+<p id="index-5">Es wird dringend empfohlen, den Fokus des <em>rc_viscore</em> im tatsächlichen Arbeitsbereich zu überprüfen und einzustellen. Bitte beachten Sie, dass der Tiefenschärfebereich aufgrund der hohen Auflösung des Sensors begrenzt ist und an den Arbeitsbereich der Anwendung angepasst werden muss. Im Nahbereich ist der Schärfentiefebereich deutlich kleiner als in größerer Entfernung. Daher sollte der Mindestabstand für die Fokussierung so weit entfernt wie für die jeweilige Anwendung sinnvoll gewählt werden. Bei Fragen zum Arbeitsabstand und zur Kalibrierung des Sensors wenden Sie sich bitte an den <a class="reference internal" href="contact.html#sect-contact"><span class="std std-ref">Support</span></a>.</p>
+<p>Der <em>rc_cube</em> bietet als Teil der Kamerakalibrierung einen Fokus-Helfer unter <span class="menuselection">Pipeline … ‣ Konfiguration ‣ Kamerakalibrierung</span>. Im ersten Schritt muss die Größe des Kalibriermusters angegeben werden. Mit einem Klick auf <span class="guilabel">Weiter</span> wird der Fokus-Helfer geöffnet. Siehe auch <a class="reference external" href="https://doc.rc-cube.com/latest/en/camera_calibration.html">https://doc.rc-cube.com/latest/en/camera_calibration.html</a>.</p>
+<p>Für Benutzer des SGM®Producer ist der Fokus-Helfer im Kalibrierprogramm <cite>rc_calib</cite> zu finden, nachdem der <em>rc_viscore</em> mit <span class="menuselection">File ‣ Connect sensor …</span> ausgewählt und die Größe des Kalibriermusters angegeben wurde.</p>
+<p>Die Balken auf der rechten Seite des Bildes zeigen die Unschärfe des Kalibriermusters an. Ein Minimum ist wünschenswert. Das Muster sollte im minimalen und maximalen Arbeitsabstand platziert werden, um die aktuelle Unschärfe zu überprüfen. Ein Wert in der Nähe der untersten Teilungslinie ist recht optimal. Siehe auch <a class="reference external" href="https://doc.rc-cube.com/latest/en/camera_calibration.html#adjust-focus">https://doc.rc-cube.com/latest/en/camera_calibration.html#adjust-focus</a>.</p>
+<p>Wenn die Schärfe eingestellt werden muss, muss der Objektivschutz der linken und rechten Kamera abgenommen werden, wie in <a class="reference internal" href="#fig-focus"><span class="std std-numref">Abb. 8</span></a> gezeigt.</p>
+<div class="figure align-center" id="id2">
+<span id="fig-focus"></span><a class="reference internal image-reference" href="_images/rcv_focus_de.png"><img alt="_images/rcv_focus_de.png" src="_images/rcv_focus_de.png" style="width: 140mm;" /></a>
+<p class="caption"><span class="caption-number">Abb. 8 </span><span class="caption-text">Abnehmen des Objektivschutzes zum Fokussieren und Ändern der Blende</span></p>
+</div>
+<p>Der Fokusring und der Blendenring sind mit jeweils 3 Schrauben gesichert, wie in <a class="reference internal" href="#fig-ricoh"><span class="std std-numref">Abb. 9</span></a> gezeigt. Zum Verstellen des Rings müssen alle drei Schrauben gelöst werden.</p>
+<div class="figure align-center" id="id3">
+<span id="fig-ricoh"></span><a class="reference internal image-reference" href="_images/ricoh_focus_aperture_de.png"><img alt="_images/ricoh_focus_aperture_de.png" src="_images/ricoh_focus_aperture_de.png" style="width: 140mm;" /></a>
+<p class="caption"><span class="caption-number">Abb. 9 </span><span class="caption-text">Anpassen von Fokus- und Blendeneinstellungen</span></p>
+</div>
+<p>Um die Schärfe richtig einzustellen, sollte das Kalibriermuster in der Mitte des Arbeitsbereichs platziert werden. Dann sollte der Fokusring gedreht werden, bis die Balken in den Bildern ein Minimum erreichen. Nach der Fokussierung auf diese Weise sollte das Kalibriermuster auf den minimalen und maximalen Arbeitsabstand gestellt werden. Wenn die Unschärfe beim minimalen und maximalen Arbeitsabstand nicht zufriedenstellend ist (z. B. nahe der zweiten Teilungslinie oder höher), kann die Blende etwas geschlossen werden, d. h. eine höhere Blendenzahl gewählt werden. Bitte beachten Sie, dass sich dadurch die Belichtungszeit und möglicherweise auch die Verstärkung erhöht, was zu einem stärkeren Rauschen im Bild führt. Die optimale Einstellung ist von der jeweiligen Anwendung abhängig.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warnung</p>
+<p class="last">Für die linke und die rechte Kamera muss die gleiche Blendeneinstellung verwendet werden, um eine Verschlechterung der Bildverarbeitungsleistung zu vermeiden. Vergewissern Sie sich, dass das linke und das rechte Bild mit der gleichen Helligkeit angezeigt werden.</p>
+</div>
+<p>Nach der Einstellung von Schärfe und Blende müssen alle Schrauben angezogen und der Objektivschutz wieder aufgesetzt werden.</p>
+<p>Um die Fokus- und Blendeneinstellungen des Projektors zu ändern, lösen Sie die drei kleinen Kreuzschlitzschrauben am entsprechenden Ring des Projektorobjektivs, drehen den Ring auf die gewünschte Einstellung und ziehen die Schrauben wieder leicht an. Für die Schärfeeinstellung sollte der Projektor permanent eingeschaltet sein, indem der Modus Out1 in der Web GUI auf High gesetzt wird. Für Blendeneinstellungen sollte Out1 auf ExposureAlternateActive und der Belichtungsmodus auf der Kameraseite des Web GUI auf „Auto“ eingestellt werden. Die perfekte Fokussierung des Projektors ist nicht entscheidend. Eine leicht unscharfe Projektion beeinträchtigt das Tiefenbild nicht.</p>
+</div>
+<div class="section" id="calibration">
+<span id="sect-calibration"></span><h2>Kalibrierung<a class="headerlink" href="#calibration" title="Link zu dieser Überschrift">¶</a></h2>
+<p id="index-6">Nach der Überprüfung und eventuellen Einstellung der Schärfe ist der nächste Schritt die Überprüfung der Kalibrierung. Dieser Schritt sollte niemals übersprungen werden und ist im Gegensatz zu allen rc_visard-Produkten obligatorisch. Bitte beachten Sie, dass der Arbeitsbereich des <em>rc_viscore</em> vordefiniert ist und die Kalibrierung für den minimalen und maximalen Arbeitsbereich überprüft werden sollte. Bei Fragen zum Arbeitsbereich und zur Kalibrierung des <em>rc_viscore</em> wenden Sie sich bitte an den <a class="reference internal" href="contact.html#sect-contact"><span class="std std-ref">Support</span></a>.</p>
+<p>Das Handbuch des <em>rc_cube</em> erklärt die Überprüfung und Neukalibrierung im Detail (siehe <a class="reference external" href="https://doc.rc-cube.com/latest/en/camera_calibration.html#verify-calibration">https://doc.rc-cube.com/latest/en/camera_calibration.html#verify-calibration</a>). Das dort beschriebene Verfahren kann auf die gleiche Weise auf den SGM®Producer angewandt werden, indem das mit dem Producer mitgelieferte Programm <cite>rc_calib</cite> verwendet wird.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warnung</p>
+<p class="last">Es ist zwingend erforderlich, die Kalibrierung immer zu überprüfen, nachdem der <em>rc_viscore</em> montiert, der Fokus oder die Blende verändert wurde. Nach der Kalibrierung ist auch eine neue Hand-Auge-Kalibrierung erforderlich.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Bemerkung</p>
+<p class="last">Der <em>rc_viscore</em> wird von Roboception mit voreingestelltem Fokus geliefert, um sicherzustellen, dass er im gewünschten Tiefenbereich funktioniert. Bitte wenden Sie sich an den <a class="reference internal" href="contact.html#sect-contact"><span class="std std-ref">Support</span></a> und teilen Sie uns Ihre Spezifikationen mit, damit wir den <em>rc_viscore</em> entsprechend einrichten können. Eine Kalibrierungsprüfung vor Ort ist dennoch erforderlich, um sicherzustellen, dass bei der Lieferung oder Montage keine Probleme aufgetreten sind.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="maintenance.html" class="btn btn-neutral float-right" title="Wartung" accesskey="n" rel="next">Weiter <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="hardware_spec.html" class="btn btn-neutral" title="Hardware-Spezifikation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Zurück</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2022, Roboception GmbH.
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-cog"> Optionen</span>
+      de
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Sprachen</dt>
+        
+          
+          <dd><a href="../en/installation.html">en</a></dd>
+          
+        
+          
+          <dd><a href="../de/installation.html">de</a></dd>
+          
+        
+      </dl>
+      
+      
+        <dl>
+          <dt>Downloads</dt>
+          
+            <dd><a href="../pdf/rc_viscore_manual_en.pdf">PDF (en)</a></dd>
+          
+            <dd><a href="../pdf/rc_viscore_manual_de.pdf">PDF (de)</a></dd>
+          
+        </dl>
+      
+
+    </div>
+  </div>
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            LANGUAGE:'de',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,314 @@
+Hardware-Spezifikation
+
+Bemerkung: Die folgenden Hardware-Spezifikationen dienen als
+  allgemeine Referenz; es können Unterschiede zum Produkt bestehen.
+
+Umfang der Lieferung
+
+Die Standardlieferung für einen
+
+rc_viscore
+
+ umfasst
+
+   rc_viscore sensor,
+
+   Kalibriermuster groß (A3),
+
+   2 x 10 m Gigabit-Ethernet-Netzwerkkabel,
+
+   10 m Stromkabel mit M12-Stecker und einem offenen Ende,
+
+   Kurzanleitung.
+
+Das vollständige Handbuch ist online in digitaler Form unter
+
+http://doc.rc-viscore.com
+
+ verfügbar.
+
+Bemerkung: Die folgenden Artikel sind nicht im Lieferumfang
+  enthalten, sofern nicht anders angegeben:
+
+  Kupplungen, Adapter, Halterungen,
+
+  Stromversorgungseinheit und Sicherungen.
+
+  Vorschläge für Kabel von Drittanbietern finden Sie unter
+
+  Zubehör
+
+  .
+
+Das folgende Bild zeigt die wichtigsten Bauteile des
+
+rc_viscore
+
+, auf die in diesem Handbuch Bezug genommen wird.
+
+
+Technische Spezifikation
+
+Die technische Spezifikation des
+
+rc_viscore
+
+ ist in
+
+Tab. 1
+
+ dargestellt. Die angegebene Tiefenbildrate kann auf einem
+
+rc_cube
+
+ oder mit dem SGM®Producer auf einem Computer mit einer Nvidia RTX2070
+GPU erreicht werden. Höhere Bildraten (bis zu 9 Hz) sind mit
+schnelleren Grafikkarten möglich.
+
+Technische Daten des rc_viscore        rc_viscore 210m-16-12M-H1-R
+Bildauflösung  4112 x 3008 Pixel monochrom  Bildwiederholrate  9 Hz
+Brennweite  16 mm  Sichtfeld  Horizontal: 47,5°, Vertikal: 35,7°
+Tiefenbild  4112 x 3008 Pixel (Voll) @ 2,8 Hz (Nvidia RTX2070)  2056 x
+1504 Pixel (Hoch) @ 4,6 Hz (Nvidia RTX2070)  1028 x 752 Pixel (Mittel)
+@ 9 Hz (Nvidia RTX2070)  686 x 502 Pixel (Niedrig) @ 9 Hz (Nvidia
+RTX2070)  Kühlung  Passiv  Basisabstand  210 mm  Größe (B x H x L)
+262 mm x 204 mm x 82 mm  Masse  1.64 kg
+
+Der Tiefenbildbereich des
+
+rc_viscore
+
+ hängt von der Tiefenbildqualität, dem angegebenen maximalen
+Tiefenbereich und dem verfügbaren GPU-Speicher ab. Der Tiefenbereich
+bei näherer Entfernung ist viel kleiner als der Tiefenbereich bei
+weiter Entfernung. Der
+
+rc_cube
+
+ verwendet 3,4 Gbyte GPU-Speicher für das Stereo-Matching.
+
+Tab. 2
+
+ zeigt Beispiele für resultierende Tiefenbereiche mit dieser Menge an
+GPU-Speicher. Größere Tiefenbereiche sind möglich, wenn der
+SGM®Producer mit einer Grafikkarte verwendet wird, die mehr GPU-
+Speicher bietet.
+
+Beispiele möglicher Tiefenbereiche des rc_viscore mit 3,4 Gbytes GPU-
+Speicher, wie im Fall des rc_cube        rc_viscore 210m-16-12M-H1-R
+Volle Tiefenbildqualität  0.89 m bis 1.00 m  1.60 m bis 2.00 m  2.18 m
+bis 3.00 m  2.65 m bis 4.00 m  Hohe Tiefenbildqualität  0.52 m bis
+1.00 m  0.66 m bis 2.00 m  0.75 m bis 3.00 m  0.80 m bis 4.00 m  1,00
+m bis unendlich  Mittlere und niedrige Tiefenbildqualität  0.52 m bis
+unendlich
+
+Die Auflösung und Genauigkeit bei verschiedenen Entfernungen ist in
+
+Tab. 3
+
+ für die empfohlene Tiefenbildqualität
+
+Hoch
+
+ angegeben. Bei voller Tiefenbildqualität sind die Auflösung und die
+Genauigkeit um den Faktor 2 besser. Bei mittlerer Qualität sind die
+Auflösung und die Genauigkeit etwa zweimal schlechter als in der
+Tabelle angegeben.
+
+Auflösung und Genauigkeit des rc_viscore in Millimetern mit Stereo-
+Matching in Qualität Hoch und Random-Dot-Projektion auf nicht-
+reflektierende und nicht-transparente Objekte.          Abstand
+rc_viscore  Laterale Auflösung  1.0 m  2.0 m  3.0 m  4.0 m  0.4 mm
+0.9 mm  1.3 mm  1.7 mm  Tiefenauflösung  1.0 m  2.0 m  3.0 m  4.0 m
+0.1 mm  0.5 mm  1.2 mm  2.0 mm  Durchschnittliche Tiefengenauigkeit
+1.0 m  2.0 m  3.0 m  4.0 m  0.5 mm  2.0 mm  4.6 mm  8.2 mm
+
+
+CAD-Modelle des
+
+rc_viscore
+
+ können von
+
+http://www.roboception.com/download
+
+ heruntergeladen werden. Die CAD-Modelle werden ohne Gewähr für ihre
+Korrektheit zur Verfügung gestellt.
+
+Umwelt- und Betriebsbedingungen
+
+Der
+
+rc_viscore
+
+ ist für den industriellen Einsatz konzipiert. Die
+Umgebungsbedingungen für Lagerung, Transport und Betrieb nach in
+
+Tab. 4
+
+ müssen beachtet werden.
+
+Umgebungsbedingungen        rc_viscore  Lager-/Transporttemperatur
+-20 °C bis 60 °C  Betriebstemperatur  0 °C bis 45 °C (passive Kühlung)
+Relative Luftfeuchtigkeit (nicht kondensierend)  20 % to 80 %
+Schutzklasse  IP54  Sonstige  Von korrosiven Flüssigkeiten oder Gasen
+fernhalten.  Von explosiven Flüssigkeiten oder Gasen fernhalten.  Von
+starken elektromagnetischen Störungen fernhalten.
+
+Der
+
+rc_viscore
+
+ ist für eine Betriebstemperatur (Umgebung) von 0 °C bis 45 °C
+ausgelegt und arbeitet mit einer konvektiven (passiven) Kühlung. Ein
+ungehinderter Luftstrom, insbesondere um die Kühlrippen, muss während
+des Einsatzes gewährleistet sein. Der
+
+rc_viscore
+
+ darf nur über die beschriebene mechanische Montageschnittstelle
+montiert werden, wobei alle Gehäuseteile unbedeckt bleiben müssen. Ein
+Freiraum von mindestens 10 cm in alle Richtungen vom Gehäuse und ein
+ausreichender Luftaustausch mit der Umgebung sind erforderlich, um
+eine ausreichende Kühlung zu gewährleisten. Die Kühlrippen müssen frei
+von Schmutz und anderen Verunreinigungen sein.
+
+Spezifikationen für die Spannungsversorgung
+
+Der
+
+rc_viscore
+
+ muss von einer Gleichspannungsquelle versorgt werden. Im
+Standardlieferumfang des
+
+rc_viscore
+
+ ist kein Gleichspannungsnetzteil enthalten. Jeder
+
+rc_viscore
+
+ muss an eine eigene Spannungsversorgung angeschlossen werden. Der
+Anschluss an das Stromnetz ist nur über eine nach EN55011 Klasse B
+zertifizierte Stromversorgung zulässig.
+
+Grenzwerte für die Stromversorgung            Min  Nominal  Max
+Versorgungsspannung  22.0 V  24 V  26.0 V  Max. Leistungsaufnahme
+48 W  Überstromschutz  Die Stromversorgung muss mit einer
+2-A-Sicherung abgesichert sein  Erfüllung der EMV-Anforderungen  siehe
+Elektronische und Sicherheitsstandards\:(Abschnitt \ref{standards
+:sect-standards})
+
+Warnung: Die Überschreitung der maximalen Betriebsspannung kann zu
+  Schäden am
+
+  rc_viscore
+
+  , am Netzteil und an angeschlossener Ausrüstung führen.
+
+Warnung: Jeder
+
+  rc_viscore
+
+   muss von einem eigenen Netzteil versorgt werden.
+
+Warnung: Der Anschluss an das Gebäudenetz darf nur über Netzteile
+  erfolgen, die gemäß EN 55011 als Gerät der Klasse B zertifiziert
+  sind.
+
+Verkabelung
+
+Der
+
+rc_viscore
+
+ wird mit einem bereits angeschlossenen Synchronisationskabel zwischen
+Projektor und Kameras geliefert. Es liegt in der Verantwortung des
+Kunden, die beiden mitgelieferten M12 X-kodierten Netzwerkkabel an die
+linke und rechte Kamera sowie das Netzkabel mit einem abgewinkelten
+M12-Stecker an den Projektor anzuschließen (siehe
+
+Abb. 4
+
+). Die Netzwerkkabel müssen zur Zugentlastung in die Kabelführung
+eingeklipst werden. Alle Kabel müssen an der Montagehalterung
+befestigt werden.
+
+
+Warnung: Aufgrund des ohmschen Spannungsabfalls ist die maximale
+  Länge des Netzkabels auf 15 m begrenzt. Die Versorgungsspannung
+  sollte auf die angegebenen 24 V eingestellt werden und darf wegen
+  der stark schwankenden Stromaufnahme des
+
+  rc_viscore
+
+   nicht über 26 V liegen.
+
+Warnung: Die Richtlinien zum Kabelmanagement sind zwingend
+  einzuhalten. Kabel sind immer mit einer Zugentlastung an der
+  Halterung des
+
+  rc_viscore
+
+   zu befestigen, sodass durch Kabelbewegungen keine Kräfte auf die
+  M12-Anschlüsse des
+
+  rc_viscore
+
+   wirken. Die verwendeten Kabel müssen lang genug sein, damit sich
+  der
+
+  rc_viscore
+
+   voll bewegen kann, ohne dass das Kabel zu stark belastet wird. Der
+  minimale Biegeradius des Kabels (d.h. R_{min} = 15 d) muss
+  eingehalten werden.
+
+Die Steckerbelegung für den Stromanschluss ist in
+
+Tab. 6
+
+ angegeben.
+
+Steckerbelegung für den Stromanschluss          Pin  Kabelfarbe
+Bezeichnung  Details  1  Weiß  nc    2  Braun  Leistung +24 V  2 A @
+24 V  3  Green  nc    4  Gelb  nc    5  Grau  GPIO Vcc  5-24 V, 50 mA
+max.  6  Pink  GPIO Out 1  Projektor Belichtungssignal  7  Blue
+Leistung GND    8  Red  GPIO-Ausgang 2
+
+Die GPIOs sind durch Optokoppler galvanisch getrennt.
+
+GPIO Out 1
+
+ liefert standardmäßig ein Belichtungssynchronisationssignal mit einem
+logischen High-Pegel für die Dauer der Bildbelichtung. Die Pins der
+nicht verwendeten GPIOs sollten potentialfrei bleiben. GPIO-
+Schaltkreise und Spezifikationen sind in
+
+Abb. 5
+
+ dargestellt.
+
+
+Koordinatensysteme
+
+Der Ursprung des Koordinatensystems des
+
+rc_viscore
+
+ ist definiert als die Austrittspupille des linken Kameraobjektivs.
+Dieses Koordinatensystem wird Sensor-Koordinatensystem oder Kamera-
+Koordinatensystem genannt. Es wird in
+
+Abb. 6
+
+ dargestellt.
+
+
+Bemerkung: Der korrekte Versatz zwischen dem Sensor-/Kamera-
+  Koordinatensystem und einem Roboterkoordinatensystem kann durch
+  Hand-Augen- Kalibrierung kalibriert werden. Siehe
+
+  https://doc.rc-cube.com/latest/en/handeye_calibration.html
+
+  .

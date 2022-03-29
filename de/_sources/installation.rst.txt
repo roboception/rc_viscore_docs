@@ -1,0 +1,424 @@
+Installation
+
+Warnung: Die Anweisungen zum
+
+  rc_viscore
+
+   im Abschnitt
+
+  Sicherheit
+
+   müssen vor der Installation gelesen und verstanden werden.
+
+Montage
+
+Der
+
+rc_viscore
+
+ ist für die Montage an einer Wand oder Decke über dem Zielbereich
+vorgesehen. Er ist nicht für den Einsatz in dynamischen Anwendungen an
+einem Roboterhandgelenk vorgesehen. Es liegt in der Verantwortung des
+Kunden, für eine geeignete Halterung zu sorgen.
+
+Für die Montage bietet der
+
+rc_viscore
+
+ auf seiner Ober- und Unterseite mehrere M4- und M5-Gewinde an (siehe
+
+Abb. 7
+
+). Zum Schutz vor Vibrationen müssen mittelfeste Schraubensicherungen
+oder Tuflok-Schrauben verwendet werden. M5-Schrauben müssen mit 4,0 Nm
+angezogen werden, M4-Schrauben müssen mit 3,3 Nm angezogen werden.
+
+Warnung: Der
+
+  rc_viscore
+
+   kann nicht an den Endeffektor eines Roboters montiert werden.
+
+
+Nur die Fläche, welche die Gewinde enthält, darf mit der Halterung in
+Berührung kommen, alle anderen Flächen müssen frei bleiben. Hinter dem
+
+rc_viscore
+
+ muss ein Freiraum von mindestens 10 cm vorhanden sein, um einen
+ausreichenden Luftstrom zur Kühlung zu ermöglichen.
+
+Einschalten
+
+Bemerkung: Verbinden Sie immer alle M12-Steckverbinder am
+
+  rc_viscore
+
+   und ziehen sie fest
+
+  bevor
+
+   Sie die Stromversorgung einschalten.
+
+Nachdem Sie das System an die Stromversorgung angeschlossen haben,
+sollte die LED auf der Vorderseite vom
+
+rc_viscore
+
+ sofort aufleuchten.
+
+Warnung: Schauen Sie während der Inbetriebnahme oder des Betriebs zu
+  keinem Zeitpunkt in das Projektorobjektiv oder in den Lichtstrahl in
+  der Mitte des
+
+  rc_viscore
+
+  .
+
+Herstellen der Verbindung
+
+Der
+
+rc_viscore
+
+ kann zusammen mit einem
+
+rc_cube
+
+ oder als eigenständige hochauflösende RGBD-Kamera mit dem
+SGM®producer verwendet werden. Die folgenden Abschnitte beschreiben
+den Anschluss des
+
+rc_viscore
+
+ in beiden Szenarien.
+
+Verbinden mit dem rc_cube
+
+Der
+
+rc_cube
+
+ I (Industrie Edge Computer) bietet vier Netzwerkanschlüsse, die mit
+Sensor 0-3 bezeichnet sind. Die beiden Netzwerkkabel des
+
+rc_viscore
+
+ müssen direkt an zwei dieser Ports angeschlossen werden. Welche das
+sind, spielt keine Rolle. Es können zwei
+
+rc_viscore
+
+ Geräte gleichzeitig angeschlossen und verwendet werden.
+
+Der
+
+rc_cube
+
+ S (Edge Computer) bietet einen 2,5-Gigabit-Sensoranschluss. Für den
+Anschluss eines
+
+rc_viscore
+
+ muss ein Switch verwendet werden. Der Switch muss 2,5 Gigabit für den
+Anschluss an den
+
+rc_cube
+
+ und 1 Gigabit Geschwindigkeit für den Anschluss an den
+
+rc_viscore
+
+ unterstützen. Der Switch ist nicht im Lieferumfang des
+
+rc_cube
+
+ S enthalten. Roboception kann auf Anfrage einen geeigneten Switch
+empfehlen.
+
+Standardmäßig ist der
+
+rc_cube
+
+ so konfiguriert, dass ein
+
+rc_visard
+
+ als Sensor unterstützt wird. Um einen
+
+rc_viscore
+
+ zu unterstützen, muss der Typ der Kamera-Pipeline in der Web GUI des
+
+rc_cube
+
+ unter System ‣ Kamera Pipelines geändert werden (siehe
+
+https://doc.rc-cube.com/latest/en/pipelines.html
+
+). Ein Klick auf Pipelines konfigurieren öffnet einen Dialog, der es
+erlaubt, den Typ der Pipeline auf "rc_viscore" zu ändern. Nach der
+Änderung der Pipeline-Konfiguration ist ein Neustart erforderlich.
+
+Für den gleichzeitigen Anschluss von zwei
+
+rc_viscore
+
+-Sensoren ist es zusätzlich notwendig, wie oben beschrieben, eine
+zweite Pipeline zu konfigurieren und durch Setzen eines
+Filterausdrucks festzulegen, welche Pipeline welchen
+
+rc_viscore
+
+ verwenden soll. Dies geschieht durch Anklicken von Kameraverbindung
+konfigurieren auf der Seite
+
+Kamera-Pipelines
+
+, oder durch Auswahl der entsprechenden Pipeline im Menü, z.B. unter
+System ‣ Kamera-Pipelines ‣ Pipeline .... Ein Klick auf Kamera
+auswählen öffnet einen Dialog zum Bearbeiten des Gerätefilters (siehe
+auch
+
+https://doc.rc-cube.com/latest/en/pipelines.html#configuration-of-
+connected-cameras
+
+).
+
+Es kann bis zu einer Minute dauern, bis der
+
+rc_viscore
+
+ verbunden ist. Für jeden erfolgreich verbundenen Sensor wird die
+Verbindungsgeschwindigkeit und Bildrate im Dashboard der Web GUI
+angezeigt.
+
+Anschließen an den SGM®Producer
+
+Für die Verwendung des
+
+rc_viscore
+
+ als hochauflösende RGBD-Kamera bietet Roboception den SGM®Producer
+an, der eine GenICam-kompatible Transportschicht darstellt (siehe
+
+https://roboception.com/product/sgmproducer
+
+). Der Producer kann mit Halcon, mit der rc_genicam_api für C++
+Programmierer, mit dem rc_genicam_driver für ROS und ROS2, sowie mit
+jeder anderen GenICam kompatiblen Anwendung verwendet werden. Er kann
+kostenlos von
+
+http://www.roboception.com/download
+
+ heruntergeladen und auf Windows- und Ubuntu-Computern mit einer
+Nvidia-Grafikkarte installiert werden.
+
+Es wird dringend empfohlen, beide Netzwerkkabel direkt an 1-Gigabit-
+Ethernet-Ports des Computers anzuschließen. Ein Netzwerk-Switch kann
+nur funktionieren, wenn die Netzwerkverbindung zwischen dem Switch und
+dem Computer eine Bandbreite von mehr als 2 Gigabit hat, z. B. 2,5, 5
+oder 10 Gigabit.
+
+In der Standard-Netzwerkkonfiguration und gemäß dem GigE Vision-
+Standard versuchen die Kameras, ihre Konfiguration von einem DHCP-
+Server zu beziehen und greifen auf das Link-Local-
+Selbstkonfigurationsprotokoll zurück, wenn kein DHCP-Server gefunden
+werden kann. Für eine direkte Verbindung ohne DHCP-Server sollten die
+Ethernet-Ports des Computers für ein Link-Local-Netzwerk konfiguriert
+werden. Es ist auch möglich, die IP-Adressen der linken und rechten
+
+rc_viscore
+
+ Kamera manuell zu konfigurieren. Die Optionen zum Ändern der
+Netzwerkeinstellungen und der IP-Konfiguration sind:
+
+   jedes Konfigurationstool, das mit GigE Vision 2.0 kompatibel ist,
+   oder das Kommandozeilentool gc_config von Roboception.
+   Normalerweise scannen diese Tools nach allen verfügbaren GigE
+   Vision® Geräten im Netzwerk. Alle rc_viscore Geräte können
+   eindeutig anhand ihrer Seriennummer identifiziert werden, die auf
+   dem Gerät aufgedruckt ist.
+
+   vorübergehende Änderung der Netzwerkkonfiguration über das Tool
+   rcdiscover-gui von Roboception. Die einzelnen Kameras können in der
+   Liste angezeigt werden, nachdem das Kontrollkästchen Only
+   Roboception devices deaktiviert wurde.
+
+Bemerkung: Das Kommandozeilen-Tool "gc_config" ist Teil des Open-
+  Source- Convenience-Layers "rc_genicam_api" von Roboception, der
+  kostenlos für Windows und Linux von
+
+  http://www.roboception.com/download
+
+   heruntergeladen werden kann.
+
+Für die Einstellung des Fokus, die Überprüfung und die Kalibrierung
+des
+
+rc_viscore
+
+, wie in den nächsten Abschnitten erläutert, enthält das SGM®Producer-
+Paket ein Kalibrierprogramm, genannt *rc_calib*.
+
+Fokus einstellen
+
+Es wird dringend empfohlen, den Fokus des
+
+rc_viscore
+
+ im tatsächlichen Arbeitsbereich zu überprüfen und einzustellen. Bitte
+beachten Sie, dass der Tiefenschärfebereich aufgrund der hohen
+Auflösung des Sensors begrenzt ist und an den Arbeitsbereich der
+Anwendung angepasst werden muss. Im Nahbereich ist der
+Schärfentiefebereich deutlich kleiner als in größerer Entfernung.
+Daher sollte der Mindestabstand für die Fokussierung so weit entfernt
+wie für die jeweilige Anwendung sinnvoll gewählt werden. Bei Fragen
+zum Arbeitsabstand und zur Kalibrierung des Sensors wenden Sie sich
+bitte an den
+
+Support
+
+.
+
+Der
+
+rc_cube
+
+ bietet als Teil der Kamerakalibrierung einen Fokus-Helfer unter
+Pipeline ... ‣ Konfiguration ‣ Kamerakalibrierung. Im ersten Schritt
+muss die Größe des Kalibriermusters angegeben werden. Mit einem Klick
+auf Weiter wird der Fokus-Helfer geöffnet. Siehe auch
+
+https://doc.rc-cube.com/latest/en/camera_calibration.html
+
+.
+
+Für Benutzer des SGM®Producer ist der Fokus-Helfer im
+Kalibrierprogramm *rc_calib* zu finden, nachdem der
+
+rc_viscore
+
+ mit File ‣ Connect sensor ... ausgewählt und die Größe des
+Kalibriermusters angegeben wurde.
+
+Die Balken auf der rechten Seite des Bildes zeigen die Unschärfe des
+Kalibriermusters an. Ein Minimum ist wünschenswert. Das Muster sollte
+im minimalen und maximalen Arbeitsabstand platziert werden, um die
+aktuelle Unschärfe zu überprüfen. Ein Wert in der Nähe der untersten
+Teilungslinie ist recht optimal. Siehe auch
+
+https://doc.rc-cube.com/latest/en/camera_calibration.html#adjust-focus
+
+.
+
+Wenn die Schärfe eingestellt werden muss, muss der Objektivschutz der
+linken und rechten Kamera abgenommen werden, wie in
+
+Abb. 8
+
+ gezeigt.
+
+
+Der Fokusring und der Blendenring sind mit jeweils 3 Schrauben
+gesichert, wie in
+
+Abb. 9
+
+ gezeigt. Zum Verstellen des Rings müssen alle drei Schrauben gelöst
+werden.
+
+
+Um die Schärfe richtig einzustellen, sollte das Kalibriermuster in der
+Mitte des Arbeitsbereichs platziert werden. Dann sollte der Fokusring
+gedreht werden, bis die Balken in den Bildern ein Minimum erreichen.
+Nach der Fokussierung auf diese Weise sollte das Kalibriermuster auf
+den minimalen und maximalen Arbeitsabstand gestellt werden. Wenn die
+Unschärfe beim minimalen und maximalen Arbeitsabstand nicht
+zufriedenstellend ist (z. B. nahe der zweiten Teilungslinie oder
+höher), kann die Blende etwas geschlossen werden, d. h. eine höhere
+Blendenzahl gewählt werden. Bitte beachten Sie, dass sich dadurch die
+Belichtungszeit und möglicherweise auch die Verstärkung erhöht, was zu
+einem stärkeren Rauschen im Bild führt. Die optimale Einstellung ist
+von der jeweiligen Anwendung abhängig.
+
+Warnung: Für die linke und die rechte Kamera muss die gleiche
+  Blendeneinstellung verwendet werden, um eine Verschlechterung der
+  Bildverarbeitungsleistung zu vermeiden. Vergewissern Sie sich, dass
+  das linke und das rechte Bild mit der gleichen Helligkeit angezeigt
+  werden.
+
+Nach der Einstellung von Schärfe und Blende müssen alle Schrauben
+angezogen und der Objektivschutz wieder aufgesetzt werden.
+
+Um die Fokus- und Blendeneinstellungen des Projektors zu ändern, lösen
+Sie die drei kleinen Kreuzschlitzschrauben am entsprechenden Ring des
+Projektorobjektivs, drehen den Ring auf die gewünschte Einstellung und
+ziehen die Schrauben wieder leicht an. Für die Schärfeeinstellung
+sollte der Projektor permanent eingeschaltet sein, indem der Modus
+Out1 in der Web GUI auf High gesetzt wird. Für Blendeneinstellungen
+sollte Out1 auf ExposureAlternateActive und der Belichtungsmodus auf
+der Kameraseite des Web GUI auf "Auto" eingestellt werden. Die
+perfekte Fokussierung des Projektors ist nicht entscheidend. Eine
+leicht unscharfe Projektion beeinträchtigt das Tiefenbild nicht.
+
+Kalibrierung
+
+Nach der Überprüfung und eventuellen Einstellung der Schärfe ist der
+nächste Schritt die Überprüfung der Kalibrierung. Dieser Schritt
+sollte niemals übersprungen werden und ist im Gegensatz zu allen
+rc_visard-Produkten obligatorisch. Bitte beachten Sie, dass der
+Arbeitsbereich des
+
+rc_viscore
+
+ vordefiniert ist und die Kalibrierung für den minimalen und maximalen
+Arbeitsbereich überprüft werden sollte. Bei Fragen zum Arbeitsbereich
+und zur Kalibrierung des
+
+rc_viscore
+
+ wenden Sie sich bitte an den
+
+Support
+
+.
+
+Das Handbuch des
+
+rc_cube
+
+ erklärt die Überprüfung und Neukalibrierung im Detail (siehe
+
+https://doc.rc-cube.com/latest/en/camera_calibration.html#verify-
+calibration
+
+). Das dort beschriebene Verfahren kann auf die gleiche Weise auf den
+SGM®Producer angewandt werden, indem das mit dem Producer
+mitgelieferte Programm *rc_calib* verwendet wird.
+
+Warnung: Es ist zwingend erforderlich, die Kalibrierung immer zu
+  überprüfen, nachdem der
+
+  rc_viscore
+
+   montiert, der Fokus oder die Blende verändert wurde. Nach der
+  Kalibrierung ist auch eine neue Hand-Auge-Kalibrierung erforderlich.
+
+Bemerkung: Der
+
+  rc_viscore
+
+   wird von Roboception mit voreingestelltem Fokus geliefert, um
+  sicherzustellen, dass er im gewünschten Tiefenbereich funktioniert.
+  Bitte wenden Sie sich an den
+
+  Support
+
+   und teilen Sie uns Ihre Spezifikationen mit, damit wir den
+
+  rc_viscore
+
+   entsprechend einrichten können. Eine Kalibrierungsprüfung vor Ort
+  ist dennoch erforderlich, um sicherzustellen, dass bei der Lieferung
+  oder Montage keine Probleme aufgetreten sind.

@@ -1,0 +1,36 @@
+.. include:: global_rst.glb
+
+.. raw:: latex
+
+    \newpage
+
+.. _sect-general:
+
+Overview
+========
+
+The |rc_viscore| is a high-resolution IP54-protected 3D stereo sensor with an integrated |rc_randomdot| pattern projector.
+The |rc_viscore| provides 12MP camera images and -- in combination with an |rc_cube| or the SGM\ |reg|\ producer -- 
+depth, confidence and error images. The integrated |rc_randomdot| projector
+allows for dense depth images even in weakly textured scenes and the high resolution permits the detection of small parts
+with high accuracy.
+
+In combination with the |rc_cube|, the |rc_viscore| provides the data for object detection and grasp computation
+applications, e.g. in industrial automation and logistics applications.
+
+Supplementary information is provided in
+
+* |rc_cube|: https://doc.rc-cube.com
+* |rc_randomdot|: https://doc.rc-randomdot.com
+* SGM\ |reg|\ producer: https://roboception.com/product/sgmproducer
+
+
+.. _fig-viscore:
+.. figure:: images/viscore_small.*
+   :width:  140mm
+   :align: center
+
+   The |manufacturer| |rc_viscore|
+
+The terms "sensor", "camera" and "|rc_viscore|" used throughout the manual all refer to the |manufacturer| |rc_viscore|
+stereo camera.
