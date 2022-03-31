@@ -142,7 +142,7 @@ Der
 rc_viscore
 
  ist für den industriellen Einsatz konzipiert. Die
-Umgebungsbedingungen für Lagerung, Transport und Betrieb nach in
+Umgebungsbedingungen für Lagerung, Transport und Betrieb in
 
 Tab. 4
 
@@ -235,10 +235,10 @@ eingeklipst werden. Alle Kabel müssen an der Montagehalterung
 befestigt werden.
 
 
-Warnung: Aufgrund des ohmschen Spannungsabfalls ist die maximale
-  Länge des Netzkabels auf 15 m begrenzt. Die Versorgungsspannung
-  sollte auf die angegebenen 24 V eingestellt werden und darf wegen
-  der stark schwankenden Stromaufnahme des
+Warnung: Aufgrund des Spannungsabfalls ist die maximale Länge des
+  Netzkabels auf 15 m begrenzt. Die Versorgungsspannung sollte auf die
+  angegebenen 24 V eingestellt werden und darf wegen der stark
+  schwankenden Stromaufnahme des
 
   rc_viscore
 

@@ -272,7 +272,7 @@ for strain relief. All cables must be secured to the mounting bracket.
 
    Locations of the electrical connections for the |rc_viscore|
 
-.. Warning:: Due to the resistive voltage drop, the maximum power cable length is limited to
+.. Warning:: Due to the voltage drop, the maximum power cable length is limited to
    15 m. The supply voltage should be set to the specified 24 V and must not be
    set above 26 V due to the highly variable current draw of the |rc_viscore|.
 

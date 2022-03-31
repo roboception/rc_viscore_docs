@@ -223,10 +223,10 @@ Fig. 4
 relief. All cables must be secured to the mounting bracket.
 
 
-Warning: Due to the resistive voltage drop, the maximum power cable
-  length is limited to 15 m. The supply voltage should be set to the
-  specified 24 V and must not be set above 26 V due to the highly
-  variable current draw of the
+Warning: Due to the voltage drop, the maximum power cable length is
+  limited to 15 m. The supply voltage should be set to the specified
+  24 V and must not be set above 26 V due to the highly variable
+  current draw of the
 
   rc_viscore
 
