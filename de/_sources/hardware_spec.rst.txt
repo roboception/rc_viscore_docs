@@ -68,11 +68,13 @@ schnelleren Grafikkarten möglich.
 Technische Daten des rc_viscore        rc_viscore 210m-16-12M-H1-R
 Bildauflösung  4112 x 3008 Pixel monochrom  Bildwiederholrate  9 Hz
 Brennweite  16 mm  Sichtfeld  Horizontal: 47,5°, Vertikal: 35,7°
-Tiefenbild  4112 x 3008 Pixel (Voll) @ 2,8 Hz (Nvidia RTX2070)  2056 x
-1504 Pixel (Hoch) @ 4,6 Hz (Nvidia RTX2070)  1028 x 752 Pixel (Mittel)
-@ 9 Hz (Nvidia RTX2070)  686 x 502 Pixel (Niedrig) @ 9 Hz (Nvidia
-RTX2070)  Kühlung  Passiv  Basisabstand  210 mm  Größe (B x H x L)
-262 mm x 204 mm x 82 mm  Masse  1.64 kg
+Arbeitsbereich  670 mm x 640 mm @ 1.0 m Abstand  1550 mm x 1280 mm @
+2.0 m Abstand  2430 mm x 1920 mm @ 3.0 m Abstand  3310 mm x 2560 mm @
+4.0 m Abstand  Tiefenbild  4112 x 3008 Pixel (Voll) @ 2,8 Hz (Nvidia
+RTX2070)  2056 x 1504 Pixel (Hoch) @ 4,6 Hz (Nvidia RTX2070)  1028 x
+752 Pixel (Mittel) @ 9 Hz (Nvidia RTX2070)  686 x 502 Pixel (Niedrig)
+@ 9 Hz (Nvidia RTX2070)  Kühlung  Passiv  Basisabstand  210 mm  Größe
+(B x H x L)  262 mm x 204 mm x 82 mm  Masse  1.64 kg
 
 Der Tiefenbildbereich des
 

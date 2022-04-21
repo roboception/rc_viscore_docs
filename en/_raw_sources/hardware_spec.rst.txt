@@ -68,6 +68,11 @@ faster graphics cards.
   +----------------------+---------------------------------------------------------------+
   | Field of view        | Horizontal: 47.5°, Vertical: 35.7°                            |
   +----------------------+---------------------------------------------------------------+
+  | Workspace            | | 670 mm x 640 mm @ 1.0 m distance                            |
+  |                      | | 1550 mm x 1280 mm @ 2.0 m distance                          |
+  |                      | | 2430 mm x 1920 mm @ 3.0 m distance                          |
+  |                      | | 3310 mm x 2560 mm @ 4.0 m distance                          |
+  +----------------------+---------------------------------------------------------------+
   | Depth image          | | 4112 x 3008 pixel (Full) @ 2.8 Hz (Nvidia RTX2070)          |
   |                      | | 2056 x 1504 pixel (High) @ 4.6 Hz (Nvidia RTX2070)          |
   |                      | | 1028 x 752 pixel (Medium) @ 9 Hz (Nvidia RTX2070)           |
