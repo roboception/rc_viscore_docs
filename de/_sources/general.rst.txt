@@ -1,19 +1,20 @@
 Überblick
 
-Der
+Die
 
 rc_viscore
 
- ist ein hochauflösender IP54-geschützter 3D-Stereosensor mit
-integriertem
+ stereo camera ist eine hochauflösende IP54-geschützte 3D-Stereokamera
+mit integriertem
 
 rc_randomdot
 
- Musterprojektor. Der
+ projector. Die
 
 rc_viscore
 
- liefert 12MP Kamerabilder und -- in Kombination mit einem
+ stereo camera liefert 12MP Kamerabilder und -- in Kombination mit
+einem
 
 rc_cube
 
@@ -22,36 +23,38 @@ integrierte
 
 rc_randomdot
 
- Projektor ermöglicht dichte Tiefenbilder auch in schwach texturierten
-Szenen und die hohe Auflösung erlaubt die Erkennung von Kleinteilen
-mit hoher Genauigkeit.
+ projector projiziert ein zufälliges Punktmuster und ermöglicht dichte
+Tiefenbilder auch in schwach texturierten Szenen und die hohe
+Auflösung erlaubt die Erkennung von Kleinteilen mit hoher Genauigkeit.
 
 In Kombination mit dem
 
 rc_cube
 
- liefert der
+ liefert die
 
 rc_viscore
 
- Daten für Anwendungen zur Objekterkennung und Greifpunktberechnung,
-z.B. in der industriellen Automatisierung und Logistik.
+ stereo camera Daten für Anwendungen zur Objekterkennung und
+Greifpunktberechnung, z.B. in der industriellen Automatisierung und
+Logistik.
 
 Ergänzende Informationen finden Sie unter
 
 rc_cube: https://doc.rc-cube.com
 
-rc_randomdot: https://doc.rc-randomdot.com
+rc_randomdot projector: https://doc.rc-randomdot.com
 
 SGM®Producer: https://roboception.com/product/sgmproducer
 
 
-Die in diesem Handbuch verwendeten Begriffe "Sensor", "Kamera" und "
+Die in diesem Handbuch verwendeten Begriffe "Stereokamera", "Kamera"
+und "
 
 rc_viscore
 
-" beziehen sich alle auf die
+ stereo camera" beziehen sich alle auf die
 
 rc_viscore
 
- Stereokamera von Roboception.
+ stereo camera von Roboception.

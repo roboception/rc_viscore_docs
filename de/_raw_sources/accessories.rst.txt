@@ -11,20 +11,42 @@ Power connections
 .. index::
    single: power cable
 
-The |rc_viscore| contains an 8-pin A-coded M12 plug connector for power and GPIO connectivity
+The |rc_viscore_camera| contains an 8-pin A-coded M12 plug connector for power and GPIO connectivity
 to the robot controller. Various cabling solutions can be obtained from third party vendors, however, the M12 connector on the
-|rc_viscore| side must be angled.
+|rc_viscore_camera| side must be angled.
 One possibility for an angled M12 to open ended cable is provided below. Customers are required to provide
 power and GPIO connections to the cables according to the pinouts described
-in :ref:`sect-wiring`:latex:`\:(Section \ref{hardware_spec:sect-wiring})`. The |rc_viscore|'s housing must be connected to ground.
+in :ref:`sect-wiring`:latex:`\:(Section \ref{hardware_spec:sect-wiring})`. The |rc_viscore_camera|'s housing must be connected to ground.
 
-**Sensor/Actor cable M12 socket to open end for power and GPIO connection**
+.. only:: roboception or schunk or basler
 
-- Angled M12 socket connector to open end, shielded 10m length: Phoenix Contact SAC-8P-10,0-PUR/M12FR SH, Art.Nr.: 1522943
+   **Sensor/Actor cable M12 socket to open end for power and GPIO connection**
 
-**Network cable M12 X-coded to RJ45**
+   - Angled M12 socket connector to open end, shielded 10m length: Phoenix Contact SAC-8P-10,0-PUR/M12FR SH, Art.Nr.: 1522943
 
-- Straight M12 X-coded to RJ45 CAT6A cable, 10m length, 2 required per |rc_viscore|: Phoenix Contact NBC-M12MSX/10,0-94F/R4AC, Art.Nr.: 1407474
+   **Network cable M12 X-coded to RJ45**
+
+   - Straight M12 X-coded to RJ45 CAT6A cable, 10m length, 2 required per |rc_viscore_camera|: Phoenix Contact NBC-M12MSX/10,0-94F/R4AC, Art.Nr.: 1407474
+
+.. only:: matrixvision
+
+   |company| provides cables with different lengths.
+   
+   **Cables with M12 socket to open end for power and GPIO connection**
+
+   - 2 m: BCC0997
+   - 5 m: BCC0998
+   - 10 m: BCC0999
+   - 20 m: BCC09HK
+
+   **Network cable M12 X-coded to RJ45**
+
+   - 2 m: BCC0HZK
+   - 5 m: BCC0HZL
+   - 10 m: BCC0HZM
+   - 15 m: BCC0JAW
+   - 20 m: BCC0JAE
+   - 30 m: BCC0JAF
 
 Power supplies
 --------------
@@ -32,17 +54,23 @@ Power supplies
 .. index::
    single: power supply
 
-The |rc_viscore| is classified as EN-55011 Class B device and is
-immune to light industrial and industrial environments. For connecting the sensor
+The |rc_viscore_camera| is classified as EN-55011 Class B device and is
+immune to light industrial and industrial environments. For connecting the camera
 to residential grid power, a power supply under EN 55011/55022 Class B has to be used.
 
-It is the customer's responsibility to obtain and install a suitable power supply
-for permanent use in industrial environments.
-One example that satisfies both EN 61000-6-2 and EN 55011/55022 Class B is the DIN-Rail
-mounted PULS MiniLine ML70.100 24V/DC 3 A by PULS GmbH (http://www.pulspower.com).
-A certified electrician must perform installation.
+.. only:: roboception or schunk or basler
 
-Only one |rc_viscore| shall be connected to a power supply
+   It is the customer's responsibility to obtain and install a suitable power supply
+   for permanent use in industrial environments.
+   One example that satisfies both EN 61000-6-2 and EN 55011/55022 Class B is the DIN-Rail
+   mounted PULS MiniLine ML70.100 24V/DC 3 A by PULS GmbH (http://www.pulspower.com).
+   A certified electrician must perform installation.
+
+.. only:: matrixvision
+
+   You can obtain suitable DIN-Rail power supplies from |company|, e.g. BAE0112.
+
+Only one |rc_viscore_camera| shall be connected to a power supply
 at any time, and the total length of cables must be less than 15 m.
 
 Spare parts
@@ -52,18 +80,20 @@ Spare parts
    single: spare parts
 
 |manufacturer| can provide calibration grids, power cables and network cables
-as spare parts for |rc_viscore| upon request.
+as spare parts for |rc_viscore_camera| upon request.
 
-SGM\ |reg|\ Producer and rc_cube
---------------------------------
+SGM\ |reg|\ Producer :mvexclude:`and rc_cube`
+---------------------------------------------
 
-The |rc_viscore| provides 12MP camera images and -- in combination with an
-|rc_cube| or the SGM\ |reg|\ Producer -- depth, confidence and error images.
-The integrated |rc_randomdot| projector allows for dense depth images even in
+The |rc_viscore_camera| provides 12MP camera images and -- in combination with :mvexclude:`an
+|rc_cube| or` the SGM\ |reg|\ Producer -- depth, confidence and error images.
+The integrated |rc_randomdot_projector| allows for dense depth images even in
 weakly textured scenes and the high resolution permits the detection of small
 parts with high accuracy. The SGM\ |reg|\ Producer can be downloaded from
-http://www.roboception.com/download.
+:mvexclude:`http://www.roboception.com/download` :mvonly:`https://www.matrix-vision.com`.
 
-In combination with the |rc_cube|, the |rc_viscore| provides the data for
-object detection and grasp computation applications, e.g. in industrial
-automation and logistics applications.
+.. only:: roboception or schunk or basler
+
+   In combination with the |rc_cube|, the |rc_viscore_camera| provides the data for
+   object detection and grasp computation applications, e.g. in industrial
+   automation and logistics applications.

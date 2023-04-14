@@ -12,12 +12,12 @@ Warranty
 Any changes or modifications to the hard- and software not expressly approved by
 |manufacturer| could void the user's warranty and guarantee rights.
 
-.. Warning:: The |rc_viscore| utilizes complex hardware technology
+.. Warning:: The |rc_viscore_camera| utilizes complex hardware technology
    that may behave in a way not intended by the user. The purchaser must design its
-   application to ensure that any failure of the |rc_viscore| does not cause
+   application to ensure that any failure of the |rc_viscore_camera| does not cause
    personal injury, property damage, or other losses.
 
-.. Warning:: Do not attempt to take apart, open, service, or modify the |rc_viscore|.
+.. Warning:: Do not attempt to take apart, open, service, or modify the |rc_viscore_camera|.
    Doing so could present the risk of electric shock or other hazard. Any evidence of any
    attempt to open and/or modify the device, including any peeling, puncturing, or
    removal of any of the labels, will void the Limited Warranty.

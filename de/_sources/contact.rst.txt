@@ -4,7 +4,7 @@ Support
 
 Support-Anfragen können Sie uns entweder über die Seite
 
-http://www.roboception.com/support
+https://www.roboception.com/support
 
  oder per E-Mail an
 
@@ -20,7 +20,7 @@ Adresse
    Deutschland
 
    Web: 
-   http://www.roboception.com
+   https://www.roboception.com
 
 
    E-Mail: 

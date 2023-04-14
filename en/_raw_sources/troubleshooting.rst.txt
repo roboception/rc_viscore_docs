@@ -13,13 +13,13 @@ Hardware issues
 
 **LED does not illuminate**
 
-The |rc_viscore| does not start up.
+The |rc_viscore_camera| does not start up.
 
 - Ensure that cables are connected and secured properly.
 - Ensure that adequate DC voltage (24 V) with correct polarity is applied to the
   power connector at the pins labeled as **Power** and **Ground** as described in
   the device's :ref:`pin assignment specification<tab-power-pin-assignments>`:latex:`\:(Section \ref{hardware_spec:tab-power-pin-assignments})`.
-  Connecting the sensor to voltage outside of the specified range, to alternating current,
+  Connecting the camera to voltage outside of the specified range, to alternating current,
   with reversed polarity, or to a supply with voltage spikes will lead to permanent hardware damage.
 
 **Reliability issues and/or mechanical damage**
@@ -27,11 +27,11 @@ The |rc_viscore| does not start up.
 This may be an indication of ambient conditions (vibration, shock, resonance, and temperature) being outside
 of specified range. Please refer to the :ref:`specification of environmental conditions<tab-hardware-environment>`:latex:`\ (Section \ref{hardware_spec:tab-hardware-environment})`.
 
-- Operating the |rc_viscore| outside of specified ambient conditions might lead to damage and will void the warranty.
+- Operating the |rc_viscore_camera| outside of specified ambient conditions might lead to damage and will void the warranty.
 
 **Electrical shock when touching the projector**
 
-This indicates an electrical fault in sensor, cabling, or power supply or adjacent system.
+This indicates an electrical fault in camera, cabling, or power supply or adjacent system.
 
 - Immediately turn off power to the system, disconnect cables, and have a qualified electrician check the setup.
 - Ensure that the projector housing is properly grounded; check for large ground loops.
@@ -39,24 +39,24 @@ This indicates an electrical fault in sensor, cabling, or power supply or adjace
 Sparse depth images
 -------------------
 
-The depth images of the |rc_viscore|, which can be seen on the depth image page in
-the |rc_cube|'s |webgui| or by using the SGM\ |reg|\ Producer, may have
+The depth images of the |rc_viscore_camera|, which can be seen :mvexclude:`on the depth image page in
+the |rc_cube|'s |webgui| or` by using the SGM\ |reg|\ Producer, may have
 missing values, which are shown in black. Missing values near object borders are normal.
 If major parts of the depth image are invalid, then this may be due to the following
 reasons:
 
-- The scene may be out of the current working range of the |rc_viscore|. Depending on the depth
-  quality, reducing the parameter *Maximum Distance* also reduces the possible minimum distance. In the
+- The scene may be out of the current working range of the |rc_viscore_camera|. Depending on the depth
+  quality, reducing the parameter *Maximum Distance* also reduces the possible minimum distance. :mvexclude:`In the
   |webgui| of the |rc_cube|, the used depth range is given on the depth image page below the
-  images. Sliders on the depth image page permit to change the depth range. See also
+  images. Sliders on the depth image page permit to change the depth range.` See also
   :numref:`tab-common-depth-ranges` for examples of possible depth ranges.
 - Depth values may be missing on objects without texture. In this case, the internal random
   dot projector should be used for projecting an artificial texture. For single shot
-  depth images, the `Single+Out1` mode should be selected on the depth image page of the
-  |rc_cube|'s |webgui|. For continuously computing depth images, the projector should be turned
+  depth images, the `Single+Out1` mode should be selected :mvexclude:`on the depth image page of the
+  |rc_cube|'s |webgui|` :mvonly:`as DepthAcquisitionMode in the category DepthControl`. For continuously computing depth images, the projector should be turned
   on for every second image by setting `Out1` to `ExposureAlternateActive` in
-  :menuselection:`Pipeline X --> Configuration --> IOControl`.
+  :mvexclude:`:menuselection:`Pipeline X --> Configuration --> IOControl`` :mvonly:`the category DigitalIOControl`.
 - The focus may be inadequate for the working range. Please check the focus using a calibration
   grid as described in :ref:`sect-adjust-focus`:latex:`\:(Section \ref{installation:sect-adjust-focus})`.
-- The calibration of the |rc_viscore| may be inaccurate. Please check the calibration as described
+- The calibration of the |rc_viscore_camera| may be inaccurate. Please check the calibration as described
   in :ref:`sect-calibration`:latex:`\:(Section \ref{installation:sect-calibration})`.

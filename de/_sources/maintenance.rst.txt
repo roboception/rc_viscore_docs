@@ -2,14 +2,14 @@ Wartung
 
 Warnung: Die einzigen vom Kunden abnehmbaren Teile ist der
   Objektivschutz der Kameras und des Projektors. Ein Öffnen des
-  Gehäuses des
+  Gehäuses der
 
   rc_viscore
 
-   zur Durchführung von Wartungsarbeiten beim Kunden ist nicht
-  vorgesehen. Unbefugtes Öffnen des Gehäuses führt zum Erlöschen der
-  Garantie. Für alle Wartungsarbeiten außer der Einstellung von Fokus
-  und Blende muss das Produkt ausgeschaltet werden.
+   stereo camera zur Durchführung von Wartungsarbeiten beim Kunden ist
+  nicht vorgesehen. Unbefugtes Öffnen des Gehäuses führt zum Erlöschen
+  der Garantie. Für alle Wartungsarbeiten außer der Einstellung von
+  Fokus und Blende muss das Produkt ausgeschaltet werden.
 
 Zur Handhabung der optischen Komponenten wird das Tragen von
 Handschuhen dringend empfohlen. Der Objektivschutz kann durch

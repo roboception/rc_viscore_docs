@@ -85,7 +85,7 @@ is made, the manual will also be revised; see revision information.
    | D-22926 Ahrensburg
    | Germany
    |
-   | Web: http://www.baslerweb.com
+   | Web: https://www.baslerweb.com
    | Email: info@baslerweb.com
    | Phone: +49 4102 463 0
    |

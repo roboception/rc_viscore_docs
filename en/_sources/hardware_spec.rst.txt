@@ -5,17 +5,17 @@ Note: The following hardware specifications are provided here as a
 
 Scope of delivery
 
-Standard delivery for an
+Standard delivery for the
 
 rc_viscore
 
- includes
+ stereo camera includes
 
-   rc_viscore sensor,
+   rc_viscore stereo camera,
 
    Calibration grid large (A3),
 
-   2 x 10 m gigabit ethernet network cables,
+   2 x 10 m gigabit Ethernet network cables,
 
    10 m power cable with M12 connector and one open end,
 
@@ -23,7 +23,7 @@ rc_viscore
 
 The full manual is online available in digital form at
 
-http://doc.rc-viscore.com
+https://doc.rc-viscore.com
 
 .
 
@@ -38,13 +38,13 @@ Note: The following items are not included in the delivery unless
 
   Accessories
 
-   for suggested third-party cable vendors.
+   for suggested cables.
 
 The following picture shows the important parts of the
 
 rc_viscore
 
- which are referenced later in the documentation.
+ stereo camera which are referenced later in the documentation.
 
 
 Technical specification
@@ -53,7 +53,7 @@ The technical specification of the
 
 rc_viscore
 
- is shown in
+ stereo camera is shown in
 
 Table 1
 
@@ -65,25 +65,26 @@ rc_cube
 Higher frame rates (up to 9 Hz) are possible with faster graphics
 cards.
 
-Technical specifications of the rc_viscore        rc_viscore
-210m-16-12M-H1-R  Image resolution  4112 x 3008 pixels monochrome
-Framerate  9 Hz  Focal length  16 mm  Field of view  Horizontal:
-47.5°, Vertical: 35.7°  Workspace  670 mm x 640 mm @ 1.0 m distance
-1550 mm x 1280 mm @ 2.0 m distance  2430 mm x 1920 mm @ 3.0 m distance
-3310 mm x 2560 mm @ 4.0 m distance  Depth image  4112 x 3008 pixel
-(Full) @ 2.8 Hz (Nvidia RTX2070)  2056 x 1504 pixel (High) @ 4.6 Hz
-(Nvidia RTX2070)  1028 x 752 pixel (Medium) @ 9 Hz (Nvidia RTX2070)
-686 x 502 pixel (Low) @ 9 Hz (Nvidia RTX2070)  Cooling  Passive
-Baseline  210 mm  Size (W x H x L)  262 mm x 204 mm x 82 mm  Mass
-1.64 kg
+Technical specifications of the rc_viscore stereo camera
+rc_viscore stereo camera  Image resolution  4112 x 3008 pixels
+monochrome  Framerate  9 Hz  Focal length  16 mm  Field of view
+Horizontal: 47.5°, Vertical: 35.7°  Workspace  670 mm x 640 mm @ 1.0 m
+distance  1550 mm x 1280 mm @ 2.0 m distance  2430 mm x 1920 mm @ 3.0
+m distance  3310 mm x 2560 mm @ 4.0 m distance  Depth image  4112 x
+3008 pixel (Full) @ 2.8 Hz (Nvidia RTX2070)  2056 x 1504 pixel (High)
+@ 4.6 Hz (Nvidia RTX2070)  1028 x 752 pixel (Medium) @ 9 Hz (Nvidia
+RTX2070)  686 x 502 pixel (Low) @ 9 Hz (Nvidia RTX2070)  Cooling
+Passive  Baseline  210 mm  Size (W x H x L)  262 mm x 204 mm x 82 mm
+Mass  1.64 kg
 
 The depth image range of the
 
 rc_viscore
 
- depends on the depth image quality, the specified maximum depth range
-and the available GPU memory. Depth ranges at closer distance are much
-smaller than depth ranges at far distances. The
+ stereo camera depends on the depth image quality, the specified
+maximum depth range and the available GPU memory. Depth ranges at
+closer distance are much smaller than depth ranges at far distances.
+The
 
 rc_cube
 
@@ -91,16 +92,16 @@ rc_cube
 
 Table 2
 
- shows examples of resulting depth ranges with this amount of GPU
+ shows examples of resulting depth ranges with 3.4 Gbytes of GPU
 memory. Larger depth ranges are possible by using the SGM®producer
 with a graphics card that offers more GPU memory.
 
-Examples of possible depth ranges of the rc_viscore with 3.4 Gbytes of
-GPU memory as in case of the rc_cube        rc_viscore
-210m-16-12M-H1-R  Full depth quality  0.89 m to 1.00 m  1.60 m to 2.00
-m  2.18 m to 3.00 m  2.65 m to 4.00 m  High depth quality  0.52 m to
-1.00 m  0.66 m to 2.00 m  0.75 m to 3.00 m  0.80 m to 4.00 m  1.00 m
-to infinity  Medium and low depth quality  0.52 m to infinity
+Examples of possible depth ranges of the rc_viscore stereo camera with
+3.4 Gbytes of GPU memory as in case of the rc_cube        rc_viscore
+stereo camera  Full depth quality  0.89 m to 1.00 m  1.60 m to 2.00 m
+2.18 m to 3.00 m  2.65 m to 4.00 m  High depth quality  0.52 m to 1.00
+m  0.66 m to 2.00 m  0.75 m to 3.00 m  0.80 m to 4.00 m  1.00 m to
+infinity  Medium and low depth quality  0.52 m to infinity
 
 The resolution and accuracy at different distances is given in
 
@@ -111,22 +112,22 @@ resolution and accuracy will be better by a factor of 2. Similarly, in
 medium quality, the resolution and accuracy will be about 2 times
 worse than shown in the table.
 
-Resolution and accuracy of the rc_viscore in millimeters with high
-quality stereo matching and random dot projection on non-reflective
-and non-transparent objects.          distance  rc_viscore  Lateral
-resolution  1.0 m  2.0 m  3.0 m  4.0 m  0.4 mm  0.9 mm  1.3 mm  1.7 mm
-Depth resolution  1.0 m  2.0 m  3.0 m  4.0 m  0.1 mm  0.5 mm  1.2 mm
-2.0 mm  Average depth accuracy  1.0 m  2.0 m  3.0 m  4.0 m  0.5 mm
-2.0 mm  4.6 mm  8.2 mm
+Resolution and accuracy of the rc_viscore stereo camera in millimeters
+with high quality stereo matching and random dot projection on non-
+reflective and non-transparent objects.          distance  rc_viscore
+stereo camera  Lateral resolution  1.0 m  2.0 m  3.0 m  4.0 m  0.4 mm
+0.9 mm  1.3 mm  1.7 mm  Depth resolution  1.0 m  2.0 m  3.0 m  4.0 m
+0.1 mm  0.5 mm  1.2 mm  2.0 mm  Average depth accuracy  1.0 m  2.0 m
+3.0 m  4.0 m  0.5 mm  2.0 mm  4.6 mm  8.2 mm
 
 
 CAD models of the
 
 rc_viscore
 
- can be downloaded from
+ stereo camera can be downloaded from
 
-http://www.roboception.com/download
+https://www.roboception.com/download
 
 . The CAD models are provided as-is, with no guarantee of correctness.
 
@@ -136,37 +137,38 @@ The
 
 rc_viscore
 
- is designed for industrial applications. Always respect the storage,
-transport, and operating environmental conditions outlined in
+ stereo camera is designed for industrial applications. Always respect
+the storage, transport, and operating environmental conditions
+outlined in
 
 Table 4
 
 .
 
-Environmental conditions        rc_viscore  Storage/Transport
-temperature  -20 °C to 60 °C  Operating temperature  0 °C to 45 °C
-(passive cooling)  Relative humidity (non condensing)  20 % to 80 %
-Protection class  IP54  Others  Free from corrosive liquids or gases
-Free from explosive liquids or gases  Free from powerful
-electromagnetic interference
+Environmental conditions        rc_viscore stereo camera
+Storage/Transport temperature  -20 °C to 60 °C  Operating temperature
+0 °C to 45 °C (passive cooling)  Relative humidity (non condensing)
+20 % to 80 %  Protection class  IP54  Others  Free from corrosive
+liquids or gases  Free from explosive liquids or gases  Free from
+powerful electromagnetic interference
 
 The
 
 rc_viscore
 
- is designed for an operating temperature (surrounding environment) of
-0 °C to 45 °C and relies on convective (passive) cooling. Unobstructed
-airflow, especially around the cooling fins, needs to be ensured
-during use. The
+ stereo camera is designed for an operating temperature (surrounding
+environment) of 0 °C to 45 °C and relies on convective (passive)
+cooling. Unobstructed airflow, especially around the cooling fins,
+needs to be ensured during use. The
 
 rc_viscore
 
- should only be mounted using the provided mechanical mounting
-interface, and all parts of the housing must remain uncovered. A free
-space of at least 10 cm extending in all directions from the housing,
-and sufficient air exchange with the environment is required to ensure
-adequate cooling. Cooling fins must be free of dirt and other
-contamination.
+ stereo camera should only be mounted using the provided mechanical
+mounting interface, and all parts of the housing must remain
+uncovered. A free space of at least 10 cm extending in all directions
+from the housing, and sufficient air exchange with the environment is
+required to ensure adequate cooling. Cooling fins must be free of dirt
+and other contamination.
 
 Power-supply specifications
 
@@ -174,17 +176,14 @@ The
 
 rc_viscore
 
- needs to be supplied by a DC voltage source. The
+ stereo camera needs to be supplied by a DC voltage source. The
+camera's standard package does not include a DC power supply. Each
 
 rc_viscore
 
-'s standard package does not include a DC power supply. Each
-
-rc_viscore
-
- must be connected to a separate power supply. Connection to domestic
-grid power is only allowed through a power supply certified as EN55011
-Class B.
+ stereo camera must be connected to a separate power supply.
+Connection to domestic grid power is only allowed through a power
+supply certified as EN55011 Class B.
 
 Absolute maximum ratings for power supply            Min  Nominal  Max
 Supply voltage  22.0 V  24 V  26.0 V  Max power consumption      48 W
@@ -197,13 +196,13 @@ Warning: Exceeding maximum power rating values may lead to damage of
 
   rc_viscore
 
-  , power supply, and connected equipment.
+   stereo camera, power supply, and connected equipment.
 
 Warning: A separate power supply must power each
 
   rc_viscore
 
-  .
+   stereo camera.
 
 Warning: Connection to domestic grid power is allowed through a
   power supply certified as EN55011 Class B only.
@@ -214,11 +213,11 @@ The
 
 rc_viscore
 
- is delivered with a sync cable already connected between projector
-and cameras. It is the customer’s responsibility to connect the two
-provided M12 X-coded network cables to the left and right camera, as
-well as the power cable with an angled M12 connector to the projector
-(see
+ stereo camera is delivered with a sync cable already connected
+between projector and cameras. It is the customer’s responsibility to
+connect the two provided M12 X-coded network cables to the left and
+right camera, as well as the power cable with an angled M12 connector
+to the projector (see
 
 Fig. 4
 
@@ -233,25 +232,22 @@ Warning: Due to the voltage drop, the maximum power cable length is
 
   rc_viscore
 
-  .
+   stereo camera.
 
 Warning: Proper cable management is mandatory. Cabling must always
   be secured to the
 
   rc_viscore
 
-   mount with a strain-relief clamp so that no forces due to cable
-  movements are exerted on the
+   stereo camera mount with a strain-relief clamp so that no forces
+  due to cable movements are exerted on the
 
   rc_viscore
 
-  's M12 connectors. Enough slack needs to be provided to allow for
-  full range of movement of the
-
-  rc_viscore
-
-   without straining the cable. The cable's minimum bend radius (i.e.
-  R_{min} = 15 d) needs to be observed.
+   stereo camera's M12 connectors. Enough slack needs to be provided
+  to allow for full range of movement of the camera without straining
+  the cable. The cable's minimum bend radius (i.e. R_{min} = 15 d)
+  needs to be observed.
 
 Pin assignments for the power connector are given in
 
@@ -261,9 +257,12 @@ Table 6
 
 Pin assignments for the power connector          Pin  Cable Color
 Designation  Details  1  White  nc    2  Brown  Power +24 V  2 A @ 24
-V  3  Green  nc    4  Yellow  nc    5  Grey  GPIO Vcc  5-24 V, 50 mA
-max.  6  Pink  GPIO Out 1  Projector exposure signal  7  Blue  Power
-GND    8  Red  GPIO Out 2
+V  3  Green  GPIO In 1  12-24 V, 15 mA max.  4  Yellow  GPIO GND    5
+Grey  GPIO Vcc  5-24 V, 50 mA max.  6  Pink  GPIO Out 1  Projector
+exposure signal  7  Blue  Power GND    8  Red  GPIO Out 2
+
+Note: Please note that in hardware revisions prior to 1.1 the pins
+  number 3 and 4 were not connected.
 
 GPIOs are decoupled by photocouplers.
 
@@ -284,16 +283,16 @@ The
 
 rc_viscore
 
-'s coordinate-frame origin is defined as the exit pupil of the left
-camera lens. This frame is called sensor coordinate frame or camera
-coordinate frame. It is shown in
+ stereo camera's coordinate-frame origin is defined as the exit pupil
+of the left camera lens. This frame is called camera coordinate frame.
+It is shown in
 
 Fig. 6
 
 .
 
 
-Note: The correct offset between the sensor/camera frame and a robot
+Note: The correct offset between the camera frame and a robot
   coordinate frame can be calibrated through hand-eye calibration. See
 
   https://doc.rc-cube.com/latest/en/handeye_calibration.html

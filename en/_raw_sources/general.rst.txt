@@ -9,28 +9,33 @@
 Overview
 ========
 
-The |rc_viscore| is a high-resolution IP54-protected 3D stereo sensor with an integrated |rc_randomdot| pattern projector.
-The |rc_viscore| provides 12MP camera images and -- in combination with an |rc_cube| or the SGM\ |reg|\ producer -- 
-depth, confidence and error images. The integrated |rc_randomdot| projector
+The |rc_viscore_camera| is a high-resolution IP54-protected 3D stereo camera with an integrated |rc_randomdot_projector|.
+The |rc_viscore_camera| provides 12MP camera images and -- in combination with :mvexclude:`an |rc_cube| or` the SGM\ |reg|\ producer -- 
+depth, confidence and error images. The integrated |rc_randomdot_projector| projects a random dot pattern and
 allows for dense depth images even in weakly textured scenes and the high resolution permits the detection of small parts
 with high accuracy.
 
-In combination with the |rc_cube|, the |rc_viscore| provides the data for object detection and grasp computation
-applications, e.g. in industrial automation and logistics applications.
+.. only:: roboception or schunk or basler
 
-Supplementary information is provided in
+   In combination with the |rc_cube|, the |rc_viscore_camera| provides the data for object detection and grasp computation
+   applications, e.g. in industrial automation and logistics applications.
+   
+   Supplementary information is provided in
+   
+   * |rc_cube|: https://doc.rc-cube.com
+   * |rc_randomdot_projector|: https://doc.rc-randomdot.com
+   * SGM\ |reg|\ producer: https://roboception.com/product/sgmproducer
 
-* |rc_cube|: https://doc.rc-cube.com
-* |rc_randomdot|: https://doc.rc-randomdot.com
-* SGM\ |reg|\ producer: https://roboception.com/product/sgmproducer
-
+.. only:: matrixvision
+    
+    Supplementary information is provided on the corresponding product page on https://www.matrix-vision.com.
 
 .. _fig-viscore:
 .. figure:: images/viscore_small.*
    :width:  140mm
    :align: center
 
-   The |manufacturer| |rc_viscore|
+   The |manufacturer| |rc_viscore_camera|
 
-The terms "sensor", "camera" and "|rc_viscore|" used throughout the manual all refer to the |manufacturer| |rc_viscore|
+The terms "stereo camera", "camera" and "|rc_viscore_camera|" used throughout the manual all refer to the |manufacturer| |rc_viscore_camera|
 stereo camera.

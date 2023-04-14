@@ -1,17 +1,17 @@
 Sicherheit
 
-Warnung: Vor Inbetriebnahme des
+Warnung: Vor Inbetriebnahme der
 
   rc_viscore
 
-   muss der Bediener alle Anweisungen in diesem Handbuch gelesen und
-  verstanden haben.
+   stereo camera muss der Bediener alle Anweisungen in diesem Handbuch
+  gelesen und verstanden haben.
 
-Warnung: Bei Betrieb des
+Warnung: Bei Betrieb der
 
   rc_viscore
 
-   mit dem
+   stereo camera mit dem
 
   rc_cube
 
@@ -24,11 +24,11 @@ Warnung: Bei Betrieb des
 
 Bemerkung: Der Begriff "Bediener" bezieht sich auf jeden, der für
   eine der folgenden Aufgaben verantwortlich ist, die in Verbindung
-  mit dem
+  mit der
 
   rc_viscore
 
-   ausgeführt werden:
+   stereo camera ausgeführt werden:
 
      Installation
 
@@ -42,121 +42,124 @@ Bemerkung: Der Begriff "Bediener" bezieht sich auf jeden, der für
 
      Außerbetriebnahme
 
-Dieses Handbuch erklärt die verschiedenen Komponenten des
+Dieses Handbuch erklärt die verschiedenen Komponenten der
 
 rc_viscore
 
- und die allgemeine Bedienung über den gesamten Lebenszyklus des
-Produkts, von der Installation über den Betrieb bis zur
-Außerbetriebnahme.
+ stereo camera und die allgemeine Bedienung über den gesamten
+Lebenszyklus des Produkts, von der Installation über den Betrieb bis
+zur Außerbetriebnahme.
 
 Die Zeichnungen und Fotos in dieser Dokumentation sind repräsentative
 Beispiele; es können Unterschiede zum gelieferten Produkt bestehen.
 
 Allgemeine Sicherheitshinweise
 
-Bemerkung: Eine Verwendung des
+Bemerkung: Eine Verwendung der
 
   rc_viscore
 
-   unter Nichtbeachtung dieser Warnhinweise ist nicht bestimmungsgemäß
-  und kann zu Verletzungen oder Schäden führen sowie die
-  Gewährleistung erlöschen lassen.
+   stereo camera unter Nichtbeachtung dieser Warnhinweise ist nicht
+  bestimmungsgemäß und kann zu Verletzungen oder Schäden führen sowie
+  die Gewährleistung erlöschen lassen.
 
 Warnung:
 
-  Der rc_viscore ist nach IP54 geschützt. Hohe Luftfeuchtigkeit oder
-  Temperatur können das Gerät beschädigen. Er darf nicht in einer
-  Umgebung benutzt werden, in der brennbare oder explosive Dämpfe
-  auftreten können.
+  Die rc_viscore stereo camera ist nach IP54 geschützt. Hohe
+  Luftfeuchtigkeit oder Temperatur können das Gerät beschädigen. Es
+  darf nicht in einer Umgebung benutzt werden, in der brennbare oder
+  explosive Dämpfe auftreten können.
 
-  Der rc_viscore muss vor der Verwendung ordnungsgemäß befestigt
-  werden.
+  Die rc_viscore stereo camera muss vor der Verwendung ordnungsgemäß
+  befestigt werden.
 
-  Alle Kabelsätze müssen am rc_viscore und an der Halterung befestigt
-  werden.
+  Alle Kabelsätze müssen an der rc_viscore stereo camera und an der
+  Halterung befestigt werden.
 
   Die Länge der verwendeten Kabel darf 30 Meter nicht überschreiten.
   Das 8-polige Stromkabel darf nicht länger sein als 15 Meter.
 
-  Zur Spannungsversorgung des rc_viscore muss eine geeignete, separate
-  Gleichspannungsquelle verwendet werden.
+  Zur Spannungsversorgung der rc_viscore stereo camera muss eine
+  geeignete, separate Gleichspannungsquelle verwendet werden.
 
-  Zur Spannungsversorgung des rc_viscore muss ein geeignetes Netzteil
-  verwendet werden, das der Norm EN 62368-1 entspricht.
+  Zur Spannungsversorgung der rc_viscore stereo camera muss ein
+  geeignetes Netzteil verwendet werden, das der Norm EN 62368-1
+  entspricht.
 
   Prüfen Sie die Polarität und die Anschlüsse.
 
-  Das Gehäuse des rc_viscore muss geerdet sein.
+  Das Gehäuse der rc_viscore stereo camera muss geerdet sein.
 
 Warnung:
 
-  Die Sicherheitsrichtlinien des rc_viscore und der zugehörigen Geräte
-  müssen immer eingehalten werden.
+  Die Sicherheitsrichtlinien der rc_viscore stereo camera und der
+  zugehörigen Geräte müssen immer eingehalten werden.
 
-  Der rc_viscore fällt nicht in den Geltungsbereich der Maschinen-
-  oder Medizinrichtlinien.
+  Die rc_viscore stereo camera fällt nicht in den Geltungsbereich der
+  Maschinen- oder Medizinrichtlinien.
 
--[ Risikobewertung und endgültige Anwendung: Der
+-[ Risikobewertung und endgültige Anwendung: Die
 
 rc_viscore
 
- darf mit einem Roboter zusammen mit einem
+ stereo camera darf mit einem Roboter zusammen mit einem
 
 rc_cube
 
  verwendet werden. Roboter,
 
-rc_viscore
+rc_cube
 
 ,
 
-rc_cube
+rc_viscore
 
- und alle anderen Geräte, die in der endgültigen Anwendung verwendet
-werden, müssen mit einer Risikobeurteilung bewertet werden. Es ist die
-Pflicht des Systemintegrators, die Einhaltung aller lokalen
-Sicherheitsmaßnahmen und Vorschriften zu gewährleisten. Je nach
-Anwendung kann es Risiken geben, die zusätzliche
-Schutz-/Sicherheitsmaßnahmen erfordern. ]-
+ stereo camera und alle anderen Geräte, die in der endgültigen
+Anwendung verwendet werden, müssen mit einer Risikobeurteilung
+bewertet werden. Es ist die Pflicht des Systemintegrators, die
+Einhaltung aller lokalen Sicherheitsmaßnahmen und Vorschriften zu
+gewährleisten. Je nach Anwendung kann es Risiken geben, die
+zusätzliche Schutz-/Sicherheitsmaßnahmen erfordern. ]-
 
 Verwendungszweck
 
-Der
+Die
 
 rc_viscore
 
- ist für die Verwendung in Kombination mit einem Roboception
+ stereo camera ist für die Verwendung in Kombination mit einem
+Roboception
 
 rc_cube
 
- oder dem SGM®Producer bestimmt. Der
+ oder dem SGM®Producer bestimmt. Die
 
 rc_viscore
 
- zusammen mit einem Roboception
+ stereo camera zusammen mit einem Roboception
 
 rc_cube
 
- sind für die Installation an einer automatisierten Maschine, einer
-mobilen Plattform oder einer stationären Anlage vorgesehen. Sie können
-auch zur Datenerfassung in anderen Anwendungen eingesetzt werden.
+ sind  für die Installation an einer automatisierten Maschine, einer
+mobilen Plattform oder einer stationären Anlage vorgesehen. Sie
+können auch zur Datenerfassung in anderen Anwendungen eingesetzt
+werden.
 
-Warnung: Der
+Warnung: Die
 
   rc_viscore
 
-   ist
+   stereo camera ist
 
   NICHT
 
    für sicherheitskritische Anwendungen vorgesehen.
 
-Warnung: Der
+Warnung: Die
 
   rc_viscore
 
-   darf
+   stereo camera darf
 
   NICHT
 
@@ -166,14 +169,14 @@ Warnung: Der
 
    am Endeffektor eines Roboters befestigt werden.
 
-Der
+Die
 
 rc_viscore
 
- darf nur im Rahmen seiner technischen Spezifikation verwendet werden.
-Jede andere Verwendung des Produkts gilt als nicht bestimmungsgemäß.
-Roboception haftet nicht für Schäden, die aus nicht bestimmungsgemäßer
-Verwendung resultieren.
+ stereo camera darf nur im Rahmen ihrer technischen Spezifikation
+verwendet werden. Jede andere Verwendung des Produkts gilt als nicht
+bestimmungsgemäß. Roboception haftet nicht für Schäden, die aus nicht
+bestimmungsgemäßer Verwendung resultieren.
 
 Warnung: Die lokalen und/oder nationalen Gesetze, Vorschriften und
   Richtlinien zu Automationssicherheit und allgemeiner

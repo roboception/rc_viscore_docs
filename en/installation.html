@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Installation &mdash; rc_viscore 1.0 documentation</title>
+  <title>Installation &mdash; rc_viscore 1.1 documentation</title>
   
 
   
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="rc_viscore 1.0 documentation" href="index.html"/>
+    <link rel="top" title="rc_viscore 1.1 documentation" href="index.html"/>
         <link rel="next" title="Maintenance" href="maintenance.html"/>
         <link rel="prev" title="Hardware specification" href="hardware_spec.html"/> 
 
@@ -81,7 +81,7 @@
             
             
               <div class="version">
-                01
+                1.1
               </div>
             
           
@@ -158,7 +158,7 @@
 <li class="toctree-l2"><a class="reference internal" href="accessories.html#power-connections">Power connections</a></li>
 <li class="toctree-l2"><a class="reference internal" href="accessories.html#power-supplies">Power supplies</a></li>
 <li class="toctree-l2"><a class="reference internal" href="accessories.html#spare-parts">Spare parts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="accessories.html#sgmregproducer-and-rc-cube">SGM®Producer and rc_cube</a></li>
+<li class="toctree-l2"><a class="reference internal" href="accessories.html#sgmregproducer-and-rc-cube">SGM®Producer <span>and rc_cube</span></a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a><ul>
@@ -237,107 +237,108 @@
 <div class="admonition warning" id="index-0">
 <p class="first admonition-title">Warning</p>
 <p class="last">The instructions on <a class="reference internal" href="safety.html#sect-safety"><span class="std std-ref">Safety</span></a>
-related to the <em>rc_viscore</em> must be read and understood prior to installation.</p>
+related to the <em>rc_viscore</em> stereo camera must be read and understood prior to installation.</p>
 </div>
 <div class="section" id="mounting">
 <h2>Mounting<a class="headerlink" href="#mounting" title="Permalink to this headline">¶</a></h2>
-<p id="index-1">The <em>rc_viscore</em> is intended to be mounted on a wall or ceiling above the target
+<p id="index-1">The <em>rc_viscore</em> stereo camera is intended to be mounted on a wall or ceiling above the target
 area. It is not intended to be used in dynamic applications mounted to a robot
 wrist. It is the customer’s responsibility to provide an adequate mounting
 bracket.</p>
-<p>For mounting, the <em>rc_viscore</em> provides an M4 and M5 thread pattern on its top and
+<p>For mounting, the <em>rc_viscore</em> stereo camera provides an M4 and M5 thread pattern on its top and
 bottom sides (see <a class="reference internal" href="#fig-mounting"><span class="std std-numref">Fig. 7</span></a>). A medium-strength thread-locker or
 Tuflok® screws must be used to protect against vibrations. M5 screws must be
 tightened to 4.0 Nm, M4 screws must be tightened to 3.3 Nm.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">The <em>rc_viscore</em> cannot be mounted on the end-effector of a robot.</p>
+<p class="last">The <em>rc_viscore</em> stereo camera cannot be mounted on the end-effector of a robot.</p>
 </div>
 <div class="figure align-center" id="id1">
 <span id="fig-mounting"></span><a class="reference internal image-reference" href="_images/rcv_mounting.png"><img alt="_images/rcv_mounting.png" src="_images/rcv_mounting.png" style="width: 140mm;" /></a>
-<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">Mounting of the <em>rc_viscore</em></span></p>
+<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">Mounting of the <em>rc_viscore</em> stereo camera</span></p>
 </div>
 <p>Only the surface containing the thread pattern must be in contact with the
 mounting bracket, all other surfaces must remain free. At least 10 cm clearance
-must be provided behind the <em>rc_viscore</em> to facilitate adequate air flow for
+must be provided behind the <em>rc_viscore</em> stereo camera to facilitate adequate air flow for
 cooling.</p>
 </div>
 <div class="section" id="power-up">
 <h2>Power-up<a class="headerlink" href="#power-up" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note" id="index-2">
 <p class="first admonition-title">Note</p>
-<p class="last">Always fully connect and tighten all M12 connectors on the <em>rc_viscore</em>
+<p class="last">Always fully connect and tighten all M12 connectors on the <em>rc_viscore</em> stereo camera
 <em>before</em> turning on the power supply.</p>
 </div>
-<p>After connecting the system to power, the LED on the front of the <em>rc_viscore</em> should
+<p>After connecting the system to power, the LED on the front of the <em>rc_viscore</em> stereo camera should
 immediately illuminate.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">Do not look into the projector lens in the center of the <em>rc_viscore</em> or
+<p class="last">Do not look into the projector lens in the center of the <em>rc_viscore</em> stereo camera or
 into the light beam at any point during startup or operation.</p>
 </div>
 </div>
 <div class="section" id="connecting">
 <h2>Connecting<a class="headerlink" href="#connecting" title="Permalink to this headline">¶</a></h2>
-<p>The <em>rc_viscore</em> can be used together with an <em>rc_cube</em> or as a stand-alone high-resolution
+<p>The <em>rc_viscore</em> stereo camera can be used together with an <em>rc_cube</em> or as a stand-alone high-resolution
 RGBD camera with the SGM®producer. The following sections describe
-connecting the <em>rc_viscore</em> in both scenarios.</p>
+connecting the <em>rc_viscore</em> stereo camera in both scenarios.</p>
 <div class="section" id="connecting-to-the-rc-cube">
 <h3>Connecting to the rc_cube<a class="headerlink" href="#connecting-to-the-rc-cube" title="Permalink to this headline">¶</a></h3>
 <p id="index-3">The <em>rc_cube</em> I (Industrial Edge Computer) offers four network ports that are
-labelled sensors 0-3. The two network cables of the <em>rc_viscore</em> must be
+labelled sensors 0-3. The two network cables of the <em>rc_viscore</em> stereo camera must be
 connected directly to two of those ports. It does not matter which ones. Two
-<em>rc_viscore</em> devices can be connected and used at the same time.</p>
+stereo cameras can be connected and used at the same time.</p>
 <p>The <em>rc_cube</em> S (Edge Computer) offers one 2.5 gigabit sensor port. A switch
-must be used for connecting an <em>rc_viscore</em>. The switch must support 2.5
+must be used for connecting an <em>rc_viscore</em> stereo camera. The switch must support 2.5
 gigabit for the connection to the <em>rc_cube</em> and 1 gigabit speed for the
-connection to the <em>rc_viscore</em>. The switch is not in the scope of the delivery
+connection to the <em>rc_viscore</em> stereo camera. The switch is not in the scope of the delivery
 of the <em>rc_cube</em> S. Roboception can recommend a suitable switch upon
 request.</p>
 <p>By default, the <em>rc_cube</em> is configured to support one <em>rc_visard</em> as sensor. For
-supporting one <em>rc_viscore</em>, the type of the camera pipeline must be changed in
+supporting one <em>rc_viscore</em> stereo camera, the type of the camera pipeline must be changed in
 the Web GUI of the <em>rc_cube</em> under <span class="menuselection">System ‣ Camera Pipelines</span>
 (see <a class="reference external" href="https://doc.rc-cube.com/latest/en/pipelines.html">https://doc.rc-cube.com/latest/en/pipelines.html</a>). Clicking on
 <span class="guilabel">Configure Camera Pipelines</span> opens a dialog that permits to change
 the type of pipeline to <code class="docutils literal notranslate"><span class="pre">rc_viscore</span></code>. A reboot is necessary after changing the
 pipeline configuration.</p>
-<p>For connecting two <em>rc_viscore</em> devices at the same time, it is additionally necessary
+<p>For connecting two stereo cameras at the same time, it is additionally necessary
 to configure a second pipeline, as explained above, and to specify which
-pipeline should use which <em>rc_viscore</em> by setting a filter expression. This is
+pipeline should use which <em>rc_viscore</em> stereo camera by setting a filter expression. This is
 done by clicking on <span class="guilabel">Configure Camera Connection</span> on the <em>Camera
 Pipelines</em> page, or select the corresponding pipeline in the menu, e.g. under
 <span class="menuselection">System ‣ Camera Pipelines ‣ Pipeline …</span>. Clicking
 <span class="guilabel">Choose Camera</span> opens a dialog to edit the device filter (see also
 <a class="reference external" href="https://doc.rc-cube.com/latest/en/pipelines.html#configuration-of-connected-cameras">https://doc.rc-cube.com/latest/en/pipelines.html#configuration-of-connected-cameras</a>).</p>
-<p>It may take up to one minute until the <em>rc_viscore</em> is connected. For each
+<p>It may take up to one minute until the <em>rc_viscore</em> stereo camera is connected. For each
 successfully connected sensor, the connection speed and frame rate is shown in
 the <span class="menuselection">Dashboard</span> of the Web GUI.</p>
 </div>
 <div class="section" id="connecting-to-the-sgmregproducer">
 <h3>Connecting to the SGM®Producer<a class="headerlink" href="#connecting-to-the-sgmregproducer" title="Permalink to this headline">¶</a></h3>
-<p id="index-4">For using the <em>rc_viscore</em> as high-resolution RGBD camera, Roboception offers
-the SGM®Producer, which is a GenICam compatible transport layer (see
-<a class="reference external" href="https://roboception.com/product/sgmproducer">https://roboception.com/product/sgmproducer</a>). The producer can be used with
+<p id="index-4">For using the <em>rc_viscore</em> stereo camera as high-resolution RGBD camera, Roboception offers
+the SGM®Producer, which is a GenICam compatible transport <span>layer (see
+<a class="reference external" href="https://roboception.com/product/sgmproducer">https://roboception.com/product/sgmproducer</a>).</span> </p>
+<p>The producer can be used with
 Halcon, with the rc_genicam_api for C++ programmers, with the rc_genicam_driver
 for ROS and ROS2, as well as with any other GenICam compatible application. It
-can be downloaded free of charge from <a class="reference external" href="http://www.roboception.com/download">http://www.roboception.com/download</a> and
+can be downloaded free of charge from <a class="reference external" href="https://www.roboception.com/download">https://www.roboception.com/download</a> and
 installed on Windows and Ubuntu computers with an Nvidia graphics card.</p>
 <p>It is strongly recommended to connect both network cables directly to 1 gigabit
 Ethernet ports of the computer. A network switch can only work if the network
 link between the switch and the computer has a bandwidth of more than 2
 gigabit, e.g. 2.5, 5 or 10 gigabit.</p>
 <p>In the default network configuration and according to the GigE Vision® standard,
-the <em>rc_viscore</em> cameras will try to obtain their configuration from a DHCP server
+the <em>rc_viscore</em> stereo camera cameras will try to obtain their configuration from a DHCP server
 and fall back to the Link-Local self-configuration protocol, if no DHCP server
 can be found. For direct connection without a DHCP server, the Ethernet
 ports of the computer should be configured for Link-Local network. It is also
-possible to manually configure IP addresses of the left and right <em>rc_viscore</em>
-cameras. Options for changing the network settings and IP configuration are:</p>
+possible to manually configure IP addresses of the left and right camera.</p>
+<p>Options for changing the network settings and IP configuration are:</p>
 <blockquote>
 <div><ul class="simple">
 <li>any configuration tool compatible with GigE Vision® 2.0,
 or Roboception’s command-line tool <code class="docutils literal notranslate"><span class="pre">gc_config</span></code>. Typically, these tools
-scan for all available GigE Vision® devices on the network. All <em>rc_viscore</em>
+scan for all available GigE Vision® devices on the network. All <em>rc_viscore</em> stereo camera
 devices can be uniquely identified by their serial number,
 which is printed on the device.</li>
 <li>temporarily changing the network configuration via Roboception’s
@@ -349,47 +350,47 @@ the <span class="guilabel">Only Roboception devices</span> check box.</li>
 <p class="first admonition-title">Note</p>
 <p class="last">The command-line tool <code class="docutils literal notranslate"><span class="pre">gc_config</span></code> is part of Roboception’s open-source
 convenience layer <code class="docutils literal notranslate"><span class="pre">rc_genicam_api</span></code>, which can be downloaded free of charge
-for Windows and Linux from <a class="reference external" href="http://www.roboception.com/download">http://www.roboception.com/download</a>.</p>
+for Windows and Linux from <a class="reference external" href="https://www.roboception.com/download">https://www.roboception.com/download</a>.</p>
 </div>
-<p>For adjusting the focus, checking and calibrating the <em>rc_viscore</em>, as
+<p>For adjusting the focus, checking and calibrating the <em>rc_viscore</em> stereo camera, as
 explained in the next sections, the SGM®Producer package contains a
 calibration program, called <cite>rc_calib</cite>.</p>
 </div>
 </div>
 <div class="section" id="adjust-focus">
 <span id="sect-adjust-focus"></span><h2>Adjust focus<a class="headerlink" href="#adjust-focus" title="Permalink to this headline">¶</a></h2>
-<p id="index-5">It is highly recommended to check and adjust the focus of the <em>rc_viscore</em> for the
+<p id="index-5">It is highly recommended to check and adjust the focus of the <em>rc_viscore</em> stereo camera for the
 actual working range. Please note that the depth of focus range is limited due
-to the high resolution of the sensor and must be adapted to the working range
+to the high resolution of the camera and must be adapted to the working range
 of the application. At close distance, the depth of focus range is much smaller
 than at higher distance. Therefore, the minimum distance for focusing should be
 chosen as far away as useful for the application. Please
 <a class="reference internal" href="contact.html#sect-contact"><span class="std std-ref">contact support</span></a>
 in case of questions regarding working distance and
-calibration of the <em>rc_viscore</em>.</p>
+calibration of the <em>rc_viscore</em> stereo camera.</p>
 <p>The <em>rc_cube</em> offers a focus helper as part of camera calibration
 under <span class="menuselection">Pipeline … ‣ Configuration ‣ Camera Calibration</span>.
 In the first step, the size of the calibration grid has to be specified. Clicking on
 <span class="guilabel">Next</span> opens the focus helper. See also
 <a class="reference external" href="https://doc.rc-cube.com/latest/en/camera_calibration.html">https://doc.rc-cube.com/latest/en/camera_calibration.html</a>.</p>
 <p>For users of the SGM®Producer, the focus helper can be found in the <cite>rc_calib</cite>
-calibration program after selecting the <em>rc_viscore</em> with
+calibration program after selecting the <em>rc_viscore</em> stereo camera with
 <span class="menuselection">File ‣ Connect sensor …</span>, and specifying the grid size.</p>
 <p>The bars on the right side of the image report the blur of the calibration
 grid, thus a minimum is desirable. The grid should be placed in the minimum and
 maximum working distance for checking the current blur. A value near the lowest
-dividing line is quite optimal. See also
-<a class="reference external" href="https://doc.rc-cube.com/latest/en/camera_calibration.html#adjust-focus">https://doc.rc-cube.com/latest/en/camera_calibration.html#adjust-focus</a>.</p>
+dividing line is quite optimal. <span>See also
+<a class="reference external" href="https://doc.rc-cube.com/latest/en/camera_calibration.html#adjust-focus">https://doc.rc-cube.com/latest/en/camera_calibration.html#adjust-focus</a>.</span></p>
 <p>If focus adjustment is needed, the lens caps of the left and right cameras must
 be removed as shown in <a class="reference internal" href="#fig-focus"><span class="std std-numref">Fig. 8</span></a>.</p>
 <div class="figure align-center" id="id2">
-<span id="fig-focus"></span><a class="reference internal image-reference" href="_images/rcv_focus.png"><img alt="_images/rcv_focus.png" src="_images/rcv_focus.png" style="width: 140mm;" /></a>
+<span id="fig-focus"></span><a class="reference internal image-reference" href="_images/rcv_focus_en.png"><img alt="_images/rcv_focus_en.png" src="_images/rcv_focus_en.png" style="width: 140mm;" /></a>
 <p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">Removing of lens caps for re-focussing and changing aperture</span></p>
 </div>
 <p>The focus ring and the aperture ring are locked by 3 screws for each ring as shown in
 <a class="reference internal" href="#fig-ricoh"><span class="std std-numref">Fig. 9</span></a>. All three screws must be loosened for moving the ring.</p>
 <div class="figure align-center" id="id3">
-<span id="fig-ricoh"></span><a class="reference internal image-reference" href="_images/ricoh_focus_aperture.png"><img alt="_images/ricoh_focus_aperture.png" src="_images/ricoh_focus_aperture.png" style="width: 140mm;" /></a>
+<span id="fig-ricoh"></span><a class="reference internal image-reference" href="_images/ricoh_focus_aperture_en.png"><img alt="_images/ricoh_focus_aperture_en.png" src="_images/ricoh_focus_aperture_en.png" style="width: 140mm;" /></a>
 <p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">Location of screws for focus and aperture ring</span></p>
 </div>
 <p>For setting the focus correctly, the calibration grid should be placed in the
@@ -413,19 +414,20 @@ caps re-attached.</p>
 fixing Phillips screws on the respective ring of the projector lens, turn the
 ring to the desired setting and lightly tighten the screws again. For focus
 adjustments, the projector should be turned on permanently by setting the Out1
-mode to High in the Web GUI. For aperture adjustments, Out1 should be set to
-ExposureAlternateActive and exposure mode should be set to ‚Auto‘ on the Web GUI’s
-Camera page. Perfectly focusing the projector is not crucial. Slightly blurred
+mode to High <span>in the Web GUI.</span> 
+For aperture adjustments, Out1 should be set to
+ExposureAlternateActive and exposure mode should be set to ‚Auto‘ <span>on the Web GUI’s
+Camera page.</span>  Perfectly focusing the projector is not crucial. Slightly blurred
 projection will not degrade the depth image.</p>
 </div>
 <div class="section" id="calibration">
 <span id="sect-calibration"></span><h2>Calibration<a class="headerlink" href="#calibration" title="Permalink to this headline">¶</a></h2>
 <p id="index-6">After checking and potentially adjusting the focus, the next step is to check
-calibration. This step should never be skipped and is mandatory as opposed
-to all rc_visard products. Please note that the working range of the <em>rc_viscore</em>
+calibration. This step should never be skipped and <span>– as opposed
+to all <em>rc_visard</em> products –</span> is mandatory. Please note that the working range of the <em>rc_viscore</em> stereo camera
 is pre-defined and the calibration should be checked for the minimum and
 maximum working range. Please <a class="reference internal" href="contact.html#sect-contact"><span class="std std-ref">contact support</span></a> in case of
-questions regarding working distance and calibration of the <em>rc_viscore</em>.</p>
+questions regarding working distance and calibration of the <em>rc_viscore</em> stereo camera.</p>
 <p>The <em>rc_cube</em> manual explains checking and re-calibrating in detail (see
 <a class="reference external" href="https://doc.rc-cube.com/latest/en/camera_calibration.html#verify-calibration">https://doc.rc-cube.com/latest/en/camera_calibration.html#verify-calibration</a>).
 The procedure that is described their can be applied in the same way to the
@@ -434,16 +436,16 @@ producer.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">It is mandatory to always check calibration after mounting the
-<em>rc_viscore</em>, changing the focus or aperture. After calibration, also a new
+<em>rc_viscore</em> stereo camera, changing the focus or aperture. After calibration, also a new
 hand-eye calibration is required.</p>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Roboception will deliver the <em>rc_viscore</em> with pre-adjusted focus to make
+<p class="last">Roboception will deliver the <em>rc_viscore</em> stereo camera with pre-adjusted focus to make
 sure it works in the desired depth range. Please
 <a class="reference internal" href="contact.html#sect-contact"><span class="std std-ref">contact support</span></a>
 and provide your specification to enable us to set up the
-<em>rc_viscore</em> accordingly. An onsite calibration check is still required to make
+<em>rc_viscore</em> stereo camera accordingly. An onsite calibration check is still required to make
 sure that no problem occurred during delivery or mounting.</p>
 </div>
 </div>
@@ -525,7 +527,7 @@ sure that no problem occurred during delivery or mounting.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'1.0',
+            VERSION:'1.1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

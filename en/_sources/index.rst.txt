@@ -1,2 +1,2 @@
-Roboception rc_viscore User Manual
+Roboception rc_viscore stereo camera user manual
 

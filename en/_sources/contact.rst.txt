@@ -4,7 +4,7 @@ Support
 
 For support issues, please see
 
-http://www.roboception.com/support
+https://www.roboception.com/support
 
  or contact
 
@@ -20,7 +20,7 @@ Address
    Germany
 
    Web: 
-   http://www.roboception.com
+   https://www.roboception.com
 
 
    Email: 

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Troubleshooting &mdash; rc_viscore 1.0 documentation</title>
+  <title>Troubleshooting &mdash; rc_viscore 1.1 documentation</title>
   
 
   
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="rc_viscore 1.0 documentation" href="index.html"/>
+    <link rel="top" title="rc_viscore 1.1 documentation" href="index.html"/>
         <link rel="next" title="Contact" href="contact.html"/>
         <link rel="prev" title="Accessories" href="accessories.html"/> 
 
@@ -81,7 +81,7 @@
             
             
               <div class="version">
-                01
+                1.1
               </div>
             
           
@@ -158,7 +158,7 @@
 <li class="toctree-l2"><a class="reference internal" href="accessories.html#power-connections">Power connections</a></li>
 <li class="toctree-l2"><a class="reference internal" href="accessories.html#power-supplies">Power supplies</a></li>
 <li class="toctree-l2"><a class="reference internal" href="accessories.html#spare-parts">Spare parts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="accessories.html#sgmregproducer-and-rc-cube">SGM®Producer and rc_cube</a></li>
+<li class="toctree-l2"><a class="reference internal" href="accessories.html#sgmregproducer-and-rc-cube">SGM®Producer <span>and rc_cube</span></a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Troubleshooting</a><ul>
@@ -237,23 +237,23 @@
 <div class="section" id="hardware-issues">
 <span id="index-0"></span><h2>Hardware issues<a class="headerlink" href="#hardware-issues" title="Permalink to this headline">¶</a></h2>
 <p><strong>LED does not illuminate</strong></p>
-<p>The <em>rc_viscore</em> does not start up.</p>
+<p>The <em>rc_viscore</em> stereo camera does not start up.</p>
 <ul class="simple">
 <li>Ensure that cables are connected and secured properly.</li>
 <li>Ensure that adequate DC voltage (24 V) with correct polarity is applied to the
 power connector at the pins labeled as <strong>Power</strong> and <strong>Ground</strong> as described in
 the device’s <a class="reference internal" href="hardware_spec.html#tab-power-pin-assignments"><span class="std std-ref">pin assignment specification</span></a>.
-Connecting the sensor to voltage outside of the specified range, to alternating current,
+Connecting the camera to voltage outside of the specified range, to alternating current,
 with reversed polarity, or to a supply with voltage spikes will lead to permanent hardware damage.</li>
 </ul>
 <p><strong>Reliability issues and/or mechanical damage</strong></p>
 <p>This may be an indication of ambient conditions (vibration, shock, resonance, and temperature) being outside
 of specified range. Please refer to the <a class="reference internal" href="hardware_spec.html#tab-hardware-environment"><span class="std std-ref">specification of environmental conditions</span></a>.</p>
 <ul class="simple">
-<li>Operating the <em>rc_viscore</em> outside of specified ambient conditions might lead to damage and will void the warranty.</li>
+<li>Operating the <em>rc_viscore</em> stereo camera outside of specified ambient conditions might lead to damage and will void the warranty.</li>
 </ul>
 <p><strong>Electrical shock when touching the projector</strong></p>
-<p>This indicates an electrical fault in sensor, cabling, or power supply or adjacent system.</p>
+<p>This indicates an electrical fault in camera, cabling, or power supply or adjacent system.</p>
 <ul class="simple">
 <li>Immediately turn off power to the system, disconnect cables, and have a qualified electrician check the setup.</li>
 <li>Ensure that the projector housing is properly grounded; check for large ground loops.</li>
@@ -261,26 +261,26 @@ of specified range. Please refer to the <a class="reference internal" href="hard
 </div>
 <div class="section" id="sparse-depth-images">
 <h2>Sparse depth images<a class="headerlink" href="#sparse-depth-images" title="Permalink to this headline">¶</a></h2>
-<p>The depth images of the <em>rc_viscore</em>, which can be seen on the depth image page in
-the <em>rc_cube</em>’s Web GUI or by using the SGM®Producer, may have
+<p>The depth images of the <em>rc_viscore</em> stereo camera, which can be seen <span>on the depth image page in
+the <em>rc_cube</em>’s Web GUI or</span> by using the SGM®Producer, may have
 missing values, which are shown in black. Missing values near object borders are normal.
 If major parts of the depth image are invalid, then this may be due to the following
 reasons:</p>
 <ul class="simple">
-<li>The scene may be out of the current working range of the <em>rc_viscore</em>. Depending on the depth
-quality, reducing the parameter <em>Maximum Distance</em> also reduces the possible minimum distance. In the
+<li>The scene may be out of the current working range of the <em>rc_viscore</em> stereo camera. Depending on the depth
+quality, reducing the parameter <em>Maximum Distance</em> also reduces the possible minimum distance. <span>In the
 Web GUI of the <em>rc_cube</em>, the used depth range is given on the depth image page below the
-images. Sliders on the depth image page permit to change the depth range. See also
+images. Sliders on the depth image page permit to change the depth range.</span> See also
 <a class="reference internal" href="hardware_spec.html#tab-common-depth-ranges"><span class="std std-numref">Table 2</span></a> for examples of possible depth ranges.</li>
 <li>Depth values may be missing on objects without texture. In this case, the internal random
 dot projector should be used for projecting an artificial texture. For single shot
-depth images, the <cite>Single+Out1</cite> mode should be selected on the depth image page of the
-<em>rc_cube</em>’s Web GUI. For continuously computing depth images, the projector should be turned
+depth images, the <cite>Single+Out1</cite> mode should be selected <span>on the depth image page of the
+<em>rc_cube</em>’s Web GUI</span> . For continuously computing depth images, the projector should be turned
 on for every second image by setting <cite>Out1</cite> to <cite>ExposureAlternateActive</cite> in
-<span class="menuselection">Pipeline X ‣ Configuration ‣ IOControl</span>.</li>
+<span><span class="menuselection">Pipeline X ‣ Configuration ‣ IOControl</span></span> .</li>
 <li>The focus may be inadequate for the working range. Please check the focus using a calibration
 grid as described in <a class="reference internal" href="installation.html#sect-adjust-focus"><span class="std std-ref">Adjust focus</span></a>.</li>
-<li>The calibration of the <em>rc_viscore</em> may be inaccurate. Please check the calibration as described
+<li>The calibration of the <em>rc_viscore</em> stereo camera may be inaccurate. Please check the calibration as described
 in <a class="reference internal" href="installation.html#sect-calibration"><span class="std std-ref">Calibration</span></a>.</li>
 </ul>
 </div>
@@ -362,7 +362,7 @@ in <a class="reference internal" href="installation.html#sect-calibration"><span
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'1.0',
+            VERSION:'1.1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

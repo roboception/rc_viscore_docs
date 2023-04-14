@@ -14,7 +14,7 @@ Removal of batteries  If the products contain batteries and
 accumulators that can be removed from the product without destruction,
 these must be removed before disposal and disposed of separately as
 batteries.  The following batteries or accumulators are contained in
-the rc_viscore: None
+the rc_viscore stereo camera: None
 
 Options for returning old equipment  Owners of old devices can return
 them to the manufacturer to ensure proper disposal.  Please contact

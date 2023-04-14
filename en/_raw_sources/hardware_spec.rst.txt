@@ -10,24 +10,39 @@ Hardware specification
 Scope of delivery
 -----------------
 
-Standard delivery for an |rc_viscore| includes
+Standard delivery for the |rc_viscore_camera| includes
 
-       - |rc_viscore| sensor,
+.. only:: roboception or schunk or basler
+
+       - |rc_viscore_camera|,
        - Calibration grid large (A3),
-       - 2 x 10 m gigabit ethernet network cables,
+       - 2 x 10 m gigabit Ethernet network cables,
        - 10 m power cable with M12 connector and one open end,
        - Quickstart guide.
 
-The full manual is online available in digital form at http://doc.rc-viscore.com.
+   The full manual is online available in digital form at https://doc.rc-viscore.com.
+
+.. only:: matrixvision
+
+       - |rc_viscore_camera|,
+       - Quickstart guide.
+
+   The following accessories are required additionally
+
+       - Calibration grid large (A3),
+       - 2 x 10 m gigabit Ethernet network cables,
+       - 10 m power cable with M12 connector and one open end.
+
+   The full manual is online available in digital form at https://www.matrix-vision.com/en/downloads/online-manuals.
 
 .. Note:: The following items are not included in the delivery unless otherwise specified:
 
           - Couplings, adapters, mounts,
           - Power supply unit and fuses.
 
-          Please refer to :ref:`sect-accessories`:latex:`\:(Section \ref{accessories:sect-accessories})` for suggested third-party cable vendors.
+          Please refer to :ref:`sect-accessories`:latex:`\:(Section \ref{accessories:sect-accessories})` for suggested cables.
 
-The following picture shows the important parts of the |rc_viscore| which are referenced later in the documentation.
+The following picture shows the important parts of the |rc_viscore_camera| which are referenced later in the documentation.
 
 .. _fig-parts:
 .. figure:: images/rcv_cameras.*
@@ -45,9 +60,9 @@ Technical specification
    single: frame rate
    single: working range
 
-The technical specification of the |rc_viscore| is shown in
+The technical specification of the |rc_viscore_camera| is shown in
 :numref:`tab-common-hardware-specifications`. The given depth image frame rate
-can be reached on an |rc_cube| or with the SGM\ |reg|\ producer on a computer
+can be reached :mvexclude:`on an |rc_cube| or` with the SGM\ |reg|\ producer on a computer
 with an Nvidia RTX2070 GPU. Higher frame rates (up to 9 Hz) are possible with
 faster graphics cards.
 
@@ -55,10 +70,10 @@ faster graphics cards.
 
 .. _tab-common-hardware-specifications:
 
-.. table:: Technical specifications of the |rc_viscore|
+.. table:: Technical specifications of the |rc_viscore_camera|
 
   +----------------------+---------------------------------------------------------------+
-  |                      | **rc_viscore 210m-16-12M-H1-R**                               |
+  |                      | |rc_viscore_camera|                                           |
   +======================+===============================================================+
   | Image resolution     | 4112 x 3008 pixels monochrome                                 |
   +----------------------+---------------------------------------------------------------+
@@ -87,21 +102,22 @@ faster graphics cards.
   | Mass                 | 1.64 kg                                                       |
   +----------------------+---------------------------------------------------------------+
 
-The depth image range of the |rc_viscore| depends on the depth image quality,
+The depth image range of the |rc_viscore_camera| depends on the depth image quality,
 the specified maximum depth range and the available GPU memory. Depth ranges at
-closer distance are much smaller than depth ranges at far distances. The
-|rc_cube| uses 3.4 Gbytes of GPU memory for stereo matching. :numref:`tab-common-depth-ranges` shows examples of resulting depth ranges with
-this amount of GPU memory. Larger depth ranges are possible by using the
+closer distance are much smaller than depth ranges at far distances. 
+:mvexclude:`The |rc_cube| uses 3.4 Gbytes of GPU memory for stereo matching.`
+:numref:`tab-common-depth-ranges` shows examples of resulting depth ranges with
+3.4 Gbytes of GPU memory. Larger depth ranges are possible by using the
 SGM\ |reg|\ producer with a graphics card that offers more GPU memory.
 
 .. tabularcolumns:: |\X{5}{11}|\X{6}{11}|
 
 .. _tab-common-depth-ranges:
 
-.. table:: Examples of possible depth ranges of the |rc_viscore| with 3.4 Gbytes of GPU memory as in case of the |rc_cube|
+.. table:: Examples of possible depth ranges of the |rc_viscore_camera| with 3.4 Gbytes of GPU memory :mvexclude:`as in case of the |rc_cube|`
 
   +------------------------------+---------------------------------------------------------+
-  |                              | **rc_viscore 210m-16-12M-H1-R**                         |
+  |                              | |rc_viscore_camera|                                     |
   +==============================+=========================================================+
   | Full depth quality           | | 0.89 m to 1.00 m                                      |
   |                              | | 1.60 m to 2.00 m                                      |
@@ -127,28 +143,28 @@ worse than shown in the table.
 
 .. _tab-common-accuracy:
 
-.. table:: Resolution and accuracy of the |rc_viscore| in millimeters with high
+.. table:: Resolution and accuracy of the |rc_viscore_camera| in millimeters with high
   quality stereo matching and random dot projection on non-reflective and
   non-transparent objects.
 
-  +------------------+-------------------+----------------+
-  |                  | **distance**      | **rc_viscore** |
-  +==================+===================+================+
-  | Lateral          | | 1.0 m           | | 0.4 mm       |
-  | resolution       | | 2.0 m           | | 0.9 mm       |
-  |                  | | 3.0 m           | | 1.3 mm       |
-  |                  | | 4.0 m           | | 1.7 mm       |
-  +------------------+-------------------+----------------+
-  | Depth resolution | | 1.0 m           | | 0.1 mm       |
-  |                  | | 2.0 m           | | 0.5 mm       |
-  |                  | | 3.0 m           | | 1.2 mm       |
-  |                  | | 4.0 m           | | 2.0 mm       |
-  +------------------+-------------------+----------------+
-  | Average depth    | | 1.0 m           | | 0.5 mm       |
-  | accuracy         | | 2.0 m           | | 2.0 mm       |
-  |                  | | 3.0 m           | | 4.6 mm       |
-  |                  | | 4.0 m           | | 8.2 mm       |
-  +------------------+-------------------+----------------+
+  +------------------+-------------------+---------------------+
+  |                  | **distance**      | |rc_viscore_camera| |
+  +==================+===================+=====================+
+  | Lateral          | | 1.0 m           | | 0.4 mm            |
+  | resolution       | | 2.0 m           | | 0.9 mm            |
+  |                  | | 3.0 m           | | 1.3 mm            |
+  |                  | | 4.0 m           | | 1.7 mm            |
+  +------------------+-------------------+---------------------+
+  | Depth resolution | | 1.0 m           | | 0.1 mm            |
+  |                  | | 2.0 m           | | 0.5 mm            |
+  |                  | | 3.0 m           | | 1.2 mm            |
+  |                  | | 4.0 m           | | 2.0 mm            |
+  +------------------+-------------------+---------------------+
+  | Average depth    | | 1.0 m           | | 0.5 mm            |
+  | accuracy         | | 2.0 m           | | 2.0 mm            |
+  |                  | | 3.0 m           | | 4.6 mm            |
+  |                  | | 4.0 m           | | 8.2 mm            |
+  +------------------+-------------------+---------------------+
 
 .. index::
    single: dimensions
@@ -158,19 +174,24 @@ worse than shown in the table.
    :width:  160mm
    :align: center
 
-   Overall dimensions of the |rc_viscore| in millimeters
+   Overall dimensions of the |rc_viscore_camera| in millimeters
 
 .. index::
    single: CAD model
 
-.. only:: roboception or matrixvision
+.. only:: roboception or basler
 
-   CAD models of the |rc_viscore| can be downloaded from http://www.roboception.com/download. The CAD models are provided as-is,
+   CAD models of the |rc_viscore_camera| can be downloaded from https://www.roboception.com/download. The CAD models are provided as-is,
    with no guarantee of correctness.
+
+.. only:: matrixvision
+
+   CAD models of the |rc_viscore_camera| can be downloaded from https://www.matrix-vision.com on the corresponding product page. 
+   The CAD models are provided as-is, with no guarantee of correctness.
 
 .. only:: schunk
 
-   CAD models of the |rc_viscore| can be downloaded from http://www.schunk.com/de_de/services/downloads/cad-ecad-daten. The CAD models are provided as-is,
+   CAD models of the |rc_viscore_camera| can be downloaded from https://www.schunk.com/de_de/services/downloads/cad-ecad-daten. The CAD models are provided as-is,
    with no guarantee of correctness.
 
 Environmental and operating conditions
@@ -183,7 +204,7 @@ Environmental and operating conditions
    single: protection class
    single: IP54
 
-The |rc_viscore| is designed for industrial applications. Always respect the storage, transport, and operating environmental
+The |rc_viscore_camera| is designed for industrial applications. Always respect the storage, transport, and operating environmental
 conditions outlined in :numref:`tab-hardware-environment`.
 
 .. tabularcolumns:: |>{\raggedright\arraybackslash}\X{4}{11}|\X{7}{11}|
@@ -193,7 +214,7 @@ conditions outlined in :numref:`tab-hardware-environment`.
 .. table:: Environmental conditions
 
   +---------------------------------------+-------------------------------------------------------+
-  |                                       | **rc_viscore**                                        |
+  |                                       | |rc_viscore_camera|                                   |
   +=======================================+=======================================================+
   | Storage/Transport temperature         | -20 °C to 60 °C                                       |
   +---------------------------------------+-------------------------------------------------------+
@@ -211,9 +232,9 @@ conditions outlined in :numref:`tab-hardware-environment`.
 .. index::
    single: cooling
 
-The |rc_viscore| is designed for an operating temperature (surrounding environment) of 0 °C to 45 °C and
+The |rc_viscore_camera| is designed for an operating temperature (surrounding environment) of 0 °C to 45 °C and
 relies on convective (passive) cooling. Unobstructed airflow, especially around the cooling fins,
-needs to be ensured during use. The |rc_viscore| should only be mounted using the provided
+needs to be ensured during use. The |rc_viscore_camera| should only be mounted using the provided
 mechanical mounting interface, and all parts of the housing must remain uncovered.
 A free space of at least 10 cm extending in
 all directions from the housing, and sufficient air exchange with the environment is
@@ -226,8 +247,8 @@ Power-supply specifications
 
 .. index:: ! power supply
 
-The |rc_viscore| needs to be supplied by a DC voltage source. The |rc_viscore|'s standard package does not include a DC power supply.
-Each |rc_viscore| must be connected to a separate power supply. Connection to domestic
+The |rc_viscore_camera| needs to be supplied by a DC voltage source. The camera's standard package does not include a DC power supply.
+Each |rc_viscore_camera| must be connected to a separate power supply. Connection to domestic
 grid power is only allowed through a power supply certified as EN55011 Class B.
 
 .. tabularcolumns:: |\X{5}{11}|\X{2}{11}|\X{2}{11}|\X{2}{11}|
@@ -248,10 +269,10 @@ grid power is only allowed through a power supply certified as EN55011 Class B.
   |  EMC compliance                   | see :ref:`sect-standards`:latex:`\:(Section \ref{standards:sect-standards})` |
   +-----------------------------------+---------------+---------------+----------------------------------------------+
 
-.. Warning:: Exceeding maximum power rating values may lead to damage of the |rc_viscore|, power
+.. Warning:: Exceeding maximum power rating values may lead to damage of the |rc_viscore_camera|, power
    supply, and connected equipment.
 
-.. Warning:: A separate power supply must power each |rc_viscore|.
+.. Warning:: A separate power supply must power each |rc_viscore_camera|.
 
 .. Warning:: Connection to domestic grid power is allowed through a power supply certified
    as EN55011 Class B only.
@@ -263,7 +284,7 @@ Wiring
 
 .. index:: cables
 
-The |rc_viscore| is delivered with a sync cable already connected between
+The |rc_viscore_camera| is delivered with a sync cable already connected between
 projector and cameras. It is the customer’s responsibility to connect the two
 provided M12 X-coded network cables to the left and right camera, as well as
 the power cable with an angled M12 connector to the projector (see
@@ -275,15 +296,15 @@ for strain relief. All cables must be secured to the mounting bracket.
    :width: 160mm
    :align: center
 
-   Locations of the electrical connections for the |rc_viscore|
+   Locations of the electrical connections for the |rc_viscore_camera|
 
 .. Warning:: Due to the voltage drop, the maximum power cable length is limited to
    15 m. The supply voltage should be set to the specified 24 V and must not be
-   set above 26 V due to the highly variable current draw of the |rc_viscore|.
+   set above 26 V due to the highly variable current draw of the |rc_viscore_camera|.
 
-.. Warning:: Proper cable management is mandatory. Cabling must always be secured to the |rc_viscore|
-   mount with a strain-relief clamp so that no forces due to cable movements are exerted on the |rc_viscore|'s
-   M12 connectors. Enough slack needs to be provided to allow for full range of movement of the |rc_viscore|
+.. Warning:: Proper cable management is mandatory. Cabling must always be secured to the |rc_viscore_camera|
+   mount with a strain-relief clamp so that no forces due to cable movements are exerted on the |rc_viscore_camera|'s
+   M12 connectors. Enough slack needs to be provided to allow for full range of movement of the camera
    without straining the cable. The cable's minimum bend radius (i.e. :math:`R_{min} = 15 d`) needs to be observed.
 
 .. index::
@@ -304,9 +325,9 @@ Pin assignments for the power connector are given in :numref:`tab-power-pin-assi
   +---------+-----------------+-----------------+---------------------------+
   | 2       | Brown           | Power +24 V     | 2 A @ 24 V                |
   +---------+-----------------+-----------------+---------------------------+
-  | 3       | Green           | nc              |                           |
+  | 3       | Green           | GPIO In 1       | 12-24 V, 15 mA max.       |
   +---------+-----------------+-----------------+---------------------------+
-  | 4       | Yellow          | nc              |                           |
+  | 4       | Yellow          | GPIO GND        |                           |
   +---------+-----------------+-----------------+---------------------------+
   | 5       | Grey            | GPIO Vcc        | 5-24 V, 50 mA max.        |
   +---------+-----------------+-----------------+---------------------------+
@@ -317,6 +338,9 @@ Pin assignments for the power connector are given in :numref:`tab-power-pin-assi
   | 8       | Red             | GPIO Out 2      |                           |
   +---------+-----------------+-----------------+---------------------------+
 
+.. note::
+   Please note that in hardware revisions prior to 1.1 the pins number 3 and 4 were not connected.
+   
 GPIOs are decoupled by photocouplers. *GPIO Out 1* by default provides an
 exposure sync signal with a logic high level for the duration of the image
 exposure. Pins of unused GPIOs should be left floating. GPIO circuitry and
@@ -337,8 +361,8 @@ Coordinate frames
 .. index::
    single: coordinate frames
 
-The |rc_viscore|'s coordinate-frame origin is defined as the exit pupil of the
-left camera lens. This frame is called sensor coordinate frame or camera
+The |rc_viscore_camera|'s coordinate-frame origin is defined as the exit pupil of the
+left camera lens. This frame is called camera
 coordinate frame. It is shown in :numref:`fig-frame`.
 
 .. _fig-frame:
@@ -348,8 +372,9 @@ coordinate frame. It is shown in :numref:`fig-frame`.
 
    Camera coordinate frame location and orientation
 
+.. only:: roboception or schunk or basler
 
-.. Note:: The correct offset between the sensor/camera frame and a robot
-   coordinate frame can be calibrated through hand-eye calibration. See
-   https://doc.rc-cube.com/latest/en/handeye_calibration.html.
+    .. Note:: The correct offset between the camera frame and a robot
+       coordinate frame can be calibrated through hand-eye calibration. See
+       https://doc.rc-cube.com/latest/en/handeye_calibration.html.
 

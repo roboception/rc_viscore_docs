@@ -9,7 +9,7 @@ Installation
    single: installation
 
 .. Warning:: The instructions on :ref:`sect-safety`:latex:`\:(Section \ref{safety:sect-safety})`
-  related to the |rc_viscore| must be read and understood prior to installation.
+  related to the |rc_viscore_camera| must be read and understood prior to installation.
 
 Mounting
 --------
@@ -17,28 +17,28 @@ Mounting
 .. index::
    single: mounting
 
-The |rc_viscore| is intended to be mounted on a wall or ceiling above the target
+The |rc_viscore_camera| is intended to be mounted on a wall or ceiling above the target
 area. It is not intended to be used in dynamic applications mounted to a robot
 wrist. It is the customer’s responsibility to provide an adequate mounting
 bracket.
 
-For mounting, the |rc_viscore| provides an M4 and M5 thread pattern on its top and
+For mounting, the |rc_viscore_camera| provides an M4 and M5 thread pattern on its top and
 bottom sides (see :numref:`fig-mounting`). A medium-strength thread-locker or
 Tuflok\ |reg| screws must be used to protect against vibrations. M5 screws must be
 tightened to 4.0 Nm, M4 screws must be tightened to 3.3 Nm.
 
-.. Warning:: The |rc_viscore| cannot be mounted on the end-effector of a robot.
+.. Warning:: The |rc_viscore_camera| cannot be mounted on the end-effector of a robot.
 
 .. _fig-mounting:
 .. figure:: images/rcv_mounting.png
    :width:  140mm
    :align: center
 
-   Mounting of the |rc_viscore|
+   Mounting of the |rc_viscore_camera|
 
 Only the surface containing the thread pattern must be in contact with the
 mounting bracket, all other surfaces must remain free. At least 10 cm clearance
-must be provided behind the |rc_viscore| to facilitate adequate air flow for
+must be provided behind the |rc_viscore_camera| to facilitate adequate air flow for
 cooling.
 
 Power-up
@@ -47,60 +47,62 @@ Power-up
 .. index::
   single: power-up
 
-.. Note:: Always fully connect and tighten all M12 connectors on the |rc_viscore|
+.. Note:: Always fully connect and tighten all M12 connectors on the |rc_viscore_camera|
   *before* turning on the power supply.
 
-After connecting the system to power, the LED on the front of the |rc_viscore| should
+After connecting the system to power, the LED on the front of the |rc_viscore_camera| should
 immediately illuminate.
 
-.. Warning:: Do not look into the projector lens in the center of the |rc_viscore| or
+.. Warning:: Do not look into the projector lens in the center of the |rc_viscore_camera| or
    into the light beam at any point during startup or operation.
 
 Connecting
 ----------
 
-The |rc_viscore| can be used together with an |rc_cube| or as a stand-alone high-resolution 
-RGBD camera with the SGM\ |reg|\ producer. The following sections describe
-connecting the |rc_viscore| in both scenarios.
+.. only:: roboception or schunk or basler
+      
+   The |rc_viscore_camera| can be used together with an |rc_cube| or as a stand-alone high-resolution 
+   RGBD camera with the SGM\ |reg|\ producer. The following sections describe
+   connecting the |rc_viscore_camera| in both scenarios.
 
-Connecting to the rc_cube
-+++++++++++++++++++++++++
+   Connecting to the rc_cube
+   +++++++++++++++++++++++++
 
-.. index::
-  pair: connecting; rc_cube
+   .. index::
+      pair: connecting; rc_cube
 
-The |rc_cube| I (Industrial Edge Computer) offers four network ports that are
-labelled sensors 0-3. The two network cables of the |rc_viscore| must be
-connected directly to two of those ports. It does not matter which ones. Two
-|rc_viscore| devices can be connected and used at the same time.
+   The |rc_cube| I (Industrial Edge Computer) offers four network ports that are
+   labelled sensors 0-3. The two network cables of the |rc_viscore_camera| must be
+   connected directly to two of those ports. It does not matter which ones. Two
+   stereo cameras can be connected and used at the same time.
 
-The |rc_cube| S (Edge Computer) offers one 2.5 gigabit sensor port. A switch
-must be used for connecting an |rc_viscore|. The switch must support 2.5
-gigabit for the connection to the |rc_cube| and 1 gigabit speed for the
-connection to the |rc_viscore|. The switch is not in the scope of the delivery
-of the |rc_cube| S. |manufacturer| can recommend a suitable switch upon
-request.
+   The |rc_cube| S (Edge Computer) offers one 2.5 gigabit sensor port. A switch
+   must be used for connecting an |rc_viscore_camera|. The switch must support 2.5
+   gigabit for the connection to the |rc_cube| and 1 gigabit speed for the
+   connection to the |rc_viscore_camera|. The switch is not in the scope of the delivery
+   of the |rc_cube| S. |manufacturer| can recommend a suitable switch upon
+   request.
 
-By default, the |rc_cube| is configured to support one |rc_visard| as sensor. For
-supporting one |rc_viscore|, the type of the camera pipeline must be changed in
-the |webgui| of the |rc_cube| under :menuselection:`System --> Camera Pipelines`
-(see https://doc.rc-cube.com/latest/en/pipelines.html). Clicking on
-:guilabel:`Configure Camera Pipelines` opens a dialog that permits to change
-the type of pipeline to ``rc_viscore``. A reboot is necessary after changing the
-pipeline configuration.
+   By default, the |rc_cube| is configured to support one |rc_visard| as sensor. For
+   supporting one |rc_viscore_camera|, the type of the camera pipeline must be changed in
+   the |webgui| of the |rc_cube| under :menuselection:`System --> Camera Pipelines`
+   (see https://doc.rc-cube.com/latest/en/pipelines.html). Clicking on
+   :guilabel:`Configure Camera Pipelines` opens a dialog that permits to change
+   the type of pipeline to ``rc_viscore``. A reboot is necessary after changing the
+   pipeline configuration.
 
-For connecting two |rc_viscore| devices at the same time, it is additionally necessary
-to configure a second pipeline, as explained above, and to specify which
-pipeline should use which |rc_viscore| by setting a filter expression. This is
-done by clicking on :guilabel:`Configure Camera Connection` on the *Camera
-Pipelines* page, or select the corresponding pipeline in the menu, e.g. under
-:menuselection:`System --> Camera Pipelines --> Pipeline ...`. Clicking
-:guilabel:`Choose Camera` opens a dialog to edit the device filter (see also
-https://doc.rc-cube.com/latest/en/pipelines.html#configuration-of-connected-cameras).
+   For connecting two stereo cameras at the same time, it is additionally necessary
+   to configure a second pipeline, as explained above, and to specify which
+   pipeline should use which |rc_viscore_camera| by setting a filter expression. This is
+   done by clicking on :guilabel:`Configure Camera Connection` on the *Camera
+   Pipelines* page, or select the corresponding pipeline in the menu, e.g. under
+   :menuselection:`System --> Camera Pipelines --> Pipeline ...`. Clicking
+   :guilabel:`Choose Camera` opens a dialog to edit the device filter (see also
+   https://doc.rc-cube.com/latest/en/pipelines.html#configuration-of-connected-cameras).
 
-It may take up to one minute until the |rc_viscore| is connected. For each
-successfully connected sensor, the connection speed and frame rate is shown in
-the :menuselection:`Dashboard` of the |webgui|.
+   It may take up to one minute until the |rc_viscore_camera| is connected. For each
+   successfully connected sensor, the connection speed and frame rate is shown in
+   the :menuselection:`Dashboard` of the |webgui|.
 
 Connecting to the SGM\ |reg|\ Producer
 ++++++++++++++++++++++++++++++++++++++
@@ -108,13 +110,24 @@ Connecting to the SGM\ |reg|\ Producer
 .. index::
   pair: connecting; SGM Producer
 
-For using the |rc_viscore| as high-resolution RGBD camera, |manufacturer| offers
-the SGM\ |reg|\ Producer, which is a GenICam compatible transport layer (see
-https://roboception.com/product/sgmproducer). The producer can be used with
-Halcon, with the rc_genicam_api for C++ programmers, with the rc_genicam_driver
-for ROS and ROS2, as well as with any other GenICam compatible application. It
-can be downloaded free of charge from http://www.roboception.com/download and
-installed on Windows and Ubuntu computers with an Nvidia graphics card.
+For using the |rc_viscore_camera| as high-resolution RGBD camera, |company| offers
+the SGM\ |reg|\ Producer, which is a GenICam compatible transport :mvexclude:`layer (see
+https://roboception.com/product/sgmproducer).` :mvonly:`layer.` 
+
+.. only:: roboception or schunk or basler
+   
+   The producer can be used with
+   Halcon, with the rc_genicam_api for C++ programmers, with the rc_genicam_driver
+   for ROS and ROS2, as well as with any other GenICam compatible application. It
+   can be downloaded free of charge from https://www.roboception.com/download and
+   installed on Windows and Ubuntu computers with an Nvidia graphics card.
+
+.. only:: matrixvision
+
+   Via the mvIMPACT Acquire API, the producer can be used with different programming
+   languages, with Halcon, as well as with any other GenICam compatible application. It
+   can be downloaded free of charge from https://www.matrix-vision.com and
+   installed on Windows and Ubuntu computers with an Nvidia graphics card.
 
 It is strongly recommended to connect both network cables directly to 1 gigabit
 Ethernet ports of the computer. A network switch can only work if the network
@@ -122,29 +135,42 @@ link between the switch and the computer has a bandwidth of more than 2
 gigabit, e.g. 2.5, 5 or 10 gigabit.
 
 In the default network configuration and according to the GigE Vision\ |reg| standard,
-the |rc_viscore| cameras will try to obtain their configuration from a DHCP server
+the |rc_viscore_camera| cameras will try to obtain their configuration from a DHCP server
 and fall back to the Link-Local self-configuration protocol, if no DHCP server
 can be found. For direct connection without a DHCP server, the Ethernet
 ports of the computer should be configured for Link-Local network. It is also
-possible to manually configure IP addresses of the left and right |rc_viscore|
-cameras. Options for changing the network settings and IP configuration are:
+possible to manually configure IP addresses of the left and right camera.
 
-    * any configuration tool compatible with GigE Vision\ |reg| 2.0,
-      or |manufacturer|'s command-line tool ``gc_config``. Typically, these tools
-      scan for all available GigE Vision\ |reg| devices on the network. All |rc_viscore|
-      devices can be uniquely identified by their serial number,
-      which is printed on the device.
-    * temporarily changing the network configuration via |manufacturer|'s
-      ``rcdiscover-gui`` tool. The individual cameras can be seen in the list after unchecking
-      the :guilabel:`Only Roboception devices` check box.
 
-.. only:: roboception or schunk or matrixvision
+.. only:: roboception or schunk or basler
 
-   .. note:: The command-line tool ``gc_config`` is part of |manufacturer|'s open-source
-             convenience layer ``rc_genicam_api``, which can be downloaded free of charge
-             for Windows and Linux from http://www.roboception.com/download.
+   Options for changing the network settings and IP configuration are:
 
-For adjusting the focus, checking and calibrating the |rc_viscore|, as
+      * any configuration tool compatible with GigE Vision\ |reg| 2.0, 
+        or |manufacturer|'s command-line tool ``gc_config``. Typically, these tools
+        scan for all available GigE Vision\ |reg| devices on the network. All |rc_viscore_camera|
+        devices can be uniquely identified by their serial number,
+        which is printed on the device.
+      
+      * temporarily changing the network configuration via |manufacturer|'s
+        ``rcdiscover-gui`` tool. The individual cameras can be seen in the list after unchecking
+        the :guilabel:`Only Roboception devices` check box.
+
+   .. only:: roboception or schunk
+
+      .. note:: The command-line tool ``gc_config`` is part of |manufacturer|'s open-source
+               convenience layer ``rc_genicam_api``, which can be downloaded free of charge
+               for Windows and Linux from https://www.roboception.com/download.
+
+.. only:: matrixvision
+
+   The tool mvIPConfigure can be used for changing the network settings and the IP address. It is
+   contained in the mvIMPACT Acquire driver for gigabit Ethernet cameras. The driver can be downloaded
+   from https://www.matrix-vision.com/en/downloads. Alternatively, any other GigE Vision 2.0 compatible
+   configuration tool can be used.
+
+
+For adjusting the focus, checking and calibrating the |rc_viscore_camera|, as
 explained in the next sections, the SGM\ |reg|\ Producer package contains a
 calibration program, called `rc_calib`.
 
@@ -157,31 +183,33 @@ Adjust focus
    single: working range
    single: aperture
 
-It is highly recommended to check and adjust the focus of the |rc_viscore| for the
+It is highly recommended to check and adjust the focus of the |rc_viscore_camera| for the
 actual working range. Please note that the depth of focus range is limited due
-to the high resolution of the sensor and must be adapted to the working range
+to the high resolution of the camera and must be adapted to the working range
 of the application. At close distance, the depth of focus range is much smaller
 than at higher distance. Therefore, the minimum distance for focusing should be
 chosen as far away as useful for the application. Please 
 :ref:`contact support<sect-contact>`:latex:`\:(Section \ref{contact:sect-contact})` 
 in case of questions regarding working distance and
-calibration of the |rc_viscore|.
+calibration of the |rc_viscore_camera|.
 
-The |rc_cube| offers a focus helper as part of camera calibration
-under :menuselection:`Pipeline ... --> Configuration --> Camera Calibration`.
-In the first step, the size of the calibration grid has to be specified. Clicking on
-:guilabel:`Next` opens the focus helper. See also
-https://doc.rc-cube.com/latest/en/camera_calibration.html.
+.. only:: roboception or schunk or basler
+
+   The |rc_cube| offers a focus helper as part of camera calibration
+   under :menuselection:`Pipeline ... --> Configuration --> Camera Calibration`.
+   In the first step, the size of the calibration grid has to be specified. Clicking on
+   :guilabel:`Next` opens the focus helper. See also
+   https://doc.rc-cube.com/latest/en/camera_calibration.html.
 
 For users of the SGM\ |reg|\ Producer, the focus helper can be found in the `rc_calib`
-calibration program after selecting the |rc_viscore| with
+calibration program after selecting the |rc_viscore_camera| with
 :menuselection:`File --> Connect sensor ...`, and specifying the grid size.
 
 The bars on the right side of the image report the blur of the calibration
 grid, thus a minimum is desirable. The grid should be placed in the minimum and
 maximum working distance for checking the current blur. A value near the lowest
-dividing line is quite optimal. See also
-https://doc.rc-cube.com/latest/en/camera_calibration.html#adjust-focus.
+dividing line is quite optimal. :mvexclude:`See also
+https://doc.rc-cube.com/latest/en/camera_calibration.html#adjust-focus.`
 
 If focus adjustment is needed, the lens caps of the left and right cameras must
 be removed as shown in :numref:`fig-focus`.
@@ -224,9 +252,10 @@ To change focus and aperture settings of the projector, loosen the three small
 fixing Phillips screws on the respective ring of the projector lens, turn the
 ring to the desired setting and lightly tighten the screws again. For focus
 adjustments, the projector should be turned on permanently by setting the Out1
-mode to High in the |webgui|. For aperture adjustments, Out1 should be set to
-ExposureAlternateActive and exposure mode should be set to ‚Auto‘ on the |webgui|'s
-Camera page. Perfectly focusing the projector is not crucial. Slightly blurred
+mode to High :mvexclude:`in the |webgui|.` :mvonly:`in the category DigitalIOControl.` 
+For aperture adjustments, Out1 should be set to
+ExposureAlternateActive and exposure mode should be set to ‚Auto‘ :mvexclude:`on the |webgui|'s
+Camera page.` :mvonly:`in the category AcquisitionControl.` Perfectly focusing the projector is not crucial. Slightly blurred
 projection will not degrade the depth image.
 
 .. _sect-calibration:
@@ -237,25 +266,37 @@ Calibration
 .. index:: ! calibration
 
 After checking and potentially adjusting the focus, the next step is to check
-calibration. This step should never be skipped and is mandatory as opposed
-to all rc_visard products. Please note that the working range of the |rc_viscore|
+calibration. This step should never be skipped and :mvexclude:`-- as opposed
+to all |rc_visard| products --` is mandatory. Please note that the working range of the |rc_viscore_camera|
 is pre-defined and the calibration should be checked for the minimum and
 maximum working range. Please :ref:`contact support<sect-contact>`:latex:`\:(Section \ref{contact:sect-contact})` in case of
-questions regarding working distance and calibration of the |rc_viscore|.
+questions regarding working distance and calibration of the |rc_viscore_camera|.
 
-The |rc_cube| manual explains checking and re-calibrating in detail (see
-https://doc.rc-cube.com/latest/en/camera_calibration.html#verify-calibration).
-The procedure that is described their can be applied in the same way to the
-SGM\ |reg|\ Producer, by using the `rc_calib` program that is provided with the
-producer.
+.. only:: roboception or schunk or basler
+
+   The |rc_cube| manual explains checking and re-calibrating in detail (see
+   https://doc.rc-cube.com/latest/en/camera_calibration.html#verify-calibration).
+   The procedure that is described their can be applied in the same way to the
+   SGM\ |reg|\ Producer, by using the `rc_calib` program that is provided with the
+   producer.
+
+.. only:: matrixvision
+
+   The manual of the smart 3D camera explains checking and re-calibrating in detail (see
+   https://www.matrix-vision.com/manuals/rc_visard/en/camera_calibration.html#verify-calibration).
+   The procedure that is described their can be applied in the same way to the
+   SGM\ |reg|\ Producer, by using the `rc_calib` program that is provided with the
+   producer.
 
 .. Warning:: It is mandatory to always check calibration after mounting the
-   |rc_viscore|, changing the focus or aperture. After calibration, also a new
+   |rc_viscore_camera|, changing the focus or aperture. After calibration, also a new
    hand-eye calibration is required.
 
-.. Note:: |manufacturer| will deliver the |rc_viscore| with pre-adjusted focus to make
-   sure it works in the desired depth range. Please 
-   :ref:`contact support<sect-contact>`:latex:`\:(Section \ref{contact:sect-contact})` 
-   and provide your specification to enable us to set up the
-   |rc_viscore| accordingly. An onsite calibration check is still required to make
-   sure that no problem occurred during delivery or mounting.
+.. only:: roboception or schunk or basler
+
+   .. Note:: |manufacturer| will deliver the |rc_viscore_camera| with pre-adjusted focus to make
+      sure it works in the desired depth range. Please 
+      :ref:`contact support<sect-contact>`:latex:`\:(Section \ref{contact:sect-contact})` 
+      and provide your specification to enable us to set up the
+      |rc_viscore_camera| accordingly. An onsite calibration check is still required to make
+      sure that no problem occurred during delivery or mounting.

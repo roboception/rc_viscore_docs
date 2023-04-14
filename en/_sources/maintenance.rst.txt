@@ -5,9 +5,10 @@ Warning: The only parts removable by the customer are the lens caps,
 
   rc_viscore
 
-  's housing to perform maintenance. Unauthorized opening of the
-  housing will void the warranty. For all maintenance operations other
-  than adjusting focus and aperture, the product must be switched off.
+   stereo camera's housing to perform maintenance. Unauthorized
+  opening of the housing will void the warranty. For all maintenance
+  operations other than adjusting focus and aperture, the product must
+  be switched off.
 
 To handle the optical components, wearing gloves is strongly
 recommended. The lens cap can be removed by unscrewing the barrel.

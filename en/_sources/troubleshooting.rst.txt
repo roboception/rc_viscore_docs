@@ -8,14 +8,14 @@ The
 
 rc_viscore
 
- does not start up.
+ stereo camera does not start up.
 
 Ensure that cables are connected and secured properly.
 
 Ensure that adequate DC voltage (24 V) with correct polarity is
 applied to the power connector at the pins labeled as Power and Ground
 as described in the device's pin assignment specification\:(Section
-\ref{hardware_spec:tab-power-pin-assignments}). Connecting the sensor
+\ref{hardware_spec:tab-power-pin-assignments}). Connecting the camera
 to voltage outside of the specified range, to alternating current,
 with reversed polarity, or to a supply with voltage spikes will lead
 to permanent hardware damage.
@@ -30,12 +30,12 @@ specification of environmental conditions
 
 .
 
-Operating the rc_viscore outside of specified ambient conditions might
-lead to damage and will void the warranty.
+Operating the rc_viscore stereo camera outside of specified ambient
+conditions might lead to damage and will void the warranty.
 
 Electrical shock when touching the projector
 
-This indicates an electrical fault in sensor, cabling, or power supply
+This indicates an electrical fault in camera, cabling, or power supply
 or adjacent system.
 
 Immediately turn off power to the system, disconnect cables, and have
@@ -50,7 +50,7 @@ The depth images of the
 
 rc_viscore
 
-, which can be seen on the depth image page in the
+ stereo camera, which can be seen on the depth image page in the
 
 rc_cube
 
@@ -59,25 +59,26 @@ which are shown in black. Missing values near object borders are
 normal. If major parts of the depth image are invalid, then this may
 be due to the following reasons:
 
-The scene may be out of the current working range of the rc_viscore.
-Depending on the depth quality, reducing the parameter Maximum
-Distance also reduces the possible minimum distance. In the Web GUI of
-the rc_cube, the used depth range is given on the depth image page
-below the images. Sliders on the depth image page permit to change the
-depth range. See also Table 2 for examples of possible depth ranges.
+The scene may be out of the current working range of the rc_viscore
+stereo camera. Depending on the depth quality, reducing the parameter
+Maximum Distance also reduces the possible minimum distance. In the
+Web GUI of the rc_cube, the used depth range is given on the depth
+image page below the images. Sliders on the depth image page permit to
+change the depth range. See also Table 2 for examples of possible
+depth ranges.
 
 Depth values may be missing on objects without texture. In this case,
 the internal random dot projector should be used for projecting an
 artificial texture. For single shot depth images, the Single+Out1 mode
-should be selected on the depth image page of the rc_cube's Web GUI.
+should be selected on the depth image page of the rc_cube's Web GUI .
 For continuously computing depth images, the projector should be
 turned on for every second image by setting Out1 to
-ExposureAlternateActive in Pipeline X ‣ Configuration ‣ IOControl.
+ExposureAlternateActive in Pipeline X ‣ Configuration ‣ IOControl .
 
 The focus may be inadequate for the working range. Please check the
 focus using a calibration grid as described in Adjust focus\:(Section
 \ref{installation:sect-adjust-focus}).
 
-The calibration of the rc_viscore may be inaccurate. Please check the
-calibration as described in Calibration\:(Section \ref{installation
-:sect-calibration}).
+The calibration of the rc_viscore stereo camera may be inaccurate.
+Please check the calibration as described in Calibration\:(Section
+\ref{installation:sect-calibration}).

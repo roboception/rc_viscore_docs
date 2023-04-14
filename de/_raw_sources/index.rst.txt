@@ -5,8 +5,8 @@
 
 .. include:: global_rst.glb
 
-|company| |rc_viscore| User Manual
-==================================
+|company| |rc_viscore_camera| user manual
+=========================================
 
 .. toctree-filt::
    :maxdepth: 2

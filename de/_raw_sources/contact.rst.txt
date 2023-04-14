@@ -10,7 +10,7 @@ Support
 
 .. only:: roboception
 
-    For support issues, please see http://www.roboception.com/support or contact support@roboception.de.
+    For support issues, please see https://www.roboception.com/support or contact support@roboception.de.
 
 .. only:: matrixvision
 
@@ -49,7 +49,7 @@ Address
     | 81241 Munich
     | Germany
     |
-    | Web: http://www.roboception.com
+    | Web: https://www.roboception.com
     | Email: info@roboception.de
     | Phone: +49 89 889 50 79-0
     |
@@ -58,7 +58,7 @@ Address
 
     | MATRIX VISION GmbH
     | Talstrasse 16
-    | D-71570 Oppenweiler
+    | 71570 Oppenweiler
     | Germany
     |
     | Web: https://www.matrix-vision.com
@@ -76,7 +76,7 @@ Address
     | D-74348 Lauffen/Neckar
     | Germany
     |
-    | Web: http://www.schunk.com
+    | Web: https://www.schunk.com
     | Email: info@de.schunk.com
     | Phone: +49-7133-103-0
     |
@@ -88,7 +88,7 @@ Address
     | 22926 Ahrensburg
     | Germany
     |
-    | Web: http://www.baslerweb.com
+    | Web: https://www.baslerweb.com
     | Email: info@baslerweb.com
     | Phone: +49 4102 463 0
     |

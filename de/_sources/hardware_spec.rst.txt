@@ -5,13 +5,13 @@ Bemerkung: Die folgenden Hardware-Spezifikationen dienen als
 
 Umfang der Lieferung
 
-Die Standardlieferung für einen
+Die Standardlieferung für die
 
 rc_viscore
 
- umfasst
+ stereo camera umfasst
 
-   rc_viscore sensor,
+   rc_viscore stereo camera,
 
    Kalibriermuster groß (A3),
 
@@ -23,7 +23,7 @@ rc_viscore
 
 Das vollständige Handbuch ist online in digitaler Form unter
 
-http://doc.rc-viscore.com
+https://doc.rc-viscore.com
 
  verfügbar.
 
@@ -34,26 +34,26 @@ Bemerkung: Die folgenden Artikel sind nicht im Lieferumfang
 
   Stromversorgungseinheit und Sicherungen.
 
-  Vorschläge für Kabel von Drittanbietern finden Sie unter
+  Vorschläge für Kabel finden Sie unter
 
   Zubehör
 
   .
 
-Das folgende Bild zeigt die wichtigsten Bauteile des
+Das folgende Bild zeigt die wichtigsten Bauteile der
 
 rc_viscore
 
-, auf die in diesem Handbuch Bezug genommen wird.
+ stereo camera, auf die in diesem Handbuch Bezug genommen wird.
 
 
 Technische Spezifikation
 
-Die technische Spezifikation des
+Die technische Spezifikation der
 
 rc_viscore
 
- ist in
+ stereo camera ist in
 
 Tab. 1
 
@@ -65,9 +65,9 @@ rc_cube
 GPU erreicht werden. Höhere Bildraten (bis zu 9 Hz) sind mit
 schnelleren Grafikkarten möglich.
 
-Technische Daten des rc_viscore        rc_viscore 210m-16-12M-H1-R
-Bildauflösung  4112 x 3008 Pixel monochrom  Bildwiederholrate  9 Hz
-Brennweite  16 mm  Sichtfeld  Horizontal: 47,5°, Vertikal: 35,7°
+Technische Daten der rc_viscore stereo camera        rc_viscore stereo
+camera  Bildauflösung  4112 x 3008 Pixel monochrom  Bildwiederholrate
+9 Hz  Brennweite  16 mm  Sichtfeld  Horizontal: 47,5°, Vertikal: 35,7°
 Arbeitsbereich  670 mm x 640 mm @ 1.0 m Abstand  1550 mm x 1280 mm @
 2.0 m Abstand  2430 mm x 1920 mm @ 3.0 m Abstand  3310 mm x 2560 mm @
 4.0 m Abstand  Tiefenbild  4112 x 3008 Pixel (Voll) @ 2,8 Hz (Nvidia
@@ -76,14 +76,14 @@ RTX2070)  2056 x 1504 Pixel (Hoch) @ 4,6 Hz (Nvidia RTX2070)  1028 x
 @ 9 Hz (Nvidia RTX2070)  Kühlung  Passiv  Basisabstand  210 mm  Größe
 (B x H x L)  262 mm x 204 mm x 82 mm  Masse  1.64 kg
 
-Der Tiefenbildbereich des
+Der Tiefenbildbereich der
 
 rc_viscore
 
- hängt von der Tiefenbildqualität, dem angegebenen maximalen
-Tiefenbereich und dem verfügbaren GPU-Speicher ab. Der Tiefenbereich
-bei näherer Entfernung ist viel kleiner als der Tiefenbereich bei
-weiter Entfernung. Der
+ stereo camera hängt von der Tiefenbildqualität, dem angegebenen
+maximalen Tiefenbereich und dem verfügbaren GPU-Speicher ab. Der
+Tiefenbereich bei näherer Entfernung ist viel kleiner als der
+Tiefenbereich bei weiter Entfernung. Der
 
 rc_cube
 
@@ -91,18 +91,17 @@ rc_cube
 
 Tab. 2
 
- zeigt Beispiele für resultierende Tiefenbereiche mit dieser Menge an
-GPU-Speicher. Größere Tiefenbereiche sind möglich, wenn der
-SGM®Producer mit einer Grafikkarte verwendet wird, die mehr GPU-
-Speicher bietet.
+ zeigt Beispiele für resultierende Tiefenbereiche mit 3,4 Gbyte GPU-
+Speicher. Größere Tiefenbereiche sind möglich, wenn der SGM®Producer
+mit einer Grafikkarte verwendet wird, die mehr GPU-Speicher bietet.
 
-Beispiele möglicher Tiefenbereiche des rc_viscore mit 3,4 Gbytes GPU-
-Speicher, wie im Fall des rc_cube        rc_viscore 210m-16-12M-H1-R
-Volle Tiefenbildqualität  0.89 m bis 1.00 m  1.60 m bis 2.00 m  2.18 m
-bis 3.00 m  2.65 m bis 4.00 m  Hohe Tiefenbildqualität  0.52 m bis
-1.00 m  0.66 m bis 2.00 m  0.75 m bis 3.00 m  0.80 m bis 4.00 m  1,00
-m bis unendlich  Mittlere und niedrige Tiefenbildqualität  0.52 m bis
-unendlich
+Beispiele möglicher Tiefenbereiche der rc_viscore stereo camera mit
+3,4 Gbytes GPU-Speicher , wie im Fall des rc_cube        rc_viscore
+stereo camera  Volle Tiefenbildqualität  0.89 m bis 1.00 m  1.60 m bis
+2.00 m  2.18 m bis 3.00 m  2.65 m bis 4.00 m  Hohe Tiefenbildqualität
+0.52 m bis 1.00 m  0.66 m bis 2.00 m  0.75 m bis 3.00 m  0.80 m bis
+4.00 m  1,00 m bis unendlich  Mittlere und niedrige Tiefenbildqualität
+0.52 m bis unendlich
 
 Die Auflösung und Genauigkeit bei verschiedenen Entfernungen ist in
 
@@ -117,82 +116,82 @@ Genauigkeit um den Faktor 2 besser. Bei mittlerer Qualität sind die
 Auflösung und die Genauigkeit etwa zweimal schlechter als in der
 Tabelle angegeben.
 
-Auflösung und Genauigkeit des rc_viscore in Millimetern mit Stereo-
-Matching in Qualität Hoch und Random-Dot-Projektion auf nicht-
-reflektierende und nicht-transparente Objekte.          Abstand
-rc_viscore  Laterale Auflösung  1.0 m  2.0 m  3.0 m  4.0 m  0.4 mm
-0.9 mm  1.3 mm  1.7 mm  Tiefenauflösung  1.0 m  2.0 m  3.0 m  4.0 m
-0.1 mm  0.5 mm  1.2 mm  2.0 mm  Durchschnittliche Tiefengenauigkeit
-1.0 m  2.0 m  3.0 m  4.0 m  0.5 mm  2.0 mm  4.6 mm  8.2 mm
+Auflösung und Genauigkeit der rc_viscore stereo camera in Millimetern
+mit Stereo-Matching in Qualität Hoch und Random-Dot-Projektion auf
+nicht-reflektierende und nicht-transparente Objekte.          Abstand
+rc_viscore stereo camera  Laterale Auflösung  1.0 m  2.0 m  3.0 m  4.0
+m  0.4 mm  0.9 mm  1.3 mm  1.7 mm  Tiefenauflösung  1.0 m  2.0 m  3.0
+m  4.0 m  0.1 mm  0.5 mm  1.2 mm  2.0 mm  Durchschnittliche
+Tiefengenauigkeit  1.0 m  2.0 m  3.0 m  4.0 m  0.5 mm  2.0 mm  4.6 mm
+8.2 mm
 
 
-CAD-Modelle des
+CAD-Modelle der
 
 rc_viscore
 
- können von
+ stereo camera können von
 
-http://www.roboception.com/download
+https://www.roboception.com/download
 
  heruntergeladen werden. Die CAD-Modelle werden ohne Gewähr für ihre
 Korrektheit zur Verfügung gestellt.
 
 Umwelt- und Betriebsbedingungen
 
-Der
+Die
 
 rc_viscore
 
- ist für den industriellen Einsatz konzipiert. Die
+ stereo camera ist für den industriellen Einsatz konzipiert. Die
 Umgebungsbedingungen für Lagerung, Transport und Betrieb in
 
 Tab. 4
 
  müssen beachtet werden.
 
-Umgebungsbedingungen        rc_viscore  Lager-/Transporttemperatur
--20 °C bis 60 °C  Betriebstemperatur  0 °C bis 45 °C (passive Kühlung)
-Relative Luftfeuchtigkeit (nicht kondensierend)  20 % to 80 %
-Schutzklasse  IP54  Sonstige  Von korrosiven Flüssigkeiten oder Gasen
-fernhalten.  Von explosiven Flüssigkeiten oder Gasen fernhalten.  Von
-starken elektromagnetischen Störungen fernhalten.
+Umgebungsbedingungen        rc_viscore stereo camera
+Lager-/Transporttemperatur  -20 °C bis 60 °C  Betriebstemperatur  0 °C
+bis 45 °C (passive Kühlung)  Relative Luftfeuchtigkeit (nicht
+kondensierend)  20 % to 80 %  Schutzklasse  IP54  Sonstige  Von
+korrosiven Flüssigkeiten oder Gasen fernhalten.  Von explosiven
+Flüssigkeiten oder Gasen fernhalten.  Von starken elektromagnetischen
+Störungen fernhalten.
 
-Der
-
-rc_viscore
-
- ist für eine Betriebstemperatur (Umgebung) von 0 °C bis 45 °C
-ausgelegt und arbeitet mit einer konvektiven (passiven) Kühlung. Ein
-ungehinderter Luftstrom, insbesondere um die Kühlrippen, muss während
-des Einsatzes gewährleistet sein. Der
+Die
 
 rc_viscore
 
- darf nur über die beschriebene mechanische Montageschnittstelle
-montiert werden, wobei alle Gehäuseteile unbedeckt bleiben müssen. Ein
-Freiraum von mindestens 10 cm in alle Richtungen vom Gehäuse und ein
-ausreichender Luftaustausch mit der Umgebung sind erforderlich, um
-eine ausreichende Kühlung zu gewährleisten. Die Kühlrippen müssen frei
-von Schmutz und anderen Verunreinigungen sein.
+ stereo camera ist für eine Betriebstemperatur (Umgebung) von 0 °C bis
+45 °C ausgelegt und arbeitet mit einer konvektiven (passiven) Kühlung.
+Ein ungehinderter Luftstrom, insbesondere um die Kühlrippen, muss
+während des Einsatzes gewährleistet sein. Die
+
+rc_viscore
+
+ stereo camera darf nur über die beschriebene mechanische
+Montageschnittstelle montiert werden, wobei alle Gehäuseteile
+unbedeckt bleiben müssen. Ein Freiraum von mindestens 10 cm in alle
+Richtungen vom Gehäuse und ein ausreichender Luftaustausch mit der
+Umgebung sind erforderlich, um eine ausreichende Kühlung zu
+gewährleisten. Die Kühlrippen müssen frei von Schmutz und anderen
+Verunreinigungen sein.
 
 Spezifikationen für die Spannungsversorgung
 
-Der
+Die
 
 rc_viscore
 
- muss von einer Gleichspannungsquelle versorgt werden. Im
-Standardlieferumfang des
+ stereo camera muss von einer Gleichspannungsquelle versorgt werden.
+Im Standardlieferumfang der Kamera ist kein Gleichspannungsnetzteil
+enthalten. Jede
 
 rc_viscore
 
- ist kein Gleichspannungsnetzteil enthalten. Jeder
-
-rc_viscore
-
- muss an eine eigene Spannungsversorgung angeschlossen werden. Der
-Anschluss an das Stromnetz ist nur über eine nach EN55011 Klasse B
-zertifizierte Stromversorgung zulässig.
+ stereo camera muss an eine eigene Spannungsversorgung angeschlossen
+werden. Der Anschluss an das Stromnetz ist nur über eine nach EN55011
+Klasse B zertifizierte Stromversorgung zulässig.
 
 Grenzwerte für die Stromversorgung            Min  Nominal  Max
 Versorgungsspannung  22.0 V  24 V  26.0 V  Max. Leistungsaufnahme
@@ -202,17 +201,18 @@ Elektronische und Sicherheitsstandards\:(Abschnitt \ref{standards
 :sect-standards})
 
 Warnung: Die Überschreitung der maximalen Betriebsspannung kann zu
-  Schäden am
+  Schäden an der
 
   rc_viscore
 
-  , am Netzteil und an angeschlossener Ausrüstung führen.
+   stereo camera, am Netzteil und an angeschlossener Ausrüstung
+  führen.
 
-Warnung: Jeder
+Warnung: Jede
 
   rc_viscore
 
-   muss von einem eigenen Netzteil versorgt werden.
+   stereo camera muss von einem eigenen Netzteil versorgt werden.
 
 Warnung: Der Anschluss an das Gebäudenetz darf nur über Netzteile
   erfolgen, die gemäß EN 55011 als Gerät der Klasse B zertifiziert
@@ -220,15 +220,16 @@ Warnung: Der Anschluss an das Gebäudenetz darf nur über Netzteile
 
 Verkabelung
 
-Der
+Die
 
 rc_viscore
 
- wird mit einem bereits angeschlossenen Synchronisationskabel zwischen
-Projektor und Kameras geliefert. Es liegt in der Verantwortung des
-Kunden, die beiden mitgelieferten M12 X-kodierten Netzwerkkabel an die
-linke und rechte Kamera sowie das Netzkabel mit einem abgewinkelten
-M12-Stecker an den Projektor anzuschließen (siehe
+ stereo camera wird mit einem bereits angeschlossenen
+Synchronisationskabel zwischen Projektor und Kameras geliefert. Es
+liegt in der Verantwortung des Kunden, die beiden mitgelieferten M12
+X-kodierten Netzwerkkabel an die linke und rechte Kamera sowie das
+Netzkabel mit einem abgewinkelten M12-Stecker an den Projektor
+anzuschließen (siehe
 
 Abb. 4
 
@@ -240,31 +241,24 @@ befestigt werden.
 Warnung: Aufgrund des Spannungsabfalls ist die maximale Länge des
   Netzkabels auf 15 m begrenzt. Die Versorgungsspannung sollte auf die
   angegebenen 24 V eingestellt werden und darf wegen der stark
-  schwankenden Stromaufnahme des
+  schwankenden Stromaufnahme der
 
   rc_viscore
 
-   nicht über 26 V liegen.
+   stereo camera nicht über 26 V liegen.
 
 Warnung: Die Richtlinien zum Kabelmanagement sind zwingend
   einzuhalten. Kabel sind immer mit einer Zugentlastung an der
-  Halterung des
+  Halterung der
 
   rc_viscore
 
-   zu befestigen, sodass durch Kabelbewegungen keine Kräfte auf die
-  M12-Anschlüsse des
-
-  rc_viscore
-
-   wirken. Die verwendeten Kabel müssen lang genug sein, damit sich
-  der
-
-  rc_viscore
-
-   voll bewegen kann, ohne dass das Kabel zu stark belastet wird. Der
-  minimale Biegeradius des Kabels (d.h. R_{min} = 15 d) muss
-  eingehalten werden.
+   stereo camera zu befestigen, sodass durch Kabelbewegungen keine
+  Kräfte auf die M12-Anschlüsse der Kamera wirken. Die verwendeten
+  Kabel müssen lang genug sein, damit sich die Kamera voll bewegen
+  kann, ohne dass das Kabel zu stark belastet wird. Der minimale
+  Biegeradius des Kabels (d.h. R_{min} = 15 d) muss eingehalten
+  werden.
 
 Die Steckerbelegung für den Stromanschluss ist in
 
@@ -274,9 +268,12 @@ Tab. 6
 
 Steckerbelegung für den Stromanschluss          Pin  Kabelfarbe
 Bezeichnung  Details  1  Weiß  nc    2  Braun  Leistung +24 V  2 A @
-24 V  3  Grün  nc    4  Gelb  nc    5  Grau  GPIO Vcc  5-24 V, 50 mA
-max.  6  Pink  GPIO Out 1  Projektor Belichtungssignal  7  Blau
-Leistung GND    8  Rot  GPIO Out 2
+24 V  3  Grün  GPIO In 1  12-24 V, 15 mA max.  4  Gelb  GPIO GND    5
+Grau  GPIO Vcc  5-24 V, 50 mA max.  6  Pink  GPIO Out 1  Projektor
+Belichtungssignal  7  Blau  Leistung GND    8  Rot  GPIO Out 2
+
+Bemerkung: Bitte beachten Sie, dass in den Hardwarerevisionen vor
+  1.1 die Pins Nummer 3 und 4 nicht verbunden waren.
 
 Die GPIOs sind durch Optokoppler galvanisch getrennt.
 
@@ -294,12 +291,12 @@ Abb. 5
 
 Koordinatensysteme
 
-Der Ursprung des Koordinatensystems des
+Der Ursprung des Koordinatensystems der
 
 rc_viscore
 
- ist definiert als die Austrittspupille des linken Kameraobjektivs.
-Dieses Koordinatensystem wird Sensor-Koordinatensystem oder Kamera-
+ stereo camera ist definiert als die Austrittspupille des linken
+Kameraobjektivs. Dieses Koordinatensystem wird Kamera-
 Koordinatensystem genannt. Es wird in
 
 Abb. 6
@@ -307,9 +304,9 @@ Abb. 6
  dargestellt.
 
 
-Bemerkung: Der korrekte Versatz zwischen dem Sensor-/Kamera-
+Bemerkung: Der korrekte Versatz zwischen dem Kamera-
   Koordinatensystem und einem Roboterkoordinatensystem kann durch
-  Hand-Augen- Kalibrierung kalibriert werden. Siehe
+  Hand-Augen-Kalibrierung kalibriert werden. Siehe
 
   https://doc.rc-cube.com/latest/en/handeye_calibration.html
 

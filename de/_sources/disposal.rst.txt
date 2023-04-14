@@ -12,8 +12,8 @@ Rückgabestellen.
 Entnahme von Batterien  Enthalten die Produkte Batterien und Akkus,
 die aus dem Altgerät zerstörungsfrei entnommen werden können, müssen
 diese vor der Entsorgung entnommen werden und getrennt als Batterie
-entsorgt werden.  Folgende Batterien bzw. Akkumulatoren sind im
-rc_viscore enthalten: Keine
+entsorgt werden.  Folgende Batterien bzw. Akkumulatoren sind in der
+rc_viscore stereo camera enthalten: Keine
 
 Möglichkeiten der Rückgabe von Altgeräten  Besitzer von Altgeräten
 können diese an den Hersteller zurückgeben, damit eine ordnungsgemäße

@@ -2,11 +2,11 @@ Zulassungen und Normen
 
 Genehmigungen
 
-Der
+Die
 
 rc_viscore
 
- hat die folgenden Zulassungen erhalten:
+ stereo camera hat die folgenden Zulassungen erhalten:
 
    EG-Konformitätserklärung
 
@@ -18,26 +18,27 @@ rc_viscore
 
 Elektronische und Sicherheitsstandards
 
-Der
+Die
 
 rc_viscore
 
- wurde so konzipiert, dass er die Anforderungen der Richtlinien
-2014/30/EU und 2011/65/EU erfüllt. Der
+ stereo camera wurde so konzipiert, dass er die Anforderungen der
+Richtlinien 2014/30/EU und 2011/65/EU erfüllt. Die
 
 rc_viscore
 
- besteht aus dem
+ stereo camera besteht aus dem
 
 rc_randomdot
 
- und zwei industriellen Vision-Kameras.
+ projector und zwei industriellen Vision-Kameras.
 
 Der
 
 rc_randomdot
 
- wurde getestet und entspricht den Vorgaben der folgenden Normen:
+ projector wurde getestet und entspricht den Vorgaben der folgenden
+Normen:
 
 EN 61000-6-4:2007 + A1:2011 : Störaussendung
 
@@ -53,39 +54,46 @@ EN 61000-6-4:2007 + A1:2011 : Störaussendung
 
 EN 61000-6-2:2005: Störfestigkeit
 
+Für den industriellen Einsatz in den USA und Kanada ist die
+
+rc_viscore
+
+ stereo camera von den technischen Anforderungen nach 47 CFR § 15  und
+ICES-003 ausgenommen.
+
 Umweltvorschriften
 
 EU-RoHS-Richtlinie
 
-Alle Komponenten des
+Alle Komponenten der
 
 rc_viscore
 
-, einschließlich des
+ stereo camera, einschließlich des
 
 rc_randomdot
 
-, der Industriekameras, der Verkabelung und der Struktur entsprechen
-den Bestimmungen der EU-Richtlinie 2011/65/EU zur Beschränkung der
-Verwendung bestimmter gefährlicher Stoffe in Elektro- und
-Elektronikgeräten (RoHS 2). Artikel, die in der RoHS-Richtlinie
+ projector, der Industriekameras, der Verkabelung und der Struktur
+entsprechen den Bestimmungen der EU-Richtlinie 2011/65/EU zur
+Beschränkung der Verwendung bestimmter gefährlicher Stoffe in Elektro-
+und Elektronikgeräten (RoHS 2). Artikel, die in der RoHS-Richtlinie
 ausgenommen sind, sind von diesen Normen ausgenommen.
 
 REACH-Verordnung
 
-Alle Bestandteile des
+Alle Bestandteile der
 
 rc_viscore
 
-, einschließlich des
+ stereo camera, einschließlich des
 
 rc_randomdot
 
-, der Industriekameras, der Verkabelung und der Struktur entsprechen
-der REACH-Verordnung 1907/2006/CE. Diese Produkte sind nicht als
-gefährlich eingestuft. Wir bescheinigen hiermit, dass diese Produkte
-keine besonders besorgniserregenden Stoffe (SVHC) in Mengen >0,1%
-(w/w) enthalten.
+ projector, der Industriekameras, der Verkabelung und der Struktur
+entsprechen der REACH-Verordnung 1907/2006/CE. Diese Produkte sind
+nicht als gefährlich eingestuft. Wir bescheinigen hiermit, dass diese
+Produkte keine besonders besorgniserregenden Stoffe (SVHC) in Mengen
+>0,1% (w/w) enthalten.
 
 Verfügbare Zertifikate
 

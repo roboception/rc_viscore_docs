@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Fehlerbehebung &mdash; rc_viscore 1.0 Dokumentation</title>
+  <title>Fehlerbehebung &mdash; rc_viscore 1.1 Dokumentation</title>
   
 
   
@@ -49,7 +49,7 @@
         <link rel="index" title="Stichwortverzeichnis"
               href="genindex.html"/>
         <link rel="search" title="Suche" href="search.html"/>
-    <link rel="top" title="rc_viscore 1.0 Dokumentation" href="index.html"/>
+    <link rel="top" title="rc_viscore 1.1 Dokumentation" href="index.html"/>
         <link rel="next" title="Kontakt" href="contact.html"/>
         <link rel="prev" title="Zubehör" href="accessories.html"/> 
 
@@ -81,7 +81,7 @@
             
             
               <div class="version">
-                01
+                1.1
               </div>
             
           
@@ -158,7 +158,7 @@
 <li class="toctree-l2"><a class="reference internal" href="accessories.html#power-connections">Stromanschluss</a></li>
 <li class="toctree-l2"><a class="reference internal" href="accessories.html#power-supplies">Netzteile</a></li>
 <li class="toctree-l2"><a class="reference internal" href="accessories.html#spare-parts">Ersatzteile</a></li>
-<li class="toctree-l2"><a class="reference internal" href="accessories.html#sgmregproducer-and-rc-cube">SGM®Producer und rc_cube</a></li>
+<li class="toctree-l2"><a class="reference internal" href="accessories.html#sgmregproducer-and-rc-cube">SGM®Producer <span>und rc_cube</span></a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Fehlerbehebung</a><ul>
@@ -237,18 +237,18 @@
 <div class="section" id="hardware-issues">
 <span id="index-0"></span><h2>Hardware-Probleme<a class="headerlink" href="#hardware-issues" title="Link zu dieser Überschrift">¶</a></h2>
 <p><strong>LED leuchtet nicht</strong></p>
-<p>Der <em>rc_viscore</em> startet nicht.</p>
+<p>Die <em>rc_viscore</em> Stereokamera startet nicht.</p>
 <ul class="simple">
 <li>Stellen Sie sicher, dass die Kabel richtig angeschlossen und gesichert sind.</li>
-<li>Stellen Sie sicher, dass eine ausreichende Gleichspannung (24 V) mit korrekter Polarität am Spannungsversorgungsstecker an den mit <strong>Power</strong> und <strong>Ground</strong> gekennzeichneten Pins anliegt, wie in <a class="reference internal" href="hardware_spec.html#tab-power-pin-assignments"><span class="std std-ref">Steckerbelegung für den Stromanschluss</span></a> beschrieben. Der Anschluss des Sensors an Spannungen außerhalb des spezifizierten Bereichs, an Wechselstrom, mit umgekehrter Polarität oder an eine Versorgung mit Spannungsspitzen führt zu dauerhaften Hardwareschäden.</li>
+<li>Stellen Sie sicher, dass eine ausreichende Gleichspannung (24 V) mit korrekter Polarität am Spannungsversorgungsstecker an den mit <strong>Power</strong> und <strong>Ground</strong> gekennzeichneten Pins anliegt, wie in <a class="reference internal" href="hardware_spec.html#tab-power-pin-assignments"><span class="std std-ref">Steckerbelegung für den Stromanschluss</span></a> beschrieben. Der Anschluss der Kamera an Spannungen außerhalb des spezifizierten Bereichs, an Wechselstrom, mit umgekehrter Polarität oder an eine Versorgung mit Spannungsspitzen führt zu dauerhaften Hardwareschäden.</li>
 </ul>
 <p><strong>Zuverlässigkeitsprobleme und/oder mechanische Schäden</strong></p>
 <p>Dies kann ein Hinweis darauf sein, dass die Umgebungsbedingungen (Vibration, Schock, Resonanz und Temperatur) außerhalb des spezifizierten Bereichs liegen. Bitte beachten Sie die <a class="reference internal" href="hardware_spec.html#tab-hardware-environment"><span class="std std-ref">spezifizierten Umgebungsbedingungen</span></a>.</p>
 <ul class="simple">
-<li>Der Betrieb des <em>rc_viscore</em> außerhalb der spezifizierten Umgebungsbedingungen kann zu Schäden führen und führt zum Erlöschen der Garantie.</li>
+<li>Der Betrieb der <em>rc_viscore</em> Stereokamera außerhalb der spezifizierten Umgebungsbedingungen kann zu Schäden führen und führt zum Erlöschen der Garantie.</li>
 </ul>
 <p><strong>Elektrischer Schlag beim Berühren des Projektors</strong></p>
-<p>Dies deutet auf einen elektrischen Fehler im Sensor, in der Verkabelung oder in der Stromversorgung oder im angrenzenden System hin.</p>
+<p>Dies deutet auf einen elektrischen Fehler in der Kamera, in der Verkabelung oder in der Stromversorgung oder im angrenzenden System hin.</p>
 <ul class="simple">
 <li>Schalten Sie die Anlage sofort stromlos, trennen Sie die Kabel und lassen Sie die Geräte und Installation von einer Elektrofachkraft überprüfen.</li>
 <li>Stellen Sie sicher, dass das Projektorgehäuse ordnungsgemäß geerdet ist; prüfen Sie auf große Erdschleifen.</li>
@@ -256,12 +256,12 @@
 </div>
 <div class="section" id="sparse-depth-images">
 <h2>Spärlich befüllte Tiefenbilder<a class="headerlink" href="#sparse-depth-images" title="Link zu dieser Überschrift">¶</a></h2>
-<p>Die Tiefenbilder des <em>rc_viscore</em>, die auf der Seite <em>Tiefenbild</em> in der Web GUI des <em>rc_cube</em> oder mit dem SGM®Producer gesehen werden können, können fehlende Werte aufweisen, die schwarz dargestellt werden. Fehlende Werte in der Nähe von Objektgrenzen sind normal. Wenn große Teile des Tiefenbildes ungültig sind, kann dies folgende Gründe haben:</p>
+<p>Die Tiefenbilder der <em>rc_viscore</em> Stereokamera, die <span>auf der Seite <em>Tiefenbild</em> in der Web GUI des <em>rc_cube</em> oder</span> mit dem SGM®Producer gesehen werden können, können fehlende Werte aufweisen, die schwarz dargestellt werden. Fehlende Werte in der Nähe von Objektgrenzen sind normal. Wenn große Teile des Tiefenbildes ungültig sind, kann dies folgende Gründe haben:</p>
 <ul class="simple">
-<li>Die Szene kann außerhalb des aktuellen Arbeitsbereichs des <em>rc_viscore</em> liegen. Abhängig von der Tiefenbildqualität wird durch die Verringerung des Parameters <em>Maximaler Abstand</em> auch die mögliche minimale Entfernung verringert. In der Web GUI des <em>rc_cube</em> wird der verwendete Tiefenbereich auf der Tiefenbildseite unterhalb der Bilder angegeben. Schieberegler auf der Tiefenbildseite erlauben es, den Tiefenbereich zu verändern. Siehe auch <a class="reference internal" href="hardware_spec.html#tab-common-depth-ranges"><span class="std std-numref">Tab. 2</span></a> für Beispiele von möglichen Tiefenbereichen.</li>
-<li>Bei Objekten ohne Textur können Tiefenwerte fehlen. In diesem Fall sollte der interne Random-Dot-Projektor für die Projektion einer künstlichen Textur verwendet werden. Für Tiefenbilder, die im Single-Shot-Modus aufgenommen werden, sollte auf der Tiefenbildseite der Web GUI des <em>rc_cube</em> der Modus <cite>Single+Out1</cite> gewählt werden. Für kontinuierlich berechnete Tiefenbilder sollte der Projektor für jedes zweite Bild eingeschaltet werden, indem auf der Seite <span class="menuselection">Pipeline X ‣ Konfiguration ‣ IOControl</span> <cite>Out1</cite> auf <cite>ExposureAlternateActive</cite> gesetzt wird.</li>
+<li>Die Szene kann außerhalb des aktuellen Arbeitsbereichs der <em>rc_viscore</em> Stereokamera liegen. Abhängig von der Tiefenbildqualität wird durch die Verringerung des Parameters <em>Maximaler Abstand</em> auch die mögliche minimale Entfernung verringert. <span>In der Web GUI des <em>rc_cube</em> wird der verwendete Tiefenbereich auf der Tiefenbildseite unterhalb der Bilder angegeben. Schieberegler auf der Tiefenbildseite erlauben es, den Tiefenbereich zu verändern.</span> Siehe auch <a class="reference internal" href="hardware_spec.html#tab-common-depth-ranges"><span class="std std-numref">Tab. 2</span></a> für Beispiele von möglichen Tiefenbereichen.</li>
+<li>Bei Objekten ohne Textur können Tiefenwerte fehlen. In diesem Fall sollte der interne Random-Dot-Projektor für die Projektion einer künstlichen Textur verwendet werden. Für Tiefenbilder, die im Single-Shot-Modus aufgenommen werden, sollte <span>auf der Tiefenbildseite der Web GUI des <em>rc_cube</em></span>  der Modus <cite>Single+Out1</cite> gewählt werden. Für kontinuierlich berechnete Tiefenbilder sollte der Projektor für jedes zweite Bild eingeschaltet werden, indem <span>auf der Seite <span class="menuselection">Pipeline X ‣ Konfiguration ‣ IOControl</span></span>  <cite>Out1</cite> auf <cite>ExposureAlternateActive</cite> gesetzt wird.</li>
 <li>Der Fokus kann für den Arbeitsbereich ungeeignet sein. Bitte überprüfen Sie die Schärfe mit einem Kalibriermuster, wie in <a class="reference internal" href="installation.html#sect-adjust-focus"><span class="std std-ref">Fokus einstellen</span></a> beschrieben.</li>
-<li>Die Kalibrierung des <em>rc_viscore</em> kann ungenau sein. Bitte überprüfen Sie die Kalibrierung wie in <a class="reference internal" href="installation.html#sect-calibration"><span class="std std-ref">Kalibrierung</span></a> beschrieben.</li>
+<li>Die Kalibrierung der <em>rc_viscore</em> Stereokamera kann ungenau sein. Bitte überprüfen Sie die Kalibrierung wie in <a class="reference internal" href="installation.html#sect-calibration"><span class="std std-ref">Kalibrierung</span></a> beschrieben.</li>
 </ul>
 </div>
 </div>
@@ -342,7 +342,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'1.0',
+            VERSION:'1.1',
             LANGUAGE:'de',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

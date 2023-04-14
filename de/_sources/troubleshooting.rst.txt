@@ -4,11 +4,11 @@ Hardware-Probleme
 
 LED leuchtet nicht
 
-Der
+Die
 
 rc_viscore
 
- startet nicht.
+ stereo camera startet nicht.
 
 Stellen Sie sicher, dass die Kabel richtig angeschlossen und gesichert
 sind.
@@ -17,7 +17,7 @@ Stellen Sie sicher, dass eine ausreichende Gleichspannung (24 V) mit
 korrekter Polarität am Spannungsversorgungsstecker an den mit Power
 und Ground gekennzeichneten Pins anliegt, wie in Steckerbelegung für
 den Stromanschluss\:(Abschnitt \ref{hardware_spec:tab-power-pin-
-assignments}) beschrieben. Der Anschluss des Sensors an Spannungen
+assignments}) beschrieben. Der Anschluss der Kamera an Spannungen
 außerhalb des spezifizierten Bereichs, an Wechselstrom, mit
 umgekehrter Polarität oder an eine Versorgung mit Spannungsspitzen
 führt zu dauerhaften Hardwareschäden.
@@ -32,13 +32,13 @@ spezifizierten Umgebungsbedingungen
 
 .
 
-Der Betrieb des rc_viscore außerhalb der spezifizierten
+Der Betrieb der rc_viscore stereo camera außerhalb der spezifizierten
 Umgebungsbedingungen kann zu Schäden führen und führt zum Erlöschen
 der Garantie.
 
 Elektrischer Schlag beim Berühren des Projektors
 
-Dies deutet auf einen elektrischen Fehler im Sensor, in der
+Dies deutet auf einen elektrischen Fehler in der Kamera, in der
 Verkabelung oder in der Stromversorgung oder im angrenzenden System
 hin.
 
@@ -51,11 +51,11 @@ ist; prüfen Sie auf große Erdschleifen.
 
 Spärlich befüllte Tiefenbilder
 
-Die Tiefenbilder des
+Die Tiefenbilder der
 
 rc_viscore
 
-, die auf der Seite
+ stereo camera, die auf der Seite
 
 Tiefenbild
 
@@ -68,9 +68,9 @@ Werte aufweisen, die schwarz dargestellt werden. Fehlende Werte in der
 Nähe von Objektgrenzen sind normal. Wenn große Teile des Tiefenbildes
 ungültig sind, kann dies folgende Gründe haben:
 
-Die Szene kann außerhalb des aktuellen Arbeitsbereichs des rc_viscore
-liegen. Abhängig von der Tiefenbildqualität wird durch die
-Verringerung des Parameters Maximaler Abstand auch die mögliche
+Die Szene kann außerhalb des aktuellen Arbeitsbereichs der rc_viscore
+stereo camera liegen. Abhängig von der Tiefenbildqualität wird durch
+die Verringerung des Parameters Maximaler Abstand auch die mögliche
 minimale Entfernung verringert. In der Web GUI des rc_cube wird der
 verwendete Tiefenbereich auf der Tiefenbildseite unterhalb der Bilder
 angegeben. Schieberegler auf der Tiefenbildseite erlauben es, den
@@ -81,10 +81,10 @@ Bei Objekten ohne Textur können Tiefenwerte fehlen. In diesem Fall
 sollte der interne Random-Dot-Projektor für die Projektion einer
 künstlichen Textur verwendet werden. Für Tiefenbilder, die im Single-
 Shot-Modus aufgenommen werden, sollte auf der Tiefenbildseite der Web
-GUI des rc_cube der Modus Single+Out1 gewählt werden. Für
+GUI des rc_cube  der Modus Single+Out1 gewählt werden. Für
 kontinuierlich berechnete Tiefenbilder sollte der Projektor für jedes
 zweite Bild eingeschaltet werden, indem auf der Seite Pipeline X ‣
-Konfiguration ‣ IOControl Out1 auf ExposureAlternateActive gesetzt
+Konfiguration ‣ IOControl  Out1 auf ExposureAlternateActive gesetzt
 wird.
 
 Der Fokus kann für den Arbeitsbereich ungeeignet sein. Bitte
@@ -92,6 +92,6 @@ Der Fokus kann für den Arbeitsbereich ungeeignet sein. Bitte
 einstellen\:(Abschnitt \ref{installation:sect-adjust-focus})
 beschrieben.
 
-Die Kalibrierung des rc_viscore kann ungenau sein. Bitte überprüfen
-Sie die Kalibrierung wie in Kalibrierung\:(Abschnitt \ref{installation
-:sect-calibration}) beschrieben.
+Die Kalibrierung der rc_viscore stereo camera kann ungenau sein. Bitte
+überprüfen Sie die Kalibrierung wie in Kalibrierung\:(Abschnitt
+\ref{installation:sect-calibration}) beschrieben.

@@ -1,10 +1,10 @@
 Installation
 
-Warnung: Die Anweisungen zum
+Warnung: Die Anweisungen zur
 
   rc_viscore
 
-   im Abschnitt
+   stereo camera im Abschnitt
 
   Sicherheit
 
@@ -12,20 +12,21 @@ Warnung: Die Anweisungen zum
 
 Montage
 
-Der
+Die
 
 rc_viscore
 
- ist für die Montage an einer Wand oder Decke über dem Zielbereich
-vorgesehen. Er ist nicht für den Einsatz in dynamischen Anwendungen an
-einem Roboterhandgelenk vorgesehen. Es liegt in der Verantwortung des
-Kunden, für eine geeignete Halterung zu sorgen.
+ stereo camera ist für die Montage an einer Wand oder Decke über dem
+Zielbereich vorgesehen. Sie ist nicht für den Einsatz in dynamischen
+Anwendungen an einem Roboterhandgelenk vorgesehen. Es liegt in der
+Verantwortung des Kunden, für eine geeignete Halterung zu sorgen.
 
-Für die Montage bietet der
+Für die Montage bietet die
 
 rc_viscore
 
- auf seiner Ober- und Unterseite mehrere M4- und M5-Gewinde an (siehe
+ stereo camera auf seiner Ober- und Unterseite mehrere M4- und
+M5-Gewinde an (siehe
 
 Abb. 7
 
@@ -33,65 +34,66 @@ Abb. 7
 oder Tuflok-Schrauben verwendet werden. M5-Schrauben müssen mit 4,0 Nm
 angezogen werden, M4-Schrauben müssen mit 3,3 Nm angezogen werden.
 
-Warnung: Der
+Warnung: Die
 
   rc_viscore
 
-   kann nicht an den Endeffektor eines Roboters montiert werden.
+   stereo camera kann nicht an den Endeffektor eines Roboters montiert
+  werden.
 
 
 Nur die Fläche, welche die Gewinde enthält, darf mit der Halterung in
-Berührung kommen, alle anderen Flächen müssen frei bleiben. Hinter dem
+Berührung kommen, alle anderen Flächen müssen frei bleiben. Hinter der
 
 rc_viscore
 
- muss ein Freiraum von mindestens 10 cm vorhanden sein, um einen
-ausreichenden Luftstrom zur Kühlung zu ermöglichen.
+ stereo camera muss ein Freiraum von mindestens 10 cm vorhanden sein,
+um einen ausreichenden Luftstrom zur Kühlung zu ermöglichen.
 
 Einschalten
 
-Bemerkung: Verbinden Sie immer alle M12-Steckverbinder am
+Bemerkung: Verbinden Sie immer alle M12-Steckverbinder an der
 
   rc_viscore
 
-   und ziehen sie fest
+   stereo camera und ziehen sie fest
 
   bevor
 
    Sie die Stromversorgung einschalten.
 
 Nachdem Sie das System an die Stromversorgung angeschlossen haben,
-sollte die LED auf der Vorderseite vom
+sollte die LED auf der Vorderseite der
 
 rc_viscore
 
- sofort aufleuchten.
+ stereo camera sofort aufleuchten.
 
 Warnung: Schauen Sie während der Inbetriebnahme oder des Betriebs zu
   keinem Zeitpunkt in das Projektorobjektiv oder in den Lichtstrahl in
-  der Mitte des
+  der Mitte der
 
   rc_viscore
 
-  .
+   stereo camera.
 
 Herstellen der Verbindung
 
-Der
+Die
 
 rc_viscore
 
- kann zusammen mit einem
+ stereo camera kann zusammen mit einem
 
 rc_cube
 
  oder als eigenständige hochauflösende RGBD-Kamera mit dem
 SGM®producer verwendet werden. Die folgenden Abschnitte beschreiben
-den Anschluss des
+den Anschluss der
 
 rc_viscore
 
- in beiden Szenarien.
+ stereo camera in beiden Szenarien.
 
 Verbinden mit dem rc_cube
 
@@ -100,36 +102,33 @@ Der
 rc_cube
 
  I (Industrie Edge Computer) bietet vier Netzwerkanschlüsse, die mit
-Sensor 0-3 bezeichnet sind. Die beiden Netzwerkkabel des
+Sensor 0-3 bezeichnet sind. Die beiden Netzwerkkabel der
 
 rc_viscore
 
- müssen direkt an zwei dieser Ports angeschlossen werden. Welche das
-sind, spielt keine Rolle. Es können zwei
-
-rc_viscore
-
- Geräte gleichzeitig angeschlossen und verwendet werden.
+ stereo camera müssen direkt an zwei dieser Ports angeschlossen
+werden. Welche das sind, spielt keine Rolle. Es können zwei
+Stereokameras gleichzeitig angeschlossen und verwendet werden.
 
 Der
 
 rc_cube
 
  S (Edge Computer) bietet einen 2,5-Gigabit-Sensoranschluss. Für den
-Anschluss eines
+Anschluss einer
 
 rc_viscore
 
- muss ein Switch verwendet werden. Der Switch muss 2,5 Gigabit für den
-Anschluss an den
+ stereo camera muss ein Switch verwendet werden. Der Switch muss 2,5
+Gigabit für den Anschluss an den
 
 rc_cube
 
- und 1 Gigabit Geschwindigkeit für den Anschluss an den
+ und 1 Gigabit Geschwindigkeit für den Anschluss an die
 
 rc_viscore
 
- unterstützen. Der Switch ist nicht im Lieferumfang des
+ stereo camera unterstützen. Der Switch ist nicht im Lieferumfang des
 
 rc_cube
 
@@ -144,11 +143,12 @@ rc_cube
 
 rc_visard
 
- als Sensor unterstützt wird. Um einen
+ als Sensor unterstützt wird. Um eine
 
 rc_viscore
 
- zu unterstützen, muss der Typ der Kamera-Pipeline in der Web GUI des
+ stereo camera zu unterstützen, muss der Typ der Kamera-Pipeline in
+der Web GUI des
 
 rc_cube
 
@@ -160,18 +160,15 @@ https://doc.rc-cube.com/latest/en/pipelines.html
 erlaubt, den Typ der Pipeline auf "rc_viscore" zu ändern. Nach der
 Änderung der Pipeline-Konfiguration ist ein Neustart erforderlich.
 
-Für den gleichzeitigen Anschluss von zwei
+Für den gleichzeitigen Anschluss von zwei Stereokameras ist es
+zusätzlich notwendig, wie oben beschrieben, eine zweite Pipeline zu
+konfigurieren und durch Setzen eines Filterausdrucks festzulegen,
+welche Pipeline welche
 
 rc_viscore
 
--Sensoren ist es zusätzlich notwendig, wie oben beschrieben, eine
-zweite Pipeline zu konfigurieren und durch Setzen eines
-Filterausdrucks festzulegen, welche Pipeline welchen
-
-rc_viscore
-
- verwenden soll. Dies geschieht durch Anklicken von Kameraverbindung
-konfigurieren auf der Seite
+ stereo camera verwenden soll. Dies geschieht durch Anklicken von
+Kameraverbindung konfigurieren auf der Seite
 
 Kamera-Pipelines
 
@@ -185,31 +182,34 @@ connected-cameras
 
 ).
 
-Es kann bis zu einer Minute dauern, bis der
+Es kann bis zu einer Minute dauern, bis die
 
 rc_viscore
 
- verbunden ist. Für jeden erfolgreich verbundenen Sensor wird die
-Verbindungsgeschwindigkeit und Bildrate im Dashboard der Web GUI
-angezeigt.
+ stereo camera verbunden ist. Für jeden erfolgreich verbundenen Sensor
+wird die Verbindungsgeschwindigkeit und Bildrate im Dashboard der Web
+GUI angezeigt.
 
 Anschließen an den SGM®Producer
 
-Für die Verwendung des
+Für die Verwendung der
 
 rc_viscore
 
- als hochauflösende RGBD-Kamera bietet Roboception den SGM®Producer
-an, der eine GenICam-kompatible Transportschicht darstellt (siehe
+ stereo camera als hochauflösende RGBD-Kamera bietet Roboception den
+SGM®Producer an, der eine GenICam-kompatible Transportschicht
+darstellt (siehe
 
 https://roboception.com/product/sgmproducer
 
-). Der Producer kann mit Halcon, mit der rc_genicam_api für C++
+).
+
+Der Producer kann mit Halcon, mit der rc_genicam_api für C++
 Programmierer, mit dem rc_genicam_driver für ROS und ROS2, sowie mit
 jeder anderen GenICam kompatiblen Anwendung verwendet werden. Er kann
 kostenlos von
 
-http://www.roboception.com/download
+https://www.roboception.com/download
 
  heruntergeladen und auf Windows- und Ubuntu-Computern mit einer
 Nvidia-Grafikkarte installiert werden.
@@ -227,18 +227,17 @@ Selbstkonfigurationsprotokoll zurück, wenn kein DHCP-Server gefunden
 werden kann. Für eine direkte Verbindung ohne DHCP-Server sollten die
 Ethernet-Ports des Computers für ein Link-Local-Netzwerk konfiguriert
 werden. Es ist auch möglich, die IP-Adressen der linken und rechten
+Kamera manuell zu konfigurieren.
 
-rc_viscore
-
- Kamera manuell zu konfigurieren. Die Optionen zum Ändern der
-Netzwerkeinstellungen und der IP-Konfiguration sind:
+Die Optionen zum Ändern der Netzwerkeinstellungen und der IP-
+Konfiguration sind:
 
    jedes Konfigurationstool, das mit GigE Vision 2.0 kompatibel ist,
    oder das Kommandozeilentool gc_config von Roboception.
    Normalerweise scannen diese Tools nach allen verfügbaren GigE
-   Vision® Geräten im Netzwerk. Alle rc_viscore Geräte können
-   eindeutig anhand ihrer Seriennummer identifiziert werden, die auf
-   dem Gerät aufgedruckt ist.
+   Vision® Geräten im Netzwerk. Alle Geräte vom Typ rc_viscore stereo
+   camera können eindeutig anhand ihrer Seriennummer identifiziert
+   werden, die auf dem Gerät aufgedruckt ist.
 
    vorübergehende Änderung der Netzwerkkonfiguration über das Tool
    rcdiscover-gui von Roboception. Die einzelnen Kameras können in der
@@ -249,32 +248,32 @@ Bemerkung: Das Kommandozeilen-Tool "gc_config" ist Teil des Open-
   Source- Convenience-Layers "rc_genicam_api" von Roboception, der
   kostenlos für Windows und Linux von
 
-  http://www.roboception.com/download
+  https://www.roboception.com/download
 
    heruntergeladen werden kann.
 
 Für die Einstellung des Fokus, die Überprüfung und die Kalibrierung
-des
+der
 
 rc_viscore
 
-, wie in den nächsten Abschnitten erläutert, enthält das SGM®Producer-
-Paket ein Kalibrierprogramm, genannt *rc_calib*.
+ stereo camera, wie in den nächsten Abschnitten erläutert, enthält das
+SGM®Producer-Paket ein Kalibrierprogramm, genannt *rc_calib*.
 
 Fokus einstellen
 
-Es wird dringend empfohlen, den Fokus des
+Es wird dringend empfohlen, den Fokus der
 
 rc_viscore
 
- im tatsächlichen Arbeitsbereich zu überprüfen und einzustellen. Bitte
-beachten Sie, dass der Tiefenschärfebereich aufgrund der hohen
-Auflösung des Sensors begrenzt ist und an den Arbeitsbereich der
-Anwendung angepasst werden muss. Im Nahbereich ist der
-Schärfentiefebereich deutlich kleiner als in größerer Entfernung.
+ stereo camera im tatsächlichen Arbeitsbereich zu überprüfen und
+einzustellen. Bitte beachten Sie, dass der Tiefenschärfebereich
+aufgrund der hohen Auflösung der Kamera begrenzt ist und an den
+Arbeitsbereich der Anwendung angepasst werden muss. Im Nahbereich ist
+der Schärfentiefebereich deutlich kleiner als in größerer Entfernung.
 Daher sollte der Mindestabstand für die Fokussierung so weit entfernt
 wie für die jeweilige Anwendung sinnvoll gewählt werden. Bei Fragen
-zum Arbeitsabstand und zur Kalibrierung des Sensors wenden Sie sich
+zum Arbeitsabstand und zur Kalibrierung der Kamera wenden Sie sich
 bitte an den
 
 Support
@@ -295,12 +294,12 @@ https://doc.rc-cube.com/latest/en/camera_calibration.html
 .
 
 Für Benutzer des SGM®Producer ist der Fokus-Helfer im
-Kalibrierprogramm *rc_calib* zu finden, nachdem der
+Kalibrierprogramm *rc_calib* zu finden, nachdem die
 
 rc_viscore
 
- mit File ‣ Connect sensor ... ausgewählt und die Größe des
-Kalibriermusters angegeben wurde.
+ stereo camera mit File ‣ Connect sensor ... ausgewählt und die Größe
+des Kalibriermusters angegeben wurde.
 
 Die Balken auf der rechten Seite des Bildes zeigen die Unschärfe des
 Kalibriermusters an. Ein Minimum ist wünschenswert. Das Muster sollte
@@ -356,9 +355,9 @@ Sie die drei kleinen Kreuzschlitzschrauben am entsprechenden Ring des
 Projektorobjektivs, drehen den Ring auf die gewünschte Einstellung und
 ziehen die Schrauben wieder leicht an. Für die Schärfeeinstellung
 sollte der Projektor permanent eingeschaltet sein, indem der Modus
-Out1 in der Web GUI auf High gesetzt wird. Für Blendeneinstellungen
+Out1 in der Web GUI  auf High gesetzt wird. Für Blendeneinstellungen
 sollte Out1 auf ExposureAlternateActive und der Belichtungsmodus auf
-der Kameraseite des Web GUI auf "Auto" eingestellt werden. Die
+der Kameraseite der Web GUI  auf "Auto" eingestellt werden. Die
 perfekte Fokussierung des Projektors ist nicht entscheidend. Eine
 leicht unscharfe Projektion beeinträchtigt das Tiefenbild nicht.
 
@@ -367,18 +366,21 @@ Kalibrierung
 Nach der Überprüfung und eventuellen Einstellung der Schärfe ist der
 nächste Schritt die Überprüfung der Kalibrierung. Dieser Schritt
 sollte niemals übersprungen werden und ist im Gegensatz zu allen
-rc_visard-Produkten obligatorisch. Bitte beachten Sie, dass der
-Arbeitsbereich des
+
+rc_visard
+
+-Produkten obligatorisch. Bitte beachten Sie, dass der Arbeitsbereich
+der
 
 rc_viscore
 
- vordefiniert ist und die Kalibrierung für den minimalen und maximalen
-Arbeitsbereich überprüft werden sollte. Bei Fragen zum Arbeitsbereich
-und zur Kalibrierung des
+ stereo camera vordefiniert ist und die Kalibrierung für den minimalen
+und maximalen Arbeitsbereich überprüft werden sollte. Bei Fragen zum
+Arbeitsbereich und zur Kalibrierung der
 
 rc_viscore
 
- wenden Sie sich bitte an den
+ stereo camera wenden Sie sich bitte an den
 
 Support
 
@@ -398,27 +400,29 @@ SGM®Producer angewandt werden, indem das mit dem Producer
 mitgelieferte Programm *rc_calib* verwendet wird.
 
 Warnung: Es ist zwingend erforderlich, die Kalibrierung immer zu
-  überprüfen, nachdem der
+  überprüfen, nachdem die
 
   rc_viscore
 
-   montiert, der Fokus oder die Blende verändert wurde. Nach der
-  Kalibrierung ist auch eine neue Hand-Auge-Kalibrierung erforderlich.
+   stereo camera montiert, der Fokus oder die Blende verändert wurde.
+  Nach der Kalibrierung ist auch eine neue Hand-Auge-Kalibrierung
+  erforderlich.
 
-Bemerkung: Der
+Bemerkung: Die
 
   rc_viscore
 
-   wird von Roboception mit voreingestelltem Fokus geliefert, um
-  sicherzustellen, dass er im gewünschten Tiefenbereich funktioniert.
-  Bitte wenden Sie sich an den
+   stereo camera wird von Roboception mit voreingestelltem Fokus
+  geliefert, um sicherzustellen, dass er im gewünschten Tiefenbereich
+  funktioniert. Bitte wenden Sie sich an den
 
   Support
 
-   und teilen Sie uns Ihre Spezifikationen mit, damit wir den
+   und teilen Sie uns Ihre Spezifikationen mit, damit wir die
 
   rc_viscore
 
-   entsprechend einrichten können. Eine Kalibrierungsprüfung vor Ort
-  ist dennoch erforderlich, um sicherzustellen, dass bei der Lieferung
-  oder Montage keine Probleme aufgetreten sind.
+   stereo camera entsprechend einrichten können. Eine
+  Kalibrierungsprüfung vor Ort ist dennoch erforderlich, um
+  sicherzustellen, dass bei der Lieferung oder Montage keine Probleme
+  aufgetreten sind.

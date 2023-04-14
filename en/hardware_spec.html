@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Hardware specification &mdash; rc_viscore 1.0 documentation</title>
+  <title>Hardware specification &mdash; rc_viscore 1.1 documentation</title>
   
 
   
@@ -49,7 +49,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="rc_viscore 1.0 documentation" href="index.html"/>
+    <link rel="top" title="rc_viscore 1.1 documentation" href="index.html"/>
         <link rel="next" title="Installation" href="installation.html"/>
         <link rel="prev" title="Safety" href="safety.html"/> 
 
@@ -81,7 +81,7 @@
             
             
               <div class="version">
-                01
+                1.1
               </div>
             
           
@@ -158,7 +158,7 @@
 <li class="toctree-l2"><a class="reference internal" href="accessories.html#power-connections">Power connections</a></li>
 <li class="toctree-l2"><a class="reference internal" href="accessories.html#power-supplies">Power supplies</a></li>
 <li class="toctree-l2"><a class="reference internal" href="accessories.html#spare-parts">Spare parts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="accessories.html#sgmregproducer-and-rc-cube">SGM®Producer and rc_cube</a></li>
+<li class="toctree-l2"><a class="reference internal" href="accessories.html#sgmregproducer-and-rc-cube">SGM®Producer <span>and rc_cube</span></a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a><ul>
@@ -240,17 +240,17 @@
 </div>
 <div class="section" id="scope-of-delivery">
 <h2>Scope of delivery<a class="headerlink" href="#scope-of-delivery" title="Permalink to this headline">¶</a></h2>
-<p>Standard delivery for an <em>rc_viscore</em> includes</p>
+<p>Standard delivery for the <em>rc_viscore</em> stereo camera includes</p>
 <blockquote>
 <div><ul class="simple">
-<li><em>rc_viscore</em> sensor,</li>
+<li><em>rc_viscore</em> stereo camera,</li>
 <li>Calibration grid large (A3),</li>
-<li>2 x 10 m gigabit ethernet network cables,</li>
+<li>2 x 10 m gigabit Ethernet network cables,</li>
 <li>10 m power cable with M12 connector and one open end,</li>
 <li>Quickstart guide.</li>
 </ul>
 </div></blockquote>
-<p>The full manual is online available in digital form at <a class="reference external" href="http://doc.rc-viscore.com">http://doc.rc-viscore.com</a>.</p>
+<p>The full manual is online available in digital form at <a class="reference external" href="https://doc.rc-viscore.com">https://doc.rc-viscore.com</a>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p>The following items are not included in the delivery unless otherwise specified:</p>
@@ -258,30 +258,30 @@
 <li>Couplings, adapters, mounts,</li>
 <li>Power supply unit and fuses.</li>
 </ul>
-<p class="last">Please refer to <a class="reference internal" href="accessories.html#sect-accessories"><span class="std std-ref">Accessories</span></a> for suggested third-party cable vendors.</p>
+<p class="last">Please refer to <a class="reference internal" href="accessories.html#sect-accessories"><span class="std std-ref">Accessories</span></a> for suggested cables.</p>
 </div>
-<p>The following picture shows the important parts of the <em>rc_viscore</em> which are referenced later in the documentation.</p>
+<p>The following picture shows the important parts of the <em>rc_viscore</em> stereo camera which are referenced later in the documentation.</p>
 <div class="figure align-center" id="id1">
-<span id="fig-parts"></span><a class="reference internal image-reference" href="_images/rcv_cameras.png"><img alt="_images/rcv_cameras.png" src="_images/rcv_cameras.png" style="width: 160mm;" /></a>
+<span id="fig-parts"></span><a class="reference internal image-reference" href="_images/rcv_cameras_en.png"><img alt="_images/rcv_cameras_en.png" src="_images/rcv_cameras_en.png" style="width: 160mm;" /></a>
 <p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Parts description</span></p>
 </div>
 </div>
 <div class="section" id="technical-specification">
 <h2>Technical specification<a class="headerlink" href="#technical-specification" title="Permalink to this headline">¶</a></h2>
-<p id="index-0">The technical specification of the <em>rc_viscore</em> is shown in
+<p id="index-0">The technical specification of the <em>rc_viscore</em> stereo camera is shown in
 <a class="reference internal" href="#tab-common-hardware-specifications"><span class="std std-numref">Table 1</span></a>. The given depth image frame rate
-can be reached on an <em>rc_cube</em> or with the SGM®producer on a computer
+can be reached <span>on an <em>rc_cube</em> or</span> with the SGM®producer on a computer
 with an Nvidia RTX2070 GPU. Higher frame rates (up to 9 Hz) are possible with
 faster graphics cards.</p>
 <span id="tab-common-hardware-specifications"></span><table border="1" class="docutils" id="id2">
-<caption><span class="caption-number">Table 1 </span><span class="caption-text">Technical specifications of the <em>rc_viscore</em></span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-number">Table 1 </span><span class="caption-text">Technical specifications of the <em>rc_viscore</em> stereo camera</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="26%" />
 <col width="74%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">&#160;</th>
-<th class="head"><strong>rc_viscore 210m-16-12M-H1-R</strong></th>
+<th class="head"><em>rc_viscore</em> stereo camera</th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -329,21 +329,22 @@ faster graphics cards.</p>
 </tr>
 </tbody>
 </table>
-<p>The depth image range of the <em>rc_viscore</em> depends on the depth image quality,
+<p>The depth image range of the <em>rc_viscore</em> stereo camera depends on the depth image quality,
 the specified maximum depth range and the available GPU memory. Depth ranges at
-closer distance are much smaller than depth ranges at far distances. The
-<em>rc_cube</em> uses 3.4 Gbytes of GPU memory for stereo matching. <a class="reference internal" href="#tab-common-depth-ranges"><span class="std std-numref">Table 2</span></a> shows examples of resulting depth ranges with
-this amount of GPU memory. Larger depth ranges are possible by using the
+closer distance are much smaller than depth ranges at far distances.
+<span>The <em>rc_cube</em> uses 3.4 Gbytes of GPU memory for stereo matching.</span>
+<a class="reference internal" href="#tab-common-depth-ranges"><span class="std std-numref">Table 2</span></a> shows examples of resulting depth ranges with
+3.4 Gbytes of GPU memory. Larger depth ranges are possible by using the
 SGM®producer with a graphics card that offers more GPU memory.</p>
 <span id="tab-common-depth-ranges"></span><table border="1" class="docutils" id="id3">
-<caption><span class="caption-number">Table 2 </span><span class="caption-text">Examples of possible depth ranges of the <em>rc_viscore</em> with 3.4 Gbytes of GPU memory as in case of the <em>rc_cube</em></span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-number">Table 2 </span><span class="caption-text">Examples of possible depth ranges of the <em>rc_viscore</em> stereo camera with 3.4 Gbytes of GPU memory <span>as in case of the <em>rc_cube</em></span></span><a class="headerlink" href="#id3" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="34%" />
 <col width="66%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">&#160;</th>
-<th class="head"><strong>rc_viscore 210m-16-12M-H1-R</strong></th>
+<th class="head"><em>rc_viscore</em> stereo camera</th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -377,18 +378,18 @@ depth quality, the resolution and accuracy will be better by a factor of 2.
 Similarly, in medium quality, the resolution and accuracy will be about 2 times
 worse than shown in the table.</p>
 <span id="tab-common-accuracy"></span><table border="1" class="docutils" id="id4">
-<caption><span class="caption-number">Table 3 </span><span class="caption-text">Resolution and accuracy of the <em>rc_viscore</em> in millimeters with high
+<caption><span class="caption-number">Table 3 </span><span class="caption-text">Resolution and accuracy of the <em>rc_viscore</em> stereo camera in millimeters with high
 quality stereo matching and random dot projection on non-reflective and
 non-transparent objects.</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
 <colgroup>
-<col width="34%" />
+<col width="31%" />
+<col width="33%" />
 <col width="36%" />
-<col width="30%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">&#160;</th>
 <th class="head"><strong>distance</strong></th>
-<th class="head"><strong>rc_viscore</strong></th>
+<th class="head"><em>rc_viscore</em> stereo camera</th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -446,14 +447,14 @@ accuracy</td>
 </table>
 <div class="figure align-center" id="id5">
 <span id="fig-size"></span><span id="index-1"></span><a class="reference internal image-reference" href="_images/rcv_size.png"><img alt="_images/rcv_size.png" src="_images/rcv_size.png" style="width: 160mm;" /></a>
-<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">Overall dimensions of the <em>rc_viscore</em> in millimeters</span></p>
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">Overall dimensions of the <em>rc_viscore</em> stereo camera in millimeters</span></p>
 </div>
-<p id="index-2">CAD models of the <em>rc_viscore</em> can be downloaded from <a class="reference external" href="http://www.roboception.com/download">http://www.roboception.com/download</a>. The CAD models are provided as-is,
+<p id="index-2">CAD models of the <em>rc_viscore</em> stereo camera can be downloaded from <a class="reference external" href="https://www.roboception.com/download">https://www.roboception.com/download</a>. The CAD models are provided as-is,
 with no guarantee of correctness.</p>
 </div>
 <div class="section" id="environmental-and-operating-conditions">
 <h2>Environmental and operating conditions<a class="headerlink" href="#environmental-and-operating-conditions" title="Permalink to this headline">¶</a></h2>
-<p id="index-3">The <em>rc_viscore</em> is designed for industrial applications. Always respect the storage, transport, and operating environmental
+<p id="index-3">The <em>rc_viscore</em> stereo camera is designed for industrial applications. Always respect the storage, transport, and operating environmental
 conditions outlined in <a class="reference internal" href="#tab-hardware-environment"><span class="std std-numref">Table 4</span></a>.</p>
 <span id="tab-hardware-environment"></span><table border="1" class="docutils" id="id6">
 <caption><span class="caption-number">Table 4 </span><span class="caption-text">Environmental conditions</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
@@ -463,7 +464,7 @@ conditions outlined in <a class="reference internal" href="#tab-hardware-environ
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">&#160;</th>
-<th class="head"><strong>rc_viscore</strong></th>
+<th class="head"><em>rc_viscore</em> stereo camera</th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -489,9 +490,9 @@ conditions outlined in <a class="reference internal" href="#tab-hardware-environ
 </tr>
 </tbody>
 </table>
-<p id="index-4">The <em>rc_viscore</em> is designed for an operating temperature (surrounding environment) of 0 °C to 45 °C and
+<p id="index-4">The <em>rc_viscore</em> stereo camera is designed for an operating temperature (surrounding environment) of 0 °C to 45 °C and
 relies on convective (passive) cooling. Unobstructed airflow, especially around the cooling fins,
-needs to be ensured during use. The <em>rc_viscore</em> should only be mounted using the provided
+needs to be ensured during use. The <em>rc_viscore</em> stereo camera should only be mounted using the provided
 mechanical mounting interface, and all parts of the housing must remain uncovered.
 A free space of at least 10 cm extending in
 all directions from the housing, and sufficient air exchange with the environment is
@@ -499,8 +500,8 @@ required to ensure adequate cooling. Cooling fins must be free of dirt and other
 </div>
 <div class="section" id="power-supply-specifications">
 <span id="power-supply"></span><h2>Power-supply specifications<a class="headerlink" href="#power-supply-specifications" title="Permalink to this headline">¶</a></h2>
-<p id="index-5">The <em>rc_viscore</em> needs to be supplied by a DC voltage source. The <em>rc_viscore</em>’s standard package does not include a DC power supply.
-Each <em>rc_viscore</em> must be connected to a separate power supply. Connection to domestic
+<p id="index-5">The <em>rc_viscore</em> stereo camera needs to be supplied by a DC voltage source. The camera’s standard package does not include a DC power supply.
+Each <em>rc_viscore</em> stereo camera must be connected to a separate power supply. Connection to domestic
 grid power is only allowed through a power supply certified as EN55011 Class B.</p>
 <span id="tab-hardware-power"></span><table border="1" class="docutils" id="id7">
 <caption><span class="caption-number">Table 5 </span><span class="caption-text">Absolute maximum ratings for power supply</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
@@ -538,12 +539,12 @@ grid power is only allowed through a power supply certified as EN55011 Class B.<
 </table>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">Exceeding maximum power rating values may lead to damage of the <em>rc_viscore</em>, power
+<p class="last">Exceeding maximum power rating values may lead to damage of the <em>rc_viscore</em> stereo camera, power
 supply, and connected equipment.</p>
 </div>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">A separate power supply must power each <em>rc_viscore</em>.</p>
+<p class="last">A separate power supply must power each <em>rc_viscore</em> stereo camera.</p>
 </div>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
@@ -553,27 +554,27 @@ as EN55011 Class B only.</p>
 </div>
 <div class="section" id="wiring">
 <span id="sect-wiring"></span><h2>Wiring<a class="headerlink" href="#wiring" title="Permalink to this headline">¶</a></h2>
-<p id="index-6">The <em>rc_viscore</em> is delivered with a sync cable already connected between
+<p id="index-6">The <em>rc_viscore</em> stereo camera is delivered with a sync cable already connected between
 projector and cameras. It is the customer’s responsibility to connect the two
 provided M12 X-coded network cables to the left and right camera, as well as
 the power cable with an angled M12 connector to the projector (see
 <a class="reference internal" href="#fig-connect"><span class="std std-numref">Fig. 4</span></a>). The network cables must be clipped into the cable guide
 for strain relief. All cables must be secured to the mounting bracket.</p>
 <div class="figure align-center" id="id8">
-<span id="fig-connect"></span><a class="reference internal image-reference" href="_images/rcv_connect.png"><img alt="_images/rcv_connect.png" src="_images/rcv_connect.png" style="width: 160mm;" /></a>
-<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Locations of the electrical connections for the <em>rc_viscore</em></span></p>
+<span id="fig-connect"></span><a class="reference internal image-reference" href="_images/rcv_connect_en.png"><img alt="_images/rcv_connect_en.png" src="_images/rcv_connect_en.png" style="width: 160mm;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Locations of the electrical connections for the <em>rc_viscore</em> stereo camera</span></p>
 </div>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">Due to the voltage drop, the maximum power cable length is limited to
 15 m. The supply voltage should be set to the specified 24 V and must not be
-set above 26 V due to the highly variable current draw of the <em>rc_viscore</em>.</p>
+set above 26 V due to the highly variable current draw of the <em>rc_viscore</em> stereo camera.</p>
 </div>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">Proper cable management is mandatory. Cabling must always be secured to the <em>rc_viscore</em>
-mount with a strain-relief clamp so that no forces due to cable movements are exerted on the <em>rc_viscore</em>’s
-M12 connectors. Enough slack needs to be provided to allow for full range of movement of the <em>rc_viscore</em>
+<p class="last">Proper cable management is mandatory. Cabling must always be secured to the <em>rc_viscore</em> stereo camera
+mount with a strain-relief clamp so that no forces due to cable movements are exerted on the <em>rc_viscore</em> stereo camera’s
+M12 connectors. Enough slack needs to be provided to allow for full range of movement of the camera
 without straining the cable. The cable’s minimum bend radius (i.e. <span class="math notranslate nohighlight">\(R_{min} = 15 d\)</span>) needs to be observed.</p>
 </div>
 <p id="index-7">Pin assignments for the power connector are given in <a class="reference internal" href="#tab-power-pin-assignments"><span class="std std-numref">Table 6</span></a>.</p>
@@ -605,12 +606,12 @@ without straining the cable. The cable’s minimum bend radius (i.e. <span class
 </tr>
 <tr class="row-even"><td>3</td>
 <td>Green</td>
-<td>nc</td>
-<td>&#160;</td>
+<td>GPIO In 1</td>
+<td>12-24 V, 15 mA max.</td>
 </tr>
 <tr class="row-odd"><td>4</td>
 <td>Yellow</td>
-<td>nc</td>
+<td>GPIO GND</td>
 <td>&#160;</td>
 </tr>
 <tr class="row-even"><td>5</td>
@@ -635,19 +636,23 @@ without straining the cable. The cable’s minimum bend radius (i.e. <span class
 </tr>
 </tbody>
 </table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Please note that in hardware revisions prior to 1.1 the pins number 3 and 4 were not connected.</p>
+</div>
 <p>GPIOs are decoupled by photocouplers. <em>GPIO Out 1</em> by default provides an
 exposure sync signal with a logic high level for the duration of the image
 exposure. Pins of unused GPIOs should be left floating. GPIO circuitry and
 specifications are shown in <a class="reference internal" href="#fig-gpio"><span class="std std-numref">Fig. 5</span></a>.</p>
 <div class="figure align-center" id="id10">
-<span id="fig-gpio"></span><a class="reference internal image-reference" href="_images/rcv_gpio.png"><img alt="_images/rcv_gpio.png" src="_images/rcv_gpio.png" style="width: 160mm;" /></a>
+<span id="fig-gpio"></span><a class="reference internal image-reference" href="_images/rcv_gpio_en.png"><img alt="_images/rcv_gpio_en.png" src="_images/rcv_gpio_en.png" style="width: 160mm;" /></a>
 <p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">GPIO circuitry and specifications</span></p>
 </div>
 </div>
 <div class="section" id="coordinate-frames">
 <span id="sect-coordinate-frames"></span><h2>Coordinate frames<a class="headerlink" href="#coordinate-frames" title="Permalink to this headline">¶</a></h2>
-<p id="index-8">The <em>rc_viscore</em>’s coordinate-frame origin is defined as the exit pupil of the
-left camera lens. This frame is called sensor coordinate frame or camera
+<p id="index-8">The <em>rc_viscore</em> stereo camera’s coordinate-frame origin is defined as the exit pupil of the
+left camera lens. This frame is called camera
 coordinate frame. It is shown in <a class="reference internal" href="#fig-frame"><span class="std std-numref">Fig. 6</span></a>.</p>
 <div class="figure align-center" id="id11">
 <span id="fig-frame"></span><a class="reference internal image-reference" href="_images/rcv_frame.png"><img alt="_images/rcv_frame.png" src="_images/rcv_frame.png" style="width: 160mm;" /></a>
@@ -655,7 +660,7 @@ coordinate frame. It is shown in <a class="reference internal" href="#fig-frame"
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The correct offset between the sensor/camera frame and a robot
+<p class="last">The correct offset between the camera frame and a robot
 coordinate frame can be calibrated through hand-eye calibration. See
 <a class="reference external" href="https://doc.rc-cube.com/latest/en/handeye_calibration.html">https://doc.rc-cube.com/latest/en/handeye_calibration.html</a>.</p>
 </div>
@@ -738,7 +743,7 @@ coordinate frame can be calibrated through hand-eye calibration. See
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'1.0',
+            VERSION:'1.1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

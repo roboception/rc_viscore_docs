@@ -2,24 +2,24 @@ Zubehör
 
 Stromanschluss
 
-Der
+Die
 
 rc_viscore
 
- verfügt über einen 8-poligen A-codierten M12-Stecker für die
-Stromversorgung und GPIO-Verbindung zur Robotersteuerung. Verschiedene
-Verkabelungslösungen können von Drittanbietern bezogen werden. Eine
-Auswahl an M12-zu-Open-End-Kabeln finden Sie im Folgenden. Der Kunde
-muss die Stromversorgungs- und GPIO-Anschlüsse an den Kabeln gemäß den
-in
+ stereo camera verfügt über einen 8-poligen A-codierten M12-Stecker
+für die Stromversorgung und GPIO-Verbindung zur Robotersteuerung.
+Verschiedene Verkabelungslösungen können von Drittanbietern bezogen
+werden. Eine Auswahl an M12-zu-Open-End-Kabeln finden Sie im
+Folgenden. Der Kunde muss die Stromversorgungs- und GPIO-Anschlüsse an
+den Kabeln gemäß den in
 
 Verkabelung
 
- beschriebenen Pinouts bereitstellen. Das Gehäuse des
+ beschriebenen Pinouts bereitstellen. Das Gehäuse der
 
 rc_viscore
 
- muß geerdet werden.
+ stereo camera muss geerdet werden.
 
 Sensor-/Aktor-Kabel mit M12-Buchse und einseitig offenem Ende für die
 Stromversorgung und GPIO-Verbindung
@@ -30,19 +30,19 @@ Phoenix Contact SAC-8P-10,0-PUR/M12FR SH, Art.Nr.: 1522943
 Netzwerkkabel M12 X-kodiert auf RJ45
 
 Gerades M12 X-kodiertes auf RJ45 CAT6A Kabel, 10m Länge, 2 Stück pro
-rc_viscore erforderlich: Phoenix Contact NBC-M12MSX/10,0-94F/R4AC,
-Art.Nr.: 1407474
+rc_viscore stereo camera erforderlich: Phoenix Contact NBC-
+M12MSX/10,0-94F/R4AC, Art.Nr.: 1407474
 
 Netzteile
 
-Der
+Die
 
 rc_viscore
 
- ist als EN-55011 Klasse B Gerät klassifiziert, und für kommerzielle,
-industrielle und geschäftliche Einsatzbereiche vorgesehen. Um den
-Sensor an ein Gebäudenetz anschließen zu können, wird ein Netzteil
-gemäß EN 55011/55022 Klasse B benötigt.
+ stereo camera ist als EN-55011 Klasse B Gerät klassifiziert, und für
+kommerzielle, industrielle und geschäftliche Einsatzbereiche
+vorgesehen. Um die Kamera an ein Gebäudenetz anschließen zu können,
+wird ein Netzteil gemäß EN 55011/55022 Klasse B benötigt.
 
 Es liegt in der Verantwortung des Kunden, eine geeignete
 Spannungsversorgung für den dauerhaften Einsatz in industrieller
@@ -51,34 +51,35 @@ die EN 61000-6-2 als auch die EN 55011/55022 Klasse B erfüllt, ist das
 Hutschienen-Netzteil PULS MiniLine ML70.100 24V/DC 3 A der Firma PULS
 GmbH (
 
-http://www.pulspower.com
+https://www.pulspower.com
 
 ). Die Installation muss von einer Elektrofachkraft durchgeführt
 werden.
 
-Es darf immer nur ein ein
+Es darf immer nur eine
 
 rc_viscore
 
- an eine Spannungsversorgung angeschlossen werden. Die Länge der
-verwendeten Kabel darf 15 Meter nicht überschreiten.
+ stereo camera an eine Spannungsversorgung angeschlossen werden. Die
+Länge der verwendeten Kabel darf 15 Meter nicht überschreiten.
 
 Ersatzteile
 
 Auf Anfrage kann Roboception Kalibriermuster, Stromkabel und
-Netzwerkkabel als Ersatzteile für den
+Netzwerkkabel als Ersatzteile für die
 
 rc_viscore
 
- liefern.
+ stereo camera liefern.
 
 SGM®Producer und rc_cube
 
-Der
+Die
 
 rc_viscore
 
- liefert 12MP Kamerabilder und -- in Kombination mit einem
+ stereo camera liefert 12MP Kamerabilder und -- in Kombination mit
+einem
 
 rc_cube
 
@@ -87,21 +88,22 @@ integrierte
 
 rc_randomdot
 
- Projektor ermöglicht dichte Tiefenbilder auch in schwach texturierten
+ projector ermöglicht dichte Tiefenbilder auch in schwach texturierten
 Szenen und die hohe Auflösung erlaubt die Erkennung von Kleinteilen
 mit hoher Genauigkeit. Der SGM® Producer kann unter
 
-http://www.roboception.com/download
+https://www.roboception.com/download
 
- heruntergeladen werden.
+  heruntergeladen werden.
 
 In Kombination mit dem
 
 rc_cube
 
- liefert der
+ liefert die
 
 rc_viscore
 
- Daten für Anwendungen zur Objekterkennung und Greifpunktberechnung,
-z.B. in der industriellen Automatisierung und Logistik.
+ stereo camera Daten für Anwendungen zur Objekterkennung und
+Greifpunktberechnung, z.B. in der industriellen Automatisierung und
+Logistik.
