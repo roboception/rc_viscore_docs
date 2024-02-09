@@ -92,15 +92,15 @@ is made, the manual will also be revised; see revision information.
 
 .. only:: matrixvision
 
-   | **Distributor**
-   | MATRIX VISION GmbH
-   | Talstrasse 16
-   | D-71570 Oppenweiler
+   | **Distributor:** 
+   | Balluff GmbH
+   | Schurwaldstrasse 9
+   | D-73765 Neuhausen a.d.F.
    | Germany
    |
-   | Web: https://www.matrix-vision.com
-   | Email: info@matrix-vision.de
-   | Phone: +49 71 91 94 32-0
+   | Web: https://www.balluff.com
+   | Email: balluff@balluff.de
+   | Phone: +49 7158 173-0 
    |
 
 

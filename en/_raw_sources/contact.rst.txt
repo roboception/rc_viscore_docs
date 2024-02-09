@@ -14,7 +14,7 @@ Support
 
 .. only:: matrixvision
 
-    For support issues, please see https://www.matrix-vision.com/support-en.html or use our service desk: https://servicedesk.matrix-vision.com/.
+    For support issues, please see https://www.balluff.com.
 
 .. only:: schunk
 
@@ -56,14 +56,14 @@ Address
 
 .. only:: matrixvision
 
-    | MATRIX VISION GmbH
-    | Talstrasse 16
-    | 71570 Oppenweiler
+    | Balluff GmbH
+    | Schurwaldstrasse 9
+    | D-73765 Neuhausen a.d.F.
     | Germany
     |
-    | Web: https://www.matrix-vision.com
-    | Email: info@matrix-vision.de
-    | Phone: +49 71 91 94 32-0
+    | Web: https://www.balluff.com
+    | Email: balluff@balluff.de
+    | Phone: +49 7158 173-0 
     |
 
 .. only:: schunk

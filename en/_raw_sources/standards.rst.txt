@@ -118,4 +118,4 @@ Available certificates
 
 .. only:: matrixvision
 
-    Copies of the various certificates can be downloaded from the corresponding product page on https://www.matrix-vision.com.
+    Copies of the various certificates can be downloaded from the corresponding product page on https://www.balluff.com.

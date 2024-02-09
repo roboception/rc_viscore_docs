@@ -33,7 +33,7 @@ Standard delivery for the |rc_viscore_camera| includes
        - 2 x 10 m gigabit Ethernet network cables,
        - 10 m power cable with M12 connector and one open end.
 
-   The full manual is online available in digital form at https://www.matrix-vision.com/en/downloads/online-manuals.
+   The full manual is online available in digital form at https://www.balluff.com.
 
 .. Note:: The following items are not included in the delivery unless otherwise specified:
 
@@ -186,7 +186,7 @@ worse than shown in the table.
 
 .. only:: matrixvision
 
-   CAD models of the |rc_viscore_camera| can be downloaded from https://www.matrix-vision.com on the corresponding product page. 
+   CAD models of the |rc_viscore_camera| can be downloaded from https://www.balluff.com on the corresponding product page. 
    The CAD models are provided as-is, with no guarantee of correctness.
 
 .. only:: schunk

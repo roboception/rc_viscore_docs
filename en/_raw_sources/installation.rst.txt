@@ -126,7 +126,7 @@ https://roboception.com/product/sgmproducer).` :mvonly:`layer.`
 
    Via the mvIMPACT Acquire API, the producer can be used with different programming
    languages, with Halcon, as well as with any other GenICam compatible application. It
-   can be downloaded free of charge from https://www.matrix-vision.com and
+   can be downloaded free of charge from https://www.balluff.com and
    installed on Windows and Ubuntu computers with an Nvidia graphics card.
 
 It is strongly recommended to connect both network cables directly to 1 gigabit
@@ -166,7 +166,7 @@ possible to manually configure IP addresses of the left and right camera.
 
    The tool mvIPConfigure can be used for changing the network settings and the IP address. It is
    contained in the mvIMPACT Acquire driver for gigabit Ethernet cameras. The driver can be downloaded
-   from https://www.matrix-vision.com/en/downloads. Alternatively, any other GigE Vision 2.0 compatible
+   from https://www.balluff.com. Alternatively, any other GigE Vision 2.0 compatible
    configuration tool can be used.
 
 
@@ -282,8 +282,7 @@ questions regarding working distance and calibration of the |rc_viscore_camera|.
 
 .. only:: matrixvision
 
-   The manual of the smart 3D camera explains checking and re-calibrating in detail (see
-   https://www.matrix-vision.com/manuals/rc_visard/en/camera_calibration.html#verify-calibration).
+   The manual of the smart 3D camera explains checking and re-calibrating in detail.
    The procedure that is described their can be applied in the same way to the
    SGM\ |reg|\ Producer, by using the `rc_calib` program that is provided with the
    producer.

@@ -90,7 +90,7 @@ The |rc_viscore_camera| provides 12MP camera images and -- in combination with :
 The integrated |rc_randomdot_projector| allows for dense depth images even in
 weakly textured scenes and the high resolution permits the detection of small
 parts with high accuracy. The SGM\ |reg|\ Producer can be downloaded from
-:mvexclude:`http://www.roboception.com/download` :mvonly:`https://www.matrix-vision.com`.
+:mvexclude:`http://www.roboception.com/download` :mvonly:`https://www.balluff.com`.
 
 .. only:: roboception or schunk or basler
 

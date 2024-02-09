@@ -28,7 +28,7 @@ with high accuracy.
 
 .. only:: matrixvision
     
-    Supplementary information is provided on the corresponding product page on https://www.matrix-vision.com.
+    Supplementary information is provided on the corresponding product page on https://www.balluff.com.
 
 .. _fig-viscore:
 .. figure:: images/viscore_small.*
