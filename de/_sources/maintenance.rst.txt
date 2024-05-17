@@ -29,7 +29,7 @@ oder Schmutzpartikel zu entfernen. Um hartnäckige Verschmutzungen zu
 entfernen, wischen Sie die Linse in sanft kreisenden Bewegungen mit
 einem Reinigungstuch ab, auf das 1-2 Tropfen einer alkoholfreien
 Linsenreinigungslösung aufgebracht wurde, die für beschichtete Linsen
-geeignet ist (z. B. die Uvex Clear-Produktfamilie). Tragen Sie die
+geeignet ist (z.B. die Uvex Clear-Produktfamilie). Tragen Sie die
 Flüssigkeit immer auf ein Tuch und nicht auf das Objektiv selbst auf.
 
 Warnung: Wenn die Objektivabdeckungen entfernt wurden, ist eine
@@ -38,8 +38,12 @@ Warnung: Wenn die Objektivabdeckungen entfernt wurden, ist eine
 Änderung des Arbeitsbereichs
 
 Falls eine Änderung des Arbeitsbereichs gewünscht wird, ist eine
-Anpassung des Fokus sowie des Tiefenbereichs erforderlich. Bitte
-beachten Sie die Einschränkungen im Messbereich in
+Anpassung des Fokus (siehe
+
+Kamerafokus einstellen
+
+) sowie des Tiefenbereichs erforderlich. Bitte beachten Sie die
+Einschränkungen im Messbereich in
 
 Tab. 2
 

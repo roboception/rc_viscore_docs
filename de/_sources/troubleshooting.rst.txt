@@ -78,20 +78,49 @@ Tiefenbereich zu verändern. Siehe auch Tab. 2 für Beispiele von
 möglichen Tiefenbereichen.
 
 Bei Objekten ohne Textur können Tiefenwerte fehlen. In diesem Fall
-sollte der interne Random-Dot-Projektor für die Projektion einer
-künstlichen Textur verwendet werden. Für Tiefenbilder, die im Single-
-Shot-Modus aufgenommen werden, sollte auf der Tiefenbildseite der Web
-GUI des rc_cube  der Modus Single+Out1 gewählt werden. Für
-kontinuierlich berechnete Tiefenbilder sollte der Projektor für jedes
-zweite Bild eingeschaltet werden, indem auf der Seite Pipeline X ‣
-Konfiguration ‣ IOControl  Out1 auf ExposureAlternateActive gesetzt
+sollte der interne Projektor für die Projektion einer künstlichen
+Textur verwendet werden. Für Tiefenbilder, die im Single-Shot-Modus
+aufgenommen werden, sollte auf der Tiefenbildseite der Web GUI des
+rc_cube  der Modus Single+Out1 gewählt werden. Für kontinuierlich
+berechnete Tiefenbilder sollte der Projektor für jedes zweite Bild
+eingeschaltet werden, indem auf der Seite Pipeline ... ‣ Konfiguration
+‣ IOControl  Out1 / Projektor auf ExposureAlternateActive gesetzt
 wird.
 
-Der Fokus kann für den Arbeitsbereich ungeeignet sein. Bitte
-überprüfen Sie die Schärfe mit einem Kalibriermuster, wie in Fokus
-einstellen\:(Abschnitt \ref{installation:sect-adjust-focus})
-beschrieben.
+Der interne Projektor kann zu dunkel sein, um in der Szene sichtbar zu
+sein. Verringern Sie das Umgebungslicht oder passen Sie die Blende des
+Projektors an, wie in Projektorblende einstellen\:(Abschnitt
+\ref{installation:sect-adjust-projector-aperture}) beschrieben.
+
+Das Muster des internen Projektors kann zu unscharf sein um die
+Tiefenbildberechnung zu unterstützen. Stellen Sie den Fokus des
+Projektors ein wir in  in Projektorfokus einstellen\:(Abschnitt
+\ref{installation:sect-adjust-projector-focus}) beschrieben.
+
+Der Fokus der Kamera kann für den Arbeitsbereich ungeeignet sein.
+Bitte überprüfen Sie die Schärfe der Kamera mit einem Kalibriermuster,
+wie in Kamerafokus einstellen\:(Abschnitt \ref{installation:sect-
+adjust-focus}) beschrieben.
 
 Die Kalibrierung der rc_viscore stereo camera kann ungenau sein. Bitte
 überprüfen Sie die Kalibrierung wie in Kalibrierung\:(Abschnitt
 \ref{installation:sect-calibration}) beschrieben.
+
+Dunkle Kamerabilder
+
+Die Kamerabilder der
+
+rc_viscore
+
+ stereo camera, die auf der Kameraseite der
+
+rc_cube
+
+ Web GUI unter Pipeline ... ‣ Kamera oder mit dem SGM®Producer gesehen
+werden können, können zu dunkel sein. Dies kann folgende Gründe haben:
+
+Der interne Projektor kann zu hell sein. Erhöhen Sie das
+Umgebungslicht oder verringern Sie die Projektorhelligkeit durch
+Anpassung der Blende des Projektors, wie in Projektorblende
+einstellen\:(Abschnitt \ref{installation:sect-adjust-projector-
+aperture}) beschrieben.

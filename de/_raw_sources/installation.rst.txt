@@ -130,12 +130,12 @@ https://roboception.com/product/sgmproducer).` :mvonly:`layer.`
    installed on Windows and Ubuntu computers with an Nvidia graphics card.
 
 It is strongly recommended to connect both network cables directly to 1 gigabit
-Ethernet ports of the computer. A network switch can only work if the network
-link between the switch and the computer has a bandwidth of more than 2
-gigabit, e.g. 2.5, 5 or 10 gigabit.
+Ethernet ports of the computer. When using a network switch, the network
+link between the switch and the computer should have a bandwidth of more than 2
+gigabit, e.g. 2.5, 5 or 10 gigabit. Otherwise, the full frame rate cannot be reached.
 
 In the default network configuration and according to the GigE Vision\ |reg| standard,
-the |rc_viscore_camera| cameras will try to obtain their configuration from a DHCP server
+the |rc_viscore_camera| will try to obtain its configuration from a DHCP server
 and fall back to the Link-Local self-configuration protocol, if no DHCP server
 can be found. For direct connection without a DHCP server, the Ethernet
 ports of the computer should be configured for Link-Local network. It is also
@@ -172,44 +172,26 @@ possible to manually configure IP addresses of the left and right camera.
 
 For adjusting the focus, checking and calibrating the |rc_viscore_camera|, as
 explained in the next sections, the SGM\ |reg|\ Producer package contains a
-calibration program, called `rc_calib`.
+calibration program, called :mvexclude:`rc_calib,` :mvonly:`3D_calib,` and a
+viewer program, called :mvexclude:`rc_viewer.` :mvonly:`3D_viewer.`
 
 .. _sect-adjust-focus:
 
-Adjust focus
-------------
+Adjust camera focus
+-------------------
 
 .. index:: ! focus adjustment
    single: working range
    single: aperture
 
-It is highly recommended to check and adjust the focus of the |rc_viscore_camera| for the
-actual working range. Please note that the depth of focus range is limited due
-to the high resolution of the camera and must be adapted to the working range
-of the application. At close distance, the depth of focus range is much smaller
-than at higher distance. Therefore, the minimum distance for focusing should be
-chosen as far away as useful for the application. Please 
-:ref:`contact support<sect-contact>`:latex:`\:(Section \ref{contact:sect-contact})` 
-in case of questions regarding working distance and
-calibration of the |rc_viscore_camera|.
-
-.. only:: roboception or schunk or basler
-
-   The |rc_cube| offers a focus helper as part of camera calibration
-   under :menuselection:`Pipeline ... --> Configuration --> Camera Calibration`.
-   In the first step, the size of the calibration grid has to be specified. Clicking on
-   :guilabel:`Next` opens the focus helper. See also
-   https://doc.rc-cube.com/latest/en/camera_calibration.html.
-
-For users of the SGM\ |reg|\ Producer, the focus helper can be found in the `rc_calib`
-calibration program after selecting the |rc_viscore_camera| with
-:menuselection:`File --> Connect sensor ...`, and specifying the grid size.
-
-The bars on the right side of the image report the blur of the calibration
-grid, thus a minimum is desirable. The grid should be placed in the minimum and
-maximum working distance for checking the current blur. A value near the lowest
-dividing line is quite optimal. :mvexclude:`See also
-https://doc.rc-cube.com/latest/en/camera_calibration.html#adjust-focus.`
+It is highly recommended to check the focus of the |rc_viscore_camera| for the
+actual working range. By default, |manufacturer| focuses the |rc_viscore_camera| to a distance of 1.6 m
+(unless otherwise specified by the customer), which results in a working range of approximately 1.4-2.0 m. 
+If a different working range is used in the application, the focus 
+must be adapted. Please note that the focus range is limited due
+to the high resolution of the camera. At close distance, the focus range is much smaller
+than at higher distances. Therefore, the minimum distance for focusing should be
+chosen as far away as useful for the application.
 
 If focus adjustment is needed, the lens caps of the left and right cameras must
 be removed as shown in :numref:`fig-focus`.
@@ -219,44 +201,143 @@ be removed as shown in :numref:`fig-focus`.
    :width:  140mm
    :align: center
 
-   Removing of lens caps for re-focussing and changing aperture
+   Removing of lens caps for re-focusing and changing aperture
 
-The focus ring and the aperture ring are locked by 3 screws for each ring as shown in
-:numref:`fig-ricoh`. All three screws must be loosened for moving the ring.
+The focus ring and the aperture ring (iris ring) are locked by 3 screws for each ring as shown in
+:numref:`fig-ricoh`. All three screws must be loosened for moving a ring.
 
 .. _fig-ricoh:
 .. figure:: images/ricoh_focus_aperture.png
    :width:  140mm
    :align: center
 
-   Location of screws for focus and aperture ring
+   Locations of screws for focus ring and aperture ring (iris ring)
+
+.. only:: roboception or schunk or basler
+
+   The |rc_cube| offers a focus helper as part of camera calibration
+   on the |webgui| under :menuselection:`Pipeline ... --> Configuration --> Camera Calibration`.
+   In the first step, the size of the calibration grid has to be specified. Clicking on
+   :guilabel:`Next` opens the focus helper. See also
+   https://doc.rc-cube.com/latest/en/camera_calibration.html.
+
+In the SGM\ |reg|\ Producer, a focus helper can be found in the
+calibration program :mvexclude:`rc_calib`:mvonly:`3D_calib` after selecting the |rc_viscore_camera| with
+:menuselection:`File --> Connect sensor ...`, and specifying the grid size.
+
+The bars on the right side of the focus helper image report the blur of the calibration
+grid, thus a minimum is desirable. :mvexclude:`See also
+https://doc.rc-cube.com/latest/en/camera_calibration.html#adjust-focus.`
 
 For setting the focus correctly, the calibration grid should be placed in the
-middle of the working range. Then, the focus ring should be turned until the
-bars in the images become a minimum. After focusing in this way, the
+middle of the working range. Then, the focus ring of each camera should be turned until the
+bar in the corresponding image becomes minimal. A value near the lowest
+dividing line is desirable. After focusing in this way, the
 grid should be placed at the minimum and maximum working distance. If the blur
 is unsatisfactory at the minimum and maximum working distance (e.g. near the
-second dividing line or higher), the aperture can be closed a bit, i.e. choosing a
-higher aperture number. Please be aware that this increases exposure time and
+second dividing line or higher), the aperture of the camera can be closed a bit by turning the iris ring, i.e. a
+higher aperture number should be chosen to expand the focus range of the cameras. 
+Please be aware that this also increases exposure time and
 potentially gain, which increases noise in the image. The optimal tradeoff
-is application dependent.
+is application dependent. The default aperture number of the cameras is 4.
 
 .. Warning:: The same aperture setting must be used for the left and right camera
    to avoid degraded image processing performance. Please validate that the left
    and right images appear with the same brightness.
 
-After adjusting focus and aperture, all screws must be tightened and the lens
-caps re-attached.
+After adjusting focus and aperture, all screws must be lightly tightened and the lens
+caps must be re-attached.
 
-To change focus and aperture settings of the projector, loosen the three small
-fixing Phillips screws on the respective ring of the projector lens, turn the
-ring to the desired setting and lightly tighten the screws again. For focus
-adjustments, the projector should be turned on permanently by setting the Out1
-mode to High :mvexclude:`in the |webgui|.` :mvonly:`in the category DigitalIOControl.` 
-For aperture adjustments, Out1 should be set to
-ExposureAlternateActive and exposure mode should be set to ‚Auto‘ :mvexclude:`on the |webgui|'s
-Camera page.` :mvonly:`in the category AcquisitionControl.` Perfectly focusing the projector is not crucial. Slightly blurred
-projection will not degrade the depth image.
+.. Warning:: It is mandatory to always check calibration after
+   changing the focus or aperture of the |rc_viscore_camera|
+   (see :ref:`sect-calibration`:latex:`, Section \ref{installation:sect-calibration}`) .
+
+Please :ref:`contact support<sect-contact>`:latex:`\:(Section \ref{contact:sect-contact})` 
+in case of questions regarding working distance and focusing of the |rc_viscore_camera|.
+
+
+.. _sect-adjust-projector-focus:
+
+Adjust projector focus
+----------------------
+
+.. index:: ! projector
+   single: projector focus
+
+During production, the focus of the projector is adjusted to match the focus distance of the cameras,
+which is 1.6 m by default (unless otherwise specified by the customer). Perfectly focusing 
+the projector is not crucial. A slightly blurred projection pattern will not degrade the depth image.
+
+.. only:: roboception or schunk or basler
+
+   To inspect the sharpness of the projector pattern, the projector should be turned on permanently
+   by setting the *Out1 / Projector* mode to ``High`` on the |rc_cube| |webgui| under 
+   :menuselection:`Pipeline ... --> Camera --> IOControl Settings` or :menuselection:`Pipeline ... --> Configuration --> IOControl`. 
+
+.. only:: matrixvision
+
+   To inspect the sharpness of the projector pattern, the projector should be turned on permanently
+   by setting the *Out1 / Projector* mode to ``High`` on the 3D_viewer *Depth* page. 
+
+The projector focus only needs to be adjusted when the projector pattern is strongly blurred.
+In this case, loosen the three small
+fixing Phillips screws on the focus ring of the projector lens as shown in :numref:`fig-ricoh`.
+Then, turn the focus ring until the visible projector pattern becomes sharp. 
+After that, lightly tighten the focus ring screws again.
+
+
+.. _sect-adjust-projector-aperture:
+
+Adjust projector aperture
+-------------------------
+
+.. index:: ! projector
+   single: projector brightness
+   single: projector aperture
+
+The aperture of the projector influences the brightness of the projector pattern. By default,
+the aperture of the projector is fully open, which means the projector has maximum brightness.
+The aperture should be adjusted so that the brightness difference between images taken
+with projector and images taken without projector is not too large, but the projector pattern is 
+still visible in the images taken with projector. To find the correct setting, make sure the external
+light in the working environment is similar to what is expected during productive mode and the 
+|rc_viscore_camera| is mounted at the desired distance from the scene.
+
+.. only:: roboception or schunk or basler
+
+   Then, on the |rc_cube| |webgui| under :menuselection:`Pipeline ... --> Camera`, set the 
+   *Exposure* mode to ``Auto`` and set the *Auto Exposure Mode* to ``AdaptiveOut1``.
+   Also set the *Out1 / Projector* mode to ``ExposureAlternateActive`` under *IOControl Settings*,
+   so that every second image is taken with projector pattern.
+   Now, the text line under the live images shows the *Out1 reduction* value in percent.
+
+.. only:: matrixvision
+
+   Then, in the 3D_viewer, set the *Auto exposure mode* on the *Camera* page to ``AdaptiveOut1`` 
+   and set the *Out1 / Projector* mode of the *Depth* page to ``ExposureAlternateActive``, so that every second image is
+   taken with projector pattern. Now, the status bar of the 3D_viewer shows the *Out1 reduction* as a value between 0 and 1.
+
+The *Out1 reduction* value describes the reduction of the brightness of the image without projection compared to the 
+image with projection. The value should be between 10% and 20%. A higher *Out1 reduction* value means, that the projector is
+too bright compared to the external lighting, which leads to images without projector patterns being too dark.
+Thus, external lighting should be increased, e.g. by installing an additional
+light source, or the brightness of the projector should be reduced by slightly closing the aperture. In analogy, if the 
+*Out1 reduction* value is too low, the projector is not bright enough compared to the external light,
+which means that the projector pattern will hardly be visible in the camera images and cannot enhance the depth computation.
+So the external light should be reduced or the projector brightness must be increased by opening the aperture.
+
+The aperture of the projector can be adjusted by loosening the three small
+fixing Phillips screws on the iris ring of the projector lens as shown in :numref:`fig-ricoh`.
+Then, turn the iris ring until the *Out1 reduction* value is in the range between 10% and 20%. 
+
+After that, the darkest object that is possible in the application should be placed in the field of view of the camera.
+If the dark object is not properly visible in the depth image, then the projector brightness must be increased, 
+despite high *Out1 reduction* values.
+
+In the end, lightly tighten the iris ring screws again.
+
+Please :ref:`contact support<sect-contact>`:latex:`\:(Section \ref{contact:sect-contact})` 
+in case of questions regarding adjusting the projector of the |rc_viscore_camera|.
 
 .. _sect-calibration:
 
@@ -265,31 +346,33 @@ Calibration
 
 .. index:: ! calibration
 
-After checking and potentially adjusting the focus, the next step is to check
-calibration. This step should never be skipped and :mvexclude:`-- as opposed
+After checking and potentially adjusting the focus of the cameras, the next step is to check
+the camera calibration. This step should never be skipped and :mvexclude:`-- as opposed
 to all |rc_visard| products --` is mandatory. Please note that the working range of the |rc_viscore_camera|
 is pre-defined and the calibration should be checked for the minimum and
-maximum working range. Please :ref:`contact support<sect-contact>`:latex:`\:(Section \ref{contact:sect-contact})` in case of
+maximum working distance. Please :ref:`contact support<sect-contact>`:latex:`\:(Section \ref{contact:sect-contact})` in case of
 questions regarding working distance and calibration of the |rc_viscore_camera|.
 
 .. only:: roboception or schunk or basler
 
-   The |rc_cube| manual explains checking and re-calibrating in detail (see
+   The |rc_cube| manual explains checking calibration and re-calibrating in detail (see
    https://doc.rc-cube.com/latest/en/camera_calibration.html#verify-calibration).
-   The procedure that is described their can be applied in the same way to the
+   The procedure that is described there can be applied in the same way to the
    SGM\ |reg|\ Producer, by using the `rc_calib` program that is provided with the
    producer.
 
 .. only:: matrixvision
 
    The manual of the smart 3D camera explains checking and re-calibrating in detail.
-   The procedure that is described their can be applied in the same way to the
-   SGM\ |reg|\ Producer, by using the `rc_calib` program that is provided with the
+   The procedure that is described there can be applied in the same way to the
+   SGM\ |reg|\ Producer, by using the `3D_calib` program that is provided with the
    producer.
 
 .. Warning:: It is mandatory to always check calibration after mounting the
-   |rc_viscore_camera|, changing the focus or aperture. After calibration, also a new
-   hand-eye calibration is required.
+   |rc_viscore_camera|, changing the focus or aperture.
+
+Recalibration is only necessary if the reported calibration error is above 0.3 pixels.
+After recalibration, also a new hand-eye calibration is required.
 
 .. only:: roboception or schunk or basler
 
@@ -298,4 +381,4 @@ questions regarding working distance and calibration of the |rc_viscore_camera|.
       :ref:`contact support<sect-contact>`:latex:`\:(Section \ref{contact:sect-contact})` 
       and provide your specification to enable us to set up the
       |rc_viscore_camera| accordingly. An onsite calibration check is still required to make
-      sure that no problem occurred during delivery or mounting.
+      sure that no problem occurred during shipping or mounting.

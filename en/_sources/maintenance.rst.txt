@@ -35,8 +35,12 @@ Warning: In case the lens covers are removed, a calibration check is
 Change of Working Range
 
 In case a change of working range is desired, an adjustment of the
-focus as well as the depth range is required. Please note the
-limitations in the measurement range in
+focus (see
+
+Adjust camera focus
+
+) as well as the depth range is required. Please note the limitations
+in the measurement range in
 
 Table 2
 

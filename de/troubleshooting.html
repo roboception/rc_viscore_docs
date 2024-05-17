@@ -145,7 +145,9 @@
 <li class="toctree-l3"><a class="reference internal" href="installation.html#connecting-to-the-sgmregproducer">Anschließen an den SGM®Producer</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#adjust-focus">Fokus einstellen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#adjust-camera-focus">Kamerafokus einstellen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#adjust-projector-focus">Projektorfokus einstellen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#adjust-projector-aperture">Projektorblende einstellen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="installation.html#calibration">Kalibrierung</a></li>
 </ul>
 </li>
@@ -164,6 +166,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Fehlerbehebung</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#hardware-issues">Hardware-Probleme</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#sparse-depth-images">Spärlich befüllte Tiefenbilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dark-camera-images">Dunkle Kamerabilder</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="contact.html">Kontakt</a><ul>
@@ -259,9 +262,18 @@
 <p>Die Tiefenbilder der <em>rc_viscore</em> Stereokamera, die <span>auf der Seite <em>Tiefenbild</em> in der Web GUI des <em>rc_cube</em> oder</span> mit dem SGM®Producer gesehen werden können, können fehlende Werte aufweisen, die schwarz dargestellt werden. Fehlende Werte in der Nähe von Objektgrenzen sind normal. Wenn große Teile des Tiefenbildes ungültig sind, kann dies folgende Gründe haben:</p>
 <ul class="simple">
 <li>Die Szene kann außerhalb des aktuellen Arbeitsbereichs der <em>rc_viscore</em> Stereokamera liegen. Abhängig von der Tiefenbildqualität wird durch die Verringerung des Parameters <em>Maximaler Abstand</em> auch die mögliche minimale Entfernung verringert. <span>In der Web GUI des <em>rc_cube</em> wird der verwendete Tiefenbereich auf der Tiefenbildseite unterhalb der Bilder angegeben. Schieberegler auf der Tiefenbildseite erlauben es, den Tiefenbereich zu verändern.</span> Siehe auch <a class="reference internal" href="hardware_spec.html#tab-common-depth-ranges"><span class="std std-numref">Tab. 2</span></a> für Beispiele von möglichen Tiefenbereichen.</li>
-<li>Bei Objekten ohne Textur können Tiefenwerte fehlen. In diesem Fall sollte der interne Random-Dot-Projektor für die Projektion einer künstlichen Textur verwendet werden. Für Tiefenbilder, die im Single-Shot-Modus aufgenommen werden, sollte <span>auf der Tiefenbildseite der Web GUI des <em>rc_cube</em></span>  der Modus <cite>Single+Out1</cite> gewählt werden. Für kontinuierlich berechnete Tiefenbilder sollte der Projektor für jedes zweite Bild eingeschaltet werden, indem <span>auf der Seite <span class="menuselection">Pipeline X ‣ Konfiguration ‣ IOControl</span></span>  <cite>Out1</cite> auf <cite>ExposureAlternateActive</cite> gesetzt wird.</li>
-<li>Der Fokus kann für den Arbeitsbereich ungeeignet sein. Bitte überprüfen Sie die Schärfe mit einem Kalibriermuster, wie in <a class="reference internal" href="installation.html#sect-adjust-focus"><span class="std std-ref">Fokus einstellen</span></a> beschrieben.</li>
+<li>Bei Objekten ohne Textur können Tiefenwerte fehlen. In diesem Fall sollte der interne Projektor für die Projektion einer künstlichen Textur verwendet werden. Für Tiefenbilder, die im Single-Shot-Modus aufgenommen werden, sollte <span>auf der Tiefenbildseite der Web GUI des <em>rc_cube</em></span>  der Modus <cite>Single+Out1</cite> gewählt werden. Für kontinuierlich berechnete Tiefenbilder sollte der Projektor für jedes zweite Bild eingeschaltet werden, indem <span>auf der Seite <span class="menuselection">Pipeline … ‣ Konfiguration ‣ IOControl</span></span>  <cite>Out1 / Projektor</cite> auf <cite>ExposureAlternateActive</cite> gesetzt wird.</li>
+<li>Der interne Projektor kann zu dunkel sein, um in der Szene sichtbar zu sein. Verringern Sie das Umgebungslicht oder passen Sie die Blende des Projektors an, wie in <a class="reference internal" href="installation.html#sect-adjust-projector-aperture"><span class="std std-ref">Projektorblende einstellen</span></a> beschrieben.</li>
+<li>Das Muster des internen Projektors kann zu unscharf sein um die Tiefenbildberechnung zu unterstützen. Stellen Sie den Fokus des Projektors ein wir in  in <a class="reference internal" href="installation.html#sect-adjust-projector-focus"><span class="std std-ref">Projektorfokus einstellen</span></a> beschrieben.</li>
+<li>Der Fokus der Kamera kann für den Arbeitsbereich ungeeignet sein. Bitte überprüfen Sie die Schärfe der Kamera mit einem Kalibriermuster, wie in <a class="reference internal" href="installation.html#sect-adjust-focus"><span class="std std-ref">Kamerafokus einstellen</span></a> beschrieben.</li>
 <li>Die Kalibrierung der <em>rc_viscore</em> Stereokamera kann ungenau sein. Bitte überprüfen Sie die Kalibrierung wie in <a class="reference internal" href="installation.html#sect-calibration"><span class="std std-ref">Kalibrierung</span></a> beschrieben.</li>
+</ul>
+</div>
+<div class="section" id="dark-camera-images">
+<h2>Dunkle Kamerabilder<a class="headerlink" href="#dark-camera-images" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Die Kamerabilder der <em>rc_viscore</em> Stereokamera, die <span>auf der Kameraseite der <em>rc_cube</em> Web GUI unter</span> <span><span class="menuselection">Pipeline … ‣ Kamera</span></span> <span>oder</span> mit dem SGM®Producer gesehen werden können, können zu dunkel sein. Dies kann folgende Gründe haben:</p>
+<ul class="simple">
+<li>Der interne Projektor kann zu hell sein. Erhöhen Sie das Umgebungslicht oder verringern Sie die Projektorhelligkeit durch Anpassung der Blende des Projektors, wie in <a class="reference internal" href="installation.html#sect-adjust-projector-aperture"><span class="std std-ref">Projektorblende einstellen</span></a> beschrieben.</li>
 </ul>
 </div>
 </div>

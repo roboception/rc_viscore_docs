@@ -145,7 +145,9 @@
 <li class="toctree-l3"><a class="reference internal" href="#connecting-to-the-sgmregproducer">Connecting to the SGM®Producer</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#adjust-focus">Adjust focus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adjust-camera-focus">Adjust camera focus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adjust-projector-focus">Adjust projector focus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adjust-projector-aperture">Adjust projector aperture</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#calibration">Calibration</a></li>
 </ul>
 </li>
@@ -164,6 +166,7 @@
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#hardware-issues">Hardware issues</a></li>
 <li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#sparse-depth-images">Sparse depth images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html#dark-camera-images">Dark camera images</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="contact.html">Contact</a><ul>
@@ -324,11 +327,11 @@ for ROS and ROS2, as well as with any other GenICam compatible application. It
 can be downloaded free of charge from <a class="reference external" href="https://www.roboception.com/download">https://www.roboception.com/download</a> and
 installed on Windows and Ubuntu computers with an Nvidia graphics card.</p>
 <p>It is strongly recommended to connect both network cables directly to 1 gigabit
-Ethernet ports of the computer. A network switch can only work if the network
-link between the switch and the computer has a bandwidth of more than 2
-gigabit, e.g. 2.5, 5 or 10 gigabit.</p>
+Ethernet ports of the computer. When using a network switch, the network
+link between the switch and the computer should have a bandwidth of more than 2
+gigabit, e.g. 2.5, 5 or 10 gigabit. Otherwise, the full frame rate cannot be reached.</p>
 <p>In the default network configuration and according to the GigE Vision® standard,
-the <em>rc_viscore</em> stereo camera cameras will try to obtain their configuration from a DHCP server
+the <em>rc_viscore</em> stereo camera will try to obtain its configuration from a DHCP server
 and fall back to the Link-Local self-configuration protocol, if no DHCP server
 can be found. For direct connection without a DHCP server, the Ethernet
 ports of the computer should be configured for Link-Local network. It is also
@@ -354,91 +357,137 @@ for Windows and Linux from <a class="reference external" href="https://www.roboc
 </div>
 <p>For adjusting the focus, checking and calibrating the <em>rc_viscore</em> stereo camera, as
 explained in the next sections, the SGM®Producer package contains a
-calibration program, called <cite>rc_calib</cite>.</p>
+calibration program, called <span>rc_calib,</span>  and a
+viewer program, called <span>rc_viewer.</span> </p>
 </div>
 </div>
-<div class="section" id="adjust-focus">
-<span id="sect-adjust-focus"></span><h2>Adjust focus<a class="headerlink" href="#adjust-focus" title="Permalink to this headline">¶</a></h2>
-<p id="index-5">It is highly recommended to check and adjust the focus of the <em>rc_viscore</em> stereo camera for the
-actual working range. Please note that the depth of focus range is limited due
-to the high resolution of the camera and must be adapted to the working range
-of the application. At close distance, the depth of focus range is much smaller
-than at higher distance. Therefore, the minimum distance for focusing should be
-chosen as far away as useful for the application. Please
-<a class="reference internal" href="contact.html#sect-contact"><span class="std std-ref">contact support</span></a>
-in case of questions regarding working distance and
-calibration of the <em>rc_viscore</em> stereo camera.</p>
-<p>The <em>rc_cube</em> offers a focus helper as part of camera calibration
-under <span class="menuselection">Pipeline … ‣ Configuration ‣ Camera Calibration</span>.
-In the first step, the size of the calibration grid has to be specified. Clicking on
-<span class="guilabel">Next</span> opens the focus helper. See also
-<a class="reference external" href="https://doc.rc-cube.com/latest/en/camera_calibration.html">https://doc.rc-cube.com/latest/en/camera_calibration.html</a>.</p>
-<p>For users of the SGM®Producer, the focus helper can be found in the <cite>rc_calib</cite>
-calibration program after selecting the <em>rc_viscore</em> stereo camera with
-<span class="menuselection">File ‣ Connect sensor …</span>, and specifying the grid size.</p>
-<p>The bars on the right side of the image report the blur of the calibration
-grid, thus a minimum is desirable. The grid should be placed in the minimum and
-maximum working distance for checking the current blur. A value near the lowest
-dividing line is quite optimal. <span>See also
-<a class="reference external" href="https://doc.rc-cube.com/latest/en/camera_calibration.html#adjust-focus">https://doc.rc-cube.com/latest/en/camera_calibration.html#adjust-focus</a>.</span></p>
+<div class="section" id="adjust-camera-focus">
+<span id="sect-adjust-focus"></span><h2>Adjust camera focus<a class="headerlink" href="#adjust-camera-focus" title="Permalink to this headline">¶</a></h2>
+<p id="index-5">It is highly recommended to check the focus of the <em>rc_viscore</em> stereo camera for the
+actual working range. By default, Roboception focuses the <em>rc_viscore</em> stereo camera to a distance of 1.6&nbsp;m
+(unless otherwise specified by the customer), which results in a working range of approximately 1.4-2.0&nbsp;m.
+If a different working range is used in the application, the focus
+must be adapted. Please note that the focus range is limited due
+to the high resolution of the camera. At close distance, the focus range is much smaller
+than at higher distances. Therefore, the minimum distance for focusing should be
+chosen as far away as useful for the application.</p>
 <p>If focus adjustment is needed, the lens caps of the left and right cameras must
 be removed as shown in <a class="reference internal" href="#fig-focus"><span class="std std-numref">Fig. 8</span></a>.</p>
 <div class="figure align-center" id="id2">
 <span id="fig-focus"></span><a class="reference internal image-reference" href="_images/rcv_focus_en.png"><img alt="_images/rcv_focus_en.png" src="_images/rcv_focus_en.png" style="width: 140mm;" /></a>
-<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">Removing of lens caps for re-focussing and changing aperture</span></p>
+<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">Removing of lens caps for re-focusing and changing aperture</span></p>
 </div>
-<p>The focus ring and the aperture ring are locked by 3 screws for each ring as shown in
-<a class="reference internal" href="#fig-ricoh"><span class="std std-numref">Fig. 9</span></a>. All three screws must be loosened for moving the ring.</p>
+<p>The focus ring and the aperture ring (iris ring) are locked by 3 screws for each ring as shown in
+<a class="reference internal" href="#fig-ricoh"><span class="std std-numref">Fig. 9</span></a>. All three screws must be loosened for moving a ring.</p>
 <div class="figure align-center" id="id3">
 <span id="fig-ricoh"></span><a class="reference internal image-reference" href="_images/ricoh_focus_aperture_en.png"><img alt="_images/ricoh_focus_aperture_en.png" src="_images/ricoh_focus_aperture_en.png" style="width: 140mm;" /></a>
-<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">Location of screws for focus and aperture ring</span></p>
+<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">Locations of screws for focus ring and aperture ring (iris ring)</span></p>
 </div>
+<p>The <em>rc_cube</em> offers a focus helper as part of camera calibration
+on the Web GUI under <span class="menuselection">Pipeline … ‣ Configuration ‣ Camera Calibration</span>.
+In the first step, the size of the calibration grid has to be specified. Clicking on
+<span class="guilabel">Next</span> opens the focus helper. See also
+<a class="reference external" href="https://doc.rc-cube.com/latest/en/camera_calibration.html">https://doc.rc-cube.com/latest/en/camera_calibration.html</a>.</p>
+<p>In the SGM®Producer, a focus helper can be found in the
+calibration program <span>rc_calib</span> after selecting the <em>rc_viscore</em> stereo camera with
+<span class="menuselection">File ‣ Connect sensor …</span>, and specifying the grid size.</p>
+<p>The bars on the right side of the focus helper image report the blur of the calibration
+grid, thus a minimum is desirable. <span>See also
+<a class="reference external" href="https://doc.rc-cube.com/latest/en/camera_calibration.html#adjust-focus">https://doc.rc-cube.com/latest/en/camera_calibration.html#adjust-focus</a>.</span></p>
 <p>For setting the focus correctly, the calibration grid should be placed in the
-middle of the working range. Then, the focus ring should be turned until the
-bars in the images become a minimum. After focusing in this way, the
+middle of the working range. Then, the focus ring of each camera should be turned until the
+bar in the corresponding image becomes minimal. A value near the lowest
+dividing line is desirable. After focusing in this way, the
 grid should be placed at the minimum and maximum working distance. If the blur
 is unsatisfactory at the minimum and maximum working distance (e.g. near the
-second dividing line or higher), the aperture can be closed a bit, i.e. choosing a
-higher aperture number. Please be aware that this increases exposure time and
+second dividing line or higher), the aperture of the camera can be closed a bit by turning the iris ring, i.e. a
+higher aperture number should be chosen to expand the focus range of the cameras.
+Please be aware that this also increases exposure time and
 potentially gain, which increases noise in the image. The optimal tradeoff
-is application dependent.</p>
+is application dependent. The default aperture number of the cameras is 4.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">The same aperture setting must be used for the left and right camera
 to avoid degraded image processing performance. Please validate that the left
 and right images appear with the same brightness.</p>
 </div>
-<p>After adjusting focus and aperture, all screws must be tightened and the lens
-caps re-attached.</p>
-<p>To change focus and aperture settings of the projector, loosen the three small
-fixing Phillips screws on the respective ring of the projector lens, turn the
-ring to the desired setting and lightly tighten the screws again. For focus
-adjustments, the projector should be turned on permanently by setting the Out1
-mode to High <span>in the Web GUI.</span> 
-For aperture adjustments, Out1 should be set to
-ExposureAlternateActive and exposure mode should be set to ‚Auto‘ <span>on the Web GUI’s
-Camera page.</span>  Perfectly focusing the projector is not crucial. Slightly blurred
-projection will not degrade the depth image.</p>
+<p>After adjusting focus and aperture, all screws must be lightly tightened and the lens
+caps must be re-attached.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">It is mandatory to always check calibration after
+changing the focus or aperture of the <em>rc_viscore</em> stereo camera
+(see <a class="reference internal" href="#sect-calibration"><span class="std std-ref">Calibration</span></a>) .</p>
+</div>
+<p>Please <a class="reference internal" href="contact.html#sect-contact"><span class="std std-ref">contact support</span></a>
+in case of questions regarding working distance and focusing of the <em>rc_viscore</em> stereo camera.</p>
+</div>
+<div class="section" id="adjust-projector-focus">
+<span id="sect-adjust-projector-focus"></span><h2>Adjust projector focus<a class="headerlink" href="#adjust-projector-focus" title="Permalink to this headline">¶</a></h2>
+<p id="index-6">During production, the focus of the projector is adjusted to match the focus distance of the cameras,
+which is 1.6&nbsp;m by default (unless otherwise specified by the customer). Perfectly focusing
+the projector is not crucial. A slightly blurred projection pattern will not degrade the depth image.</p>
+<p>To inspect the sharpness of the projector pattern, the projector should be turned on permanently
+by setting the <em>Out1 / Projector</em> mode to <code class="docutils literal notranslate"><span class="pre">High</span></code> on the <em>rc_cube</em> Web GUI under
+<span class="menuselection">Pipeline … ‣ Camera ‣ IOControl Settings</span> or <span class="menuselection">Pipeline … ‣ Configuration ‣ IOControl</span>.</p>
+<p>The projector focus only needs to be adjusted when the projector pattern is strongly blurred.
+In this case, loosen the three small
+fixing Phillips screws on the focus ring of the projector lens as shown in <a class="reference internal" href="#fig-ricoh"><span class="std std-numref">Fig. 9</span></a>.
+Then, turn the focus ring until the visible projector pattern becomes sharp.
+After that, lightly tighten the focus ring screws again.</p>
+</div>
+<div class="section" id="adjust-projector-aperture">
+<span id="sect-adjust-projector-aperture"></span><h2>Adjust projector aperture<a class="headerlink" href="#adjust-projector-aperture" title="Permalink to this headline">¶</a></h2>
+<p id="index-7">The aperture of the projector influences the brightness of the projector pattern. By default,
+the aperture of the projector is fully open, which means the projector has maximum brightness.
+The aperture should be adjusted so that the brightness difference between images taken
+with projector and images taken without projector is not too large, but the projector pattern is
+still visible in the images taken with projector. To find the correct setting, make sure the external
+light in the working environment is similar to what is expected during productive mode and the
+<em>rc_viscore</em> stereo camera is mounted at the desired distance from the scene.</p>
+<p>Then, on the <em>rc_cube</em> Web GUI under <span class="menuselection">Pipeline … ‣ Camera</span>, set the
+<em>Exposure</em> mode to <code class="docutils literal notranslate"><span class="pre">Auto</span></code> and set the <em>Auto Exposure Mode</em> to <code class="docutils literal notranslate"><span class="pre">AdaptiveOut1</span></code>.
+Also set the <em>Out1 / Projector</em> mode to <code class="docutils literal notranslate"><span class="pre">ExposureAlternateActive</span></code> under <em>IOControl Settings</em>,
+so that every second image is taken with projector pattern.
+Now, the text line under the live images shows the <em>Out1 reduction</em> value in percent.</p>
+<p>The <em>Out1 reduction</em> value describes the reduction of the brightness of the image without projection compared to the
+image with projection. The value should be between 10% and 20%. A higher <em>Out1 reduction</em> value means, that the projector is
+too bright compared to the external lighting, which leads to images without projector patterns being too dark.
+Thus, external lighting should be increased, e.g. by installing an additional
+light source, or the brightness of the projector should be reduced by slightly closing the aperture. In analogy, if the
+<em>Out1 reduction</em> value is too low, the projector is not bright enough compared to the external light,
+which means that the projector pattern will hardly be visible in the camera images and cannot enhance the depth computation.
+So the external light should be reduced or the projector brightness must be increased by opening the aperture.</p>
+<p>The aperture of the projector can be adjusted by loosening the three small
+fixing Phillips screws on the iris ring of the projector lens as shown in <a class="reference internal" href="#fig-ricoh"><span class="std std-numref">Fig. 9</span></a>.
+Then, turn the iris ring until the <em>Out1 reduction</em> value is in the range between 10% and 20%.</p>
+<p>After that, the darkest object that is possible in the application should be placed in the field of view of the camera.
+If the dark object is not properly visible in the depth image, then the projector brightness must be increased,
+despite high <em>Out1 reduction</em> values.</p>
+<p>In the end, lightly tighten the iris ring screws again.</p>
+<p>Please <a class="reference internal" href="contact.html#sect-contact"><span class="std std-ref">contact support</span></a>
+in case of questions regarding adjusting the projector of the <em>rc_viscore</em> stereo camera.</p>
 </div>
 <div class="section" id="calibration">
 <span id="sect-calibration"></span><h2>Calibration<a class="headerlink" href="#calibration" title="Permalink to this headline">¶</a></h2>
-<p id="index-6">After checking and potentially adjusting the focus, the next step is to check
-calibration. This step should never be skipped and <span>– as opposed
+<p id="index-8">After checking and potentially adjusting the focus of the cameras, the next step is to check
+the camera calibration. This step should never be skipped and <span>– as opposed
 to all <em>rc_visard</em> products –</span> is mandatory. Please note that the working range of the <em>rc_viscore</em> stereo camera
 is pre-defined and the calibration should be checked for the minimum and
-maximum working range. Please <a class="reference internal" href="contact.html#sect-contact"><span class="std std-ref">contact support</span></a> in case of
+maximum working distance. Please <a class="reference internal" href="contact.html#sect-contact"><span class="std std-ref">contact support</span></a> in case of
 questions regarding working distance and calibration of the <em>rc_viscore</em> stereo camera.</p>
-<p>The <em>rc_cube</em> manual explains checking and re-calibrating in detail (see
+<p>The <em>rc_cube</em> manual explains checking calibration and re-calibrating in detail (see
 <a class="reference external" href="https://doc.rc-cube.com/latest/en/camera_calibration.html#verify-calibration">https://doc.rc-cube.com/latest/en/camera_calibration.html#verify-calibration</a>).
-The procedure that is described their can be applied in the same way to the
+The procedure that is described there can be applied in the same way to the
 SGM®Producer, by using the <cite>rc_calib</cite> program that is provided with the
 producer.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">It is mandatory to always check calibration after mounting the
-<em>rc_viscore</em> stereo camera, changing the focus or aperture. After calibration, also a new
-hand-eye calibration is required.</p>
+<em>rc_viscore</em> stereo camera, changing the focus or aperture.</p>
 </div>
+<p>Recalibration is only necessary if the reported calibration error is above 0.3 pixels.
+After recalibration, also a new hand-eye calibration is required.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Roboception will deliver the <em>rc_viscore</em> stereo camera with pre-adjusted focus to make
@@ -446,7 +495,7 @@ sure it works in the desired depth range. Please
 <a class="reference internal" href="contact.html#sect-contact"><span class="std std-ref">contact support</span></a>
 and provide your specification to enable us to set up the
 <em>rc_viscore</em> stereo camera accordingly. An onsite calibration check is still required to make
-sure that no problem occurred during delivery or mounting.</p>
+sure that no problem occurred during shipping or mounting.</p>
 </div>
 </div>
 </div>

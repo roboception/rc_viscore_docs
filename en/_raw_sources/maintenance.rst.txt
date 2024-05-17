@@ -40,6 +40,6 @@ Change of Working Range
 .. index::
   single: working range
 
-In case a change of working range is desired, an adjustment of the focus as well as
-the depth range is required. Please note the limitations in the measurement
-range in :numref:`tab-common-depth-ranges`.
+In case a change of working range is desired, an adjustment of the focus (see :ref:`sect-adjust-focus`:latex:`, Section \ref{installation:sect-adjust-focus}`) 
+as well as the depth range is required.
+Please note the limitations in the measurement range in :numref:`tab-common-depth-ranges`.

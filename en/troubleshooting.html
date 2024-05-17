@@ -145,7 +145,9 @@
 <li class="toctree-l3"><a class="reference internal" href="installation.html#connecting-to-the-sgmregproducer">Connecting to the SGM®Producer</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#adjust-focus">Adjust focus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#adjust-camera-focus">Adjust camera focus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#adjust-projector-focus">Adjust projector focus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#adjust-projector-aperture">Adjust projector aperture</a></li>
 <li class="toctree-l2"><a class="reference internal" href="installation.html#calibration">Calibration</a></li>
 </ul>
 </li>
@@ -164,6 +166,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Troubleshooting</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#hardware-issues">Hardware issues</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#sparse-depth-images">Sparse depth images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dark-camera-images">Dark camera images</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="contact.html">Contact</a><ul>
@@ -272,16 +275,32 @@ quality, reducing the parameter <em>Maximum Distance</em> also reduces the possi
 Web GUI of the <em>rc_cube</em>, the used depth range is given on the depth image page below the
 images. Sliders on the depth image page permit to change the depth range.</span> See also
 <a class="reference internal" href="hardware_spec.html#tab-common-depth-ranges"><span class="std std-numref">Table 2</span></a> for examples of possible depth ranges.</li>
-<li>Depth values may be missing on objects without texture. In this case, the internal random
-dot projector should be used for projecting an artificial texture. For single shot
+<li>Depth values may be missing on objects without texture. In this case, the internal
+projector should be used for projecting an artificial texture. For single shot
 depth images, the <cite>Single+Out1</cite> mode should be selected <span>on the depth image page of the
-<em>rc_cube</em>’s Web GUI</span> . For continuously computing depth images, the projector should be turned
-on for every second image by setting <cite>Out1</cite> to <cite>ExposureAlternateActive</cite> in
-<span><span class="menuselection">Pipeline X ‣ Configuration ‣ IOControl</span></span> .</li>
-<li>The focus may be inadequate for the working range. Please check the focus using a calibration
-grid as described in <a class="reference internal" href="installation.html#sect-adjust-focus"><span class="std std-ref">Adjust focus</span></a>.</li>
+<em>rc_cube</em>’s Web GUI</span> .
+For continuously computing depth images, the projector should be turned
+on for every second image by setting <cite>Out1 / Projector</cite> to <cite>ExposureAlternateActive</cite> in
+<span><span class="menuselection">Pipeline … ‣ Configuration ‣ IOControl</span></span> .</li>
+<li>The internal projector may be too dark to be visible in the scene. Adjust the external lighting or the
+aperture of the projector as described in <a class="reference internal" href="installation.html#sect-adjust-projector-aperture"><span class="std std-ref">Adjust projector aperture</span></a>.</li>
+<li>The pattern of the internal projector may be too blurred to support depth computation. Adjust the focus
+of the projector as described in <a class="reference internal" href="installation.html#sect-adjust-projector-focus"><span class="std std-ref">Adjust projector focus</span></a>.</li>
+<li>The camera focus may be inadequate for the working range. Please check the camera focus using a calibration
+grid as described in <a class="reference internal" href="installation.html#sect-adjust-focus"><span class="std std-ref">Adjust camera focus</span></a>.</li>
 <li>The calibration of the <em>rc_viscore</em> stereo camera may be inaccurate. Please check the calibration as described
 in <a class="reference internal" href="installation.html#sect-calibration"><span class="std std-ref">Calibration</span></a>.</li>
+</ul>
+</div>
+<div class="section" id="dark-camera-images">
+<h2>Dark camera images<a class="headerlink" href="#dark-camera-images" title="Permalink to this headline">¶</a></h2>
+<p>The camera images of the <em>rc_viscore</em> stereo camera, which can be seen <span>on the camera page in
+the <em>rc_cube</em>’s Web GUI under</span> <span><span class="menuselection">Pipeline … ‣ Camera</span></span> <span>or</span> by using the SGM®Producer, may be too dark.
+This can have the following reasons:</p>
+<ul class="simple">
+<li>The internal projector may be too bright. Increase the external lighting or reduce the projector
+brightness by adapting the aperture of the projector as described in
+<a class="reference internal" href="installation.html#sect-adjust-projector-aperture"><span class="std std-ref">Adjust projector aperture</span></a>.</li>
 </ul>
 </div>
 </div>

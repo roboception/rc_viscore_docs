@@ -215,10 +215,11 @@ https://www.roboception.com/download
 Nvidia-Grafikkarte installiert werden.
 
 Es wird dringend empfohlen, beide Netzwerkkabel direkt an 1-Gigabit-
-Ethernet-Ports des Computers anzuschließen. Ein Netzwerk-Switch kann
-nur funktionieren, wenn die Netzwerkverbindung zwischen dem Switch und
-dem Computer eine Bandbreite von mehr als 2 Gigabit hat, z. B. 2,5, 5
-oder 10 Gigabit.
+Ethernet-Ports des Computers anzuschließen. Wenn ein Netzwerk-Switch
+verwendet wird, sollte die Netzwerkverbindung zwischen dem Switch und
+dem Computer eine Bandbreite von mehr als 2 Gigabit haben, z.B. 2,5, 5
+oder 10 Gigabit. Andernfalls kann die volle Bildwiederholrate nicht
+erreicht werden.
 
 In der Standard-Netzwerkkonfiguration und gemäß dem GigE Vision-
 Standard versuchen die Kameras, ihre Konfiguration von einem DHCP-
@@ -252,64 +253,35 @@ Bemerkung: Das Kommandozeilen-Tool "gc_config" ist Teil des Open-
 
    heruntergeladen werden kann.
 
-Für die Einstellung des Fokus, die Überprüfung und die Kalibrierung
-der
+Für die Einstellung des Fokus, die Überprüfung der Kalibrierung und
+die Neukalibrierung der
 
 rc_viscore
 
  stereo camera, wie in den nächsten Abschnitten erläutert, enthält das
-SGM®Producer-Paket ein Kalibrierprogramm, genannt *rc_calib*.
+SGM®Producer-Paket ein Kalibrierprogramm, genannt rc_calib,  und ein
+Anzeigeprogramm, genannt rc_viewer.
 
-Fokus einstellen
+Kamerafokus einstellen
 
 Es wird dringend empfohlen, den Fokus der
 
 rc_viscore
 
- stereo camera im tatsächlichen Arbeitsbereich zu überprüfen und
-einzustellen. Bitte beachten Sie, dass der Tiefenschärfebereich
-aufgrund der hohen Auflösung der Kamera begrenzt ist und an den
-Arbeitsbereich der Anwendung angepasst werden muss. Im Nahbereich ist
-der Schärfentiefebereich deutlich kleiner als in größerer Entfernung.
-Daher sollte der Mindestabstand für die Fokussierung so weit entfernt
-wie für die jeweilige Anwendung sinnvoll gewählt werden. Bei Fragen
-zum Arbeitsabstand und zur Kalibrierung der Kamera wenden Sie sich
-bitte an den
-
-Support
-
-.
-
-Der
-
-rc_cube
-
- bietet als Teil der Kamerakalibrierung einen Fokus-Helfer unter
-Pipeline ... ‣ Konfiguration ‣ Kamerakalibrierung. Im ersten Schritt
-muss die Größe des Kalibriermusters angegeben werden. Mit einem Klick
-auf Weiter wird der Fokus-Helfer geöffnet. Siehe auch
-
-https://doc.rc-cube.com/latest/en/camera_calibration.html
-
-.
-
-Für Benutzer des SGM®Producer ist der Fokus-Helfer im
-Kalibrierprogramm *rc_calib* zu finden, nachdem die
+ stereo camera im tatsächlichen Arbeitsbereich zu überprüfen.
+Standardmäßig fokussiert Roboception die
 
 rc_viscore
 
- stereo camera mit File ‣ Connect sensor ... ausgewählt und die Größe
-des Kalibriermusters angegeben wurde.
-
-Die Balken auf der rechten Seite des Bildes zeigen die Unschärfe des
-Kalibriermusters an. Ein Minimum ist wünschenswert. Das Muster sollte
-im minimalen und maximalen Arbeitsabstand platziert werden, um die
-aktuelle Unschärfe zu überprüfen. Ein Wert in der Nähe der untersten
-Teilungslinie ist recht optimal. Siehe auch
-
-https://doc.rc-cube.com/latest/en/camera_calibration.html#adjust-focus
-
-.
+ stereo camera auf einen Abstand von 1.6 m (falls nicht anders vom
+Kunden gewünscht), was einem Arbeitsbereich von etwa 1.4-2.0 m
+entspricht. Falls in der Anwendung ein anderer Arbeitsbereich
+verwendet wird, muss der Fokus angepasst werden. Bitte beachten Sie,
+dass der Tiefenschärfebereich aufgrund der hohen Auflösung der Kamera
+begrenzt ist. Im Nahbereich ist der Tiefenschärfebereich deutlich
+kleiner als in größerer Entfernung. Daher sollte der Mindestabstand
+für die Fokussierung so weit entfernt wie für die jeweilige Anwendung
+sinnvoll gewählt werden.
 
 Wenn die Schärfe eingestellt werden muss, muss der Objektivschutz der
 linken und rechten Kamera abgenommen werden, wie in
@@ -319,27 +291,58 @@ Abb. 8
  gezeigt.
 
 
-Der Fokusring und der Blendenring sind mit jeweils 3 Schrauben
-gesichert, wie in
+Der Fokusring und der Blendenring (Irisring) sind mit jeweils 3
+Schrauben gesichert, wie in
 
 Abb. 9
 
- gezeigt. Zum Verstellen des Rings müssen alle drei Schrauben gelöst
+ gezeigt. Zum Verstellen eines Rings müssen alle drei Schrauben gelöst
 werden.
 
 
+Der
+
+rc_cube
+
+ bietet als Teil der Kamerakalibrierung einen Fokus-Helfer in der Web
+GUI unter Pipeline ... ‣ Konfiguration ‣ Kamerakalibrierung. Im ersten
+Schritt muss die Größe des Kalibriermusters angegeben werden. Mit
+einem Klick auf Weiter wird der Fokus-Helfer geöffnet. Siehe auch
+
+https://doc.rc-cube.com/latest/en/camera_calibration.html
+
+.
+
+Im SGM®Producer gibt es einen Fokus-Helfer im Kalibrierprogramm
+rc_calib, nachdem die
+
+rc_viscore
+
+ stereo camera unter File ‣ Connect sensor ... ausgewählt wurde, und
+die Größe des Kalibriermusters angegeben wurde.
+
+Die Balken auf der rechten Seite des Bildes zeigen die Unschärfe des
+Kalibriermusters an. Ein Minimum ist wünschenswert. Siehe auch
+
+https://doc.rc-cube.com/latest/en/camera_calibration.html#adjust-focus
+
+.
+
 Um die Schärfe richtig einzustellen, sollte das Kalibriermuster in der
 Mitte des Arbeitsbereichs platziert werden. Dann sollte der Fokusring
-gedreht werden, bis die Balken in den Bildern ein Minimum erreichen.
-Nach der Fokussierung auf diese Weise sollte das Kalibriermuster auf
-den minimalen und maximalen Arbeitsabstand gestellt werden. Wenn die
-Unschärfe beim minimalen und maximalen Arbeitsabstand nicht
-zufriedenstellend ist (z. B. nahe der zweiten Teilungslinie oder
-höher), kann die Blende etwas geschlossen werden, d. h. eine höhere
-Blendenzahl gewählt werden. Bitte beachten Sie, dass sich dadurch die
-Belichtungszeit und möglicherweise auch die Verstärkung erhöht, was zu
-einem stärkeren Rauschen im Bild führt. Die optimale Einstellung ist
-von der jeweiligen Anwendung abhängig.
+jeder Kamera gedreht werden, bis der Balken im zugehörigen Bild ein
+Minimum erreicht. Ein Wert nahe der untersten Teilungslinie ist
+wünschenswert. Nach der Fokussierung auf diese Weise sollte das
+Kalibriermuster im minimalen und maximalen Arbeitsabstand platziert
+werden. Wenn die Unschärfe beim minimalen und maximalen Arbeitsabstand
+nicht zufriedenstellend ist (z.B. nahe der zweiten Teilungslinie oder
+höher), kann die Blende durch Drehen des Irisrings etwas geschlossen
+werden, d.h. eine höhere Blendenzahl gewählt werden, um den
+Tiefenschärfebereich der Kameras zu erhöhen. Bitte beachten Sie, dass
+sich dadurch die Belichtungszeit und möglicherweise auch die
+Verstärkung erhöht, was zu einem stärkeren Rauschen im Bild führt. Die
+optimale Einstellung ist von der jeweiligen Anwendung abhängig. Die
+Standard-Blendenzahl der Kameras ist 4.
 
 Warnung: Für die linke und die rechte Kamera muss die gleiche
   Blendeneinstellung verwendet werden, um eine Verschlechterung der
@@ -348,24 +351,173 @@ Warnung: Für die linke und die rechte Kamera muss die gleiche
   werden.
 
 Nach der Einstellung von Schärfe und Blende müssen alle Schrauben
-angezogen und der Objektivschutz wieder aufgesetzt werden.
+leicht angezogen und der Objektivschutz wieder aufgesetzt werden.
 
-Um die Fokus- und Blendeneinstellungen des Projektors zu ändern, lösen
-Sie die drei kleinen Kreuzschlitzschrauben am entsprechenden Ring des
-Projektorobjektivs, drehen den Ring auf die gewünschte Einstellung und
-ziehen die Schrauben wieder leicht an. Für die Schärfeeinstellung
-sollte der Projektor permanent eingeschaltet sein, indem der Modus
-Out1 in der Web GUI  auf High gesetzt wird. Für Blendeneinstellungen
-sollte Out1 auf ExposureAlternateActive und der Belichtungsmodus auf
-der Kameraseite der Web GUI  auf "Auto" eingestellt werden. Die
-perfekte Fokussierung des Projektors ist nicht entscheidend. Eine
-leicht unscharfe Projektion beeinträchtigt das Tiefenbild nicht.
+Warnung: Es ist zwingend erforderlich, die Kalibrierung immer zu
+  überprüfen, nachdem der Fokus oder die Blende der
+
+  rc_viscore
+
+   stereo camera verändert wurden (siehe
+
+  Kalibrierung
+
+  ).
+
+Bei Fragen zum Arbeitsbereich und zur Fokussierung der
+
+rc_viscore
+
+ stereo camera wenden Sie sich bitte an den
+
+Support
+
+.
+
+Projektorfokus einstellen
+
+Während der Herstellung der
+
+rc_viscore
+
+ stereo camera wurde der Fokus des Projektors passend zum Fokusabstand
+der Kameras eingestellt, welcher standardmäßig 1.6 m beträgt (falls
+nicht anders vom Kunden gewünscht). Eine perfekte Fokussierung des
+Projektors ist nicht nötig. Ein leicht unscharfes Projektionsmuster
+beeinträchtigt das  Tiefenbild nicht.
+
+Um die Schärfe des Projektionsmusters beurteilen zu können, sollte der
+Projektor dauerhaft eingeschaltet werden, indem in der
+
+rc_cube
+
+ Web GUI unter Pipeline ... ‣ Kamera ‣ IOControl Einstellungen oder
+Pipeline ... ‣ Konfiguration ‣ IOControl der
+
+Out1 / Projektor
+
+ Modus auf "High" gesetzt wird.
+
+Der Projektorfokus muss nur angepasst werden, wenn das
+Projektionsmuster sehr unscharf ist. In diesem Fall, lösen Sie die
+drei kleinen Kreuzschlitzschrauben am Fokusring des
+Projektorobjektivs, wie in
+
+Abb. 9
+
+ gezeigt. Dann drehen Sie den Ring bis das sichtbare Projektionsmuster
+scharf wird. Danach ziehen Sie die Schrauben wieder leicht an.
+
+Projektorblende einstellen
+
+Die Blende des Projektors beeinflusst die Helligkeit des
+Projektionsmuster. Standardmäßig ist die Blende des Projektors
+vollständig geöffnet, d.h. der Projektor hat die maximale Helligkeit.
+Die Blende sollte so eingestellt werden, dass der
+Helligkeitsunterschied zwischen Bildern, die mit Projektor aufgenommen
+werden, und Bildern ohne Projektor nicht zu groß ist, aber dass das
+Projektionsmuster trotzdem noch sichtbar ist in den Bildern, die mit
+Projektor aufgenommen werden. Um die korrekte Einstellung zu finden,
+stellen Sie sicher, dass die externe Beleuchtung im Arbeitsbereich der
+zu erwartenden Beleuchtung während des Betriebs entspricht, und dass
+die
+
+rc_viscore
+
+ stereo camera im gewünschten Abstand von der Szene montiert ist.
+
+Danach setzen Sie in der
+
+rc_cube
+
+ Web GUI unter Pipeline ... ‣ Kamera, den Modus
+
+Belichtung
+
+ auf "Auto" und stellen Sie den
+
+Modus Belichtungsautomatik
+
+ auf "AdaptiveOut1". Weiterhin setzen Sie unter
+
+IOControl Einstellungen
+
+ den Modus
+
+Out1 / Projektor
+
+ auf "ExposureAlternateActive", damit jedes zweite Bild mit
+Projektionsmuster aufgenommen wird. Jetzt wird in der Textzeile unter
+den Livebildern der Wert
+
+Out1 Reduktion
+
+ in Prozent angezeigt.
+
+Der Wert
+
+Out1 Reduktion
+
+ beschreibt die Reduktion der Helligkeit des Bildes ohne Projektion
+verglichen mit der Helligkeit des Bildes mit Projektion. Der Wert
+sollte zwischen 10% und 20% liegen. Eine höhere
+
+Out1 Reduktion
+
+ bedeutet, dass der Projektor zu hell ist im Vergleich zu der externen
+Beleuchtung, was dazu führt, dass Bilder ohne Projektionsmuster zu
+dunkel sind. Deswegen sollte die externe Beleuchtung erhöht werden,
+z.B. durch Anbringen einer zusätzlichen Lichtquelle, oder die
+Helligkeit des Projektors sollte durch leichtes Schließen der Blende
+verringert wird. Wenn die
+
+Out1 Reduktion
+
+ zu niedrig ist, ist der Projektor nicht hell genug im Vergleich zum
+Umgebungslicht, was bedeutet, dass das Projektionsmuster in den
+Kamerabildern kaum sichtbar ist, und somit die Tiefenbildberechnung
+nicht verbessern kann. Also sollte das Umgebungslicht reduziert
+werden, oder die Helligkeit des Projektors sollte durch Öffnen der
+Blende erhöht werden.
+
+Zum Anpassen der Projektorblende, lösen Sie die drei kleinen
+Kreuzschlitzschrauben am Irisring des Projektorobjektivs, wie in
+
+Abb. 9
+
+ gezeigt. Dann drehen Sie den Irisring bis der Wert für die
+
+Out1 Reduktion
+
+ zwischen 10% und 20% liegt.
+
+Danach sollte das dunkelste Objekt, das in der Anwendung vorkommen
+kann, im Arbeitsbereich der Kamera platziert werden. Wenn dieses
+Objekt im Tiefenbild nicht gut sichtbar ist, sollte die Helligkeit des
+Projektors weiter erhöht werden, auch wenn die
+
+Out1 Reduktion
+
+ bereits hoch ist.
+
+Am Ende ziehen Sie die Schrauben wieder leicht an.
+
+Bei Fragen zum Anpassen des Projektors der
+
+rc_viscore
+
+ stereo camera wenden Sie sich bitte an den
+
+Support
+
+.
 
 Kalibrierung
 
-Nach der Überprüfung und eventuellen Einstellung der Schärfe ist der
-nächste Schritt die Überprüfung der Kalibrierung. Dieser Schritt
-sollte niemals übersprungen werden und ist im Gegensatz zu allen
+Nach der Überprüfung und eventuellen Einstellung der Schärfe der
+Kameras ist der nächste Schritt die Überprüfung der
+Kamerakalibrierung. Dieser Schritt sollte niemals übersprungen werden
+und ist im Gegensatz zu allen
 
 rc_visard
 
@@ -375,7 +527,7 @@ der
 rc_viscore
 
  stereo camera vordefiniert ist und die Kalibrierung für den minimalen
-und maximalen Arbeitsbereich überprüft werden sollte. Bei Fragen zum
+und maximalen Arbeitsabstand überprüft werden sollte. Bei Fragen zum
 Arbeitsbereich und zur Kalibrierung der
 
 rc_viscore
@@ -405,15 +557,17 @@ Warnung: Es ist zwingend erforderlich, die Kalibrierung immer zu
   rc_viscore
 
    stereo camera montiert, der Fokus oder die Blende verändert wurde.
-  Nach der Kalibrierung ist auch eine neue Hand-Auge-Kalibrierung
-  erforderlich.
+
+Eine Neukalibrierung ist nur nötig, wenn der angezeigte
+Kalibrierfehler 0.3 Pixel übersteigt. Nach einer Neukalibrierung ist
+auch eine neue Hand-Auge Kalibrierung nötig.
 
 Bemerkung: Die
 
   rc_viscore
 
    stereo camera wird von Roboception mit voreingestelltem Fokus
-  geliefert, um sicherzustellen, dass er im gewünschten Tiefenbereich
+  geliefert, um sicherzustellen, dass sie im gewünschten Tiefenbereich
   funktioniert. Bitte wenden Sie sich an den
 
   Support
