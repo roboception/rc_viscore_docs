@@ -80,8 +80,8 @@ The
 
 rc_viscore
 
- stereo camera provides 12MP camera images and -- in combination with
-an
+ stereo camera provides 12MP or 5MP camera images and -- in
+combination with an
 
 rc_cube
 

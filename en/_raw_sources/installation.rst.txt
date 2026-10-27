@@ -203,15 +203,33 @@ be removed as shown in :numref:`fig-focus`.
 
    Removing of lens caps for re-focusing and changing aperture
 
-The focus ring and the aperture ring (iris ring) are locked by 3 screws for each ring as shown in
-:numref:`fig-ricoh`. All three screws must be loosened for moving a ring.
+For the 12MP variants with standard optics, the focus ring and the aperture ring (iris ring) are locked
+by 3 screws for each ring as shown in :numref:`fig-ricoh`. All three screws must be loosened for moving a ring.
 
 .. _fig-ricoh:
 .. figure:: images/ricoh_focus_aperture.png
    :width:  140mm
    :align: center
 
-   Locations of screws for focus ring and aperture ring (iris ring)
+   Locations of screws for focus ring and aperture ring (iris ring) of the 12MP variants with standard optics
+
+For the variants with ruggedized optics, the focus ring is locked by the fixing screw (A) as shown in
+:numref:`fig-vst` for the 12MP variants and in :numref:`fig-va` for the 5MP variants. The fixing screw
+must be loosened for moving the focus ring.
+
+.. _fig-vst:
+.. figure:: images/vst_focus_aperture.png
+   :width:  140mm
+   :align: center
+
+   Location of the fixing screw for the focus ring of the 12MP variants with ruggedized optics
+
+.. _fig-va:
+.. figure:: images/va_focus_aperture.png
+   :width:  140mm
+   :align: center
+
+   Location of the fixing screw for the focus ring of the 5MP variants
 
 .. only:: roboception or schunk or basler
 

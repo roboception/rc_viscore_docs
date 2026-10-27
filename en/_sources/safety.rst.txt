@@ -124,22 +124,39 @@ The
 
 rc_viscore
 
- stereo camera is intended to be used in combination with a
+ stereo camera is an industrial 3D vision camera that is intended for
+integration into automation and robotics applications. Their purpose
+is the acquisition of image data and it is intended to be connected to
+a Roboception
+
+rc_cube
+
+ or host computer.
+
+This product is designed and intended to be operated in a trusted
+environment with a direct, point-to-point (1:1) connection to the
 Roboception
 
 rc_cube
 
- or the SGM®Producer. The
+ or host computer. In this configuration, the devices are not intended
+to be connected to, or made accessible from, an open or untrusted
+network.
 
-rc_viscore
+The provided GigE Vision interfaces is an established industry
+standard that does not support encryption or authentication. Making
+this interface available outside a trusted, isolated network may
+expose the system to cybersecurity risks and is outside the intended
+use of the product.
 
- stereo camera together with a Roboception
-
-rc_cube
-
- are  intended for installation with automated machinery, a mobile
-platform, or stationary equipment.  They can also be used for data
-acquisition in other applications.
+The operator is responsible for ensuring that the operating
+environment matches these conditions, including physical access
+control to the device, network isolation, and secure configuration of
+the host system where applicable. Operating the product outside its
+intended use, in particular by exposing unsecured interfaces to an
+untrusted network, may compromise the security and reliability of the
+system and is not covered by the product's cybersecurity risk
+assessment.
 
 Warning: The
 
@@ -155,7 +172,7 @@ Warning: The
 
   rc_viscore
 
-   stereo camera is
+   stereo camera with standard optics is
 
   NOT
 

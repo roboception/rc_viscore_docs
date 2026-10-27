@@ -42,6 +42,10 @@ Adjust camera focus
 ) as well as the depth range is required. Please note the limitations
 in the measurement range in
 
-Table 2
+Table 3
+
+ and
+
+Table 4
 
 .

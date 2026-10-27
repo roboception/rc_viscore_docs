@@ -127,23 +127,43 @@ Die
 
 rc_viscore
 
- stereo camera ist für die Verwendung in Kombination mit einem
+ stereo camera ist eine industrielle 3D-Bildverarbeitungskamera, die
+für die Integration in Automatisierungs- und Robotikanwendungen
+bestimmt ist. Ihr bestimmungsgemäßer Zweck ist die Erfassung von
+Bilddaten, und sie ist für den Anschluss an einen Roboception
+
+rc_cube
+
+ oder einen Host-Computer bestimmt.
+
+Dieses Produkt ist für den Betrieb in einer vertrauenswürdigen
+Umgebung mit einer direkten Punkt-zu-Punkt-Verbindung (1:1) zum
 Roboception
 
 rc_cube
 
- oder dem SGM®Producer bestimmt. Die
+ oder zum Host-Computer ausgelegt und bestimmt. In dieser
+Konfiguration ist nicht vorgesehen, die Geräte mit einem offenen oder
+nicht vertrauenswürdigen Netzwerk zu verbinden oder aus einem solchen
+Netzwerk zugänglich zu machen.
 
-rc_viscore
+Die bereitgestellte GigE Vision-Schnittstelle basiert auf einem
+etablierten Industriestandard, der weder Verschlüsselung noch
+Authentifizierung unterstützt. Diese Schnittstelle außerhalb eines
+vertrauenswürdigen, isolierten Netzwerks zugänglich zu machen, kann
+das System Cybersicherheitsrisiken aussetzen und liegt außerhalb der
+bestimmungsgemäßen Verwendung des Produkts.
 
- stereo camera zusammen mit einem Roboception
-
-rc_cube
-
- sind  für die Installation an einer automatisierten Maschine, einer
-mobilen Plattform oder einer stationären Anlage vorgesehen. Sie
-können auch zur Datenerfassung in anderen Anwendungen eingesetzt
-werden.
+Der Betreiber ist dafür verantwortlich sicherzustellen, dass die
+Betriebsumgebung diesen Bedingungen entspricht, einschließlich der
+physischen Zugangskontrolle zum Gerät, der Netzwerkisolierung und
+gegebenenfalls der sicheren Konfiguration des Host-Systems. Ein
+Betrieb des Produkts außerhalb der bestimmungsgemäßen Verwendung,
+insbesondere wenn ungesicherte Schnittstellen einem nicht
+vertrauenswürdigen Netzwerk zugänglich gemacht werden, kann die
+Sicherheit und Zuverlässigkeit des Systems beeinträchtigen und ist
+nicht durch die Cybersicherheits-Risikobewertung des Produkts
+abgedeckt.
 
 Warnung: Die
 
@@ -159,7 +179,7 @@ Warnung: Die
 
   rc_viscore
 
-   stereo camera darf
+   stereo camera mit Standardoptik darf
 
   NICHT
 

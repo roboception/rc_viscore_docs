@@ -10,10 +10,14 @@ Overview
 ========
 
 The |rc_viscore_camera| is a high-resolution IP54-protected 3D stereo camera with an integrated |rc_randomdot_projector|.
-The |rc_viscore_camera| provides 12MP camera images and -- in combination with :mvexclude:`an |rc_cube| or` the SGM\ |reg|\ producer -- 
+The |rc_viscore_camera| provides 12MP or 5MP camera images and -- in combination with :mvexclude:`an |rc_cube| or` the SGM\ |reg|\ producer -- 
 depth, confidence and error images. The integrated |rc_randomdot_projector| projects a random dot pattern and
 allows for dense depth images even in weakly textured scenes and the high resolution permits the detection of small parts
 with high accuracy.
+
+The 12MP variants of the |rc_viscore_camera| are available with standard optics for commercial use or with
+ruggedized optics for industrial use. The 5MP variants are available with ruggedized optics. Each variant is offered
+with three different focal lengths (see :ref:`sect-hardware-specification`:latex:`\:(Section \ref{hardware_spec:sect-hardware-specification})`).
 
 .. only:: roboception or schunk or basler
 

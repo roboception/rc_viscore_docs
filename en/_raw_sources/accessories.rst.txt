@@ -85,7 +85,7 @@ as spare parts for |rc_viscore_camera| upon request.
 SGM\ |reg|\ Producer :mvexclude:`and rc_cube`
 ---------------------------------------------
 
-The |rc_viscore_camera| provides 12MP camera images and -- in combination with :mvexclude:`an
+The |rc_viscore_camera| provides 12MP or 5MP camera images and -- in combination with :mvexclude:`an
 |rc_cube| or` the SGM\ |reg|\ Producer -- depth, confidence and error images.
 The integrated |rc_randomdot_projector| allows for dense depth images even in
 weakly textured scenes and the high resolution permits the detection of small

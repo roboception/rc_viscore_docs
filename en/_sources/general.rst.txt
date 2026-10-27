@@ -13,8 +13,8 @@ rc_randomdot
 
 rc_viscore
 
- stereo camera provides 12MP camera images and -- in combination with
-an
+ stereo camera provides 12MP or 5MP camera images and -- in
+combination with an
 
 rc_cube
 
@@ -26,6 +26,19 @@ rc_randomdot
  projector projects a random dot pattern and allows for dense depth
 images even in weakly textured scenes and the high resolution permits
 the detection of small parts with high accuracy.
+
+The 12MP variants of the
+
+rc_viscore
+
+ stereo camera are available with standard optics for commercial use
+or with ruggedized optics for industrial use. The 5MP variants are
+available with ruggedized optics. Each variant is offered with three
+different focal lengths (see
+
+Hardware specification
+
+).
 
 In combination with the
 

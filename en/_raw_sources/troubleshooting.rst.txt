@@ -49,7 +49,7 @@ reasons:
   quality, reducing the parameter *Maximum Distance* also reduces the possible minimum distance. :mvexclude:`In the
   |webgui| of the |rc_cube|, the used depth range is given on the depth image page below the
   images. Sliders on the depth image page permit to change the depth range.` See also
-  :numref:`tab-common-depth-ranges` for examples of possible depth ranges.
+  :numref:`tab-common-depth-ranges` and :numref:`tab-depth-ranges-5mp` for examples of possible depth ranges.
 - Depth values may be missing on objects without texture. In this case, the internal
   projector should be used for projecting an artificial texture. For single shot
   depth images, the `Single+Out1` mode should be selected :mvexclude:`on the depth image page of the

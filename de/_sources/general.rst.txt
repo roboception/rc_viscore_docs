@@ -13,8 +13,8 @@ rc_randomdot
 
 rc_viscore
 
- stereo camera liefert 12MP Kamerabilder und -- in Kombination mit
-einem
+ stereo camera liefert 12MP oder 5MP Kamerabilder und -- in
+Kombination mit einem
 
 rc_cube
 
@@ -26,6 +26,19 @@ rc_randomdot
  projector projiziert ein zufälliges Punktmuster und ermöglicht dichte
 Tiefenbilder auch in schwach texturierten Szenen und die hohe
 Auflösung erlaubt die Erkennung von Kleinteilen mit hoher Genauigkeit.
+
+Die 12MP-Varianten der
+
+rc_viscore
+
+ stereo camera sind mit Standardoptik für den kommerziellen Einsatz
+oder mit robuster Optik für den industriellen Einsatz erhältlich. Die
+5MP-Varianten sind mit robuster Optik erhältlich. Jede Variante wird
+mit drei verschiedenen Brennweiten angeboten (siehe
+
+Hardware-Spezifikation
+
+).
 
 In Kombination mit dem
 

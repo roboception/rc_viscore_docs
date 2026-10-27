@@ -74,8 +74,8 @@ die Verringerung des Parameters Maximaler Abstand auch die mögliche
 minimale Entfernung verringert. In der Web GUI des rc_cube wird der
 verwendete Tiefenbereich auf der Tiefenbildseite unterhalb der Bilder
 angegeben. Schieberegler auf der Tiefenbildseite erlauben es, den
-Tiefenbereich zu verändern. Siehe auch Tab. 2 für Beispiele von
-möglichen Tiefenbereichen.
+Tiefenbereich zu verändern. Siehe auch Tab. 3 und Tab. 4 für Beispiele
+von möglichen Tiefenbereichen.
 
 Bei Objekten ohne Textur können Tiefenwerte fehlen. In diesem Fall
 sollte der interne Projektor für die Projektion einer künstlichen

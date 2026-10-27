@@ -280,12 +280,26 @@ Fig. 8
 .
 
 
-The focus ring and the aperture ring (iris ring) are locked by 3
-screws for each ring as shown in
+For the 12MP variants with standard optics, the focus ring and the
+aperture ring (iris ring) are locked by 3 screws for each ring as
+shown in
 
 Fig. 9
 
 . All three screws must be loosened for moving a ring.
+
+
+For the variants with ruggedized optics, the focus ring is locked by
+the fixing screw (A) as shown in
+
+Fig. 10
+
+ for the 12MP variants and in
+
+Fig. 11
+
+ for the 5MP variants. The fixing screw must be loosened for moving
+the focus ring.
 
 
 The

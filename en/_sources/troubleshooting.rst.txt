@@ -64,8 +64,8 @@ stereo camera. Depending on the depth quality, reducing the parameter
 Maximum Distance also reduces the possible minimum distance. In the
 Web GUI of the rc_cube, the used depth range is given on the depth
 image page below the images. Sliders on the depth image page permit to
-change the depth range. See also Table 2 for examples of possible
-depth ranges.
+change the depth range. See also Table 3 and Table 4 for examples of
+possible depth ranges.
 
 Depth values may be missing on objects without texture. In this case,
 the internal projector should be used for projecting an artificial

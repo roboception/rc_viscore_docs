@@ -45,6 +45,10 @@ Kamerafokus einstellen
 ) sowie des Tiefenbereichs erforderlich. Bitte beachten Sie die
 Einschränkungen im Messbereich in
 
-Tab. 2
+Tab. 3
+
+ und
+
+Tab. 4
 
 .

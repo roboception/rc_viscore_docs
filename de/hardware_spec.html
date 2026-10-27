@@ -271,112 +271,370 @@
 </div>
 <div class="section" id="technical-specification">
 <h2>Technische Spezifikation<a class="headerlink" href="#technical-specification" title="Link zu dieser Überschrift">¶</a></h2>
-<p id="index-0">Die technische Spezifikation der <em>rc_viscore</em> Stereokamera ist in <a class="reference internal" href="#tab-common-hardware-specifications"><span class="std std-numref">Tab. 1</span></a> dargestellt. Die angegebene Tiefenbildrate kann <span>auf einem <em>rc_cube</em> oder</span> mit dem SGM®Producer auf einem Computer mit einer Nvidia RTX2070 GPU erreicht werden. Höhere Bildraten (bis zu 9 Hz) sind mit schnelleren Grafikkarten möglich.</p>
-<span id="tab-common-hardware-specifications"></span><table border="1" class="docutils" id="technische-daten-der-rc-viscore-camera">
-<caption><span class="caption-number">Tab. 1 </span><span class="caption-text">Technische Daten der <em>rc_viscore</em> Stereokamera</span><a class="headerlink" href="#technische-daten-der-rc-viscore-camera" title="Link zu dieser Tabelle">¶</a></caption>
+<p id="index-0">Die <em>rc_viscore</em> Stereokamera ist mit zwei Bildauflösungen, 12MP und 5MP, mit jeweils drei verschiedenen Brennweiten erhältlich. Die 12MP-Varianten sind mit Standardoptik für den kommerziellen Einsatz oder mit robuster Optik für den industriellen Einsatz erhältlich. Die 5MP-Varianten sind mit robuster Optik erhältlich. Die technischen Daten der 12MP-Varianten sind in <a class="reference internal" href="#tab-hardware-specifications-12mp"><span class="std std-numref">Tab. 1</span></a> und die technischen Daten der 5MP-Varianten in <a class="reference internal" href="#tab-hardware-specifications-5mp"><span class="std std-numref">Tab. 2</span></a> angegeben. Die angegebenen Tiefenbildraten und Latenzen wurden für Stereo-Matching mit Semi-Global Matching (SGM®) auf einem Computer mit einer Nvidia RTX PRO 2000 Blackwell GPU und einer Intel Core i7 CPU der 14. Generation gemessen, wobei die Latenzen im Single-Shot-Modus gemessen wurden. Auf anderer Hardware können Bildraten und Latenzen abweichen.</p>
+<span id="tab-hardware-specifications-12mp"></span><table border="1" class="docutils" id="technische-daten-der-12mp-varianten-der-rc-viscore-camera">
+<caption><span class="caption-number">Tab. 1 </span><span class="caption-text">Technische Daten der 12MP-Varianten der <em>rc_viscore</em> Stereokamera</span><a class="headerlink" href="#technische-daten-der-12mp-varianten-der-rc-viscore-camera" title="Link zu dieser Tabelle">¶</a></caption>
 <colgroup>
-<col width="26%" />
-<col width="74%" />
+<col width="20%" />
+<col width="27%" />
+<col width="27%" />
+<col width="27%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">&#160;</th>
-<th class="head"><em>rc_viscore</em> Stereokamera</th>
+<th class="head">12 mm</th>
+<th class="head">16 mm</th>
+<th class="head">25 mm</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>Bildauflösung</td>
-<td>4112 x 3008 Pixel monochrom</td>
+<tr class="row-even"><td>Typ (Modell)</td>
+<td colspan="3"><div class="first last line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">rc_viscore</span> <span class="pre">210[m/c]-[12/16/25]-12M-H1-R</span></code> (Standardoptik)</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">rc_viscore</span> <span class="pre">210[m/c]-[12/16/25]-12M-H1-V</span></code> (robuste Optik)</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>Bildauflösung</td>
+<td colspan="3">4112 x 3008 Pixel</td>
+</tr>
+<tr class="row-even"><td>Sensortyp</td>
+<td colspan="3">Monochrom oder Farbe, Global Shutter</td>
 </tr>
 <tr class="row-odd"><td>Bildwiederholrate</td>
-<td>9 Hz</td>
+<td colspan="3">9 Hz</td>
 </tr>
-<tr class="row-even"><td>Brennweite</td>
-<td>16 mm</td>
-</tr>
-<tr class="row-odd"><td>Sichtfeld</td>
-<td>Horizontal: 47,5°, Vertikal: 35,7°</td>
-</tr>
-<tr class="row-even"><td>Arbeitsbereich</td>
+<tr class="row-even"><td>Sichtfeld</td>
 <td><div class="first last line-block">
-<div class="line">670 mm x 640 mm &#64; 1.0 m Abstand</div>
-<div class="line">1550 mm x 1280 mm &#64; 2.0 m Abstand</div>
-<div class="line">2430 mm x 1920 mm &#64; 3.0 m Abstand</div>
-<div class="line">3310 mm x 2560 mm &#64; 4.0 m Abstand</div>
+<div class="line">Horizontal: 59°</div>
+<div class="line">Vertikal: 45°</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">Horizontal: 46°</div>
+<div class="line">Vertikal: 34°</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">Horizontal: 30°</div>
+<div class="line">Vertikal: 22°</div>
 </div>
 </td>
 </tr>
-<tr class="row-odd"><td>Tiefenbild</td>
-<td><div class="first last line-block">
-<div class="line">4112 x 3008 Pixel (Voll) &#64; 2,8 Hz (Nvidia RTX2070)</div>
-<div class="line">2056 x 1504 Pixel (Hoch) &#64; 4,6 Hz (Nvidia RTX2070)</div>
-<div class="line">1028 x 752 Pixel (Mittel) &#64; 9 Hz (Nvidia RTX2070)</div>
-<div class="line">686 x 502 Pixel (Niedrig) &#64; 9 Hz (Nvidia RTX2070)</div>
+<tr class="row-odd"><td><div class="first last line-block">
+<div class="line">Arbeitsbereich</div>
+<div class="line">&#64; 1.0 m</div>
+<div class="line">&#64; 2.0 m</div>
+<div class="line">&#64; 3.0 m</div>
+<div class="line">&#64; 4.0 m</div>
 </div>
 </td>
+<td><div class="first last line-block">
+<div class="line"><br /></div>
+<div class="line">940 mm x 840 mm</div>
+<div class="line">2090 mm x 1680 mm</div>
+<div class="line">3250 mm x 2530 mm</div>
+<div class="line">4400 mm x 3370 mm</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line"><br /></div>
+<div class="line">640 mm x 620 mm</div>
+<div class="line">1490 mm x 1240 mm</div>
+<div class="line">2340 mm x 1870 mm</div>
+<div class="line">3200 mm x 2490 mm</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line"><br /></div>
+<div class="line">340 mm x 400 mm</div>
+<div class="line">890 mm x 800 mm</div>
+<div class="line">1440 mm x 1200 mm</div>
+<div class="line">1990 mm x 1610 mm</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>Tiefenbild</td>
+<td colspan="3"><div class="first last line-block">
+<div class="line">4112 x 3008 Pixel (Voll) &#64; 3 Hz, 920 ms Latenz</div>
+<div class="line">2056 x 1504 Pixel (Hoch) &#64; 4,7 Hz, 450 ms Latenz</div>
+<div class="line">1028 x 752 Pixel (Mittel) &#64; 9 Hz, 230 ms Latenz</div>
+<div class="line">686 x 502 Pixel (Niedrig) &#64; 9 Hz, 190 ms Latenz</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>Optik</td>
+<td colspan="3">Standardoptik für den kommerziellen Einsatz oder robuste Optik für den industriellen Einsatz</td>
 </tr>
 <tr class="row-even"><td>Kühlung</td>
-<td>Passiv</td>
+<td colspan="3">Passiv</td>
 </tr>
 <tr class="row-odd"><td>Basisabstand</td>
-<td>210 mm</td>
+<td colspan="3">210 mm</td>
 </tr>
-<tr class="row-even"><td>Größe (B x H x L)</td>
-<td>262 mm x 204 mm x 82 mm</td>
+<tr class="row-even"><td>Größe (B x L x H)</td>
+<td colspan="3"><div class="first last line-block">
+<div class="line">262 mm x 202 mm x 82 mm (Standardoptik)</div>
+<div class="line">262 mm x 188 mm x 82 mm (robuste Optik)</div>
+</div>
+</td>
 </tr>
 <tr class="row-odd"><td>Masse</td>
-<td>1.64 kg</td>
+<td colspan="3">2.3 kg</td>
 </tr>
 </tbody>
 </table>
-<p>Der Tiefenbildbereich der <em>rc_viscore</em> Stereokamera hängt von der Tiefenbildqualität, dem angegebenen maximalen Tiefenbereich und dem verfügbaren GPU-Speicher ab. Der Tiefenbereich bei näherer Entfernung ist viel kleiner als der Tiefenbereich bei weiter Entfernung. <span>Der <em>rc_cube</em> verwendet 3,4 Gbyte GPU-Speicher für das Stereo-Matching.</span> <a class="reference internal" href="#tab-common-depth-ranges"><span class="std std-numref">Tab. 2</span></a> zeigt Beispiele für resultierende Tiefenbereiche mit 3,4 Gbyte GPU-Speicher. Größere Tiefenbereiche sind möglich, wenn der SGM®Producer mit einer Grafikkarte verwendet wird, die mehr GPU-Speicher bietet.</p>
-<span id="tab-common-depth-ranges"></span><table border="1" class="docutils" id="beispiele-moglicher-tiefenbereiche-der-rc-viscore-camera-mit-3-4-gbytes-gpu-speicher-wie-im-fall-des-rc-cube">
-<caption><span class="caption-number">Tab. 2 </span><span class="caption-text">Beispiele möglicher Tiefenbereiche der <em>rc_viscore</em> Stereokamera mit 3,4 Gbytes GPU-Speicher <span>, wie im Fall des <em>rc_cube</em></span></span><a class="headerlink" href="#beispiele-moglicher-tiefenbereiche-der-rc-viscore-camera-mit-3-4-gbytes-gpu-speicher-wie-im-fall-des-rc-cube" title="Link zu dieser Tabelle">¶</a></caption>
+<span id="tab-hardware-specifications-5mp"></span><table border="1" class="docutils" id="technische-daten-der-5mp-varianten-der-rc-viscore-camera">
+<caption><span class="caption-number">Tab. 2 </span><span class="caption-text">Technische Daten der 5MP-Varianten der <em>rc_viscore</em> Stereokamera</span><a class="headerlink" href="#technische-daten-der-5mp-varianten-der-rc-viscore-camera" title="Link zu dieser Tabelle">¶</a></caption>
 <colgroup>
-<col width="34%" />
-<col width="66%" />
+<col width="20%" />
+<col width="27%" />
+<col width="27%" />
+<col width="27%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">&#160;</th>
-<th class="head"><em>rc_viscore</em> Stereokamera</th>
+<th class="head">6 mm</th>
+<th class="head">8 mm</th>
+<th class="head">12 mm</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Typ (Modell)</td>
+<td colspan="3"><code class="docutils literal notranslate"><span class="pre">rc_viscore</span> <span class="pre">210[m/c]-[6/8/12]-5M-H1-A</span></code></td>
+</tr>
+<tr class="row-odd"><td>Bildauflösung</td>
+<td colspan="3">2472 x 2064 Pixel</td>
+</tr>
+<tr class="row-even"><td>Sensortyp</td>
+<td colspan="3">Monochrom oder Farbe, Global Shutter</td>
+</tr>
+<tr class="row-odd"><td>Bildwiederholrate</td>
+<td colspan="3">23 Hz</td>
+</tr>
+<tr class="row-even"><td>Sichtfeld</td>
+<td><div class="first last line-block">
+<div class="line">Horizontal: 56°</div>
+<div class="line">Vertikal: 48°</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">Horizontal: 44°</div>
+<div class="line">Vertikal: 37°</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">Horizontal: 30°</div>
+<div class="line">Vertikal: 25°</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="first last line-block">
+<div class="line">Arbeitsbereich</div>
+<div class="line">&#64; 1.0 m</div>
+<div class="line">&#64; 2.0 m</div>
+<div class="line">&#64; 3.0 m</div>
+<div class="line">&#64; 4.0 m</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line"><br /></div>
+<div class="line">860 mm x 890 mm</div>
+<div class="line">1930 mm x 1790 mm</div>
+<div class="line">3010 mm x 2690 mm</div>
+<div class="line">4080 mm x 3580 mm</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line"><br /></div>
+<div class="line">600 mm x 680 mm</div>
+<div class="line">1420 mm x 1360 mm</div>
+<div class="line">2240 mm x 2050 mm</div>
+<div class="line">3060 mm x 2730 mm</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line"><br /></div>
+<div class="line">330 mm x 450 mm</div>
+<div class="line">880 mm x 910 mm</div>
+<div class="line">1430 mm x 1370 mm</div>
+<div class="line">1980 mm x 1830 mm</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>Tiefenbild</td>
+<td colspan="3"><div class="first last line-block">
+<div class="line">2472 x 2064 Pixel (Voll) &#64; 4 Hz, 450 ms Latenz</div>
+<div class="line">1236 x 1032 Pixel (Hoch) &#64; 10 Hz, 210 ms Latenz</div>
+<div class="line">618 x 516 Pixel (Mittel) &#64; 23 Hz, 110 ms Latenz</div>
+<div class="line">412 x 344 Pixel (Niedrig) &#64; 23 Hz, 90 ms Latenz</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>Optik</td>
+<td colspan="3">Robuste Optik für den industriellen Einsatz</td>
+</tr>
+<tr class="row-even"><td>Kühlung</td>
+<td colspan="3">Passiv</td>
+</tr>
+<tr class="row-odd"><td>Basisabstand</td>
+<td colspan="3">210 mm</td>
+</tr>
+<tr class="row-even"><td>Größe (B x L x H)</td>
+<td>262 mm x 188 mm x 82 mm</td>
+<td>262 mm x 172 mm x 82 mm</td>
+<td>262 mm x 172 mm x 82 mm</td>
+</tr>
+<tr class="row-odd"><td>Masse</td>
+<td colspan="3">1.97 kg</td>
+</tr>
+</tbody>
+</table>
+<p>Der Tiefenbildbereich der <em>rc_viscore</em> Stereokamera hängt von der Bildauflösung, der Brennweite, der Tiefenbildqualität, dem angegebenen maximalen Tiefenbereich und der Menge an GPU-Speicher ab, die für das Stereo-Matching reserviert ist. Der Tiefenbereich bei näherer Entfernung ist viel kleiner als der Tiefenbereich bei weiter Entfernung. <a class="reference internal" href="#tab-common-depth-ranges"><span class="std std-numref">Tab. 3</span></a> und <a class="reference internal" href="#tab-depth-ranges-5mp"><span class="std std-numref">Tab. 4</span></a> zeigen Beispiele für resultierende Tiefenbereiche bei SGM®-Stereo-Matching auf demselben Computer, wobei der maximale Tiefenbereich auf einen Arbeitsabstand von 1 m, 2 m, 3 m und 4 m eingestellt ist. Die Tiefenbereiche wurden mit 3,4 Gbyte GPU-Speicher ermittelt, die für das Stereo-Matching reserviert sind. <span>Das ist die Menge an GPU-Speicher, die der <em>rc_cube</em> für das Stereo-Matching verwendet.</span> Größere Tiefenbereiche sind möglich, wenn mehr GPU-Speicher für das Stereo-Matching reserviert wird.</p>
+<span id="tab-common-depth-ranges"></span><table border="1" class="docutils" id="beispiele-moglicher-tiefenbereiche-der-12mp-varianten-der-rc-viscore-camera-mit-3-4-gbyte-gpu-speicher-fur-das-stereo-matching">
+<caption><span class="caption-number">Tab. 3 </span><span class="caption-text">Beispiele möglicher Tiefenbereiche der 12MP-Varianten der <em>rc_viscore</em> Stereokamera mit 3,4 Gbyte GPU-Speicher für das Stereo-Matching</span><a class="headerlink" href="#beispiele-moglicher-tiefenbereiche-der-12mp-varianten-der-rc-viscore-camera-mit-3-4-gbyte-gpu-speicher-fur-das-stereo-matching" title="Link zu dieser Tabelle">¶</a></caption>
+<colgroup>
+<col width="26%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">&#160;</th>
+<th class="head">12 mm</th>
+<th class="head">16 mm</th>
+<th class="head">25 mm</th>
 </tr>
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>Volle Tiefenbildqualität</td>
 <td><div class="first last line-block">
+<div class="line">0.85 m bis 1.00 m</div>
+<div class="line">1.49 m bis 2.00 m</div>
+<div class="line">1.99 m bis 3.00 m</div>
+<div class="line">2.38 m bis 4.00 m</div>
+</div>
+</td>
+<td><div class="first last line-block">
 <div class="line">0.89 m bis 1.00 m</div>
 <div class="line">1.60 m bis 2.00 m</div>
 <div class="line">2.18 m bis 3.00 m</div>
-<div class="line">2.65 m bis 4.00 m</div>
+<div class="line">2.66 m bis 4.00 m</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">0.93 m bis 1.00 m</div>
+<div class="line">1.72 m bis 2.00 m</div>
+<div class="line">2.41 m bis 3.00 m</div>
+<div class="line">3.02 m bis 4.00 m</div>
 </div>
 </td>
 </tr>
 <tr class="row-odd"><td>Hohe Tiefenbildqualität</td>
 <td><div class="first last line-block">
 <div class="line">0.52 m bis 1.00 m</div>
+<div class="line">0.53 m bis 2.00 m</div>
+<div class="line">0.59 m bis 3.00 m</div>
+<div class="line">0.62 m bis 4.00 m</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">0.52 m bis 1.00 m</div>
 <div class="line">0.66 m bis 2.00 m</div>
-<div class="line">0.75 m bis 3.00 m</div>
-<div class="line">0.80 m bis 4.00 m</div>
-<div class="line">1,00 m bis unendlich</div>
+<div class="line">0.74 m bis 3.00 m</div>
+<div class="line">0.79 m bis 4.00 m</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">0.60 m bis 1.00 m</div>
+<div class="line">0.87 m bis 2.00 m</div>
+<div class="line">1.01 m bis 3.00 m</div>
+<div class="line">1.11 m bis 4.00 m</div>
 </div>
 </td>
 </tr>
-<tr class="row-even"><td>Mittlere und niedrige Tiefenbildqualität</td>
-<td>0.52 m bis unendlich</td>
+</tbody>
+</table>
+<span id="tab-depth-ranges-5mp"></span><table border="1" class="docutils" id="beispiele-moglicher-tiefenbereiche-der-5mp-varianten-der-rc-viscore-camera-mit-3-4-gbyte-gpu-speicher-fur-das-stereo-matching">
+<caption><span class="caption-number">Tab. 4 </span><span class="caption-text">Beispiele möglicher Tiefenbereiche der 5MP-Varianten der <em>rc_viscore</em> Stereokamera mit 3,4 Gbyte GPU-Speicher für das Stereo-Matching</span><a class="headerlink" href="#beispiele-moglicher-tiefenbereiche-der-5mp-varianten-der-rc-viscore-camera-mit-3-4-gbyte-gpu-speicher-fur-das-stereo-matching" title="Link zu dieser Tabelle">¶</a></caption>
+<colgroup>
+<col width="26%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">&#160;</th>
+<th class="head">6 mm</th>
+<th class="head">8 mm</th>
+<th class="head">12 mm</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Volle Tiefenbildqualität</td>
+<td><div class="first last line-block">
+<div class="line">0.61 m bis 1.00 m</div>
+<div class="line">0.87 m bis 2.00 m</div>
+<div class="line">1.02 m bis 3.00 m</div>
+<div class="line">1.12 m bis 4.00 m</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">0.67 m bis 1.00 m</div>
+<div class="line">1.01 m bis 2.00 m</div>
+<div class="line">1.21 m bis 3.00 m</div>
+<div class="line">1.35 m bis 4.00 m</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">0.75 m bis 1.00 m</div>
+<div class="line">1.21 m bis 2.00 m</div>
+<div class="line">1.51 m bis 3.00 m</div>
+<div class="line">1.73 m bis 4.00 m</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>Hohe Tiefenbildqualität</td>
+<td><div class="first last line-block">
+<div class="line">0.52 m bis 1.00 m</div>
+<div class="line">0.52 m bis 2.00 m</div>
+<div class="line">0.52 m bis 3.00 m</div>
+<div class="line">0.52 m bis 4.00 m</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">0.52 m bis 1.00 m</div>
+<div class="line">0.52 m bis 2.00 m</div>
+<div class="line">0.52 m bis 3.00 m</div>
+<div class="line">0.52 m bis 4.00 m</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">0.52 m bis 1.00 m</div>
+<div class="line">0.52 m bis 2.00 m</div>
+<div class="line">0.52 m bis 3.00 m</div>
+<div class="line">0.52 m bis 4.00 m</div>
+</div>
+</td>
 </tr>
 </tbody>
 </table>
-<p>Die Auflösung und Genauigkeit bei verschiedenen Entfernungen ist in <a class="reference internal" href="#tab-common-accuracy"><span class="std std-numref">Tab. 3</span></a> für die empfohlene Tiefenbildqualität <em>Hoch</em> angegeben. Bei voller Tiefenbildqualität sind die Auflösung und die Genauigkeit um den Faktor 2 besser. Bei mittlerer Qualität sind die Auflösung und die Genauigkeit etwa zweimal schlechter als in der Tabelle angegeben.</p>
-<span id="tab-common-accuracy"></span><table border="1" class="docutils" id="auflosung-und-genauigkeit-der-rc-viscore-camera-in-millimetern-mit-stereo-matching-in-qualitat-hoch-und-random-dot-projektion-auf-nicht-reflektierende-und-nicht-transparente-objekte">
-<caption><span class="caption-number">Tab. 3 </span><span class="caption-text">Auflösung und Genauigkeit der <em>rc_viscore</em> Stereokamera in Millimetern mit Stereo-Matching in Qualität <em>Hoch</em> und Random-Dot-Projektion auf nicht-reflektierende und nicht-transparente Objekte.</span><a class="headerlink" href="#auflosung-und-genauigkeit-der-rc-viscore-camera-in-millimetern-mit-stereo-matching-in-qualitat-hoch-und-random-dot-projektion-auf-nicht-reflektierende-und-nicht-transparente-objekte" title="Link zu dieser Tabelle">¶</a></caption>
+<p>Die Auflösung und Genauigkeit bei SGM®-Stereo-Matching in verschiedenen Entfernungen sind in <a class="reference internal" href="#tab-common-accuracy"><span class="std std-numref">Tab. 5</span></a> für die 12MP-Varianten und in <a class="reference internal" href="#tab-accuracy-5mp"><span class="std std-numref">Tab. 6</span></a> für die 5MP-Varianten angegeben. Jeder Eintrag enthält die Werte für volle und hohe Tiefenbildqualität in der Form [voll | hoch]. Bei mittlerer Qualität sind die Auflösung und die Genauigkeit etwa zweimal schlechter als bei hoher Qualität.</p>
+<span id="tab-common-accuracy"></span><table border="1" class="docutils" id="auflosung-und-genauigkeit-der-12mp-varianten-der-rc-viscore-camera-in-millimetern-fur-volle-hohe-tiefenbildqualitat-mit-random-dot-projektion-auf-nicht-reflektierende-und-nicht-transparente-objekte">
+<caption><span class="caption-number">Tab. 5 </span><span class="caption-text">Auflösung und Genauigkeit der 12MP-Varianten der <em>rc_viscore</em> Stereokamera in Millimetern für [volle | hohe] Tiefenbildqualität mit Random-Dot-Projektion auf nicht-reflektierende und nicht-transparente Objekte</span><a class="headerlink" href="#auflosung-und-genauigkeit-der-12mp-varianten-der-rc-viscore-camera-in-millimetern-fur-volle-hohe-tiefenbildqualitat-mit-random-dot-projektion-auf-nicht-reflektierende-und-nicht-transparente-objekte" title="Link zu dieser Tabelle">¶</a></caption>
 <colgroup>
-<col width="31%" />
-<col width="33%" />
-<col width="36%" />
+<col width="17%" />
+<col width="13%" />
+<col width="23%" />
+<col width="23%" />
+<col width="23%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">&#160;</th>
 <th class="head"><strong>Abstand</strong></th>
-<th class="head"><em>rc_viscore</em> Stereokamera</th>
+<th class="head">12 mm</th>
+<th class="head">16 mm</th>
+<th class="head">25 mm</th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -389,10 +647,24 @@
 </div>
 </td>
 <td><div class="first last line-block">
-<div class="line">0.4 mm</div>
-<div class="line">0.9 mm</div>
-<div class="line">1.3 mm</div>
-<div class="line">1.7 mm</div>
+<div class="line">0.3 | 0.6</div>
+<div class="line">0.6 | 1.2</div>
+<div class="line">0.9 | 1.8</div>
+<div class="line">1.2 | 2.4</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">0.3 | 0.5</div>
+<div class="line">0.5 | 0.9</div>
+<div class="line">0.7 | 1.3</div>
+<div class="line">0.9 | 1.8</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">0.2 | 0.3</div>
+<div class="line">0.3 | 0.6</div>
+<div class="line">0.5 | 0.9</div>
+<div class="line">0.6 | 1.1</div>
 </div>
 </td>
 </tr>
@@ -405,10 +677,24 @@
 </div>
 </td>
 <td><div class="first last line-block">
-<div class="line">0.1 mm</div>
-<div class="line">0.5 mm</div>
-<div class="line">1.2 mm</div>
-<div class="line">2.0 mm</div>
+<div class="line">0.1 | 0.2</div>
+<div class="line">0.4 | 0.7</div>
+<div class="line">0.8 | 1.6</div>
+<div class="line">1.4 | 2.8</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">0.1 | 0.2</div>
+<div class="line">0.3 | 0.6</div>
+<div class="line">0.6 | 1.2</div>
+<div class="line">1.1 | 2.1</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">0.1 | 0.1</div>
+<div class="line">0.2 | 0.4</div>
+<div class="line">0.4 | 0.8</div>
+<div class="line">0.7 | 1.3</div>
 </div>
 </td>
 </tr>
@@ -421,10 +707,134 @@
 </div>
 </td>
 <td><div class="first last line-block">
-<div class="line">0.5 mm</div>
-<div class="line">2.0 mm</div>
-<div class="line">4.6 mm</div>
-<div class="line">8.2 mm</div>
+<div class="line">0.4 | 0.7</div>
+<div class="line">1.4 | 2.8</div>
+<div class="line">3.1 | 6.2</div>
+<div class="line">5.6 | 11.1</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">0.3 | 0.6</div>
+<div class="line">1.1 | 2.1</div>
+<div class="line">2.4 | 4.7</div>
+<div class="line">4.2 | 8.3</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">0.2 | 0.4</div>
+<div class="line">0.7 | 1.3</div>
+<div class="line">1.5 | 3.0</div>
+<div class="line">2.6 | 5.2</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<span id="tab-accuracy-5mp"></span><table border="1" class="docutils" id="auflosung-und-genauigkeit-der-5mp-varianten-der-rc-viscore-camera-in-millimetern-fur-volle-hohe-tiefenbildqualitat-mit-random-dot-projektion-auf-nicht-reflektierende-und-nicht-transparente-objekte">
+<caption><span class="caption-number">Tab. 6 </span><span class="caption-text">Auflösung und Genauigkeit der 5MP-Varianten der <em>rc_viscore</em> Stereokamera in Millimetern für [volle | hohe] Tiefenbildqualität mit Random-Dot-Projektion auf nicht-reflektierende und nicht-transparente Objekte</span><a class="headerlink" href="#auflosung-und-genauigkeit-der-5mp-varianten-der-rc-viscore-camera-in-millimetern-fur-volle-hohe-tiefenbildqualitat-mit-random-dot-projektion-auf-nicht-reflektierende-und-nicht-transparente-objekte" title="Link zu dieser Tabelle">¶</a></caption>
+<colgroup>
+<col width="17%" />
+<col width="13%" />
+<col width="23%" />
+<col width="23%" />
+<col width="23%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">&#160;</th>
+<th class="head"><strong>Abstand</strong></th>
+<th class="head">6 mm</th>
+<th class="head">8 mm</th>
+<th class="head">12 mm</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Laterale Auflösung</td>
+<td><div class="first last line-block">
+<div class="line">1.0 m</div>
+<div class="line">2.0 m</div>
+<div class="line">3.0 m</div>
+<div class="line">4.0 m</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">0.5 | 0.9</div>
+<div class="line">0.9 | 1.8</div>
+<div class="line">1.4 | 2.7</div>
+<div class="line">1.8 | 3.5</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">0.4 | 0.7</div>
+<div class="line">0.7 | 1.4</div>
+<div class="line">1.1 | 2.1</div>
+<div class="line">1.4 | 2.7</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">0.3 | 0.5</div>
+<div class="line">0.5 | 1.0</div>
+<div class="line">0.7 | 1.4</div>
+<div class="line">1.0 | 1.9</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>Tiefenauflösung</td>
+<td><div class="first last line-block">
+<div class="line">1.0 m</div>
+<div class="line">2.0 m</div>
+<div class="line">3.0 m</div>
+<div class="line">4.0 m</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">0.2 | 0.3</div>
+<div class="line">0.6 | 1.1</div>
+<div class="line">1.2 | 2.4</div>
+<div class="line">2.1 | 4.2</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">0.2 | 0.3</div>
+<div class="line">0.5 | 0.9</div>
+<div class="line">1.0 | 1.9</div>
+<div class="line">1.7 | 3.3</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">0.1 | 0.2</div>
+<div class="line">0.3 | 0.6</div>
+<div class="line">0.7 | 1.3</div>
+<div class="line">1.1 | 2.2</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>Durchschnittliche Tiefengenauigkeit</td>
+<td><div class="first last line-block">
+<div class="line">1.0 m</div>
+<div class="line">2.0 m</div>
+<div class="line">3.0 m</div>
+<div class="line">4.0 m</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">0.6 | 1.1</div>
+<div class="line">2.1 | 4.2</div>
+<div class="line">4.7 | 9.4</div>
+<div class="line">8.3 | 16.6</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">0.5 | 0.9</div>
+<div class="line">1.7 | 3.3</div>
+<div class="line">3.7 | 7.3</div>
+<div class="line">6.5 | 12.9</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">0.3 | 0.6</div>
+<div class="line">1.1 | 2.2</div>
+<div class="line">2.5 | 4.9</div>
+<div class="line">4.4 | 8.7</div>
 </div>
 </td>
 </tr>
@@ -434,13 +844,66 @@
 <span id="fig-size"></span><span id="index-1"></span><a class="reference internal image-reference" href="_images/rcv_size.png"><img alt="_images/rcv_size.png" src="_images/rcv_size.png" style="width: 160mm;" /></a>
 <p class="caption"><span class="caption-number">Abb. 3 </span><span class="caption-text">Gesamtabmessungen der <em>rc_viscore</em> Stereokamera in Millimetern</span></p>
 </div>
+<p>Die Länge L der <em>rc_viscore</em> Stereokamera hängt von der Modellvariante ab und ist in <a class="reference internal" href="#tab-size-length"><span class="std std-numref">Tab. 7</span></a> angegeben.</p>
+<span id="tab-size-length"></span><table border="1" class="docutils" id="lange-l-der-modellvarianten-der-rc-viscore-camera">
+<caption><span class="caption-number">Tab. 7 </span><span class="caption-text">Länge L der Modellvarianten der <em>rc_viscore</em> Stereokamera</span><a class="headerlink" href="#lange-l-der-modellvarianten-der-rc-viscore-camera" title="Link zu dieser Tabelle">¶</a></caption>
+<colgroup>
+<col width="52%" />
+<col width="29%" />
+<col width="19%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Modellvariante</strong></th>
+<th class="head"><strong>Brennweite</strong></th>
+<th class="head"><strong>L</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>12MP mit Standardoptik</td>
+<td>12 mm</td>
+<td>202 mm</td>
+</tr>
+<tr class="row-odd"><td>12MP mit Standardoptik</td>
+<td>16 mm</td>
+<td>202 mm</td>
+</tr>
+<tr class="row-even"><td>12MP mit Standardoptik</td>
+<td>25 mm</td>
+<td>202 mm</td>
+</tr>
+<tr class="row-odd"><td>12MP mit robuster Optik</td>
+<td>12 mm</td>
+<td>188 mm</td>
+</tr>
+<tr class="row-even"><td>12MP mit robuster Optik</td>
+<td>16 mm</td>
+<td>188 mm</td>
+</tr>
+<tr class="row-odd"><td>12MP mit robuster Optik</td>
+<td>25 mm</td>
+<td>188 mm</td>
+</tr>
+<tr class="row-even"><td>5MP mit robuster Optik</td>
+<td>6 mm</td>
+<td>188 mm</td>
+</tr>
+<tr class="row-odd"><td>5MP mit robuster Optik</td>
+<td>8 mm</td>
+<td>172 mm</td>
+</tr>
+<tr class="row-even"><td>5MP mit robuster Optik</td>
+<td>12 mm</td>
+<td>172 mm</td>
+</tr>
+</tbody>
+</table>
 <p id="index-2">CAD-Modelle der <em>rc_viscore</em> Stereokamera können von <a class="reference external" href="https://www.roboception.com/download">https://www.roboception.com/download</a> heruntergeladen werden. Die CAD-Modelle werden ohne Gewähr für ihre Korrektheit zur Verfügung gestellt.</p>
 </div>
 <div class="section" id="environmental-and-operating-conditions">
 <h2>Umwelt- und Betriebsbedingungen<a class="headerlink" href="#environmental-and-operating-conditions" title="Link zu dieser Überschrift">¶</a></h2>
-<p id="index-3">Die <em>rc_viscore</em> Stereokamera ist für den industriellen Einsatz konzipiert. Die Umgebungsbedingungen für Lagerung, Transport und Betrieb in <a class="reference internal" href="#tab-hardware-environment"><span class="std std-numref">Tab. 4</span></a> müssen beachtet werden.</p>
+<p id="index-3">Die <em>rc_viscore</em> Stereokamera ist für den industriellen Einsatz konzipiert. Die Umgebungsbedingungen für Lagerung, Transport und Betrieb in <a class="reference internal" href="#tab-hardware-environment"><span class="std std-numref">Tab. 8</span></a> müssen beachtet werden.</p>
 <span id="tab-hardware-environment"></span><table border="1" class="docutils" id="umgebungsbedingungen">
-<caption><span class="caption-number">Tab. 4 </span><span class="caption-text">Umgebungsbedingungen</span><a class="headerlink" href="#umgebungsbedingungen" title="Link zu dieser Tabelle">¶</a></caption>
+<caption><span class="caption-number">Tab. 8 </span><span class="caption-text">Umgebungsbedingungen</span><a class="headerlink" href="#umgebungsbedingungen" title="Link zu dieser Tabelle">¶</a></caption>
 <colgroup>
 <col width="41%" />
 <col width="59%" />
@@ -479,7 +942,7 @@
 <span id="power-supply"></span><h2>Spezifikationen für die Spannungsversorgung<a class="headerlink" href="#power-supply-specifications" title="Link zu dieser Überschrift">¶</a></h2>
 <p id="index-5">Die <em>rc_viscore</em> Stereokamera muss von einer Gleichspannungsquelle versorgt werden. Im Standardlieferumfang der Kamera ist kein Gleichspannungsnetzteil enthalten. Jede <em>rc_viscore</em> Stereokamera muss an eine eigene Spannungsversorgung angeschlossen werden. Der Anschluss an das Stromnetz ist nur über eine nach EN55011 Klasse B zertifizierte Stromversorgung zulässig.</p>
 <span id="tab-hardware-power"></span><table border="1" class="docutils" id="grenzwerte-fur-die-stromversorgung">
-<caption><span class="caption-number">Tab. 5 </span><span class="caption-text">Grenzwerte für die Stromversorgung</span><a class="headerlink" href="#grenzwerte-fur-die-stromversorgung" title="Link zu dieser Tabelle">¶</a></caption>
+<caption><span class="caption-number">Tab. 9 </span><span class="caption-text">Grenzwerte für die Stromversorgung</span><a class="headerlink" href="#grenzwerte-fur-die-stromversorgung" title="Link zu dieser Tabelle">¶</a></caption>
 <colgroup>
 <col width="32%" />
 <col width="14%" />
@@ -540,9 +1003,9 @@
 <p class="first admonition-title">Warnung</p>
 <p class="last">Die Richtlinien zum Kabelmanagement sind zwingend einzuhalten. Kabel sind immer mit einer Zugentlastung an der Halterung der <em>rc_viscore</em> Stereokamera zu befestigen, sodass durch Kabelbewegungen keine Kräfte auf die M12-Anschlüsse der Kamera wirken. Die verwendeten Kabel müssen lang genug sein, damit sich die Kamera voll bewegen kann, ohne dass das Kabel zu stark belastet wird. Der minimale Biegeradius des Kabels (d.h. <span class="math notranslate nohighlight">\(R_{min} = 15 d\)</span>) muss eingehalten werden.</p>
 </div>
-<p id="index-7">Die Steckerbelegung für den Stromanschluss ist in <a class="reference internal" href="#tab-power-pin-assignments"><span class="std std-numref">Tab. 6</span></a> angegeben.</p>
+<p id="index-7">Die Steckerbelegung für den Stromanschluss ist in <a class="reference internal" href="#tab-power-pin-assignments"><span class="std std-numref">Tab. 10</span></a> angegeben.</p>
 <span id="tab-power-pin-assignments"></span><table border="1" class="docutils" id="steckerbelegung-fur-den-stromanschluss">
-<caption><span class="caption-number">Tab. 6 </span><span class="caption-text">Steckerbelegung für den Stromanschluss</span><a class="headerlink" href="#steckerbelegung-fur-den-stromanschluss" title="Link zu dieser Tabelle">¶</a></caption>
+<caption><span class="caption-number">Tab. 10 </span><span class="caption-text">Steckerbelegung für den Stromanschluss</span><a class="headerlink" href="#steckerbelegung-fur-den-stromanschluss" title="Link zu dieser Tabelle">¶</a></caption>
 <colgroup>
 <col width="13%" />
 <col width="24%" />
@@ -616,6 +1079,59 @@
 <span id="fig-frame"></span><a class="reference internal image-reference" href="_images/rcv_frame.png"><img alt="_images/rcv_frame.png" src="_images/rcv_frame.png" style="width: 160mm;" /></a>
 <p class="caption"><span class="caption-number">Abb. 6 </span><span class="caption-text">Position und Orientierung des Kamerakoordinatensystems</span></p>
 </div>
+<p>Der Abstand EP des Ursprungs des Kamera-Koordinatensystems hängt von der Modellvariante ab und ist in <a class="reference internal" href="#tab-frame-ep"><span class="std std-numref">Tab. 11</span></a> angegeben.</p>
+<span id="tab-frame-ep"></span><table border="1" class="docutils" id="abstand-ep-der-modellvarianten-der-rc-viscore-camera">
+<caption><span class="caption-number">Tab. 11 </span><span class="caption-text">Abstand EP der Modellvarianten der <em>rc_viscore</em> Stereokamera</span><a class="headerlink" href="#abstand-ep-der-modellvarianten-der-rc-viscore-camera" title="Link zu dieser Tabelle">¶</a></caption>
+<colgroup>
+<col width="52%" />
+<col width="29%" />
+<col width="19%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>Modellvariante</strong></th>
+<th class="head"><strong>Brennweite</strong></th>
+<th class="head"><strong>EP</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>12MP mit Standardoptik</td>
+<td>12 mm</td>
+<td>86.5 mm</td>
+</tr>
+<tr class="row-odd"><td>12MP mit Standardoptik</td>
+<td>16 mm</td>
+<td>80.5 mm</td>
+</tr>
+<tr class="row-even"><td>12MP mit Standardoptik</td>
+<td>25 mm</td>
+<td>57.5 mm</td>
+</tr>
+<tr class="row-odd"><td>12MP mit robuster Optik</td>
+<td>12 mm</td>
+<td>78.5 mm</td>
+</tr>
+<tr class="row-even"><td>12MP mit robuster Optik</td>
+<td>16 mm</td>
+<td>76.5 mm</td>
+</tr>
+<tr class="row-odd"><td>12MP mit robuster Optik</td>
+<td>25 mm</td>
+<td>57 mm</td>
+</tr>
+<tr class="row-even"><td>5MP mit robuster Optik</td>
+<td>6 mm</td>
+<td>63.4 mm</td>
+</tr>
+<tr class="row-odd"><td>5MP mit robuster Optik</td>
+<td>8 mm</td>
+<td>64.9 mm</td>
+</tr>
+<tr class="row-even"><td>5MP mit robuster Optik</td>
+<td>12 mm</td>
+<td>56.9 mm</td>
+</tr>
+</tbody>
+</table>
 <div class="admonition note">
 <p class="first admonition-title">Bemerkung</p>
 <p class="last">Der korrekte Versatz zwischen dem Kamera-Koordinatensystem und einem Roboterkoordinatensystem kann durch Hand-Augen-Kalibrierung kalibriert werden. Siehe <a class="reference external" href="https://doc.rc-cube.com/latest/en/handeye_calibration.html">https://doc.rc-cube.com/latest/en/handeye_calibration.html</a>.</p>

@@ -64,15 +64,27 @@ General warnings
 Intended use
 ------------
 
-The |rc_viscore_camera| is intended to be used in combination with :mvexclude:`a |company|
-|rc_cube| or` the SGM\ |reg|\ Producer. The |rc_viscore_camera| :mvexclude:`together with a |company|
-|rc_cube| are` :mvonly:`is` intended for installation with automated machinery,
-a mobile platform, or stationary equipment. :mvonly:`It` :mvexclude:`They` can also be used for data
-acquisition in other applications.
+The |rc_viscore_camera| is an industrial 3D vision camera that is intended for integration into automation 
+and robotics applications. Their purpose is the acquisition of image data and it is intended to be connected 
+to a :mvexclude:`|company| |rc_cube| or` host computer.
+
+This product is designed and intended to be operated in a trusted environment with a direct, 
+point-to-point (1:1) connection to the :mvexclude:`|company| |rc_cube| or` host computer. In this configuration, 
+the devices are not intended to be connected to, or made accessible from, an open or untrusted network.
+
+The provided GigE Vision interfaces is an established industry standard that does not support encryption or 
+authentication. Making this interface available outside a trusted, isolated network may expose the system to 
+cybersecurity risks and is outside the intended use of the product.
+
+The operator is responsible for ensuring that the operating environment matches these conditions, including 
+physical access control to the device, network isolation, and secure configuration of the host system where 
+applicable. Operating the product outside its intended use, in particular by exposing unsecured interfaces 
+to an untrusted network, may compromise the security and reliability of the system and is not covered by 
+the product's cybersecurity risk assessment.
 
 .. Warning:: The |rc_viscore_camera| is **NOT** intended for safety critical applications.
 
-.. Warning:: The |rc_viscore_camera| is **NOT** to be used in dynamic environments or mounted to a robot end-effector.
+.. Warning:: The |rc_viscore_camera| with standard optics is **NOT** to be used in dynamic environments or mounted to a robot end-effector.
 
 The |rc_viscore_camera| may be used only within the scope of its technical specification. Any other use of the
 product is deemed unintended use. |company| will not be liable for any damages resulting from any

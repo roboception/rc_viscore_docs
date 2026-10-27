@@ -291,13 +291,26 @@ Abb. 8
  gezeigt.
 
 
-Der Fokusring und der Blendenring (Irisring) sind mit jeweils 3
-Schrauben gesichert, wie in
+Bei den 12MP-Varianten mit Standardoptik sind der Fokusring und der
+Blendenring (Irisring) mit jeweils 3 Schrauben gesichert, wie in
 
 Abb. 9
 
  gezeigt. Zum Verstellen eines Rings müssen alle drei Schrauben gelöst
 werden.
+
+
+Bei den Varianten mit robuster Optik ist der Fokusring mit der
+Fixierschraube (A) gesichert, wie in
+
+Abb. 10
+
+ für die 12MP-Varianten und in
+
+Abb. 11
+
+ für die 5MP-Varianten gezeigt. Zum Verstellen des Fokusrings muss die
+Fixierschraube gelöst werden.
 
 
 Der

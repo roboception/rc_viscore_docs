@@ -49,82 +49,175 @@ rc_viscore
 
 Technische Spezifikation
 
-Die technische Spezifikation der
+Die
 
 rc_viscore
 
- stereo camera ist in
+ stereo camera ist mit zwei Bildauflösungen, 12MP und 5MP, mit jeweils
+drei verschiedenen Brennweiten erhältlich. Die 12MP-Varianten sind mit
+Standardoptik für den kommerziellen Einsatz oder mit robuster Optik
+für den industriellen Einsatz erhältlich. Die 5MP-Varianten sind mit
+robuster Optik erhältlich. Die technischen Daten der 12MP-Varianten
+sind in
 
 Tab. 1
 
- dargestellt. Die angegebene Tiefenbildrate kann auf einem
+ und die technischen Daten der 5MP-Varianten in
 
-rc_cube
+Tab. 2
 
- oder mit dem SGM®Producer auf einem Computer mit einer Nvidia RTX2070
-GPU erreicht werden. Höhere Bildraten (bis zu 9 Hz) sind mit
-schnelleren Grafikkarten möglich.
+ angegeben. Die angegebenen Tiefenbildraten und Latenzen wurden für
+Stereo-Matching mit Semi-Global Matching (SGM®) auf einem Computer mit
+einer Nvidia RTX PRO 2000 Blackwell GPU und einer Intel Core i7 CPU
+der 14. Generation gemessen, wobei die Latenzen im Single-Shot-Modus
+gemessen wurden. Auf anderer Hardware können Bildraten und Latenzen
+abweichen.
 
-Technische Daten der rc_viscore stereo camera        rc_viscore stereo
-camera  Bildauflösung  4112 x 3008 Pixel monochrom  Bildwiederholrate
-9 Hz  Brennweite  16 mm  Sichtfeld  Horizontal: 47,5°, Vertikal: 35,7°
-Arbeitsbereich  670 mm x 640 mm @ 1.0 m Abstand  1550 mm x 1280 mm @
-2.0 m Abstand  2430 mm x 1920 mm @ 3.0 m Abstand  3310 mm x 2560 mm @
-4.0 m Abstand  Tiefenbild  4112 x 3008 Pixel (Voll) @ 2,8 Hz (Nvidia
-RTX2070)  2056 x 1504 Pixel (Hoch) @ 4,6 Hz (Nvidia RTX2070)  1028 x
-752 Pixel (Mittel) @ 9 Hz (Nvidia RTX2070)  686 x 502 Pixel (Niedrig)
-@ 9 Hz (Nvidia RTX2070)  Kühlung  Passiv  Basisabstand  210 mm  Größe
-(B x H x L)  262 mm x 204 mm x 82 mm  Masse  1.64 kg
+Technische Daten der 12MP-Varianten der rc_viscore stereo camera
+12 mm  16 mm  25 mm  Typ (Modell)  rc_viscore
+210[m/c]-[12/16/25]-12M-H1-R (Standardoptik)  rc_viscore
+210[m/c]-[12/16/25]-12M-H1-V (robuste Optik)  Bildauflösung  4112 x
+3008 Pixel  Sensortyp  Monochrom oder Farbe, Global Shutter
+Bildwiederholrate  9 Hz  Sichtfeld  Horizontal: 59°  Vertikal: 45°
+Horizontal: 46°  Vertikal: 34°  Horizontal: 30°  Vertikal: 22°
+Arbeitsbereich  @ 1.0 m  @ 2.0 m  @ 3.0 m  @ 4.0 m    940 mm x 840 mm
+2090 mm x 1680 mm  3250 mm x 2530 mm  4400 mm x 3370 mm    640 mm x
+620 mm  1490 mm x 1240 mm  2340 mm x 1870 mm  3200 mm x 2490 mm    340
+mm x 400 mm  890 mm x 800 mm  1440 mm x 1200 mm  1990 mm x 1610 mm
+Tiefenbild  4112 x 3008 Pixel (Voll) @ 3 Hz, 920 ms Latenz  2056 x
+1504 Pixel (Hoch) @ 4,7 Hz, 450 ms Latenz  1028 x 752 Pixel (Mittel) @
+9 Hz, 230 ms Latenz  686 x 502 Pixel (Niedrig) @ 9 Hz, 190 ms Latenz
+Optik  Standardoptik für den kommerziellen Einsatz oder robuste Optik
+für den industriellen Einsatz  Kühlung  Passiv  Basisabstand  210 mm
+Größe (B x L x H)  262 mm x 202 mm x 82 mm (Standardoptik)  262 mm x
+188 mm x 82 mm (robuste Optik)  Masse  2.3 kg
+
+Technische Daten der 5MP-Varianten der rc_viscore stereo camera
+6 mm  8 mm  12 mm  Typ (Modell)  rc_viscore 210[m/c]-[6/8/12]-5M-H1-A
+Bildauflösung  2472 x 2064 Pixel  Sensortyp  Monochrom oder Farbe,
+Global Shutter  Bildwiederholrate  23 Hz  Sichtfeld  Horizontal: 56°
+Vertikal: 48°  Horizontal: 44°  Vertikal: 37°  Horizontal: 30°
+Vertikal: 25°  Arbeitsbereich  @ 1.0 m  @ 2.0 m  @ 3.0 m  @ 4.0 m
+860 mm x 890 mm  1930 mm x 1790 mm  3010 mm x 2690 mm  4080 mm x 3580
+mm    600 mm x 680 mm  1420 mm x 1360 mm  2240 mm x 2050 mm  3060 mm x
+2730 mm    330 mm x 450 mm  880 mm x 910 mm  1430 mm x 1370 mm  1980
+mm x 1830 mm  Tiefenbild  2472 x 2064 Pixel (Voll) @ 4 Hz, 450 ms
+Latenz  1236 x 1032 Pixel (Hoch) @ 10 Hz, 210 ms Latenz  618 x 516
+Pixel (Mittel) @ 23 Hz, 110 ms Latenz  412 x 344 Pixel (Niedrig) @ 23
+Hz, 90 ms Latenz  Optik  Robuste Optik für den industriellen Einsatz
+Kühlung  Passiv  Basisabstand  210 mm  Größe (B x L x H)  262 mm x 188
+mm x 82 mm  262 mm x 172 mm x 82 mm  262 mm x 172 mm x 82 mm  Masse
+1.97 kg
 
 Der Tiefenbildbereich der
 
 rc_viscore
 
- stereo camera hängt von der Tiefenbildqualität, dem angegebenen
-maximalen Tiefenbereich und dem verfügbaren GPU-Speicher ab. Der
-Tiefenbereich bei näherer Entfernung ist viel kleiner als der
-Tiefenbereich bei weiter Entfernung. Der
-
-rc_cube
-
- verwendet 3,4 Gbyte GPU-Speicher für das Stereo-Matching.
-
-Tab. 2
-
- zeigt Beispiele für resultierende Tiefenbereiche mit 3,4 Gbyte GPU-
-Speicher. Größere Tiefenbereiche sind möglich, wenn der SGM®Producer
-mit einer Grafikkarte verwendet wird, die mehr GPU-Speicher bietet.
-
-Beispiele möglicher Tiefenbereiche der rc_viscore stereo camera mit
-3,4 Gbytes GPU-Speicher , wie im Fall des rc_cube        rc_viscore
-stereo camera  Volle Tiefenbildqualität  0.89 m bis 1.00 m  1.60 m bis
-2.00 m  2.18 m bis 3.00 m  2.65 m bis 4.00 m  Hohe Tiefenbildqualität
-0.52 m bis 1.00 m  0.66 m bis 2.00 m  0.75 m bis 3.00 m  0.80 m bis
-4.00 m  1,00 m bis unendlich  Mittlere und niedrige Tiefenbildqualität
-0.52 m bis unendlich
-
-Die Auflösung und Genauigkeit bei verschiedenen Entfernungen ist in
+ stereo camera hängt von der Bildauflösung, der Brennweite, der
+Tiefenbildqualität, dem angegebenen maximalen Tiefenbereich und der
+Menge an GPU-Speicher ab, die für das Stereo-Matching reserviert ist.
+Der Tiefenbereich bei näherer Entfernung ist viel kleiner als der
+Tiefenbereich bei weiter Entfernung.
 
 Tab. 3
 
- für die empfohlene Tiefenbildqualität
+ und
 
-Hoch
+Tab. 4
 
- angegeben. Bei voller Tiefenbildqualität sind die Auflösung und die
-Genauigkeit um den Faktor 2 besser. Bei mittlerer Qualität sind die
-Auflösung und die Genauigkeit etwa zweimal schlechter als in der
-Tabelle angegeben.
+ zeigen Beispiele für resultierende Tiefenbereiche bei SGM®-Stereo-
+Matching auf demselben Computer, wobei der maximale Tiefenbereich auf
+einen Arbeitsabstand von 1 m, 2 m, 3 m und 4 m eingestellt ist. Die
+Tiefenbereiche wurden mit 3,4 Gbyte GPU-Speicher ermittelt, die für
+das Stereo-Matching reserviert sind. Das ist die Menge an GPU-
+Speicher, die der
 
-Auflösung und Genauigkeit der rc_viscore stereo camera in Millimetern
-mit Stereo-Matching in Qualität Hoch und Random-Dot-Projektion auf
-nicht-reflektierende und nicht-transparente Objekte.          Abstand
-rc_viscore stereo camera  Laterale Auflösung  1.0 m  2.0 m  3.0 m  4.0
-m  0.4 mm  0.9 mm  1.3 mm  1.7 mm  Tiefenauflösung  1.0 m  2.0 m  3.0
-m  4.0 m  0.1 mm  0.5 mm  1.2 mm  2.0 mm  Durchschnittliche
-Tiefengenauigkeit  1.0 m  2.0 m  3.0 m  4.0 m  0.5 mm  2.0 mm  4.6 mm
-8.2 mm
+rc_cube
 
+ für das Stereo-Matching verwendet. Größere Tiefenbereiche sind
+möglich, wenn mehr GPU-Speicher für das Stereo-Matching reserviert
+wird.
+
+Beispiele möglicher Tiefenbereiche der 12MP-Varianten der rc_viscore
+stereo camera mit 3,4 Gbyte GPU-Speicher für das Stereo-Matching
+12 mm  16 mm  25 mm  Volle Tiefenbildqualität  0.85 m bis 1.00 m  1.49
+m bis 2.00 m  1.99 m bis 3.00 m  2.38 m bis 4.00 m  0.89 m bis 1.00 m
+1.60 m bis 2.00 m  2.18 m bis 3.00 m  2.66 m bis 4.00 m  0.93 m bis
+1.00 m  1.72 m bis 2.00 m  2.41 m bis 3.00 m  3.02 m bis 4.00 m  Hohe
+Tiefenbildqualität  0.52 m bis 1.00 m  0.53 m bis 2.00 m  0.59 m bis
+3.00 m  0.62 m bis 4.00 m  0.52 m bis 1.00 m  0.66 m bis 2.00 m  0.74
+m bis 3.00 m  0.79 m bis 4.00 m  0.60 m bis 1.00 m  0.87 m bis 2.00 m
+1.01 m bis 3.00 m  1.11 m bis 4.00 m
+
+Beispiele möglicher Tiefenbereiche der 5MP-Varianten der rc_viscore
+stereo camera mit 3,4 Gbyte GPU-Speicher für das Stereo-Matching
+6 mm  8 mm  12 mm  Volle Tiefenbildqualität  0.61 m bis 1.00 m  0.87 m
+bis 2.00 m  1.02 m bis 3.00 m  1.12 m bis 4.00 m  0.67 m bis 1.00 m
+1.01 m bis 2.00 m  1.21 m bis 3.00 m  1.35 m bis 4.00 m  0.75 m bis
+1.00 m  1.21 m bis 2.00 m  1.51 m bis 3.00 m  1.73 m bis 4.00 m  Hohe
+Tiefenbildqualität  0.52 m bis 1.00 m  0.52 m bis 2.00 m  0.52 m bis
+3.00 m  0.52 m bis 4.00 m  0.52 m bis 1.00 m  0.52 m bis 2.00 m  0.52
+m bis 3.00 m  0.52 m bis 4.00 m  0.52 m bis 1.00 m  0.52 m bis 2.00 m
+0.52 m bis 3.00 m  0.52 m bis 4.00 m
+
+Die Auflösung und Genauigkeit bei SGM®-Stereo-Matching in
+verschiedenen Entfernungen sind in
+
+Tab. 5
+
+ für die 12MP-Varianten und in
+
+Tab. 6
+
+ für die 5MP-Varianten angegeben. Jeder Eintrag enthält die Werte für
+volle und hohe Tiefenbildqualität in der Form [voll | hoch]. Bei
+mittlerer Qualität sind die Auflösung und die Genauigkeit etwa zweimal
+schlechter als bei hoher Qualität.
+
+Auflösung und Genauigkeit der 12MP-Varianten der rc_viscore stereo
+camera in Millimetern für [volle | hohe] Tiefenbildqualität mit
+Random-Dot-Projektion auf nicht-reflektierende und nicht-transparente
+Objekte              Abstand  12 mm  16 mm  25 mm  Laterale Auflösung
+1.0 m  2.0 m  3.0 m  4.0 m  0.3 | 0.6  0.6 | 1.2  0.9 | 1.8  1.2 | 2.4
+0.3 | 0.5  0.5 | 0.9  0.7 | 1.3  0.9 | 1.8  0.2 | 0.3  0.3 | 0.6  0.5
+| 0.9  0.6 | 1.1  Tiefenauflösung  1.0 m  2.0 m  3.0 m  4.0 m  0.1 |
+0.2  0.4 | 0.7  0.8 | 1.6  1.4 | 2.8  0.1 | 0.2  0.3 | 0.6  0.6 | 1.2
+1.1 | 2.1  0.1 | 0.1  0.2 | 0.4  0.4 | 0.8  0.7 | 1.3
+Durchschnittliche Tiefengenauigkeit  1.0 m  2.0 m  3.0 m  4.0 m  0.4 |
+0.7  1.4 | 2.8  3.1 | 6.2  5.6 | 11.1  0.3 | 0.6  1.1 | 2.1  2.4 | 4.7
+4.2 | 8.3  0.2 | 0.4  0.7 | 1.3  1.5 | 3.0  2.6 | 5.2
+
+Auflösung und Genauigkeit der 5MP-Varianten der rc_viscore stereo
+camera in Millimetern für [volle | hohe] Tiefenbildqualität mit
+Random-Dot-Projektion auf nicht-reflektierende und nicht-transparente
+Objekte              Abstand  6 mm  8 mm  12 mm  Laterale Auflösung
+1.0 m  2.0 m  3.0 m  4.0 m  0.5 | 0.9  0.9 | 1.8  1.4 | 2.7  1.8 | 3.5
+0.4 | 0.7  0.7 | 1.4  1.1 | 2.1  1.4 | 2.7  0.3 | 0.5  0.5 | 1.0  0.7
+| 1.4  1.0 | 1.9  Tiefenauflösung  1.0 m  2.0 m  3.0 m  4.0 m  0.2 |
+0.3  0.6 | 1.1  1.2 | 2.4  2.1 | 4.2  0.2 | 0.3  0.5 | 0.9  1.0 | 1.9
+1.7 | 3.3  0.1 | 0.2  0.3 | 0.6  0.7 | 1.3  1.1 | 2.2
+Durchschnittliche Tiefengenauigkeit  1.0 m  2.0 m  3.0 m  4.0 m  0.6 |
+1.1  2.1 | 4.2  4.7 | 9.4  8.3 | 16.6  0.5 | 0.9  1.7 | 3.3  3.7 | 7.3
+6.5 | 12.9  0.3 | 0.6  1.1 | 2.2  2.5 | 4.9  4.4 | 8.7
+
+
+Die Länge L der
+
+rc_viscore
+
+ stereo camera hängt von der Modellvariante ab und ist in
+
+Tab. 7
+
+ angegeben.
+
+Länge L der Modellvarianten der rc_viscore stereo camera
+Modellvariante  Brennweite  L  12MP mit Standardoptik  12 mm  202 mm
+12MP mit Standardoptik  16 mm  202 mm  12MP mit Standardoptik  25 mm
+202 mm  12MP mit robuster Optik  12 mm  188 mm  12MP mit robuster
+Optik  16 mm  188 mm  12MP mit robuster Optik  25 mm  188 mm  5MP mit
+robuster Optik  6 mm  188 mm  5MP mit robuster Optik  8 mm  172 mm
+5MP mit robuster Optik  12 mm  172 mm
 
 CAD-Modelle der
 
@@ -146,7 +239,7 @@ rc_viscore
  stereo camera ist für den industriellen Einsatz konzipiert. Die
 Umgebungsbedingungen für Lagerung, Transport und Betrieb in
 
-Tab. 4
+Tab. 8
 
  müssen beachtet werden.
 
@@ -262,7 +355,7 @@ Warnung: Die Richtlinien zum Kabelmanagement sind zwingend
 
 Die Steckerbelegung für den Stromanschluss ist in
 
-Tab. 6
+Tab. 10
 
  angegeben.
 
@@ -303,6 +396,21 @@ Abb. 6
 
  dargestellt.
 
+
+Der Abstand EP des Ursprungs des Kamera-Koordinatensystems hängt von
+der Modellvariante ab und ist in
+
+Tab. 11
+
+ angegeben.
+
+Abstand EP der Modellvarianten der rc_viscore stereo camera
+Modellvariante  Brennweite  EP  12MP mit Standardoptik  12 mm  86.5 mm
+12MP mit Standardoptik  16 mm  80.5 mm  12MP mit Standardoptik  25 mm
+57.5 mm  12MP mit robuster Optik  12 mm  78.5 mm  12MP mit robuster
+Optik  16 mm  76.5 mm  12MP mit robuster Optik  25 mm  57 mm  5MP mit
+robuster Optik  6 mm  63.4 mm  5MP mit robuster Optik  8 mm  64.9 mm
+5MP mit robuster Optik  12 mm  56.9 mm
 
 Bemerkung: Der korrekte Versatz zwischen dem Kamera-
   Koordinatensystem und einem Roboterkoordinatensystem kann durch
